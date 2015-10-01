@@ -399,6 +399,11 @@ a.more-projects:hover {
     white-space: nowrap;
     letter-spacing: 1px;
 }
+.top-menu li a.special {
+    color: #09f;
+    background: #036;
+    border: 1px solid #069;
+}
 .top-menu li a:hover {
     border: 1px solid #777;
     background: #666;
