@@ -16,6 +16,7 @@ Luckily, as of PHP 5.5, a **native password hashing API** was introduced to safe
 ## The Implementation of API
 
 The implementation consists of 4 functions:-
+
 * `password_hash()` : To create a new password hash
 * `password_verify()` : To confirm a given password matches with the hash
 * `password_needs_rehash()` : To check if a password meets the desired hash settings (algorithm, cost)
@@ -218,10 +219,10 @@ A cryptographic salt is a data which is applied during the hashing process in or
 
 When using `password_hash()` or `crypt()`, the return value includes the salt as part of the generated hash. This value should be stored verbatim in your database, as it includes information about the hash function that was used and can then be given directly to `password_verify()` or `crypt()` when verifying passwords.
 
-![Password Hash](http://i.imgur.com/muvZpRC.png)
+![Password Hash](http://i.imgur.com/9cmcBRo.png)
 
 The diagram above shows the format of a return value from `crypt()` or `password_hash()`. As you can see, they are self-contained, with all the information on the algorithm and salt required for future password verification.
 
 ## Conclusion
 
-With this new PHP [password extension](http://php.net/password), the password hashing becomes more easier as we don't need to create our custom-made class or use any other external password hashing class library in our application anymore.
+With this new [password extension](http://php.net/password), the password hashing becomes more easier as we don't need to create our custom-made algorithm class or use any other external password hashing class library in our application anymore.
