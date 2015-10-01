@@ -1,8 +1,10 @@
-# [heiswayi.github.io](http://heiswayi.github.io)'s source code
+# Version 2.x
 
-This repository contains the source code of my site, which is built with [Jekyll](http://jekyllrb.com/) and generously hosted free on GitHub.
+This repo contains the source code of my site, which is built with [Jekyll](http://jekyllrb.com/) and generously hosted free on GitHub. Thanks to [Font Awesome](https://fortawesome.github.io/Font-Awesome/) for the awesome icons and [Fira](https://github.com/mozilla/Fira) fonts by **Mozilla** for the awesome typeface.
 
-### Post/Note Writing Format
+**URL:** [http://heiswayi.github.io](http://heiswayi.github.io)
+
+### Post Writing Format
 
 **Filename format:** `YYYY-MM-DD-lorem-ipsum-is-here.md`
 
@@ -14,19 +16,12 @@ description: A short brief about what this post is about.
 keywords: keyword1, next keyword2, just keywords
 ---
 
-Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
-a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
-It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.
-One day however a small line of blind text by the name of Lorem Ipsum decided to.
-
-Bla..bla..bla..
+Lorem ipsum dolor sit amet, commodo diceret interpretaris mel ex, fuisset verterem mel in. Ea nam commodo maiorum nostrum, quo quem erat veniam at. Eos populo gloriatur et, per vero aeterno hendrerit cu. Id hendrerit efficiantur eum, aliquid euripidis ea nam, oblique virtute eam ex. Vis eu dicta possim facilisis, delenit hendrerit cum ne.
 ```
 
 # License
 
-`_post/` and `images/` folder are copyrighted. You may not reuse anything therein without my permission. Everything else is [MIT licensed](LICENSE.md).
+`_post/` and `images/` folders are copyrights of **Heiswayi Nrird** (aka me). You may not reuse anything therein without my permission. Everything else is [MIT licensed](LICENSE.md), unless otherwise stated.
 
 ---
-Made with love by [Heiswayi Nrird](http://heiswayi.github.io).
+Handcrafted by [Heiswayi Nrird](http://heiswayi.github.io) with love.
