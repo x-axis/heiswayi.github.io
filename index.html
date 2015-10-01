@@ -1,0 +1,140 @@
+---
+layout: default
+title: Home
+---
+
+<div class="posts">
+  <h2>My Recent Notes</h2>
+  {% for post in site.posts limit:5 %}
+    <div class="post-list">
+      <div class="post-list-date"><small>{{ post.date | date: "%b %d, %Y" }}</small></div>
+	    <div class="text-truncate"><a href="{{ post.url }}">{{ post.title }}</a></div>
+      <div class="post-list-desc">{{ post.description }}</div>
+    </div>
+  {% endfor %}
+  <a class="more-notes" href="/notes.html">more notes</a>
+</div>
+
+<div class="hrline"></div>
+
+<div class="posts">
+  <h2>Apps &amp; Projects</h2>
+  <div class="grid">
+    <div class="grid-sizer"></div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>HTML, JS</small></div>
+	    <div class="project-title"><a href="http://heiswayi.github.io/pgp/">PGP Key Generator Online</a></div>
+      <div class="project-list-desc">A simple and easy to use client-side PGP key generator.</div>
+      <div class="project-source"><a href="https://github.com/heiswayi/pgp">source code</a></div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>HTML, JS</small></div>
+	    <div class="project-title"><a href="http://heiswayi.github.io/wce">Web Content Encryption (WCE)</a></div>
+      <div class="project-list-desc">Web Content Encryption (WCE) is a JavaScript encryption tool based on Gibberish AES to encrypt/decrypt your web content or message and it is embeddable into your site.</div>
+      <div class="project-source"><a href="https://github.com/heiswayi/wce">source code</a></div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>HTML, JS</small></div>
+	    <div class="project-title"><a href="http://heiswayi.github.io/markdown-editor">Live Markdown Editor</a></div>
+      <div class="project-list-desc">Live Markdown Editor with GitHub-flavored Markdown.</div>
+      <div class="project-source"><a href="https://github.com/heiswayi/markdown-editor">source code</a></div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>HTML, JS</small></div>
+	    <div class="project-title"><a href="http://heiswayi.github.io/random-name-picker">Random Name Picker</a></div>
+      <div class="project-list-desc">This is a simple HTML tool written with JavaScript to randomly pick a name from a list. The name that has been picked is removable from the list. This is useful for indoor event/party.</div>
+      <div class="project-source"><a href="https://github.com/heiswayi/random-name-picker">source code</a></div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>HTML</small></div>
+	    <div class="project-title"><a href="http://heiswayi.github.io/mit-license">MIT License Online</a></div>
+      <div class="project-list-desc">Your own MIT license that you can always link to.</div>
+      <div class="project-source"><a href="https://github.com/heiswayi/mit-license">source code</a></div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>HTML, JS</small></div>
+	    <div class="project-title"><a href="http://heiswayi.github.io/math-console">Math Console</a></div>
+      <div class="project-list-desc">Math Console is a Mathematical-powered console to evaluate basic arithmetic operations, common math functions and also to convert a math unit to another. Some constants are supported too.</div>
+      <div class="project-source"><a href="https://github.com/heiswayi/math-console">source code</a></div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>PHP</small></div>
+	    <div class="project-title"><a href="http://ai.wayi.me">W4Y1</a></div>
+      <div class="project-list-desc">My own Artificial Intelligence (AI) chatter bot program built to represent a fragment of my knowledge and memories.</div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>PHP</small></div>
+	    <div class="project-title"><a href="http://proxy.wayi.me">Wayi's Private Web Proxy</a></div>
+      <div class="project-list-desc">My super simple web proxy! The intention of this service is for my personal use purpose. However, it's publicly accessible and you're free to use it at your own risk.</div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>PHP</small></div>
+	    <div class="project-title"><a href="http://l.wayi.me">My URL Shortener</a></div>
+      <div class="project-list-desc">Known as "L" which stands for Linker, it's my public URL shortening service. Originally built for my personal use purpose, but available freely to the public usage.</div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>PHP</small></div>
+	    <div class="project-title"><a href="http://wayi.me/app/snippets/">Code Snippets Saver</a></div>
+      <div class="project-list-desc">An experimental multi-user PHP application to save code snippets with automatic syntax-highlighting based on predefined categories. The code snippets can be shared publicly or saved privately for personal use.</div>
+      <div class="project-source"><a href="https://github.com/heiswayi/code-snippets-saver">source code</a></div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>PHP</small></div>
+	    <div class="project-title"><a href="http://imgen.wayi.me/">Online Dummy Image Generator</a></div>
+      <div class="project-list-desc">Simply generate dummy image online for your design mockup/sample and directly hotlinking it.</div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>PHP</small></div>
+	    <div class="project-title"><a href="http://wayi.me/app/zeropaste/">ZeroPaste</a></div>
+      <div class="project-list-desc">A zero-knowledge pastebin. The data is encrypted/decrypted in the browser using 256-bits AES. Here's a <a href="https://wayi.me/app/zeropaste/?624b09af8d4ec9da#5Acxw9xpLPOP8Mrjvq0eJ6DZLqVZKYIT25MvJZLlEaM=">sample</a> of a paste.</div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>PHP</small></div>
+	    <div class="project-title"><a href="http://wayi.me/app/source-code-viewer/">File Source Code Viewer</a></div>
+      <div class="project-list-desc">This is a simple tool to view the source code of a <code>.phps</code> file remotely and embeddable into your site content. Other NON server-side files like <code>.js</code>, <code>.css</code>, <code>.html</code>, etc. also can be used with this tool.</div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>HTML, JS</small></div>
+	    <div class="project-title"><a href="http://heiswayi.github.io/color-contrast-checker">Color Contrast Checker</a></div>
+      <div class="project-list-desc">A simple tool to evaluate and check your color contrast between foreground and background colors.</div>
+      <div class="project-source"><a href="https://github.com/heiswayi/color-contrast-checker">source code</a></div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>HTML, JS</small></div>
+	    <div class="project-title"><a href="http://heiswayi.github.io/spelling-uk-vs-us">Spelling: UK vs US</a></div>
+      <div class="project-list-desc">A comprehensive* list of British and American spelling differences.</div>
+      <div class="project-source"><a href="https://github.com/heiswayi/spelling-uk-vs-us">source code</a></div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>Jekyll</small></div>
+	    <div class="project-title"><a href="http://heiswayi.github.io/the-plain">The Plain</a></div>
+      <div class="project-list-desc">A minimalist Jekyll theme that focuses on writing matters.</div>
+      <div class="project-source"><a href="https://github.com/heiswayi/the-plain">source code</a></div>
+    </div>
+
+    <div class="project-list grid-item">
+      <div class="project-list-category"><small>JS, PHP</small></div>
+	    <div class="project-title"><a href="http://wayi.me/webpage-screenshot">Webpage Screenshot Mockup Generator</a></div>
+      <div class="project-list-desc">Generate a webpage screenshot automatically with Google Chrome browser-like frame.</div>
+      <div class="project-source"><a href="https://github.com/heiswayi/webpage-screenshot">source code</a></div>
+    </div>
+
+  </div><!-- /#grid -->
+  <a class="more-projects" href="https://github.com/heiswayi?tab=repositories">more projects on github</a>
+</div>

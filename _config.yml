@@ -1,0 +1,31 @@
+encoding:         UTF-8
+
+#markdown:         kramdown
+#kramdown:
+#  input:          GFM
+#  syntax_highlighter: rouge
+markdown:         redcarpet
+redcarpet:
+  extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+highlighter:      pygments
+
+permalink:        none
+version:          1.0.0
+
+title:            "Heiswayi Nrird"
+tagline:          "Just another Software Guy's blog and ranting"
+description:      "It is better to live your own destiny imperfectly than to live an imitation of somebody else's life with perfection."
+url:              http://heiswayi.github.io
+
+author:
+  name:           "Heiswayi Nrird"
+  email:          hnrird@gmail.com
+  url:            http://wayi.me
+
+github:
+  repo:           https://github.com/heiswayi/heiswayi.github.io
+
+twitter:
+  username:       HeiswayiNrird
+
+google_analytics: UA-58296043-7
