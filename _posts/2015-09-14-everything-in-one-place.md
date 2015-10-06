@@ -9,7 +9,7 @@ Nowadays, I started to use GitHub for almost everything. Time to time, my **GitH
 
 So, to make them easy on eyes, I created a simple view of listing page for both of them.
 
-**GitHub Repositories:** [http://heiswayi.github.io/my-repos](http://heiswayi.github.io/my-repos/) ([source code](https://github.com/heiswayi/my-repos))
+**GitHub Repositories:** [**http://heiswayi.github.io/my-repos**](http://heiswayi.github.io/my-repos/) ([source code](https://github.com/heiswayi/my-repos))
 
 **GitHub Gists:** [**http://heiswayi.github.io/my-gists**](http://heiswayi.github.io/my-gists/) ([source code](https://github.com/heiswayi/my-gists))
 
