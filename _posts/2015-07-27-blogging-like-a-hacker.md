@@ -13,6 +13,8 @@ Today, Tom's idea has evolved to become [GitHub Pages](https://pages.github.com)
 
 In the past few years, I have been using [WordPress](https://wordpress.org) all the times for my website or blog. I don't even know about this awesome static blog generator because I never use GitHub before. Just starting this year, 2015, I started using GitHub to port some of the projects. Then, I started exploring Jekyll and use it for my new website/blog.
 
+### Reasons of Switching
+
 Here are the REASONS why I made a switch from WordPress to Jekyll if you asked me;-
 
 **1. No server-side setup**
@@ -33,6 +35,8 @@ I started to love markdown because it's a distraction-free writing tool. All I n
 
 These are the four reasons I can conclude here. If you need an inspiration, you may take a look here, [a bunch of folks](https://github.com/jekyll/jekyll/wiki/sites) has been using the software (Jekyll) for their sites.
 
+### Workflow
+
 > If you ask me, how my workflow works and what kind of tools that I used?
 
 Maybe this can help. I'm using Windows for both my PC at home and office because most of my professional works/software are based on Windows environment. All I need at first is to download [GitHub for Windows](https://windows.github.com) software and install it on my PC. I operate the software in both way; sometimes GUI, sometimes through Git Shell. If not necessary for me to use the software, I just manage them directly on the GitHub website.
@@ -41,6 +45,6 @@ My default text editor is [Notepad2-mod](http://xhmikosr.github.io/notepad2-mod)
 
 ### Conclusion
 
-Simplicity is everything. Some people said; `Less is more.` Being a minimalist is not that simple. But being a minimalist is a part of myself. I try my best to utilize everything around me. Let's do this in the Hacker Way: _"Why pay of there's a thing that free?"_
+Simplicity is everything. Some people said; `Less is more.` Being a minimalist is not that simple. But being a minimalist is a part of myself. I try my best to utilize everything around me. Let's do this in the Hacker Way: _"Why pay if there's a thing that free?"_
 
 [**Jekyll**](http://jekyllrb.com) + [**GitHub**](https://pages.github.com) + [**Markdown**](http://daringfireball.net/projects/markdown) = **Blogging like a Hacker**
