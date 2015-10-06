@@ -1,34 +1,16 @@
 ---
 layout: post
 title: Everything In One Place
-description: Listing pages for my GitHub repositories and gists in grid view.
+description: Listing pages for my GitHub repositories and GitHub gists.
 keywords: listing pages, github repos, github gists, grid view layout
 ---
 
-> **UPDATED (29-09-2015):** New layout! More simpler than ever.
+Nowadays, I started to use GitHub for almost everything. Time to time, my **GitHub repositories** (repos) and **GitHub gists** will keep increasing. Having so many repos and gists will make it harder for me or other people to browse through the old projects/snippets.
 
-Nowadays, I started to use GitHub for almost everything. Time to time, my GitHub repositories (shorten as "repos") and gists (code snippets) are increasing. Having so many repos and gists make me harder to look for the old projects or snippets. So, what I do is I create a listing webpage and fetch all my repos by using GitHub API and gather them in a grid view. Also the same goes to my gists.
+So, to make them easy on eyes, I created a simple view of listing page for both of them.
 
-### GitHub Repositories Listing
+**GitHub Repositories:** [http://heiswayi.github.io/my-repos](http://heiswayi.github.io/my-repos/) ([source code](https://github.com/heiswayi/my-repos))
 
-**Old Layout**
-![GitHub Repos](http://heiswayi.github.io/images/20150914/my-repos.png)
+**GitHub Gists:** [**http://heiswayi.github.io/my-gists**](http://heiswayi.github.io/my-gists/) ([source code](https://github.com/heiswayi/my-gists))
 
-**New Layout**
-![GitHub Repos](http://heiswayi.github.io/images/20150914/my-repos-2.png)
-
->[**http://heiswayi.github.io/my-repos**](http://heiswayi.github.io/my-repos/) ([source code](https://github.com/heiswayi/my-repos))
-
-### GitHub Gists Listing
-
-**Old Layout**
-![GitHub Gists](http://heiswayi.github.io/images/20150914/my-gists.png)
-
-**New Layout**
-![GitHub Gists](http://heiswayi.github.io/images/20150914/my-gists-2.png)
-
->[**http://heiswayi.github.io/my-gists**](http://heiswayi.github.io/my-gists/) ([source code](https://github.com/heiswayi/my-gists))
-
----
-
-The screenshots are created using [Webpage Screenshot Mockup Generator](http://wayi.me/webpage-screenshot/).
+I used [GitHub](https://developer.github.com/v3/repos/) [API](https://developer.github.com/v3/gists/) to retrieve the data and populate them with JavaScript into HTML layout. As simple as it should be.
