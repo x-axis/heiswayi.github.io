@@ -43,7 +43,7 @@ ServerName localhost:80
 Finally, if you want to run the server automatically when the system starts (even if nobody logs in), you'll need to run it as a service. Open your command prompt as an administrator, type:
 
 ```
-cd "C:\Apache24\bin"
+cd C:\Apache24\bin
 httpd.exe -k install
 ```
 
