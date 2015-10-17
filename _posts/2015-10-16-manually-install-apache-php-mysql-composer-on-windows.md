@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Set Up Your Own Fully Functional WAMP Server On Windows
-description: Tutorial on how to manually install Apache, PHP, MySQL and Composer on Windows.
+title: Manually Install Apache, PHP, MySQL Server and Composer on Windows
+description: Tutorial on making your own fully functional WAMP server on Windows.
 keywords: manual install, apache, php, mysql, composer, wamp server
 ---
 
-Ok, this tutorial is going to be a straightforward tutorial. What I'm going to show here is a simple tutorial on **how to manually install Apache, PHP, MySQL and Composer on your Windows PC**. This will be your own WAMP server **without** using any ready-to-use packages like WAMPServer, XAMPP and whatnot. And I'm using **Windows 10 Pro 64-bit** as for your information.
+Instead of using any ready-to-use packages like WampServer, XAMPP and whatnot, you can make your own fully functional WAMP server. So, this tutorial is about **how you can manually install Apache, PHP, MySQL server and Composer on your Windows PC**. As for your information, when writing this I'm currently using **Windows 10 Pro 64-bit**. So, this tutorial is based on it. Let's start!
 
 ## Apache
 
@@ -19,7 +19,14 @@ Here's the latest version that I used when writing this: **Apache 2.4.17 Win64**
 
 Once downloaded, just extract the `Apache24` folder to the root of your C drive, so that you will have a path like this; `C:\Apache24\bin`.
 
-Open a command line window (Windows+R and type `cmd` then press Enter), change directory into `C:\Apache24\bin` or `cd "C:\Apache24\bin"` and run `httpd.exe`. Normally, it shouldn't print any errors.
+Open a command line window (Windows+R and type `cmd` then press Enter), change directory into `C:\Apache24\bin` or type the following:
+
+```
+cd C:\Apache24\bin
+httpd.exe
+```
+
+Normally, it shouldn't print any errors.
 
 If you get an error dialog stating that `MSVCR110.dll` is missing, you'll need to install the [Visual C++ Redistributable for Visual Studio 2012](http://www.microsoft.com/en-us/download/details.aspx?id=30679). If it's saying that it can't bind to port 80, check if another application uses that port. Skype application is known to use port 80 and 443 by default. You may need to [uncheck "Use port 80 and 443 as alternatives for incoming connections" in its advanced connection settings](http://i.stack.imgur.com/WKpiY.png) and restart your Skype to apply the changes.
 
@@ -152,4 +159,4 @@ ______
 Composer version 1.0-dev (a54f84f05f915c6d42bed94de0cdcb4406a4707b) 2015-10-13 13:09:04
 ```
 
-That's it! You now have a fully functional WAMP server with Composer that runs as a service and doesn't depend on any user (accessible even if no one is logged in). If you set up for production instead development, you need to read carefully their notes, check for the firewall and consult with expert in order to maximize the security and performance.
+That's it! You now have a fully functional WAMP server (with Composer) that runs as a service and doesn't depend on any user (accessible even if no one is logged in). If you set up for production instead development, you might need to read carefully their notes or instruction manual, configure your firewall properly and try to consult with expert in order to maximize the security and performance.
