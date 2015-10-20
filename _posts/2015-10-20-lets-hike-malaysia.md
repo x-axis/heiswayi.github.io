@@ -13,11 +13,11 @@ keywords: normalize.css, mini css framework, rapid development
 
 Each marker on the map site contains the information of the **peak name**, **GPS coordinates**, **elevation profile** (in meter) and **remark** or **short description** about it. The color of the marker is based on the elevation categories;-
 
-* blue: 0 - 199m
-* green: 200m - 499m
-* yellow: 500m - 999m
-* red: 1000m - 1999m
-* purple: 2000m and above
+* `blue`: 0 - 199m
+* `green`: 200m - 499m
+* `yellow`: 500m - 999m
+* `red`: 1000m - 1999m
+* `purple`: 2000m and above
 
 ## Project website
 
