@@ -5,7 +5,7 @@ description: Turning web browser as a Notepad by utilizing data URI hack.
 keywords: web browser as notepad, data uri hack
 ---
 
-We all uses Notepad or sticky note or some editors to take immediate notes on something like code snippets, ideas, blog content or todos. Well, I just found this hack is quite interesting to use where we can turn our web browser to be just like a Notepad. The trick actually hacks around the [Data URI scheme](http://en.wikipedia.org/wiki/Data_URI_scheme) and HTML [contenteditable](http://www.w3schools.com/tags/att_global_contenteditable.asp) attribute.
+We all use Notepad or sticky note or some editors to take immediate notes on something like code snippets, ideas, blog content or todos. Well, I just found this hack is quite interesting to use where we can turn our web browser to be just like a Notepad. The trick actually hacks around the [Data URI scheme](http://en.wikipedia.org/wiki/Data_URI_scheme) and HTML [contenteditable](http://www.w3schools.com/tags/att_global_contenteditable.asp) attribute.
 
 The real trick is just type the following code into our web browser's URL bar:
 
