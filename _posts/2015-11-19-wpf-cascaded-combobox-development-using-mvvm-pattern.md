@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WPF Cascaded ComboBox Development Using MVVM Patern
+title: WPF Cascaded ComboBox Development Using MVVM Pattern
 description: A tutorial to create an example of WPF cascaded ComboBox using MVVM design pattern.
 keywords: cascaded combobox, wpf mvvm
 ---
