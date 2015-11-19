@@ -50,8 +50,8 @@ Solution 'ComboBoxMVVMExample' (1 project)
 		├── Model
 		├── View
 		├── ViewModel
-		|		├── RelayCommand.cs
-		|		└── ViewModelBase.cs
+		|	├── RelayCommand.cs
+		|	└── ViewModelBase.cs
 		├── App.config
 		├── App.xaml
 		└── MainWindow.xaml
@@ -163,10 +163,10 @@ Solution 'ComboBoxMVVMExample' (1 project)
 		├── References
 		├── Model
 		├── View
-		|		└── ComboBox.xaml
+		|	└── ComboBox.xaml
 		├── ViewModel
-		|		├── RelayCommand.cs
-		|		└── ViewModelBase.cs
+		|	├── RelayCommand.cs
+		|	└── ViewModelBase.cs
 		├── App.config
 		├── App.xaml
 		└── MainWindow.xaml
@@ -226,12 +226,12 @@ Solution 'ComboBoxMVVMExample' (1 project)
 		├── Properties
 		├── References
 		├── Model
-		|		└── ExampleModel.cs
+		|	└── ExampleModel.cs
 		├── View
-		|		└── ComboBox.xaml
+		|	└── ComboBox.xaml
 		├── ViewModel
-		|		├── RelayCommand.cs
-		|		└── ViewModelBase.cs
+		|	├── RelayCommand.cs
+		|	└── ViewModelBase.cs
 		├── App.config
 		├── App.xaml
 		└── MainWindow.xaml
@@ -325,13 +325,13 @@ Solution 'ComboBoxMVVMExample' (1 project)
 		├── Properties
 		├── References
 		├── Model
-		|		└── ExampleModel.cs
+		|	└── ExampleModel.cs
 		├── View
-		|		└── ComboBox.xaml
+		|	└── ComboBox.xaml
 		├── ViewModel
-		|		├── ExampleViewModel.cs
-		|		├── RelayCommand.cs
-		|		└── ViewModelBase.cs
+		|	├── ExampleViewModel.cs
+		|	├── RelayCommand.cs
+		|	└── ViewModelBase.cs
 		├── App.config
 		├── App.xaml
 		└── MainWindow.xaml
