@@ -309,6 +309,9 @@ blockquote p:last-child { margin-bottom: 0 }
     color: #888;
     font-size: 80%;
 }
+.post-list-desc {
+    padding-right: 110px;
+}
 .project-source {
     display: block;
 }
