@@ -33,7 +33,7 @@ SerialComm Monitor v1 Screenshot
 
 ## Downloads
 
-[**Source Code on GitHub**](https://github.com/heiswayi/SerialComm)
+[**Source Code on GitHub**](https://github.com/heiswayi/SerialComm) - [**SerialComm.exe.zip**](https://github.com/heiswayi/SerialComm/releases/download/v1.0/SerialComm.exe.zip)
 
 ---
 
