@@ -1,11 +1,11 @@
 ---
 layout: post
-title: WPF Cascaded ComboBox Development Using MVVM Pattern
+title: Creating WPF Cascaded ComboBox In MVVM
 description: A tutorial to create an example of WPF cascaded ComboBox using MVVM design pattern.
 keywords: cascaded combobox, wpf mvvm
 ---
 
-Implementing ComboBox in WPF XAML with MVVM design pattern may look like hard, but not that hard actually. Let me show you a basic example how you can develop the **cascaded ComboBox with MVVM implementation** using `List<T>` class.
+Implementing ComboBox in WPF XAML with MVVM design pattern may look like hard at first, but not that hard actually. This tutorial will show you a basic example how you can develop the **cascaded ComboBox with MVVM implementation** using `List<T>` class.
 
 ## Understanding MVVM
 
@@ -57,7 +57,7 @@ Solution 'ComboBoxMVVMExample' (1 project)
 	└── MainWindow.xaml
 ```
 
-**NOTE:** All code here have been simplified; all comments and linebreaks have been removed. Please check the source code of the project for more details.
+**NOTE:** All code here have been simplified; all comments and linebreaks have been removed. Please check the [source code](https://github.com/heiswayi/ComboBoxMVVMExample) of the project for more details.
 
 The code inside `ViewModelBase.cs` file:
 
@@ -70,8 +70,8 @@ namespace ComboBoxMVVMExample.ViewModel
 {
     public abstract class ViewModelBase : INotifyPropertyChanged
     {
-				[Conditional("DEBUG")]
-				[DebuggerStepThrough]
+        [Conditional("DEBUG")]
+        [DebuggerStepThrough]
         public virtual void VerifyPropertyName(string propertyName)
         {
             if (TypeDescriptor.GetProperties(this)[propertyName] == null)
@@ -130,7 +130,7 @@ namespace ComboBoxMVVMExample.ViewModel
             _execute = execute;
             _canExecute = canExecute;
         }
-				[DebuggerStepThrough]
+        [DebuggerStepThrough]
         public bool CanExecute(object parameters)
         {
             return _canExecute == null ? true : _canExecute(parameters);
@@ -148,7 +148,7 @@ namespace ComboBoxMVVMExample.ViewModel
 }
 ```
 
-**NOTE:** You may copy-paste those code into your files.
+**NOTE:** You may copy-paste those code above into your files.
 
 Now, we have finished with our basic classes that required for MVVM implementation to work without problem.
 
