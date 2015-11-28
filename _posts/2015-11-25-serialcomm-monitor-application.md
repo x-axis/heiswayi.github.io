@@ -7,7 +7,7 @@ keywords: serialcomm monitor, serialport, serial communication, wpf mvvm
 
 **SerialComm Monitor** is a serial communication application based on `SerialPort` class, built in C# WPF with MVVM design pattern to send (write) or receive (read) data string to/from a serial communication physical interface connected via RS232 or USB to the computer (Windows OS).
 
-SerialComm Monitor v1 Screenshot
+SerialComm Monitor v2.0.0 Screenshot
 
 ![V2](http://i.imgur.com/eSRqhDP.png)
 
