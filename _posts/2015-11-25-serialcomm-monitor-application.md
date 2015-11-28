@@ -9,23 +9,17 @@ keywords: serialcomm monitor, serialport, serial communication, wpf mvvm
 
 SerialComm Monitor v1 Screenshot
 
-![V1](http://i.imgur.com/FSliKIX.png)
+![V2](http://i.imgur.com/eSRqhDP.png)
 
 ## Latest Features Available
 
-- Available serial port settings
-  - Selectable COM* ports
-  - Selectable baud rates
-  - Selectable parities
-  - Selectable data bits
-  - Selectable stop bits
-  - Enable/disable Data Terminal Ready (DTR)
-  - Enable/disable Request To Send (RTS)
+- Basic serial port settings
 - Send (write) data string to serial port
 - Receive or monitor (read) data sent from serial port
 - Line ending options
 - Autoscroll output box
 - Dark Metro-like application skin
+- Export output data to a file
 
 ## Application Prerequisites
 
@@ -33,7 +27,7 @@ SerialComm Monitor v1 Screenshot
 
 ## Downloads
 
-[**Source Code on GitHub**](https://github.com/heiswayi/SerialComm) - [**Releases Page**](https://github.com/heiswayi/SerialComm/releases)
+Download the latest [source code](https://github.com/heiswayi/SerialComm) on GitHub or the latest binary file on [release page](https://github.com/heiswayi/SerialComm/releases).
 
 ---
 
