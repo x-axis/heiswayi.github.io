@@ -450,6 +450,7 @@ a.more-projects:hover {
 
 .grid-sizer,
 .grid-item {
+    box-sizing: border-box;
     width: -moz-calc( ( 100% - 30px ) / 3 );
     width: -webkit-calc( ( 100% - 30px ) / 3 );
     width: calc( ( 100% - 30px ) / 3 );
