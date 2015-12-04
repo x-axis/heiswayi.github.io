@@ -486,17 +486,24 @@ a.more-projects:hover {
     }
     .grid-sizer,
     .grid-item {
+        /*
         width: -moz-calc( ( 100% - 20px ) / 2 );
         width: -webkit-calc( ( 100% - 20px ) / 2 );
         width: calc( ( 100% - 20px ) / 2 );
+        */
+        padding: 10px;
+        width: 47.5%;
     }
 }
 @media only screen and (max-width : 400px) {
   .grid-sizer,
   .grid-item {
+      /*
       width: -moz-calc( 100% - 10px );
       width: -webkit-calc( 100% - 10px );
       width: calc( 100% - 10px );
+      */
+      width: 95%;
   }
 }
 /* Print Styles */
