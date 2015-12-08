@@ -35,7 +35,7 @@ echo Encrypt('myPass123', 'Welcome to Flippancy 25');
 // Output: U2FsdGVkX19LYv5Y5EDmFbjH8bGMDFwlid30h2x1ybibT1Dwp0vekJ0OT4tb7/j6
 {% endhighlight %}
 
-The special feature here is, every time I execute this function `Encrypt()`, by using the **same** password and **same** data, the enrypted string is always changed.
+The special feature here is, every time I execute this function `Encrypt()`, by using the **same** password and **same** data, the encrypted string is always changed.
 
 Here is the output examples of encrypted strings after I executed it for three times:-
 

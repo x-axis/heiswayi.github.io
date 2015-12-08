@@ -7,11 +7,11 @@ keywords: blogging like a hacker, jekyll, wordpress, blogging platform
 
 Hello, there!
 
-Back in 2008, the Founder of [GitHub](https://github.com), **Tom Preston-Werner** wrote [Blogging Like a Hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) (a recommended read), introducing [Jekyll](http://jekyllrb.com), a simple, blog aware, static site generator. In his blog post, Tom thoroughly elaborated how Jekyll works with GitHub.
+Back in 2008, the Founder of [GitHub](https://github.com), **Tom Preston-Werner** wrote [Blogging Like a Hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) (a recommended read), introducing [Jekyll](http://jekyllrb.com) - a simple, blog aware, static site generator. In his blog post, Tom thoroughly elaborated how Jekyll works with GitHub.
 
-Today, Tom's idea has evolved to become [GitHub Pages](https://pages.github.com), a fully-fledged, free hosting service for static web pages on GitHub where we can write our pages in a simple [markdown](http://daringfireball.net/projects/markdown) language, organize theme in a straightforward directory structure and then, let the GitHub does the rest.
+Today, Tom's idea has evolved to become [GitHub Pages](https://pages.github.com), a fully-fledged, free hosting service for static web pages on GitHub where we can write our web pages in a simple [markdown](http://daringfireball.net/projects/markdown) language, organize them in a straightforward directory structure and then, let the GitHub does the rest.
 
-In the past few years, I have been using [WordPress](https://wordpress.org) all the times for my website or blog. I don't even know about this awesome static blog generator because I never use GitHub before. Just starting this year, 2015, I started using GitHub to port some of the projects. Then, I started exploring Jekyll and use it for my new website/blog.
+In the past few years, I have been using [WordPress](https://wordpress.org) all the times for my websites or blogs. I don't even know about this awesome static blog generator because I don't have any kind of experiences using GitHub before. Just starting this year, 2015, I started using GitHub repositories to port some of the projects. Then, I started exploring Jekyll and use it for my new website/blog.
 
 ### Reasons of Switching
 
@@ -37,14 +37,14 @@ These are the four reasons I can conclude here. If you need an inspiration, you 
 
 ### Workflow
 
-> If you ask me, how my workflow works and what kind of tools that I used?
+> If you ask me, how my workflow works and what kind of tools that I have used?
 
-Maybe this can help. I'm using Windows for both my PC at home and office because most of my professional works/software are based on Windows environment. All I need at first is to download [GitHub for Windows](https://windows.github.com) software and install it on my PC. I operate the software in both way; sometimes GUI, sometimes through Git Shell. If not necessary for me to use the software, I just manage them directly on the GitHub website.
+Maybe this can help. I'm using Windows for both my PC at home and office because most of my professional works/software are based on Windows OS environment. All I need at first is to download [GitHub for Windows](https://windows.github.com) software and install it on my PC. I operate the software in both way; sometimes GUI, sometimes through the Git Shell. If not necessary for me to use the software, I just manage them directly on the GitHub website.
 
-My default text editor is [Notepad2-mod](http://xhmikosr.github.io/notepad2-mod), which used as a replacement to the default Notepad program. However, my favorite use of text editor is [GitHub's Atom Editor](https://atom.io), a hackable text editor they said, but as for me, it's the best editor I ever experienced, compared to [Visual Studio Code](https://code.visualstudio.com) and [Sublime Text](http://www.sublimetext.com/). Like this post and the others, all are written using the GitHub's Atom Editor with Markdown Preview.
+My default text editor is [Notepad2-mod](http://xhmikosr.github.io/notepad2-mod), which is used as a replacement to the default Notepad program. However, my favorite use of text editor is [GitHub's Atom Editor](https://atom.io), a hackable text editor they said, but as for me, it's the best editor I ever experienced, compared to [Visual Studio Code](https://code.visualstudio.com) and [Sublime Text](http://www.sublimetext.com/). Like this post and the others, all are written using the GitHub's Atom Editor with Markdown Preview.
 
 ### Conclusion
 
-Simplicity is everything. Some people said; `Less is more.` Being a minimalist is not that simple. But being a minimalist is a part of myself. I try my best to utilize everything around me. Let's do this in the Hacker Way: _"Why pay if there's a thing that free?"_
+Simplicity is everything. Some people said; `Less is more.` Being a minimalist is not that simple. But being a minimalist is a part of myself. I try my best to utilize everything around me with minimum spending of dollars. Let's do this in the Hacker Way: _"Why pay if there's a thing that available for free?"_
 
 [**Jekyll**](http://jekyllrb.com) + [**GitHub**](https://pages.github.com) + [**Markdown**](http://daringfireball.net/projects/markdown) = **Blogging like a Hacker**

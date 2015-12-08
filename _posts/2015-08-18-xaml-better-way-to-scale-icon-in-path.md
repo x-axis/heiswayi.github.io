@@ -15,19 +15,19 @@ Let's say the original dimension of the designed icon is 44x44 pixels and we nee
 
 Instead of this:
 
-{% highlight xml %}
+```xml
 <Path Fill="White" Data="F1 M 22.9583,31.6667C 24.27, ..., ..., ... Z ">
     <Path.RenderTransform>
         <ScaleTransform ScaleX="1" ScaleY="1" />
     </Path.RenderTransform>
 </Path>
-{% endhighlight %}
+```
 
-Change it to use like this:
+Change it to use something like this:
 
-{% highlight xml %}
+```xml
 <Path Width="100" Height="100" Stretch="Uniform" Fill="White" Data="F1 M 22.9583,31.6667C 24.27,31.6667 25.3333,32.73 25.3333,34.0417L 25.3333, ..., ..., ... Z "/>
-{% endhighlight %}
+```
 
 ### Conclusion
 

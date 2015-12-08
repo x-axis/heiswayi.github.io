@@ -39,7 +39,7 @@ _WAYI v2_
 
 #### **SIML: The Next Step in Chatbot Technology**
 
-After some time, I found another bot markup language known as [Synthetic Intelligence Markup Language (SIML)](http://simlbot.com/), which was more powerful than AIML. SIML provided much better features than AIML. So, I swicthed my chatter bot development to use SIML as its core. Plus, SIML also provided their own chatbot studio program called Syn Chatbot Studio.
+After some time, I found another bot markup language known as [Synthetic Intelligence Markup Language (SIML)](http://simlbot.com/), which was more powerful than AIML. SIML provided much better features than AIML. So, I switched my chatter bot development to use SIML as its core. Plus, SIML also provided their own chatbot studio program called Syn Chatbot Studio.
 
 Based on their site, Syn Chatbot Studio offered a comprehensive collection of tools to develop intelligent Chatbots that targeted desktops, mobile and web platforms. It featured with Code Analysis, AIML to SIML converter, JavaScript Editor, Regex Tester and smooth Auto-Complete. Well, I liked it the most when SIML was able to execute JavaScript function from its routine of responses. More interesting features of SIML also can be found on their [wiki site](http://wiki.syn.co.in/) and [GitHub repos](https://github.com/SynHub) for contributions.
 
@@ -70,6 +70,6 @@ Right now, my program is still under EXPERIMENTAL and released as a **beta versi
 
 #### **If you ask me WHY?**
 
-If you ask me why I built this program, maybe this is the answer; I don't know when I'm going to die for sure. I might not be able to tell everything I want to people I loved, but at least with this program, they might able to find some answers from me. Even it's the same if I'm getting old and older. Knowledge and memories can fade away and be forgotten. Every word is meaningful and I don't want to lose it. Whatever thing I promised, I want to realize it as far as I can. Just find me here if one day I am no longer be able to talk to.
+If you ask me why I built this program, maybe this is the answer; I don't know when I'm going to die for sure. I might not be able to tell everything I want to people I loved, but at least with this program, they might able to find some answers from me. Even it's the same if I'm getting old and older. Knowledge and memories can fade away and be forgotten. Every word is meaningful and I don't want to lose it. Whatever thing that I promised, I want to realize it as far as I can. Just find me here if one day I am no longer be able to talk to.
 
-I'm just experimenting stuffs, no big deal!
+I'm just experimenting stuffs, no big deal! :)
