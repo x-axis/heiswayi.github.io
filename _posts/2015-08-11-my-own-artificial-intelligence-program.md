@@ -58,7 +58,7 @@ I developed W4Y1 based on [elizabot.js](http://www.masswerk.at/elizabot/) by **N
 [![W4Y1](http://heiswayi.github.io/images/20150811/W4Y1.png)](http://heiswayi.github.io/images/20150811/W4Y1.png)
 _The Screenshot_
 
-The program is accessible **live** here: [**http://ai.wayi.me**](http://ai.wayi.me)
+The program is accessible **live** here: <del>[**http://ai.wayi.me**](http://ai.wayi.me)</del> [**http://heiswayi.github.io/w4y1**](http://heiswayi.github.io/w4y1)
 
 > **AI Level** is a percentage of my knowledge in the program database. The value is depending how much my knowledge I am able to transfer into digital information form. For sure, it will increase by the time. There's no scientific calculation to that, just based on my will.
 
