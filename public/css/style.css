@@ -408,6 +408,11 @@ a.more-projects:hover {
     background: #036;
     border: 1px solid #069;
 }
+.top-menu li a.unique {
+    color: #FF3D36;
+    background: #7D0000;
+    border: 1px solid #DD3D36;
+}
 .top-menu li a:hover {
     border: 1px solid #777;
     background: #666;
