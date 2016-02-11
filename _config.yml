@@ -1,5 +1,5 @@
 encoding:         UTF-8
-gems:             [jekyll-paginate, jekyll-gist, redcarpet]
+gems:             [pygments.rb, redcarpet]
 
 #markdown:         kramdown
 #highlight:        rouge
