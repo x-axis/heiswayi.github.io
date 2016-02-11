@@ -1,9 +1,9 @@
 # Site settings
 # =============
-title: Heiswayi Nrird on Tech
-tagline: Another Software Guy's Blog
+title: "Heiswayi Nrird on Tech"
+#tagline: Another Software Guy's Blog
 email: hnrird@gmail.com
-description: 1+1=3 is always TRUE in my world, a balance between binary and reality.
+description: "1+1=3 is always TRUE in my world, a balance between binary and reality."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://heiswayi.github.io" # the base hostname & protocol for your site
 
@@ -18,7 +18,7 @@ url: "http://heiswayi.github.io" # the base hostname & protocol for your site
 #twitter:
 #  username: HeiswayiNrird
 
-google_analytics: UA-58296043-7
+#google_analytics: UA-58296043-7
 
 # Build settings
 # ==============
