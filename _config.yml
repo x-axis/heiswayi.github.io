@@ -8,7 +8,7 @@ gems:             [pygments.rb, redcarpet]
 markdown:         redcarpet
 redcarpet:
   extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-#highlighter:      pygments
+highlighter:      pygments
 
 permalink:        none
 version:          2.2
