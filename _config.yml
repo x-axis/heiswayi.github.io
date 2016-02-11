@@ -1,4 +1,3 @@
-encoding:         UTF-8
 gems:             [pygments.rb, redcarpet]
 
 #markdown:         kramdown
@@ -9,10 +8,10 @@ gems:             [pygments.rb, redcarpet]
 markdown:         redcarpet
 redcarpet:
   extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-highlighter:      pygments
+#highlighter:      pygments
 
-permalink:        /:categories/:title/
-version:          2.1
+#permalink:        /:categories/:title/
+version:          2.2
 
 title:            "Heiswayi Nrird on Tech"
 tagline:          "Another Software Guy's Blog"
