@@ -5,9 +5,39 @@
     <description>1+1=3 is always TRUE in my world, a balance between binary and reality.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 11 Feb 2016 13:27:12 +0000</pubDate>
-    <lastBuildDate>Thu, 11 Feb 2016 13:27:12 +0000</lastBuildDate>
+    <pubDate>Wed, 30 Mar 2016 17:27:26 +0000</pubDate>
+    <lastBuildDate>Wed, 30 Mar 2016 17:27:26 +0000</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Simple Exif Reader Program</title>
+        <description>&lt;p&gt;Holla.. It&amp;#39;s been a while I&amp;#39;m not updating anything for this blog. Perhaps, I have been busy with my day job (as a Software Engineer) and my new hobby - photography. Since I have been pretty serious with photography, I have created a simple tool or Windows program that can easily extract the Exif data from an image file. The program called &lt;strong&gt;Exif Reader&lt;/strong&gt;. The latest release version as I&amp;#39;m writing this post is &lt;strong&gt;v1.1&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;screenshot-of-exif-reader-v1-1&quot;&gt;Screenshot of Exif Reader v1.1&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/yAls0JU.png&quot; alt=&quot;Exif Reader v1.1&quot;&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;features-of-exif-reader-v1-1&quot;&gt;Features of Exif Reader v1.1&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Load image file from local disk or remotely via FETCH URL&lt;/li&gt;
+&lt;li&gt;Extract metadata of the image file (Exif)&lt;/li&gt;
+&lt;li&gt;Preview the loaded image file with histogram analysis&lt;/li&gt;
+&lt;li&gt;Export the Exif data to a text file&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;downloads&quot;&gt;Downloads&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;#39;re interested with this program, you may download the latest binary &lt;a href=&quot;https://github.com/heiswayi/ExifReader/releases&quot;&gt;&lt;strong&gt;release&lt;/strong&gt;&lt;/a&gt; or download the &lt;a href=&quot;https://github.com/heiswayi/ExifReader&quot;&gt;&lt;strong&gt;source code&lt;/strong&gt;&lt;/a&gt; and run it from your computer.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;P/S:&lt;/strong&gt; The intention of this program originally is for my photography info purpose. But, since I created this program with a help of the Open Source software, so let me give back to the community by uploading the source code to my &lt;a href=&quot;http://github.com/heiswayi&quot;&gt;GitHub&lt;/a&gt; and released it under MIT license.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 30 Mar 2016 00:00:00 +0000</pubDate>
+        <link>/simple-exif-reader-program.html</link>
+        <guid isPermaLink="true">/simple-exif-reader-program.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Simple Pomodoro Technique Timer Application</title>
@@ -927,21 +957,6 @@ Composer version 1.0-dev (a54f84f05f915c6d42bed94de0cdcb4406a4707b) 2015-10-13 1
         <pubDate>Thu, 15 Oct 2015 00:00:00 +0000</pubDate>
         <link>/rapidcss.html</link>
         <guid isPermaLink="true">/rapidcss.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Web Colors Guide</title>
-        <description>&lt;p&gt;This color palette is based on &lt;a href=&quot;http://wordpress.com&quot;&gt;WordPress.com&lt;/a&gt; colors, and will be used as my new color reference in web design.&lt;/p&gt;
-
-&lt;p data-height=&quot;650&quot; data-theme-id=&quot;11537&quot; data-slug-hash=&quot;JYyvQY&quot; data-default-tab=&quot;result&quot; data-user=&quot;heiswayi&quot; class=&#39;codepen&#39;&gt;See the Pen &lt;a href=&#39;http://codepen.io/heiswayi/pen/JYyvQY/&#39;&gt;Web Colors Guide&lt;/a&gt; by Heiswayi Nrird (&lt;a href=&#39;http://codepen.io/heiswayi&#39;&gt;@heiswayi&lt;/a&gt;) on &lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-</description>
-        <pubDate>Wed, 07 Oct 2015 00:00:00 +0000</pubDate>
-        <link>/web-colors-guide.html</link>
-        <guid isPermaLink="true">/web-colors-guide.html</guid>
         
         
       </item>
