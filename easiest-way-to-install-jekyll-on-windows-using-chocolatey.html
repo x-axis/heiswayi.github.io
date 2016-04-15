@@ -130,28 +130,20 @@
 
   <p>Have you heard about Chocolatey? Chocolatey is the BEST way to install and keep applications updated on Windows. Let&#39;s not waste the time, here are the steps.</p>
 
-<ol>
-<li>Open a command prompt with Administrator access</li>
-<li>Paste this to install <a href="https://chocolatey.org/">Chocolatey</a>:</li>
-</ol>
+<p>STEP01. Open a command prompt with Administrator access
+STEP02. Paste this to install <a href="https://chocolatey.org/">Chocolatey</a>:</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">@powershell -NoProfile -ExecutionPolicy Bypass -Command &quot;iex ((new-object net.webclient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&quot; &amp;&amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 </code></pre></div>
-<ol>
-<li>Close the command prompt as Chocolatey will not be available until we close and reopen.</li>
-<li>Open a command prompt again with Administrator access</li>
-<li>Paste this to install <a href="https://chocolatey.org/packages/ruby">Ruby</a>:</li>
-</ol>
+<p>STEP03. Close the command prompt as Chocolatey will not be available until we close and reopen.
+STEP04. Open a command prompt again with Administrator access
+STEP05. Paste this to install <a href="https://chocolatey.org/packages/ruby">Ruby</a>:</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">choco install ruby -y
 </code></pre></div>
-<ol>
-<li>Close and reopen a new command prompt again with Administrator access</li>
-<li>Paste this to install <a href="https://jekyllrb.com/">Jekyll</a>:</li>
-</ol>
+<p>STEP06. Close and reopen a new command prompt again with Administrator access
+STEP07. Paste this to install <a href="https://jekyllrb.com/">Jekyll</a>:</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">gem install jekyll
 </code></pre></div>
-<ol>
-<li>Done! Now we can use standard Jekyll commands to create a new site and serve it:</li>
-</ol>
+<p>STEP08. Done! Now we can use standard Jekyll commands to create a new site and serve it:</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">jekyll new myblog
 cd myblog
 jekyll serve
