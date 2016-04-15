@@ -132,30 +132,29 @@
 
 <ol>
 <li>Open a command prompt with Administrator access</li>
-<li>Paste this to install <a href="https://chocolatey.org/">Chocolatey</a>:</li>
+<li><p>Paste this to install <a href="https://chocolatey.org/">Chocolatey</a>:
+<code>
+@powershell -NoProfile -ExecutionPolicy Bypass -Command &quot;iex ((new-object net.webclient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&quot; &amp;&amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+</code></p></li>
+<li><p>Close the command prompt as Chocolatey will not be available until we close and reopen.</p></li>
+<li><p>Open a command prompt again with Administrator access</p></li>
+<li><p>Paste this to install <a href="https://chocolatey.org/packages/ruby">Ruby</a>:
+<code>
+choco install ruby -y
+</code></p></li>
+<li><p>Close and reopen a new command prompt again with Administrator access</p></li>
+<li><p>Paste this to install <a href="https://jekyllrb.com/">Jekyll</a>:
+<code>
+gem install jekyll
+</code></p></li>
+<li><p>Done! Now we can use standard Jekyll commands to create a new site and serve it:
+<code>
+jekyll new myblog
+cd myblog
+jekyll serve
+</code></p></li>
 </ol>
-<div class="highlight"><pre><code class="language-text" data-lang="text">  @powershell -NoProfile -ExecutionPolicy Bypass -Command &quot;iex ((new-object net.webclient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&quot; &amp;&amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
-</code></pre></div>
-<ol>
-<li>Close the command prompt as Chocolatey will not be available until we close and reopen.</li>
-<li>Open a command prompt again with Administrator access</li>
-<li>Paste this to install <a href="https://chocolatey.org/packages/ruby">Ruby</a>:</li>
-</ol>
-<div class="highlight"><pre><code class="language-text" data-lang="text">  choco install ruby -y
-</code></pre></div>
-<ol>
-<li>Close and reopen a new command prompt again with Administrator access</li>
-<li>Paste this to install <a href="https://jekyllrb.com/">Jekyll</a>:</li>
-</ol>
-<div class="highlight"><pre><code class="language-text" data-lang="text">  gem install jekyll
-</code></pre></div>
-<ol>
-<li>Done! Now we can use standard Jekyll commands to create a new site and serve it:</li>
-</ol>
-<div class="highlight"><pre><code class="language-text" data-lang="text">  jekyll new myblog
-  cd myblog
-  jekyll serve
-</code></pre></div>
+
 <p>Credit: <a href="https://davidburela.wordpress.com/2015/11/28/easily-install-jekyll-on-windows-with-3-command-prompt-entries-and-chocolatey/">David Burela</a></p>
 
   
