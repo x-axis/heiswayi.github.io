@@ -5,9 +5,32 @@
     <description>1+1=3 is always TRUE in my world, a balance between binary and reality.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Apr 2016 03:38:14 +0000</pubDate>
-    <lastBuildDate>Fri, 15 Apr 2016 03:38:14 +0000</lastBuildDate>
+    <pubDate>Thu, 21 Apr 2016 15:11:00 +0000</pubDate>
+    <lastBuildDate>Thu, 21 Apr 2016 15:11:00 +0000</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>My Own Substitution Cipher Program</title>
+        <description>&lt;p&gt;Sometimes, I like to send a secret message or text to some friends. As &lt;strong&gt;just for fun&lt;/strong&gt;, I created my own cipher program in .NET C# called &lt;em&gt;Heiswayi Nrird Cipher Program&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I know, there are a lot of ciphers that I can use such as steganography, ROT13, Caesar shift cipher, Vigenere and so forth. Yes I can use the modern unbreakable of encryption algorithms such as Triple DES, RSA, Blowfish, Twofish, AES, etc. if I want to, but to be epic, I decided to use a substitution method with my own designed keys and encoding method.&lt;/p&gt;
+
+&lt;p&gt;Here is the screenshot of the program:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/AbUYj16.png&quot; alt=&quot;Heiswayi Nrird Cipher Program&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.dropbox.com/s/p9lc58cgw059mka/HeiswayiNrirdCipherProgramV1.zip?dl=0&quot;&gt;&lt;strong&gt;Download (.exe)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To use this program, &lt;a href=&quot;https://www.microsoft.com/en-us/download/details.aspx?id=42642&quot;&gt;.NET Framework 4.5.2&lt;/a&gt; is required to be installed first.&lt;/p&gt;
+
+&lt;p&gt;WARNING: This program is just for fun, not for serious business. This program is compiled without any secure obfuscation and highly vulnerable to reverse engineering.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+        <link>/my-own-substitution-cipher-program.html</link>
+        <guid isPermaLink="true">/my-own-substitution-cipher-program.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Easiest Way to Install Jekyll on Windows using Chocolatey</title>
@@ -830,141 +853,6 @@ jekyll serve
         <pubDate>Tue, 20 Oct 2015 00:00:00 +0000</pubDate>
         <link>/lets-hike-malaysia.html</link>
         <guid isPermaLink="true">/lets-hike-malaysia.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Manually Install Apache, PHP, MySQL Server and Composer on Windows</title>
-        <description>&lt;p&gt;Instead of using any ready-to-use packages like WampServer, XAMPP and whatnot, you can make your own fully functional WAMP server. So, this tutorial is about &lt;strong&gt;how you can manually install Apache, PHP, MySQL server and Composer on your Windows PC&lt;/strong&gt;. As for your information, when writing this I&amp;#39;m currently using &lt;strong&gt;Windows 10 Pro 64-bit&lt;/strong&gt;. So, this tutorial is based on it. Let&amp;#39;s start!&lt;/p&gt;
-
-&lt;h2 id=&quot;apache&quot;&gt;Apache&lt;/h2&gt;
-
-&lt;p&gt;First, you need to install Apache. It&amp;#39;s recommended for you to read the &lt;a href=&quot;http://httpd.apache.org/docs/current/platform/windows.html&quot;&gt;Platform Specific Notes&lt;/a&gt; of Apache for Windows before you can proceed because it explains some Windows-specific features like running as a service that you don&amp;#39;t have on other OSes and you probably never used before.&lt;/p&gt;
-
-&lt;p&gt;As mentioned in the notes, Apache doesn&amp;#39;t provide binaries for Windows. However, they have links to several third-party sites that provide binaries, for example &lt;a href=&quot;http://www.apachelounge.com/download/&quot;&gt;Apache Lounge&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;From that website, we can download either the 32-bit version or 64-bit version. If your OS is 64-bit, you should always try to install 64-bit version of software.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;#39;s the latest version that I used when writing this: &lt;strong&gt;Apache 2.4.17 Win64&lt;/strong&gt; (&lt;a href=&quot;http://www.apachelounge.com/download/VC14/binaries/httpd-2.4.17-win64-VC14.zip&quot;&gt;httpd-2.4.17-win64-VC14.zip&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Once downloaded, just extract the &lt;code&gt;Apache24&lt;/code&gt; folder to the root of your C drive, so that you will have a path like this; &lt;code&gt;C:\Apache24\bin&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Open a command line window (Windows+R and type &lt;code&gt;cmd&lt;/code&gt; then press Enter), change directory into &lt;code&gt;C:\Apache24\bin&lt;/code&gt; or type the following:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;cd C:\Apache24\bin
-httpd.exe
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Normally, it shouldn&amp;#39;t print any errors.&lt;/p&gt;
-
-&lt;p&gt;If you get an error dialog stating that &lt;code&gt;MSVCR110.dll&lt;/code&gt; is missing, you&amp;#39;ll need to install the &lt;a href=&quot;http://www.microsoft.com/en-us/download/details.aspx?id=30679&quot;&gt;Visual C++ Redistributable for Visual Studio 2012&lt;/a&gt;. If it&amp;#39;s saying that it can&amp;#39;t bind to port 80, check if another application uses that port. Skype application is known to use port 80 and 443 by default. You may need to &lt;a href=&quot;http://i.stack.imgur.com/WKpiY.png&quot;&gt;uncheck &amp;quot;Use port 80 and 443 as alternatives for incoming connections&amp;quot; in its advanced connection settings&lt;/a&gt; and restart your Skype to apply the changes.&lt;/p&gt;
-
-&lt;p&gt;A warning like &lt;code&gt;Could not reliably determine the server&amp;#39;s fully qualified domain name&lt;/code&gt; can be ignored for now.&lt;/p&gt;
-
-&lt;p&gt;Then, open a web browser and browse to &lt;code&gt;http://localhost&lt;/code&gt;. If you see a page saying &lt;code&gt;It works!&lt;/code&gt;, then it means your Apache installation is working.&lt;/p&gt;
-
-&lt;p&gt;The warning above can be fixed by editing &lt;code&gt;C:\Apache24\conf\httpd.conf&lt;/code&gt;, uncomment and change it into something like this:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ServerName localhost:80
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Finally, if you want to run the server automatically when the system starts (even if nobody logs in), you&amp;#39;ll need to run it as a service. Open your command prompt as an administrator, type:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;cd C:\Apache24\bin
-httpd.exe -k install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;If it&amp;#39;s currently still running, you need to terminate it first by pressing Ctrl+C in the command prompt.&lt;/p&gt;
-
-&lt;p&gt;Now you have a new service in Services (Windows+R, then type &lt;code&gt;services.msc&lt;/code&gt; then press Enter) named as &amp;quot;Apache2.4&amp;quot;. You can control just like other Windows services to start, stop or restart.&lt;/p&gt;
-
-&lt;h2 id=&quot;php&quot;&gt;PHP&lt;/h2&gt;
-
-&lt;p&gt;Download the latest PHP binaries from the &lt;a href=&quot;http://windows.php.net/download/&quot;&gt;official PHP for Windows download page&lt;/a&gt;, choose &lt;strong&gt;Thread Safe&lt;/strong&gt; version that matches your Apache installation (x86 for 32-bit, x64 for 64-bit).&lt;/p&gt;
-
-&lt;p&gt;The version I used is &lt;strong&gt;VC11 x64 Thread Safe&lt;/strong&gt; (&lt;a href=&quot;http://windows.php.net/downloads/releases/php-5.6.14-Win32-VC11-x64.zip&quot;&gt;php-5.6.14-Win32-VC11-x64.zip&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Create an empty &lt;code&gt;PHP&lt;/code&gt; folder at the root of your C drive, extract the archive there. You should have a path like &lt;code&gt;C:\PHP\ext&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ini &lt;code&gt;C:\PHP&lt;/code&gt;, rename the &lt;code&gt;php.ini-production&lt;/code&gt; or &lt;code&gt;php.ini-development&lt;/code&gt; (depending on what you want) to &lt;code&gt;php.ini&lt;/code&gt;. For me, I chose &lt;code&gt;php.ini-development&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Open that &lt;code&gt;php.ini&lt;/code&gt; file, search for &lt;code&gt;extension_dir = &amp;quot;ext&amp;quot;&lt;/code&gt; and uncomment that line (remove the first &lt;code&gt;;&lt;/code&gt;). I also uncommented several other extensions such as these following:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;extension=php_curl.dll
-extension=php_fileinfo.dll
-extension=php_gd2.dll
-extension=php_mbstring.dll
-extension=php_mysqli.dll
-extension=php_openssl.dll
-extension=php_pdo_mysql.dll
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Don&amp;#39;t forget to set your timezone. Search for &lt;code&gt;;date.timezone&lt;/code&gt;, remove &lt;code&gt;;&lt;/code&gt; and update it into something like this; &lt;code&gt;date.timezone = Asia/Kuala_Lumpur&lt;/code&gt; as for me. Else, it will set to UTC by default.&lt;/p&gt;
-
-&lt;p&gt;Now configure Apache to use that PHP by editing &lt;code&gt;C:\Apache24\conf\httpd.conf&lt;/code&gt;, after all the &lt;code&gt;LoadModule&lt;/code&gt; lines, add the following:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-apache&quot; data-lang=&quot;apache&quot;&gt;&lt;span class=&quot;nb&quot;&gt;LoadModule&lt;/span&gt; php5_module C:/PHP/php5apache2_4.dll
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;IfModule&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;php5_module&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;DirectoryIndex&lt;/span&gt; index.html index.php
-    &lt;span class=&quot;nb&quot;&gt;AddHandler&lt;/span&gt; application/x-httpd-php .php
-    &lt;span class=&quot;nb&quot;&gt;PHPIniDir&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;C:/PHP&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/IfModule&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Now try to start Apache manually or restart the service, if you see no errors, it means your configurations file is valid and PHP is &lt;em&gt;most likely working&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can test your PHP installation by creating a file like &lt;code&gt;info.php&lt;/code&gt; with &lt;code&gt;&amp;lt;?php phpinfo();&lt;/code&gt; inside. Then browse to &lt;code&gt;http://localhost/info.php&lt;/code&gt;, you should see quite a bit of info about your system and your PHP installation and all its modules.&lt;/p&gt;
-
-&lt;h2 id=&quot;mysql&quot;&gt;MySQL&lt;/h2&gt;
-
-&lt;p&gt;On the &lt;a href=&quot;http://dev.mysql.com/downloads/installer/&quot;&gt;MySQL Installer download page&lt;/a&gt;, download the web installer version. Mine is &lt;a href=&quot;http://dev.mysql.com/downloads/file.php?id=459309&quot;&gt;mysql-installer-web-community-5.6.27.0.msi&lt;/a&gt; - it is the latest version as I&amp;#39;m writing this article.&lt;/p&gt;
-
-&lt;p&gt;The installer will automatically install the appropriate version (32-bit or 64-bit) depending on your system. During the installation, it might install all the available products and may ask for some dependencies like Python for MySQL Connector/Python. You may ignored it first and just proceed. I ignored it because I don&amp;#39;t need those MySQL Connectors and I&amp;#39;m going to remove them anyway.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;#39;re installing for development, then the &lt;code&gt;Developer default&lt;/code&gt; will be your best option. It&amp;#39;ll also install MySQL Workbench which is a native GUI client, thus avoiding you having to install slow web-based tools such as &lt;a href=&quot;https://www.phpmyadmin.net/&quot;&gt;phpMyAdmin&lt;/a&gt; if you aren&amp;#39;t comfortable with using the command line client.&lt;/p&gt;
-
-&lt;p&gt;However, as for me, I just installed &lt;strong&gt;MySQL Server&lt;/strong&gt;, &lt;strong&gt;MySQL Workbench&lt;/strong&gt; and &lt;strong&gt;MySQL Documentation&lt;/strong&gt;. The others I removed them via MySQL Installer.&lt;/p&gt;
-
-&lt;p&gt;But, there is a bug that I&amp;#39;m facing where I cannot start MySQL Workbench and got the error dialog stating something like this:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;The type initializer for &amp;#39;HtmlRenderer.Utils.FontsUtils&amp;#39; threw an exception.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This issue occurs due to the HTML rendered DLL that is included in MySQL Workbench. Full details of the bug are &lt;a href=&quot;https://bugs.mysql.com/bug.php?id=75673&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;To fix the bug, I just downloaded this DLL file (&lt;a href=&quot;https://bugs.mysql.com/file.php?id=22868&amp;amp;bug_id=75673&quot;&gt;HtmlRenderer.dll&lt;/a&gt;), go to &lt;code&gt;C:\Program Files\MySQL\MySQL Workbench 6.3 CE\&lt;/code&gt; then paste it here (replace the existing file). Now I can open MySQL Workbench as usual.&lt;/p&gt;
-
-&lt;h3 id=&quot;besides-mysql-workbench-i-also-installed-phpmyadmin&quot;&gt;Besides MySQL Workbench, I also installed phpMyAdmin&lt;/h3&gt;
-
-&lt;p&gt;Previously, I rarely use MySQL Workbench. Most of the time, I use phpMyAdmin.&lt;/p&gt;
-
-&lt;p&gt;Go to &lt;a href=&quot;https://www.phpmyadmin.net/downloads/&quot;&gt;phpMyAdmin download page&lt;/a&gt;, as for me I chose &lt;a href=&quot;https://files.phpmyadmin.net/phpMyAdmin/4.5.0.2/phpMyAdmin-4.5.0.2-english.zip&quot;&gt;phpMyAdmin-4.5.0.2-english.zip&lt;/a&gt;. Extract the archive into the Apache &lt;code&gt;htdocs&lt;/code&gt; folder and rename &lt;code&gt;phpMyAdmin-4.5.0.2-english&lt;/code&gt; into &lt;code&gt;phpmyadmin&lt;/code&gt;. You should have a path like this; &lt;code&gt;C:\Apache24\htdocs\phpmyadmin&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;C:\Apache24\htdocs&lt;/code&gt; is your Apache WWW folder. So, your phpMyAdmin can be accessed by visiting the URL: &lt;code&gt;http://localhost/phpmyadmin&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Inside &lt;code&gt;C:\Apache24\htdocs\phpmyadmin&lt;/code&gt;, look for &lt;code&gt;config.sample.inc.php&lt;/code&gt; then rename it into &lt;code&gt;config.inc.php&lt;/code&gt;. Open the file, fill in the code line:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;x&quot;&gt;$cfg[&amp;#39;blowfish_secret&amp;#39;] = &amp;#39;YOUR_SECRET_KEY&amp;#39;; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;For example:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;x&quot;&gt;$cfg[&amp;#39;blowfish_secret&amp;#39;] = &amp;#39;W4Y1&amp;#39;; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;By default, nothing much need to configure since phpMyAdmin automatically detect the port used by MySQL Server. So, you can directly access &lt;code&gt;http://localhost/phpmyadmin&lt;/code&gt; and login (username and password) as what you set during MySQL installation.&lt;/p&gt;
-
-&lt;h2 id=&quot;composer-optional&quot;&gt;Composer (Optional)&lt;/h2&gt;
-
-&lt;p&gt;Composer is a tool for dependency management in PHP, like a package manager. It allows to easily install PHP packages and even entire frameworks.&lt;/p&gt;
-
-&lt;p&gt;Composer requires the PHP OpenSSL extension to be enabled, so you need to uncomment the extension line in &lt;code&gt;C:\PHP\php.ini&lt;/code&gt; into something like this:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;extension=php_openssl.dll
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Now download Composer&amp;#39;s Windows installer from their &lt;a href=&quot;https://getcomposer.org/download/&quot;&gt;download page&lt;/a&gt;. Install it and follow the instructions. When prompted for the path to PHP, browse to &lt;code&gt;C:\PHP&lt;/code&gt; then select &lt;code&gt;php.exe&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;To test if it works, open the command prompt, type &lt;code&gt;composer&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;You should get a nice ASCII-art logo and something this:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;______
-/ ____/___  ____ ___  ____  ____  ________  _____
-/ /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
-/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
-\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
-                 /_/
-Composer version 1.0-dev (a54f84f05f915c6d42bed94de0cdcb4406a4707b) 2015-10-13 13:09:04
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;That&amp;#39;s it! You now have a fully functional WAMP server (with Composer) that runs as a service and doesn&amp;#39;t depend on any user (accessible even if no one is logged in). If you set up for production instead development, you might need to read carefully their notes or instruction manual, configure your firewall properly and try to consult with expert in order to maximize the security and performance.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
-        <link>/manually-install-apache-php-mysql-composer-on-windows.html</link>
-        <guid isPermaLink="true">/manually-install-apache-php-mysql-composer-on-windows.html</guid>
         
         
       </item>
