@@ -5,12 +5,12 @@
     <description>1+1=3 is always TRUE in my world, a balance between binary and reality.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 06 May 2016 06:35:45 +0000</pubDate>
-    <lastBuildDate>Fri, 06 May 2016 06:35:45 +0000</lastBuildDate>
+    <pubDate>Fri, 06 May 2016 06:29:22 +0000</pubDate>
+    <lastBuildDate>Fri, 06 May 2016 06:29:22 +0000</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
-        <title>Simple Singleton Pattern Using .NET 4&#39;s Lazy Type</title>
+        <title>Simple Singleton Pattern Using .NET 4&#39;s `Lazy&lt;T&gt;` Type</title>
         <description>&lt;p&gt;Nowadays, most of the Microsoft .NET based applications are using .NET 4 or higher. When talking about Singleton pattern, this way of implementation is my favorite - using the &lt;code class=&quot;highlighter-rouge&quot;&gt;System.Lazy&amp;lt;T&amp;gt;&lt;/code&gt; type.&lt;/p&gt;
 
 &lt;p&gt;All you need to do is pass a delegate to the constructor which calls the Single constructor, which is done most easily with a lambda expression.&lt;/p&gt;
