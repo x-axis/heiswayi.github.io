@@ -136,39 +136,39 @@
 
 <p>Check out to a temporary branch:</p>
 
-<p><code class="highlighter-rouge">
-git checkout --orphan TEMP_BRANCH
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout --orphan TEMP_BRANCH
+</code></pre>
+</div>
 
 <p>Add all the files:</p>
 
-<p><code class="highlighter-rouge">
-git add -A
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git add -A
+</code></pre>
+</div>
 
 <p>Commit the changes:</p>
 
-<p><code class="highlighter-rouge">
-git commit -am "Initial commit"
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git commit -am "Initial commit"
+</code></pre>
+</div>
 
 <p>Delete the old branch:</p>
 
-<p><code class="highlighter-rouge">
-git branch -D master
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git branch -D master
+</code></pre>
+</div>
 
 <p>Rename the temporary branch to <strong>master</strong>:</p>
 
-<p><code class="highlighter-rouge">
-git branch -m master
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git branch -m master
+</code></pre>
+</div>
 
 <p>Finally, force update to our repository:</p>
 
-<p><code class="highlighter-rouge">
-git push -f origin master
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git push -f origin master
+</code></pre>
+</div>
 
 <p>This will not keep our old commits history around. <strong>But if this doesn’t work, try the next method below.</strong></p>
 
@@ -176,42 +176,42 @@ git push -f origin master
 
 <p>Clone the project, e.g. <code class="highlighter-rouge">myproject</code> is my project repository:</p>
 
-<p><code class="highlighter-rouge">
-git clone https://github/heiswayi/myproject.git
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github/heiswayi/myproject.git
+</code></pre>
+</div>
 
 <p>Since all of the commits history are in the <code class="highlighter-rouge">.git</code> folder, we have to remove it:</p>
 
-<p><code class="highlighter-rouge">
-cd myproject
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>cd myproject
+</code></pre>
+</div>
 
 <p>And delete the <code class="highlighter-rouge">.git</code> folder:</p>
 
-<p><code class="highlighter-rouge">
-git rm -rf .git
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git rm -rf .git
+</code></pre>
+</div>
 
 <p>Now, re-initialize the repository:</p>
 
-<p><code class="highlighter-rouge">
-git init
+<div class="highlighter-rouge"><pre class="highlight"><code>git init
 git remote add origin https://github.com/heiswayi/myproject.git
 git remote -v
-</code></p>
+</code></pre>
+</div>
 
 <p>Add all the files and commit the changes:</p>
 
-<p><code class="highlighter-rouge">
-git add --all
+<div class="highlighter-rouge"><pre class="highlight"><code>git add --all
 git commit -am "Initial commit"
-</code></p>
+</code></pre>
+</div>
 
 <p>Force push update to the <strong>master</strong> branch of our project repository:</p>
 
-<p><code class="highlighter-rouge">
-git push -f origin master
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git push -f origin master
+</code></pre>
+</div>
 
 <blockquote>
   <p>NOTE: You might need to provide the credentials for your account.</p>

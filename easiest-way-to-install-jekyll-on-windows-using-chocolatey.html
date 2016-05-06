@@ -134,9 +134,9 @@
 
 <p><strong>STEP02.</strong> Paste this to install <a href="https://chocolatey.org/">Chocolatey</a>:</p>
 
-<p><code class="highlighter-rouge">
-@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" &amp;&amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" &amp;&amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+</code></pre>
+</div>
 
 <p><strong>STEP03.</strong> Close the command prompt as Chocolatey will not be available until we close and reopen.</p>
 
@@ -144,25 +144,25 @@
 
 <p><strong>STEP05.</strong> Paste this to install <a href="https://chocolatey.org/packages/ruby">Ruby</a>:</p>
 
-<p><code class="highlighter-rouge">
-choco install ruby -y
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>choco install ruby -y
+</code></pre>
+</div>
 
 <p><strong>STEP06.</strong> Close and reopen a new command prompt again with Administrator access</p>
 
 <p><strong>STEP07.</strong> Paste this to install <a href="https://jekyllrb.com/">Jekyll</a>:</p>
 
-<p><code class="highlighter-rouge">
-gem install jekyll
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>gem install jekyll
+</code></pre>
+</div>
 
 <p><strong>STEP08.</strong> Done! Now we can use standard Jekyll commands to create a new site and serve it:</p>
 
-<p><code class="highlighter-rouge">
-jekyll new myblog
+<div class="highlighter-rouge"><pre class="highlight"><code>jekyll new myblog
 cd myblog
 jekyll serve
-</code></p>
+</code></pre>
+</div>
 
 <p>Credit: <a href="https://davidburela.wordpress.com/2015/11/28/easily-install-jekyll-on-windows-with-3-command-prompt-entries-and-chocolatey/">David Burela</a></p>
 

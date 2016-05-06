@@ -144,10 +144,10 @@
 
 <p>Open a command line window (Windows+R and type <code class="highlighter-rouge">cmd</code> then press Enter), change directory into <code class="highlighter-rouge">C:\Apache24\bin</code> or type the following:</p>
 
-<p><code class="highlighter-rouge">
-cd C:\Apache24\bin
+<div class="highlighter-rouge"><pre class="highlight"><code>cd C:\Apache24\bin
 httpd.exe
-</code></p>
+</code></pre>
+</div>
 
 <p>Normally, it shouldn’t print any errors.</p>
 
@@ -159,16 +159,16 @@ httpd.exe
 
 <p>The warning above can be fixed by editing <code class="highlighter-rouge">C:\Apache24\conf\httpd.conf</code>, uncomment and change it into something like this:</p>
 
-<p><code class="highlighter-rouge">
-ServerName localhost:80
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>ServerName localhost:80
+</code></pre>
+</div>
 
 <p>Finally, if you want to run the server automatically when the system starts (even if nobody logs in), you’ll need to run it as a service. Open your command prompt as an administrator, type:</p>
 
-<p><code class="highlighter-rouge">
-cd C:\Apache24\bin
+<div class="highlighter-rouge"><pre class="highlight"><code>cd C:\Apache24\bin
 httpd.exe -k install
-</code></p>
+</code></pre>
+</div>
 
 <p>If it’s currently still running, you need to terminate it first by pressing Ctrl+C in the command prompt.</p>
 
@@ -186,29 +186,29 @@ httpd.exe -k install
 
 <p>Open that <code class="highlighter-rouge">php.ini</code> file, search for <code class="highlighter-rouge">extension_dir = "ext"</code> and uncomment that line (remove the first <code class="highlighter-rouge">;</code>). I also uncommented several other extensions such as these following:</p>
 
-<p><code class="highlighter-rouge">
-extension=php_curl.dll
+<div class="highlighter-rouge"><pre class="highlight"><code>extension=php_curl.dll
 extension=php_fileinfo.dll
 extension=php_gd2.dll
 extension=php_mbstring.dll
 extension=php_mysqli.dll
 extension=php_openssl.dll
 extension=php_pdo_mysql.dll
-</code></p>
+</code></pre>
+</div>
 
 <p>Don’t forget to set your timezone. Search for <code class="highlighter-rouge">;date.timezone</code>, remove <code class="highlighter-rouge">;</code> and update it into something like this; <code class="highlighter-rouge">date.timezone = Asia/Kuala_Lumpur</code> as for me. Else, it will set to UTC by default.</p>
 
 <p>Now configure Apache to use that PHP by editing <code class="highlighter-rouge">C:\Apache24\conf\httpd.conf</code>, after all the <code class="highlighter-rouge">LoadModule</code> lines, add the following:</p>
 
-<p>```apache
-LoadModule php5_module C:/PHP/php5apache2_4.dll</p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nl">LoadModule</span> php5_module C:/PHP/php5apache2_4.dll
 
-<ifmodule php5_module="">
-    DirectoryIndex index.html index.php
-    AddHandler application/x-httpd-php .php
-    PHPIniDir "C:/PHP"
-</ifmodule>
-<p>```</p>
+<span class="p">&lt;</span><span class="nc">IfModule</span> <span class="sr">php5_module</span><span class="p">&gt;
+</span>    <span class="nl">DirectoryIndex</span> index.html index.php
+    <span class="nl">AddHandler</span> application/x-httpd-php .php
+     "C:/PHP"
+<span class="p">&lt;/</span><span class="nc">IfModule</span><span class="p">&gt;
+</span></code></pre>
+</div>
 
 <p>Now try to start Apache manually or restart the service, if you see no errors, it means your configurations file is valid and PHP is <em>most likely working</em>.</p>
 
@@ -226,9 +226,9 @@ LoadModule php5_module C:/PHP/php5apache2_4.dll</p>
 
 <p>But, there is a bug that I’m facing where I cannot start MySQL Workbench and got the error dialog stating something like this:</p>
 
-<p><code class="highlighter-rouge">
-The type initializer for 'HtmlRenderer.Utils.FontsUtils' threw an exception.
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>The type initializer for 'HtmlRenderer.Utils.FontsUtils' threw an exception.
+</code></pre>
+</div>
 
 <p>This issue occurs due to the HTML rendered DLL that is included in MySQL Workbench. Full details of the bug are <a href="https://bugs.mysql.com/bug.php?id=75673">here</a>.</p>
 
@@ -244,15 +244,15 @@ The type initializer for 'HtmlRenderer.Utils.FontsUtils' threw an exception.
 
 <p>Inside <code class="highlighter-rouge">C:\Apache24\htdocs\phpmyadmin</code>, look for <code class="highlighter-rouge">config.sample.inc.php</code> then rename it into <code class="highlighter-rouge">config.inc.php</code>. Open the file, fill in the code line:</p>
 
-<p><code class="highlighter-rouge">php
-$cfg['blowfish_secret'] = 'YOUR_SECRET_KEY'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$cfg['blowfish_secret'] = 'YOUR_SECRET_KEY'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+</code></pre>
+</div>
 
 <p>For example:</p>
 
-<p><code class="highlighter-rouge">php
-$cfg['blowfish_secret'] = 'W4Y1'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$cfg['blowfish_secret'] = 'W4Y1'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+</code></pre>
+</div>
 
 <p>By default, nothing much need to configure since phpMyAdmin automatically detect the port used by MySQL Server. So, you can directly access <code class="highlighter-rouge">http://localhost/phpmyadmin</code> and login (username and password) as what you set during MySQL installation.</p>
 
@@ -262,9 +262,9 @@ $cfg['blowfish_secret'] = 'W4Y1'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 
 <p>Composer requires the PHP OpenSSL extension to be enabled, so you need to uncomment the extension line in <code class="highlighter-rouge">C:\PHP\php.ini</code> into something like this:</p>
 
-<p><code class="highlighter-rouge">
-extension=php_openssl.dll
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>extension=php_openssl.dll
+</code></pre>
+</div>
 
 <p>Now download Composer’s Windows installer from their <a href="https://getcomposer.org/download/">download page</a>. Install it and follow the instructions. When prompted for the path to PHP, browse to <code class="highlighter-rouge">C:\PHP</code> then select <code class="highlighter-rouge">php.exe</code>.</p>
 
@@ -272,15 +272,15 @@ extension=php_openssl.dll
 
 <p>You should get a nice ASCII-art logo and something this:</p>
 
-<p><code class="highlighter-rouge">
-______
+<div class="highlighter-rouge"><pre class="highlight"><code>______
 / ____/___  ____ ___  ____  ____  ________  _____
 / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
 / /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
 \____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
                  /_/
 Composer version 1.0-dev (a54f84f05f915c6d42bed94de0cdcb4406a4707b) 2015-10-13 13:09:04
-</code></p>
+</code></pre>
+</div>
 
 <p>That’s it! You now have a fully functional WAMP server (with Composer) that runs as a service and doesn’t depend on any user (accessible even if no one is logged in). If you set up for production instead development, you might need to read carefully their notes or instruction manual, configure your firewall properly and try to consult with expert in order to maximize the security and performance.</p>
 

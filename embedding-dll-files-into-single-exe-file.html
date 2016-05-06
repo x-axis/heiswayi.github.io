@@ -168,18 +168,18 @@
 
 <p>Then, add this anonymous function code on the top of our application constructor, as my case, before <code class="highlighter-rouge">InitializeComponent();</code>:</p>
 
-<p>```csharp
-AppDomain.CurrentDomain.AssemblyResolve += (sender, args) =&gt;
-{
-	string resourceName = new AssemblyName(args.Name).Name + “.dll”;
-    string resource = Array.Find(this.GetType().Assembly.GetManifestResourceNames(), element =&gt; element.EndsWith(resourceName));</p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">AppDomain</span><span class="p">.</span><span class="n">CurrentDomain</span><span class="p">.</span><span class="n">AssemblyResolve</span> <span class="p">+=</span> <span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span> <span class="p">=&gt;</span>
+<span class="p">{</span>
+	<span class="kt">string</span> <span class="n">resourceName</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">AssemblyName</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="n">Name</span><span class="p">).</span><span class="n">Name</span> <span class="p">+</span> <span class="s">".dll"</span><span class="p">;</span>
+    <span class="kt">string</span> <span class="n">resource</span> <span class="p">=</span> <span class="n">Array</span><span class="p">.</span><span class="nf">Find</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nf">GetType</span><span class="p">().</span><span class="n">Assembly</span><span class="p">.</span><span class="nf">GetManifestResourceNames</span><span class="p">(),</span> <span class="n">element</span> <span class="p">=&gt;</span> <span class="n">element</span><span class="p">.</span><span class="nf">EndsWith</span><span class="p">(</span><span class="n">resourceName</span><span class="p">));</span>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resource))
-{
-	Byte[] assemblyData = new Byte[stream.Length];
-    stream.Read(assemblyData, 0, assemblyData.Length);
-    return Assembly.Load(assemblyData);
-} }; ```
+    <span class="k">using</span> <span class="p">(</span><span class="n">var</span> <span class="n">stream</span> <span class="p">=</span> <span class="n">Assembly</span><span class="p">.</span><span class="nf">GetExecutingAssembly</span><span class="p">().</span><span class="nf">GetManifestResourceStream</span><span class="p">(</span><span class="n">resource</span><span class="p">))</span>
+    <span class="p">{</span>
+		<span class="n">Byte</span><span class="p">[]</span> <span class="n">assemblyData</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Byte</span><span class="p">[</span><span class="n">stream</span><span class="p">.</span><span class="n">Length</span><span class="p">];</span>
+        <span class="n">stream</span><span class="p">.</span><span class="nf">Read</span><span class="p">(</span><span class="n">assemblyData</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="n">assemblyData</span><span class="p">.</span><span class="n">Length</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">Assembly</span><span class="p">.</span><span class="nf">Load</span><span class="p">(</span><span class="n">assemblyData</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">};</span>
 </code></pre>
 </div>
 
