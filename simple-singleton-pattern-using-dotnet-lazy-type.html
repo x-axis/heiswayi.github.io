@@ -9,13 +9,13 @@
 
   <title>
     
-      PHP - Encryption, Decryption And Password Hashing &middot; Heiswayi Nrird on Tech
+      Simple Singleton Pattern Using .NET 4's `Lazy<T>` Type &middot; Heiswayi Nrird on Tech
     
   </title>
 
   
-    <meta name="description" content="Code snippets, examples of usage and the implementations."/>
-    <meta name="keywords" content="php encryption, php decryption, password hashing using php">
+    <meta name="description" content="This singleton pattern is simple and performs well, best used with time-consuming operation class."/>
+    <meta name="keywords" content="singleton pattern, .net 4, laziness, lambda expression">
   
   <meta name="author" content="Heiswayi Nrird">
 
@@ -23,16 +23,16 @@
   <meta name="twitter:site" content="@HeiswayiNrird">
   <meta name="twitter:creator" content="@HeiswayiNrird">
   
-    <meta name="twitter:title" content="PHP - Encryption, Decryption And Password Hashing">
-    <meta name="twitter:description" content="Code snippets, examples of usage and the implementations.">
+    <meta name="twitter:title" content="Simple Singleton Pattern Using .NET 4's `Lazy<T>` Type">
+    <meta name="twitter:description" content="This singleton pattern is simple and performs well, best used with time-consuming operation class.">
   
 
   <meta property="og:type" content="website"/>
   
-    <meta property="og:title" content="PHP - Encryption, Decryption And Password Hashing"/>
-    <meta property="og:url" content="/php-encryption-decryption-and-password-hashing.html"/>
-    <meta property="og:description" content="Code snippets, examples of usage and the implementations."/>
-    <meta property="og:site_name" content="PHP - Encryption, Decryption And Password Hashing"/>
+    <meta property="og:title" content="Simple Singleton Pattern Using .NET 4's `Lazy<T>` Type"/>
+    <meta property="og:url" content="/simple-singleton-pattern-using-dotnet-lazy-type.html"/>
+    <meta property="og:description" content="This singleton pattern is simple and performs well, best used with time-consuming operation class."/>
+    <meta property="og:site_name" content="Simple Singleton Pattern Using .NET 4's `Lazy<T>` Type"/>
   
 
   <link rel="apple-touch-icon" sizes="57x57" href="/public/icons/apple-icon-57x57.png">
@@ -116,133 +116,70 @@
       <div class="container content">
         <div class="post">
   <div class="post-top-meta">
-    <div class="post-date">August 17, 2015 &middot; <span class="reading-time" title="Estimated Reading Time">
+    <div class="post-date">May 05, 2016 &middot; <span class="reading-time" title="Estimated Reading Time">
   
   
-    3 minutes read
+    1 minute read
   
 </span>
 </div>
-    <h1 class="post-title">PHP - Encryption, Decryption And Password Hashing</h1>
+    <h1 class="post-title">Simple Singleton Pattern Using .NET 4's `Lazy<T>` Type</h1>
   </div>
 
   <div class="hrline"></div>
 
-  <p>These days, people are browsing the web a lot. Some of them may be doing their business at risk when they are using a web application that is weakly built in protecting its user’s data or confidential information. It doesn’t matter how simple or complicated, small or big the application is, when it involves keeping the user’s data, we (the developers) need to take care their information well and ensure their data are safe with our application. One way to do that is by encrypting the data before we save it.</p>
+  <p>Nowadays, most of the Microsoft .NET based applications are using .NET 4 or higher. When talking about Singleton pattern, this way of implementation is my favorite - using the <code class="highlighter-rouge">System.Lazy&lt;T&gt;</code> type.</p>
 
-<p>In PHP, there are many methods that we can encrypt the information. These code snippets are ones that I commonly used in my application to ensure their confidential information are not easily been disclosed.</p>
+<p>All you need to do is pass a delegate to the constructor which calls the Single constructor, which is done most easily with a lambda expression.</p>
 
-<h3 id="encryption">Encryption</h3>
+<p>Let say I have a class called <code class="highlighter-rouge">SayHello.cs</code> with the Singleton pattern:</p>
 
-<p>This is a PHP function used to encrypt the data string.</p>
+<p>```csharp
+using System;</p>
 
-<p>```php
-&lt;?php
-function Encrypt($password, $data)
-{</p>
+<p>namespace SingletonExample
+{
+    class SayHello
+    {
+        private static readonly Lazy<sayhello> lazy = new Lazy<sayhello>(() =&gt; new SayHello());
+        public static SayHello Instance { get { return lazy.Value; } }</sayhello></sayhello></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$salt = substr(md5(mt_rand(), true), 8);
+<div class="highlighter-rouge"><pre class="highlight"><code>    SayHello()
+    {
+    }
 
-$key = md5($password . $salt, true);
-$iv  = md5($key . $password . $salt, true);
-
-$ct = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key, $data, MCRYPT_MODE_CBC, $iv);
-
-return base64_encode('Salted__' . $salt . $ct); } ?&gt; ```
+    public void Test()
+    {
+        Console.WriteLine("Hello hello hello!");
+    }
+} } ```
 </code></pre>
 </div>
 
-<h4 id="example-of-usage">Example of Usage</h4>
+<p>And here my main program that will execute a function from <code class="highlighter-rouge">SayHello.cs</code> class:</p>
 
-<p><code class="highlighter-rouge">php
-&lt;?php
-echo Encrypt('myPass123', 'Welcome to Flippancy 25');
-// Output: U2FsdGVkX19LYv5Y5EDmFbjH8bGMDFwlid30h2x1ybibT1Dwp0vekJ0OT4tb7/j6
-?&gt;
-</code></p>
+<p>```csharp
+using System;</p>
 
-<p>The special feature here is, every time I execute this function <code class="highlighter-rouge">Encrypt()</code>, by using the <strong>same</strong> password and <strong>same</strong> data, the encrypted string is always changed.</p>
+<p>namespace SingletonExample
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SayHello.Instance.Test();</p>
 
-<p>Here is the output examples of encrypted strings after I executed it for three times:-</p>
-
-<p><code class="highlighter-rouge">
-// Output 1: U2FsdGVkX19LYv5Y5EDmFbjH8bGMDFwlid30h2x1ybibT1Dwp0vekJ0OT4tb7/j6
-// Output 2: U2FsdGVkX1/3zxJCcE8p89t67nJNp8blNkezNxTVn4IDFQLM755K2+OSfFHewDLI
-// Output 3: U2FsdGVkX18OQ8puUN8BBi+d6vAjEzDTZqM2WaKQD1atOykkYl9MY7NQM1DqI4Kw
-</code></p>
-
-<p>Hence, even the encrypted strings are changed each time I executed the function for the same input data, but these three encrypted strings are still can be decrypted and output the <strong>same</strong> results. This is the uniqueness of this encryption function.</p>
-
-<h3 id="decryption">Decryption</h3>
-
-<p>To get back the original data string, we need the decryption function.</p>
-
-<p>```php
-&lt;?php
-function Decrypt($password, $data)
-{</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>$data = base64_decode($data);
-$salt = substr($data, 8, 8);
-$ct   = substr($data, 16);
-
-$key = md5($password . $salt, true);
-$iv  = md5($key . $password . $salt, true);
-
-$pt = mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key, $ct, MCRYPT_MODE_CBC, $iv);
-
-return $pt; } ?&gt; ```
+<div class="highlighter-rouge"><pre class="highlight"><code>        Console.ReadLine();
+    }
+} } ```
 </code></pre>
 </div>
 
-<h4 id="example-of-usage-1">Example of Usage</h4>
+<p>Here’s the output:</p>
 
-<p><code class="highlighter-rouge">php
-&lt;?php
-echo Decrypt('myPass123', 'U2FsdGVkX19LYv5Y5EDmFbjH8bGMDFwlid30h2x1ybibT1Dwp0vekJ0OT4tb7/j6');
-echo Decrypt('myPass123', 'U2FsdGVkX1/3zxJCcE8p89t67nJNp8blNkezNxTVn4IDFQLM755K2+OSfFHewDLI');
-echo Decrypt('myPass123', 'U2FsdGVkX18OQ8puUN8BBi+d6vAjEzDTZqM2WaKQD1atOykkYl9MY7NQM1DqI4Kw');
-// All of three above will output the same decrypted data: Welcome to Flippancy 25
-?&gt;
-</code></p>
+<p><img src="http://i.imgur.com/Vnbsea3.png" alt="SingletonExample" /></p>
 
-<p>As you can see, for each encryption and decryption, the correct password/passcode is required in order to get back the original data strings.</p>
-
-<h3 id="application-of-data-encryption-and-decryption">Application of Data Encryption and Decryption</h3>
-
-<p>These both PHP encryption and decryption functions are useful when we want to securely encrypt user’s confidential information such as Social Security number, Phone number, Bank Account number, Credit Card information, whatnot and at some points of time, we need it back in plain text or the original version of the data.</p>
-
-<blockquote>
-  <p>Using these functions for saving passwords are NOT RECOMMENDED as it is reversible (ability to be decrypted). Check the next topic!</p>
-</blockquote>
-
-<h3 id="password-hashing">Password Hashing</h3>
-
-<p>Despite encryption and decryption of the data, another part that plays important role in our application development is password hashing. The best implementation in password hashing is to use <strong><em>one-way</em></strong> hashing technique. Meaning that, it is irreversible. Unlikely the encryptions, they are formulated to be able to be decrypted it back. The password is encrypted and hashed for one-time only and it is no longer can be decrypted to a plain text anymore. You may want to check <a href="http://php.net/manual/en/function.password-hash.php">password_hash</a> or <a href="http://php.net/manual/en/function.crypt.php">crypt</a> for PHP one-way hashing algorithms.</p>
-
-<p>In my projects, I usually use this hashing function to hash the user’s password:</p>
-
-<p><code class="highlighter-rouge">php
-&lt;?php
-function hashPassword($password, $salt) {
-    $hash_password = hash("SHA512", base64_encode(str_rot13(hash("SHA512", str_rot13($salt . $password)))));
-    return $hash_password;
-}
-?&gt;
-</code></p>
-
-<h4 id="example-of-usage-2">Example of Usage</h4>
-
-<p><code class="highlighter-rouge">php
-&lt;?php
-echo hashPassword('myPa55w0rd', 'Flipp@ncy25');
-// Output: 815890bb72e10a75a52087513a931afb6641a5d8d105365fa6f389f038dd81b45290a44cf94bb61e7741e073c6f4d59a16e9896bd197cc320f84f3a4d27cfb50
-?&gt;
-</code></p>
-
-<hr />
-
-<p>For more details about password hashing, I <strong>recommended</strong> you to read <a href="https://crackstation.net/hashing-security.htm">this article</a>. It’s a really good article about salted password hashing.</p>
+<p>This singleton pattern is simple and performs well, best used with time-consuming operation class.</p>
 
   
 </div>

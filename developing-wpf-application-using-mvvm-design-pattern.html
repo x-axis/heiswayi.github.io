@@ -119,7 +119,7 @@
     <div class="post-date">September 02, 2015 &middot; <span class="reading-time" title="Estimated Reading Time">
   
   
-    18 minutes read
+    13 minutes read
   
 </span>
 </div>
@@ -175,7 +175,8 @@
 
 <p>OK, here’s how the Tree View for directories and files looked like inside the project.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Solution 'SimpleOneWayHashing' (1 project)
+<p><code class="highlighter-rouge">
+Solution 'SimpleOneWayHashing' (1 project)
 └── SimpleOneWayHashing
     ├── Properties
     ├── References
@@ -201,8 +202,7 @@
     ├── App.xaml
     |   └── App.xaml.cs
     └── ClassDiagram1.cd
-</code></pre>
-</div>
+</code></p>
 
 <blockquote>
   <p><strong>NOTE:</strong> I used Visual Studio 2013 to develop the “Password Hashing Tool” project but the solution and project files are named as <code class="highlighter-rouge">SimpleOneWayHashing</code>.</p>
@@ -214,61 +214,61 @@
 
 <h4 id="lets-start-with-the-model-first">Let’s start with the Model first</h4>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>    ├── Models
+<p><code class="highlighter-rouge">
+    ├── Models
     |   └── HashingModel.cs
-</code></pre>
-</div>
+</code></p>
 
 <p>This is how the code looked like inside <code class="highlighter-rouge">HashingModel.cs</code> file.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Security.Cryptography</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
+<p>```csharp
+using System;
+using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;</p>
 
-<span class="k">namespace</span> <span class="nn">SimpleOneWayHashing.Models</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">class</span> <span class="nc">HashingModel</span>
-    <span class="p">{</span>
-        <span class="err">#</span><span class="n">region</span> <span class="n">Private</span> <span class="n">Members</span>
-        <span class="k">private</span> <span class="kt">string</span> <span class="n">appTitle</span> <span class="p">=</span> <span class="s">"One-Way Password Hashing"</span><span class="p">;</span>
-        <span class="k">private</span> <span class="kt">string</span> <span class="n">result</span><span class="p">;</span>
-        <span class="err">#</span><span class="n">endregion</span>
+<p>namespace SimpleOneWayHashing.Models
+{
+    public class HashingModel
+    {
+        #region Private Members
+        private string appTitle = “One-Way Password Hashing”;
+        private string result;
+        #endregion</p>
 
-        <span class="err">#</span><span class="n">region</span> <span class="n">Constructor</span>
-        <span class="k">public</span> <span class="nf">HashingModel</span><span class="p">(</span><span class="kt">string</span> <span class="n">_plainText</span><span class="p">,</span> <span class="kt">string</span> <span class="n">_salt</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="n">PlainText</span> <span class="p">=</span> <span class="n">_plainText</span><span class="p">;</span>
-            <span class="n">Salt</span> <span class="p">=</span> <span class="n">_salt</span><span class="p">;</span>
-            <span class="n">result</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="k">public</span> <span class="nf">HashingModel</span><span class="p">()</span>
-        <span class="p">{</span>
-            <span class="n">PlainText</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
-            <span class="n">Salt</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
-            <span class="n">result</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="err">#</span><span class="n">endregion</span>
+<div class="highlighter-rouge"><pre class="highlight"><code>    #region Constructor
+    public HashingModel(string _plainText, string _salt)
+    {
+        PlainText = _plainText;
+        Salt = _salt;
+        result = string.Empty;
+    }
+    public HashingModel()
+    {
+        PlainText = string.Empty;
+        Salt = string.Empty;
+        result = string.Empty;
+    }
+    #endregion
 
-        <span class="err">#</span><span class="n">region</span> <span class="n">Public</span> <span class="n">Properties</span> <span class="n">and</span> <span class="n">Methods</span>
-        <span class="k">public</span> <span class="kt">string</span> <span class="n">AppTitle</span> <span class="p">{</span> <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">appTitle</span><span class="p">;</span> <span class="p">}</span> <span class="p">}</span>
-        <span class="k">public</span> <span class="kt">string</span> <span class="n">PlainText</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
-        <span class="k">public</span> <span class="kt">string</span> <span class="n">Salt</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
-        <span class="k">public</span> <span class="kt">string</span> <span class="n">Result</span> <span class="p">{</span> <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">result</span><span class="p">;</span> <span class="p">}</span> <span class="p">}</span>
+    #region Public Properties and Methods
+    public string AppTitle { get { return appTitle; } }
+    public string PlainText { get; set; }
+    public string Salt { get; set; }
+    public string Result { get { return result; } }
 
-        <span class="k">public</span> <span class="k">void</span> <span class="nf">ComputingResult</span><span class="p">()</span>
-        <span class="p">{</span>
-            <span class="n">UTF8Encoding</span> <span class="n">utf8</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">UTF8Encoding</span><span class="p">();</span>
-            <span class="kt">byte</span><span class="p">[]</span> <span class="n">textWithSaltBytes</span> <span class="p">=</span> <span class="n">utf8</span><span class="p">.</span><span class="nf">GetBytes</span><span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="nf">Concat</span><span class="p">(</span><span class="n">PlainText</span><span class="p">,</span> <span class="n">Salt</span><span class="p">));</span>
-            <span class="n">HashAlgorithm</span> <span class="n">hasher</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">SHA1CryptoServiceProvider</span><span class="p">();</span>
-            <span class="kt">byte</span><span class="p">[]</span> <span class="n">hashedBytes</span> <span class="p">=</span> <span class="n">hasher</span><span class="p">.</span><span class="nf">ComputeHash</span><span class="p">(</span><span class="n">textWithSaltBytes</span><span class="p">);</span>
-            <span class="n">hasher</span><span class="p">.</span><span class="nf">Clear</span><span class="p">();</span>
-            <span class="n">result</span> <span class="p">=</span> <span class="n">Convert</span><span class="p">.</span><span class="nf">ToBase64String</span><span class="p">(</span><span class="n">hashedBytes</span><span class="p">);</span>
-        <span class="p">}</span>
-        <span class="err">#</span><span class="n">endregion</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+    public void ComputingResult()
+    {
+        UTF8Encoding utf8 = new UTF8Encoding();
+        byte[] textWithSaltBytes = utf8.GetBytes(string.Concat(PlainText, Salt));
+        HashAlgorithm hasher = new SHA1CryptoServiceProvider();
+        byte[] hashedBytes = hasher.ComputeHash(textWithSaltBytes);
+        hasher.Clear();
+        result = Convert.ToBase64String(hashedBytes);
+    }
+    #endregion
+} } ```
 </code></pre>
 </div>
 
@@ -276,167 +276,167 @@
 
 <h4 id="the-viewmodel">The ViewModel</h4>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>    ├── ViewModels
+<p><code class="highlighter-rouge">
+    ├── ViewModels
     |   ├── HashingViewModel.cs
     |   └── ViewModelBase.cs
-</code></pre>
-</div>
+</code></p>
 
 <p>Inside <strong>ViewModels</strong> folder, there are two files; <code class="highlighter-rouge">HashingViewMode.cs</code> and <code class="highlighter-rouge">ViewModelBase.cs</code>.</p>
 
 <p>Inside <code class="highlighter-rouge">ViewModelBase.cs</code>, there is a helper class which inherits <code class="highlighter-rouge">INotifyPropertyChanged</code> interface.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.ComponentModel</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
+<p>```csharp
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Text;
+using System.Threading.Tasks;</p>
 
-<span class="k">namespace</span> <span class="nn">SimpleOneWayHashing.ViewModels</span>
-<span class="p">{</span>
-    <span class="c1">/// &lt;summary&gt;
-</span>    <span class="c1">/// Provides common functionality for ViewModel class
-</span>    <span class="c1">/// &lt;/summary&gt;
-</span>    <span class="k">public</span> <span class="k">abstract</span> <span class="k">class</span> <span class="nc">ViewModelBase</span> <span class="p">:</span> <span class="n">INotifyPropertyChanged</span>
-    <span class="p">{</span>
-        <span class="k">public</span> <span class="k">event</span> <span class="n">PropertyChangedEventHandler</span> <span class="n">PropertyChanged</span><span class="p">;</span>
+<p>namespace SimpleOneWayHashing.ViewModels
+{
+    /// &lt;summary&gt;
+    /// Provides common functionality for ViewModel class
+    /// &lt;/summary&gt;
+    public abstract class ViewModelBase : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;</p>
 
-        <span class="k">protected</span> <span class="k">void</span> <span class="nf">OnPropertyChanged</span><span class="p">(</span><span class="kt">string</span> <span class="n">propertyName</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="n">PropertyChangedEventHandler</span> <span class="n">handler</span> <span class="p">=</span> <span class="n">PropertyChanged</span><span class="p">;</span>
+<div class="highlighter-rouge"><pre class="highlight"><code>    protected void OnPropertyChanged(string propertyName)
+    {
+        PropertyChangedEventHandler handler = PropertyChanged;
 
-            <span class="k">if</span> <span class="p">(</span><span class="n">handler</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
-            <span class="p">{</span>
-                <span class="nf">handler</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="k">new</span> <span class="nf">PropertyChangedEventArgs</span><span class="p">(</span><span class="n">propertyName</span><span class="p">));</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
+        if (handler != null)
+        {
+            handler(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
 
-    <span class="p">}</span>
-<span class="p">}</span>
+} } ```
 </code></pre>
 </div>
 
 <p><code class="highlighter-rouge">HashingViewMode.cs</code> is where it contains all the logics for this “Password Hashing Tool” program to work with the View.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Windows.Input</span><span class="p">;</span>
+<p>```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;</p>
 
-<span class="k">using</span> <span class="nn">SimpleOneWayHashing.Commands</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">SimpleOneWayHashing.Models</span><span class="p">;</span>
+<p>using SimpleOneWayHashing.Commands;
+using SimpleOneWayHashing.Models;</p>
 
-<span class="k">namespace</span> <span class="nn">SimpleOneWayHashing.ViewModels</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">class</span> <span class="nc">HashingViewModel</span> <span class="p">:</span> <span class="n">ViewModelBase</span>
-    <span class="p">{</span>
-        <span class="err">#</span><span class="n">region</span> <span class="n">Private</span> <span class="n">Members</span>
-        <span class="k">private</span> <span class="n">Models</span><span class="p">.</span><span class="n">HashingModel</span> <span class="n">hashing</span><span class="p">;</span>
+<p>namespace SimpleOneWayHashing.ViewModels
+{
+    public class HashingViewModel : ViewModelBase
+    {
+        #region Private Members
+        private Models.HashingModel hashing;</p>
 
-        <span class="k">private</span> <span class="n">DelegateCommand</span> <span class="n">computeHashCommand</span><span class="p">;</span>
-        <span class="k">private</span> <span class="n">DelegateCommand</span> <span class="n">clearTextBoxCommand</span><span class="p">;</span>
+<div class="highlighter-rouge"><pre class="highlight"><code>    private DelegateCommand computeHashCommand;
+    private DelegateCommand clearTextBoxCommand;
 
-        <span class="k">private</span> <span class="kt">string</span> <span class="n">hashingTitle</span><span class="p">;</span>
-        <span class="k">private</span> <span class="kt">string</span> <span class="n">computedHash</span><span class="p">;</span>
-        <span class="err">#</span><span class="n">endregion</span>
+    private string hashingTitle;
+    private string computedHash;
+    #endregion
 
-        <span class="err">#</span><span class="n">region</span> <span class="n">Constructor</span>
-        <span class="k">public</span> <span class="nf">HashingViewModel</span><span class="p">()</span>
-        <span class="p">{</span>
-            <span class="k">this</span><span class="p">.</span><span class="n">hashing</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">HashingModel</span><span class="p">();</span>
-            <span class="n">hashingTitle</span> <span class="p">=</span> <span class="n">hashing</span><span class="p">.</span><span class="n">AppTitle</span><span class="p">;</span>
-            <span class="k">this</span><span class="p">.</span><span class="n">PlainText</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
-            <span class="k">this</span><span class="p">.</span><span class="n">Salt</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
-            <span class="k">this</span><span class="p">.</span><span class="n">computedHash</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="err">#</span><span class="n">endregion</span>
+    #region Constructor
+    public HashingViewModel()
+    {
+        this.hashing = new HashingModel();
+        hashingTitle = hashing.AppTitle;
+        this.PlainText = string.Empty;
+        this.Salt = string.Empty;
+        this.computedHash = string.Empty;
+    }
+    #endregion
 
-        <span class="err">#</span><span class="n">region</span> <span class="n">Public</span> <span class="n">Properties</span>
-        <span class="k">public</span> <span class="kt">string</span> <span class="n">HashingTitle</span>
-        <span class="p">{</span>
-            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">hashingTitle</span><span class="p">;</span> <span class="p">}</span>
-        <span class="p">}</span>
-        <span class="k">public</span> <span class="kt">string</span> <span class="n">PlainText</span>
-        <span class="p">{</span>
-            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">hashing</span><span class="p">.</span><span class="n">PlainText</span><span class="p">;</span> <span class="p">}</span>
-            <span class="k">set</span> <span class="p">{</span> <span class="n">hashing</span><span class="p">.</span><span class="n">PlainText</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
-        <span class="p">}</span>
+    #region Public Properties
+    public string HashingTitle
+    {
+        get { return hashingTitle; }
+    }
+    public string PlainText
+    {
+        get { return hashing.PlainText; }
+        set { hashing.PlainText = value; }
+    }
 
-        <span class="k">public</span> <span class="kt">string</span> <span class="n">Salt</span>
-        <span class="p">{</span>
-            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">hashing</span><span class="p">.</span><span class="n">Salt</span><span class="p">;</span> <span class="p">}</span>
-            <span class="k">set</span> <span class="p">{</span> <span class="n">hashing</span><span class="p">.</span><span class="n">Salt</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
-        <span class="p">}</span>
+    public string Salt
+    {
+        get { return hashing.Salt; }
+        set { hashing.Salt = value; }
+    }
 
-        <span class="k">public</span> <span class="kt">string</span> <span class="n">Result</span>
-        <span class="p">{</span>
-            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">hashing</span><span class="p">.</span><span class="n">Result</span><span class="p">;</span> <span class="p">}</span>
-        <span class="p">}</span>
+    public string Result
+    {
+        get { return hashing.Result; }
+    }
 
-        <span class="k">public</span> <span class="kt">string</span> <span class="n">ComputedHash</span>
-        <span class="p">{</span>
-            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">computedHash</span><span class="p">;</span> <span class="p">}</span>
-            <span class="k">set</span>
-            <span class="p">{</span>
-                <span class="n">computedHash</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
-                <span class="nf">OnPropertyChanged</span><span class="p">(</span><span class="s">"ComputedHash"</span><span class="p">);</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-        <span class="err">#</span><span class="n">endregion</span>
+    public string ComputedHash
+    {
+        get { return computedHash; }
+        set
+        {
+            computedHash = value;
+            OnPropertyChanged("ComputedHash");
+        }
+    }
+    #endregion
 
-        <span class="err">#</span><span class="n">region</span> <span class="n">Commands</span>
-        <span class="k">public</span> <span class="n">ICommand</span> <span class="n">ComputeHashCommand</span>
-        <span class="p">{</span>
-            <span class="k">get</span>
-            <span class="p">{</span>
-                <span class="k">if</span> <span class="p">(</span><span class="n">computeHashCommand</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
-                <span class="p">{</span>
-                    <span class="n">computeHashCommand</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">DelegateCommand</span><span class="p">(</span><span class="n">ComputeHash</span><span class="p">,</span> <span class="n">CanComputeHash</span><span class="p">);</span>
-                <span class="p">}</span>
-                <span class="k">return</span> <span class="n">computeHashCommand</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
+    #region Commands
+    public ICommand ComputeHashCommand
+    {
+        get
+        {
+            if (computeHashCommand == null)
+            {
+                computeHashCommand = new DelegateCommand(ComputeHash, CanComputeHash);
+            }
+            return computeHashCommand;
+        }
+    }
 
-        <span class="k">private</span> <span class="kt">bool</span> <span class="nf">CanComputeHash</span><span class="p">()</span>
-        <span class="p">{</span>
-            <span class="k">if</span> <span class="p">(!</span><span class="kt">string</span><span class="p">.</span><span class="nf">IsNullOrEmpty</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">PlainText</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="p">!</span><span class="kt">string</span><span class="p">.</span><span class="nf">IsNullOrEmpty</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">Salt</span><span class="p">))</span>
-                <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
-            <span class="k">else</span>
-                <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
-        <span class="p">}</span>
+    private bool CanComputeHash()
+    {
+        if (!string.IsNullOrEmpty(this.PlainText) &amp;&amp; !string.IsNullOrEmpty(this.Salt))
+            return true;
+        else
+            return false;
+    }
 
-        <span class="k">private</span> <span class="k">void</span> <span class="nf">ComputeHash</span><span class="p">()</span>
-        <span class="p">{</span>
-            <span class="n">hashing</span><span class="p">.</span><span class="nf">ComputingResult</span><span class="p">();</span>
-            <span class="n">ComputedHash</span> <span class="p">=</span> <span class="n">Result</span><span class="p">;</span>
-        <span class="p">}</span>
+    private void ComputeHash()
+    {
+        hashing.ComputingResult();
+        ComputedHash = Result;
+    }
 
-        <span class="k">public</span> <span class="n">ICommand</span> <span class="n">ClearTextBoxCommand</span>
-        <span class="p">{</span>
-            <span class="k">get</span>
-            <span class="p">{</span>
-                <span class="k">if</span> <span class="p">(</span><span class="n">clearTextBoxCommand</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
-                <span class="p">{</span>
-                    <span class="n">clearTextBoxCommand</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">DelegateCommand</span><span class="p">(</span><span class="n">ClearTextBox</span><span class="p">);</span>
-                <span class="p">}</span>
-                <span class="k">return</span> <span class="n">clearTextBoxCommand</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
+    public ICommand ClearTextBoxCommand
+    {
+        get
+        {
+            if (clearTextBoxCommand == null)
+            {
+                clearTextBoxCommand = new DelegateCommand(ClearTextBox);
+            }
+            return clearTextBoxCommand;
+        }
+    }
 
-        <span class="k">private</span> <span class="k">void</span> <span class="nf">ClearTextBox</span><span class="p">()</span>
-        <span class="p">{</span>
-            <span class="k">this</span><span class="p">.</span><span class="n">PlainText</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
-            <span class="nf">OnPropertyChanged</span><span class="p">(</span><span class="s">"PlainText"</span><span class="p">);</span>
+    private void ClearTextBox()
+    {
+        this.PlainText = string.Empty;
+        OnPropertyChanged("PlainText");
 
-            <span class="k">this</span><span class="p">.</span><span class="n">Salt</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
-            <span class="nf">OnPropertyChanged</span><span class="p">(</span><span class="s">"Salt"</span><span class="p">);</span>
+        this.Salt = string.Empty;
+        OnPropertyChanged("Salt");
 
-            <span class="k">this</span><span class="p">.</span><span class="n">ComputedHash</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="err">#</span><span class="n">endregion</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+        this.ComputedHash = string.Empty;
+    }
+    #endregion
+} } ```
 </code></pre>
 </div>
 
@@ -444,122 +444,117 @@
 
 <p>The Model and <code class="highlighter-rouge">ICommand</code> interface helper class are using different classes and namespaces. So, I need to include them like this in <code class="highlighter-rouge">HashingViewModel.cs</code>:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">using</span> <span class="nn">SimpleOneWayHashing.Commands</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">SimpleOneWayHashing.Models</span><span class="p">;</span>
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">csharp
+using SimpleOneWayHashing.Commands;
+using SimpleOneWayHashing.Models;
+</code></p>
 
 <p>Overall, this is the code structure inside <code class="highlighter-rouge">HashingViewModel.cs</code>:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Windows.Input</span><span class="p">;</span>
+<p>```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;</p>
 
-<span class="k">using</span> <span class="nn">SimpleOneWayHashing.Commands</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">SimpleOneWayHashing.Models</span><span class="p">;</span>
+<p>using SimpleOneWayHashing.Commands;
+using SimpleOneWayHashing.Models;</p>
 
-<span class="k">namespace</span> <span class="nn">SimpleOneWayHashing.ViewModels</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">class</span> <span class="nc">HashingViewModel</span> <span class="p">:</span> <span class="n">ViewModelBase</span>
-    <span class="p">{</span>
-        <span class="c1">// Private Members
-</span>
-        <span class="c1">// Constructor
-</span>
-        <span class="c1">// Public Properties
-</span>
-        <span class="c1">// Commands
-</span>    <span class="p">}</span>
-<span class="p">}</span>
+<p>namespace SimpleOneWayHashing.ViewModels
+{
+    public class HashingViewModel : ViewModelBase
+    {
+        // Private Members</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    // Constructor
+
+    // Public Properties
+
+    // Commands
+} } ```
 </code></pre>
 </div>
 
 <h4 id="next-is-the-view">Next is the View</h4>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>    ├── Views
+<p><code class="highlighter-rouge">
+    ├── Views
     |   └── HasherView.xaml
     |       └── HasherView.xaml.cs
-</code></pre>
-</div>
+</code></p>
 
 <p>For this project, I just have one View file only <code class="highlighter-rouge">HasherView.xaml</code>. This is usually our <strong>MainWindow.xaml</strong>. OK, I don’t use <code class="highlighter-rouge">DataTemplate</code> here. Here’s how the XAML code looked like inside <code class="highlighter-rouge">HasherView.xaml</code>:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;Window</span> <span class="na">x:Class=</span><span class="s">"SimpleOneWayHashing.Views.HasherView"</span>
-        <span class="na">xmlns=</span><span class="s">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span>
-        <span class="na">xmlns:x=</span><span class="s">"http://schemas.microsoft.com/winfx/2006/xaml"</span>
-        <span class="na">xmlns:local=</span><span class="s">"clr-namespace:SimpleOneWayHashing.ViewModels"</span>
-        <span class="na">WindowStartupLocation=</span><span class="s">"CenterScreen"</span>
-        <span class="na">Title=</span><span class="s">"{Binding HashingTitle}"</span> <span class="na">Height=</span><span class="s">"400"</span> <span class="na">Width=</span><span class="s">"400"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;Grid&gt;</span>
-        <span class="nt">&lt;StackPanel</span> <span class="na">Orientation=</span><span class="s">"Vertical"</span> <span class="na">Margin=</span><span class="s">"10"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;TextBlock</span> <span class="na">Text=</span><span class="s">"Enter your plain password:"</span><span class="nt">/&gt;</span>
-            <span class="nt">&lt;TextBox</span> <span class="na">x:Name=</span><span class="s">"PlainText"</span> <span class="na">Height=</span><span class="s">"Auto"</span> <span class="na">HorizontalAlignment=</span><span class="s">"Stretch"</span> <span class="na">Text=</span><span class="s">"{Binding Path=PlainText, UpdateSourceTrigger=PropertyChanged}"</span><span class="nt">/&gt;</span>
-            <span class="nt">&lt;TextBlock</span> <span class="na">Text=</span><span class="s">"Enter your password salt (anything, whatever):"</span> <span class="na">Margin=</span><span class="s">"0,10,0,0"</span><span class="nt">/&gt;</span>
-            <span class="nt">&lt;TextBox</span> <span class="na">x:Name=</span><span class="s">"Salt"</span> <span class="na">Height=</span><span class="s">"Auto"</span> <span class="na">HorizontalAlignment=</span><span class="s">"Stretch"</span> <span class="na">Text=</span><span class="s">"{Binding Path=Salt, UpdateSourceTrigger=PropertyChanged}"</span><span class="nt">/&gt;</span>
-            <span class="nt">&lt;Grid</span> <span class="na">Margin=</span><span class="s">"0,10,0,0"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;Grid.ColumnDefinitions&gt;</span>
-                    <span class="nt">&lt;ColumnDefinition</span> <span class="na">Width=</span><span class="s">"*"</span><span class="nt">/&gt;</span>
-                    <span class="nt">&lt;ColumnDefinition</span> <span class="na">Width=</span><span class="s">"*"</span><span class="nt">/&gt;</span>
-                <span class="nt">&lt;/Grid.ColumnDefinitions&gt;</span>
-                <span class="nt">&lt;Button</span> <span class="na">Content=</span><span class="s">"Get Hash"</span> <span class="na">Grid.Column=</span><span class="s">"0"</span> <span class="na">Command=</span><span class="s">"{Binding Path=ComputeHashCommand}"</span><span class="nt">/&gt;</span>
-                <span class="nt">&lt;Button</span> <span class="na">Content=</span><span class="s">"Clear TextBox"</span> <span class="na">Grid.Column=</span><span class="s">"1"</span> <span class="na">Command=</span><span class="s">"{Binding Path=ClearTextBoxCommand}"</span><span class="nt">/&gt;</span>
-            <span class="nt">&lt;/Grid&gt;</span>
-            <span class="nt">&lt;TextBlock</span> <span class="na">Text=</span><span class="s">"Hashed String:"</span> <span class="na">Margin=</span><span class="s">"0,10,0,0"</span><span class="nt">/&gt;</span>
-            <span class="nt">&lt;TextBox</span> <span class="na">x:Name=</span><span class="s">"HashedString"</span> <span class="na">Height=</span><span class="s">"Auto"</span> <span class="na">HorizontalAlignment=</span><span class="s">"Stretch"</span> <span class="na">Text=</span><span class="s">"{Binding Path=ComputedHash, Mode=OneWay}"</span> <span class="na">IsReadOnly=</span><span class="s">"True"</span><span class="nt">/&gt;</span>
-            <span class="nt">&lt;GroupBox</span> <span class="na">Header=</span><span class="s">"Information"</span> <span class="na">Margin=</span><span class="s">"0,10,0,0"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;TextBlock</span> <span class="na">TextWrapping=</span><span class="s">"Wrap"</span> <span class="na">Margin=</span><span class="s">"5"</span><span class="nt">&gt;</span>
+<p>```xml</p>
+<window x:class="SimpleOneWayHashing.Views.HasherView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:SimpleOneWayHashing.ViewModels" windowstartuplocation="CenterScreen" title="{Binding HashingTitle}" height="400" width="400">
+    <grid>
+        <stackpanel orientation="Vertical" margin="10">
+            <textblock text="Enter your plain password:" />
+            <textbox x:name="PlainText" height="Auto" horizontalalignment="Stretch" text="{Binding Path=PlainText, UpdateSourceTrigger=PropertyChanged}" />
+            <textblock text="Enter your password salt (anything, whatever):" margin="0,10,0,0" />
+            <textbox x:name="Salt" height="Auto" horizontalalignment="Stretch" text="{Binding Path=Salt, UpdateSourceTrigger=PropertyChanged}" />
+            <grid margin="0,10,0,0">
+                <grid.columndefinitions>
+                    <columndefinition width="*" />
+                    <columndefinition width="*" />
+                </grid.columndefinitions>
+                <button content="Get Hash" grid.column="0" command="{Binding Path=ComputeHashCommand}" />
+                <button content="Clear TextBox" grid.column="1" command="{Binding Path=ClearTextBoxCommand}" />
+            </grid>
+            <textblock text="Hashed String:" margin="0,10,0,0" />
+            <textbox x:name="HashedString" height="Auto" horizontalalignment="Stretch" text="{Binding Path=ComputedHash, Mode=OneWay}" isreadonly="True" />
+            <groupbox header="Information" margin="0,10,0,0">
+                <textblock textwrapping="Wrap" margin="5">
                     This is a sample of MVVM-based WPF application with a simple algorithm to generate a very strong one-way password hashing.
-                <span class="nt">&lt;/TextBlock&gt;</span>
-            <span class="nt">&lt;/GroupBox&gt;</span>
-        <span class="nt">&lt;/StackPanel&gt;</span>
-    <span class="nt">&lt;/Grid&gt;</span>
-<span class="nt">&lt;/Window&gt;</span>
-</code></pre>
-</div>
+                </textblock>
+            </groupbox>
+        </stackpanel>
+    </grid>
+</window>
+<p>```</p>
 
 <p>As can be seen there I used “Binding” to bind with the Model and ViewModel. Below is how the <strong>untouched</strong> code-behind of <code class="highlighter-rouge">HasherView.xaml.cs</code> looked like:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Windows</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Windows.Controls</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Windows.Data</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Windows.Documents</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Windows.Input</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Windows.Media</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Windows.Media.Imaging</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Windows.Shapes</span><span class="p">;</span>
+<p>```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;</p>
 
-<span class="k">namespace</span> <span class="nn">SimpleOneWayHashing.Views</span>
-<span class="p">{</span>
-    <span class="c1">/// &lt;summary&gt;
-</span>    <span class="c1">/// Interaction logic for HasherView.xaml
-</span>    <span class="c1">/// &lt;/summary&gt;
-</span>    <span class="k">public</span> <span class="k">partial</span> <span class="k">class</span> <span class="nc">HasherView</span> <span class="p">:</span> <span class="n">Window</span>
-    <span class="p">{</span>
-        <span class="k">public</span> <span class="nf">HasherView</span><span class="p">()</span>
-        <span class="p">{</span>
-            <span class="nf">InitializeComponent</span><span class="p">();</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<p>namespace SimpleOneWayHashing.Views
+{
+    /// &lt;summary&gt;
+    /// Interaction logic for HasherView.xaml
+    /// &lt;/summary&gt;
+    public partial class HasherView : Window
+    {
+        public HasherView()
+        {
+            InitializeComponent();
+        }
+    }
+}
+```</p>
 
 <h4 id="icommand-interface-helper-class">ICommand interface helper class</h4>
 
 <p>There is another new class here called <code class="highlighter-rouge">DelegateCommand</code>, basically inherits from <code class="highlighter-rouge">ICommand</code> interface. This helper class is essential for MVVM to work. It’s a command that is meant to be executed by other classes to run code in this class by invoking delegates. Some people may called it the <strong>RelayCommand</strong>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>    ├── Commands
+<p><code class="highlighter-rouge">
+    ├── Commands
     |   ├── CommandReference.cs
     |   └── DelegateCommand.cs
-</code></pre>
-</div>
+</code></p>
 
 <p>Inside this “Password Hashing Tool” project, there are two files in the <strong>Commands</strong> folder; <a href="https://github.com/heiswayi/SimpleOneWayHashing/blob/master/Commands/CommandReference.cs">CommandReference.cs</a> and <a href="https://github.com/heiswayi/SimpleOneWayHashing/blob/master/Commands/DelegateCommand.cs">DeletegateCommand.cs</a>. The source code of both helper classes are well-documented, self-explainable and easily reusable for your MVVM project as well.</p>
 
@@ -567,58 +562,55 @@
 
 <p>This is usually known as <code class="highlighter-rouge">App.xaml</code> file. Since my project has <strong>Themes</strong> folder where it contains the XAML theme files, so this is how I created the resources inside <code class="highlighter-rouge">App.xaml</code>:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;Application</span> <span class="na">x:Class=</span><span class="s">"SimpleOneWayHashing.App"</span>
-             <span class="na">xmlns=</span><span class="s">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span>
-             <span class="na">xmlns:x=</span><span class="s">"http://schemas.microsoft.com/winfx/2006/xaml"</span>
-             <span class="na">Startup=</span><span class="s">"Application_Startup"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;Application.Resources&gt;</span>
-        <span class="nt">&lt;ResourceDictionary&gt;</span>
-            <span class="nt">&lt;ResourceDictionary.MergedDictionaries&gt;</span>
-                <span class="nt">&lt;ResourceDictionary</span> <span class="na">Source=</span><span class="s">"Themes/Metro/Metro.MSControls.Core.Implicit.xaml"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;ResourceDictionary</span> <span class="na">Source=</span><span class="s">"Themes/Metro/Metro.MSControls.Toolkit.Implicit.xaml"</span> <span class="nt">/&gt;</span>
-            <span class="nt">&lt;/ResourceDictionary.MergedDictionaries&gt;</span>
-        <span class="nt">&lt;/ResourceDictionary&gt;</span>
-    <span class="nt">&lt;/Application.Resources&gt;</span>
-<span class="nt">&lt;/Application&gt;</span>
-</code></pre>
-</div>
+<p>```xml</p>
+<application x:class="SimpleOneWayHashing.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" startup="Application_Startup">
+    <application.resources>
+        <resourcedictionary>
+            <resourcedictionary.mergeddictionaries>
+                <resourcedictionary source="Themes/Metro/Metro.MSControls.Core.Implicit.xaml" />
+                <resourcedictionary source="Themes/Metro/Metro.MSControls.Toolkit.Implicit.xaml" />
+            </resourcedictionary.mergeddictionaries>
+        </resourcedictionary>
+    </application.resources>
+</application>
+<p>```</p>
 
 <p>But, to start the application, this is the code snippet I used which can be found in the code-behind of the startup file: <code class="highlighter-rouge">App.xaml.cs</code>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">Views</span><span class="p">.</span><span class="n">HasherView</span> <span class="n">view</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Views</span><span class="p">.</span><span class="nf">HasherView</span><span class="p">();</span>
-<span class="n">view</span><span class="p">.</span><span class="n">DataContext</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ViewModels</span><span class="p">.</span><span class="nf">HashingViewModel</span><span class="p">();</span>
-<span class="n">view</span><span class="p">.</span><span class="nf">Show</span><span class="p">();</span>
-</code></pre>
-</div>
+<p><code class="highlighter-rouge">csharp
+Views.HasherView view = new Views.HasherView();
+view.DataContext = new ViewModels.HashingViewModel();
+view.Show();
+</code></p>
 
 <p>This is how overall code looked like in <code class="highlighter-rouge">App.xaml.cs</code> file:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Configuration</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Data</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Windows</span><span class="p">;</span>
+<p>```csharp
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows;</p>
 
-<span class="k">namespace</span> <span class="nn">SimpleOneWayHashing</span>
-<span class="p">{</span>
-    <span class="c1">/// &lt;summary&gt;
-</span>    <span class="c1">/// Interaction logic for App.xaml
-</span>    <span class="c1">/// &lt;/summary&gt;
-</span>    <span class="k">public</span> <span class="k">partial</span> <span class="k">class</span> <span class="nc">App</span> <span class="p">:</span> <span class="n">Application</span>
-    <span class="p">{</span>
-        <span class="k">private</span> <span class="k">void</span> <span class="nf">Application_Startup</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">StartupEventArgs</span> <span class="n">e</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="c1">// Create the ViewModel and expose it using the View's DataContext
-</span>            <span class="n">Views</span><span class="p">.</span><span class="n">HasherView</span> <span class="n">view</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Views</span><span class="p">.</span><span class="nf">HasherView</span><span class="p">();</span>
-            <span class="n">view</span><span class="p">.</span><span class="n">DataContext</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ViewModels</span><span class="p">.</span><span class="nf">HashingViewModel</span><span class="p">();</span>
-            <span class="n">view</span><span class="p">.</span><span class="nf">Show</span><span class="p">();</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+<p>namespace SimpleOneWayHashing
+{
+    /// &lt;summary&gt;
+    /// Interaction logic for App.xaml
+    /// &lt;/summary&gt;
+    public partial class App : Application
+    {
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            // Create the ViewModel and expose it using the View’s DataContext
+            Views.HasherView view = new Views.HasherView();
+            view.DataContext = new ViewModels.HashingViewModel();
+            view.Show();
+        }
+    }
+}
+```</p>
 
 <h3 id="conclusion">Conclusion</h3>
 

@@ -138,58 +138,60 @@
 
 <p><strong>minified.css.php</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nb">header</span><span class="p">(</span><span class="s1">'Content-type: text/css'</span><span class="p">);</span>
-<span class="nb">ob_start</span><span class="p">(</span><span class="s2">"compress"</span><span class="p">);</span>
+<p>```php
+&lt;?php
+header(‘Content-type: text/css’);
+ob_start(“compress”);</p>
 
-  <span class="k">function</span> <span class="nf">compress</span><span class="p">(</span><span class="nv">$buffer</span><span class="p">)</span> <span class="p">{</span>
-    <span class="cm">/* remove comments */</span>
-      <span class="nv">$buffer</span> <span class="o">=</span> <span class="nb">preg_replace</span><span class="p">(</span><span class="s1">'!/\*[^*]*\*+([^/][^*]*\*+)*/!'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="nv">$buffer</span><span class="p">);</span>
+<p>function compress($buffer) {
+    /* remove comments <em>/
+      $buffer = preg_replace(‘!/*[^</em>]<em>*+([^/][^</em>]<em>*+)</em>/!’, ‘’, $buffer);</p>
 
-      <span class="cm">/* remove tabs, spaces, newlines, etc. */</span>
-      <span class="nv">$buffer</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s2">"</span><span class="se">\r\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\r</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s1">'  '</span><span class="p">,</span> <span class="s1">'    '</span><span class="p">,</span> <span class="s1">'    '</span><span class="p">),</span> <span class="s1">''</span><span class="p">,</span> <span class="nv">$buffer</span><span class="p">);</span>
+<div class="highlighter-rouge"><pre class="highlight"><code>  /* remove tabs, spaces, newlines, etc. */
+  $buffer = str_replace(array("\r\n", "\r", "\n", "\t", '  ', '    ', '    '), '', $buffer);
 
-      <span class="k">return</span> <span class="nv">$buffer</span><span class="p">;</span>
-  <span class="p">}</span>
-
-  <span class="cm">/* css files for compression */</span>
-  <span class="k">include</span><span class="p">(</span><span class="s1">'grid.css'</span><span class="p">);</span>
-  <span class="k">include</span><span class="p">(</span><span class="s1">'typography.css'</span><span class="p">);</span>
-  <span class="k">include</span><span class="p">(</span><span class="s1">'button.css'</span><span class="p">);</span>
-  <span class="k">include</span><span class="p">(</span><span class="s1">'form.css'</span><span class="p">);</span>
-  <span class="k">include</span><span class="p">(</span><span class="s1">'table.css'</span><span class="p">);</span>
-  <span class="k">include</span><span class="p">(</span><span class="s1">'backgrounds.css'</span><span class="p">);</span>
-  <span class="k">include</span><span class="p">(</span><span class="s1">'pagination.css'</span><span class="p">);</span>
-  <span class="k">include</span><span class="p">(</span><span class="s1">'breadcrumbs.css'</span><span class="p">);</span>
-  <span class="k">include</span><span class="p">(</span><span class="s1">'font.css'</span><span class="p">);</span>
-  <span class="k">include</span><span class="p">(</span><span class="s1">'helpers.css'</span><span class="p">);</span>
-  <span class="k">include</span><span class="p">(</span><span class="s1">'print.css'</span><span class="p">);</span>
-  <span class="k">include</span><span class="p">(</span><span class="s1">'animation.css'</span><span class="p">);</span>
-  <span class="k">include</span><span class="p">(</span><span class="s1">'responsive.css'</span><span class="p">);</span>
-
-<span class="nb">ob_end_flush</span><span class="p">();</span>
-<span class="cp">?&gt;</span>
+  return $buffer;   }
 </code></pre>
 </div>
+
+<p>/* css files for compression */
+  include(‘grid.css’);
+  include(‘typography.css’);
+  include(‘button.css’);
+  include(‘form.css’);
+  include(‘table.css’);
+  include(‘backgrounds.css’);
+  include(‘pagination.css’);
+  include(‘breadcrumbs.css’);
+  include(‘font.css’);
+  include(‘helpers.css’);
+  include(‘print.css’);
+  include(‘animation.css’);
+  include(‘responsive.css’);</p>
+
+<p>ob_end_flush();
+?&gt;
+```</p>
 
 <p>The PHP code above will include all those CSS files, minify them, and output itself as a functional CSS-compressed file.</p>
 
 <p>This is how we put <strong>minified.css.php</strong> file in our HTML <code class="highlighter-rouge">&lt;head&gt;</code> section:</p>
 
-<pre><code class="language-HTML">&lt;html lang="en"&gt;
-  &lt;head&gt;
-    &lt;title&gt;My Website&lt;/title&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;meta http-equiv="X-UA-Compatible" content="IE=9"&gt;
+<p>```HTML</p>
+<html lang="en">
+  <head>
+    <title>My Website</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
 
-    &lt;link href="assets/css/minified.css.php" rel="stylesheet"&gt;
+    <link href="assets/css/minified.css.php" rel="stylesheet" />
 
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;!-- website content --&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+  </head>
+  <body>
+    <!-- website content -->
+  </body>
+</html>
+<p>```</p>
 
 <p>Have a try and good luck!</p>
 

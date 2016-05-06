@@ -214,37 +214,37 @@
 
 <p>Here’s the batch script inside the <code class="highlighter-rouge">INSTALL64.BAT</code> file:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>@echo off
+<p>```
+@echo off</p>
 
-set TargetLocation=c:\IME\
+<p>set TargetLocation=c:\IME\
 set FolderToCopy=IMEInterX64
-set FileToCopy1=UNINSTALL64.BAT
+set FileToCopy1=UNINSTALL64.BAT</p>
 
+<p>echo.
+echo 1. Setup configuration data</p>
+
+<p>start “” /d “%~dp0%FolderToCopy%” “addconfigs.exe”</p>
+
+<p>echo #1 DONE
 echo.
-echo 1. Setup configuration data
+echo 2. Register assemblies</p>
 
-start "" /d "%~dp0%FolderToCopy%" "addconfigs.exe"
-
-echo #1 DONE
-echo.
-echo 2. Register assemblies
-
-SET AssemblyPath="%TargetLocation%%FolderToCopy%\IMEInterX2_SwAddin.dll"
+<p>SET AssemblyPath=”%TargetLocation%%FolderToCopy%\IMEInterX2_SwAddin.dll”
 set FMWK=Framework64
-IF EXIST "%Windir%\Microsoft.NET\%FMWK%\v4.0.30319" (set FMWKVersion=v4.0.30319) ELSE (set FMWKVersion=v2.0.50727)
+IF EXIST “%Windir%\Microsoft.NET\%FMWK%\v4.0.30319” (set FMWKVersion=v4.0.30319) ELSE (set FMWKVersion=v2.0.50727)
 echo Detected %FMWK% %FMWKVersion%
-echo Running command...
+echo Running command…
 @ECHO ON
-"%Windir%\Microsoft.NET\%FMWK%\%FMWKVersion%\regasm" /codebase %AssemblyPath%
-@ECHO OFF
+“%Windir%\Microsoft.NET\%FMWK%\%FMWKVersion%\regasm” /codebase %AssemblyPath%
+@ECHO OFF</p>
 
-echo #2 DONE
+<p>echo #2 DONE</p>
 
-echo.
+<p>echo.
 echo INSTALLATION COMPLETE
 pause
-</code></pre>
-</div>
+```</p>
 
 <blockquote>
   <p><code class="highlighter-rouge">addconfigs.exe</code> is a mini program to create and load configuration data into Windows Registry.</p>
