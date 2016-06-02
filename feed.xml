@@ -5,19 +5,19 @@
     <description>1+1=3 is always TRUE in my world, a balance between binary and reality.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 02 Jun 2016 16:38:13 +0000</pubDate>
-    <lastBuildDate>Thu, 02 Jun 2016 16:38:13 +0000</lastBuildDate>
+    <pubDate>Thu, 02 Jun 2016 16:44:43 +0000</pubDate>
+    <lastBuildDate>Thu, 02 Jun 2016 16:44:43 +0000</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
         <title>C# Common Practices</title>
         <description>&lt;p&gt;This article may not be as unique as you are expected to be. Because out there, if you’re friendly enough with Mr. Google, you will find something more similar to this article. Even so, I still want to note this as a reminder to myself whenever I do programming in C#, and also might help or as a common guideline to the new C# developers.&lt;/p&gt;
 
-&lt;p&gt;P/S: These are based on my experiences working as a C# Developer, developing awesome .NET software with awesome teammates in an awesome company.&lt;/p&gt;
-
 &lt;h3 id=&quot;use-of-proper-naming-conventions&quot;&gt;Use of Proper Naming Conventions&lt;/h3&gt;
 
 &lt;p&gt;Use of proper naming conventions ensure you an easy way to maintain your code, especially when the software is big or has thousand lines of code.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Always use Camel case or Pascal when declaring variables/properties.&lt;/p&gt;
@@ -47,6 +47,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;Use all uppercase when declaring constant variables.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -58,11 +60,15 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;Never use a name that begins with a numeric character.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;1Person&lt;/code&gt;, you can define as &lt;code class=&quot;highlighter-rouge&quot;&gt;OnePerson&lt;/code&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Always use meaningful names for class, property, method, variable, etc. Make it easily understandable. Good code is self-documented.&lt;/p&gt;
@@ -70,11 +76,15 @@
 
 &lt;p&gt;Example: Instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;Meas&lt;/code&gt; class name, best to put in a complete term as &lt;code class=&quot;highlighter-rouge&quot;&gt;Measurement&lt;/code&gt;.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;If you can, just avoid adding prefixes or suffixes for your identifiers. However, this is subjective/optional depending on your organization coding practices.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;As far as I know, it’s not that much useful to add prefix like &lt;code class=&quot;highlighter-rouge&quot;&gt;m_&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt; to your variable declaration. But if you still want to use it, that’s okay for me if you think by adding those prefixes will help your code looks much more readable in recognizing the variable of &lt;code class=&quot;highlighter-rouge&quot;&gt;private&lt;/code&gt; members.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Always use &lt;code class=&quot;highlighter-rouge&quot;&gt;I&lt;/code&gt; as a prefix for Interface. This is a common practice for declaring interfaces.&lt;/p&gt;
@@ -105,6 +115,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;Always add &lt;code class=&quot;highlighter-rouge&quot;&gt;Exception&lt;/code&gt; as suffix for your custom exception class. This will give better visibility to your exception class.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -117,6 +129,8 @@
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Never prefix or suffix the class name to its property names.&lt;/p&gt;
@@ -139,6 +153,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;Recommended to use prefix like &lt;code class=&quot;highlighter-rouge&quot;&gt;Is&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Has&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;Can&lt;/code&gt; for Boolean properties, e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;IsVisible&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;HasChildren&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;CanExecute&lt;/code&gt;. These will give proper meaning to the properties.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -146,6 +162,8 @@
 &lt;p&gt;Remember, good code is self-documented.&lt;/p&gt;
 
 &lt;h3 id=&quot;other-proper-practices&quot;&gt;Other Proper Practices&lt;/h3&gt;
+
+&lt;hr /&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Use Nullable Data Types whenever required.&lt;/p&gt;
@@ -157,6 +175,8 @@
 &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Nullable data type declaration
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Use runtime constants over compile time constants.&lt;/p&gt;
@@ -172,6 +192,8 @@
 &lt;/div&gt;
 
 &lt;p&gt;So, what is the need to prefer &lt;code class=&quot;highlighter-rouge&quot;&gt;readonly&lt;/code&gt; over &lt;code class=&quot;highlighter-rouge&quot;&gt;const&lt;/code&gt; variables? Compile time constants (&lt;code class=&quot;highlighter-rouge&quot;&gt;const&lt;/code&gt;) must be initialized at the time of declaration and can’t be changed later. Also, they are limited to only numbers and strings. The IL replaces the &lt;code class=&quot;highlighter-rouge&quot;&gt;const&lt;/code&gt; variable with the value of it over the whole code and thus it is a bit faster. Whereas, the Runtime constants (&lt;code class=&quot;highlighter-rouge&quot;&gt;readonly&lt;/code&gt;) are initialized in the constructor and can be changed at different initialization time. The IL references the &lt;code class=&quot;highlighter-rouge&quot;&gt;readonly&lt;/code&gt; variable and not the original value. So, when you have some critical situation, use &lt;code class=&quot;highlighter-rouge&quot;&gt;const&lt;/code&gt; to make the code run faster. When you need a reliable code, always prefer &lt;code class=&quot;highlighter-rouge&quot;&gt;readonly&lt;/code&gt; variables.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Use “is” and “as” operators while casting.&lt;/p&gt;
@@ -205,11 +227,15 @@
 
 &lt;p&gt;In the code above, I do the checking before converting it to the right type. If it is unable to convert, it will return as &lt;code class=&quot;highlighter-rouge&quot;&gt;null&lt;/code&gt; but will not throw any exception. So, from here we can check whether the converted value is &lt;code class=&quot;highlighter-rouge&quot;&gt;null&lt;/code&gt;.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;Use string.Format() or StringBuilder for string concatenation.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;It’s because of better memory management! &lt;code class=&quot;highlighter-rouge&quot;&gt;string.Format()&lt;/code&gt; will not create multiple objects and &lt;code class=&quot;highlighter-rouge&quot;&gt;StringBuilder&lt;/code&gt; is an immutable object which will not create separate memory for each operation.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Use Conditional Attributes when necessary.&lt;/p&gt;
@@ -240,6 +266,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;Use “0” (zero) as Default Value for Enum Value Types.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -264,11 +292,15 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;Always prefer the foreach(…) loop.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;foreach&lt;/code&gt; statement is a variation of &lt;code class=&quot;highlighter-rouge&quot;&gt;do&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;while&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt; loops. The best iteration code generation. The advantage is while looping through the Single Dimensional or Multi Dimensional array, you don’t have to write multiline &lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt; statements. The compiler internally will generate that code. Thus, increases your productivity.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Properly utilize try-catch-finally blocks.&lt;/p&gt;
@@ -304,11 +336,15 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;hr /&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;Catch only Exception that you can handle.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;People always use the generic &lt;code class=&quot;highlighter-rouge&quot;&gt;Exception&lt;/code&gt; class to catch any exception which neither good for your app nor for the system performance. You may use this generic &lt;code class=&quot;highlighter-rouge&quot;&gt;Exception&lt;/code&gt; to catch for unknown exceptions. If you know that you code might throwing &lt;code class=&quot;highlighter-rouge&quot;&gt;NullReferenceException&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;ArgumentException&lt;/code&gt;, use it specifically in order to easily handle the problem.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Use IDisposable interface.&lt;/p&gt;
@@ -356,6 +392,8 @@
 &lt;/div&gt;
 
 &lt;p&gt;If you’re using &lt;code class=&quot;highlighter-rouge&quot;&gt;using(...) { ... }&lt;/code&gt; block, it will call the &lt;code class=&quot;highlighter-rouge&quot;&gt;Dispose()&lt;/code&gt; method automatically to free up the class resources. You will not have to call the &lt;code class=&quot;highlighter-rouge&quot;&gt;Dispose()&lt;/code&gt; explicitly for the class.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Split you logic in several small and simple methods.&lt;/p&gt;

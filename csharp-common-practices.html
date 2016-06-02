@@ -130,11 +130,11 @@
 
   <p>This article may not be as unique as you are expected to be. Because out there, if you’re friendly enough with Mr. Google, you will find something more similar to this article. Even so, I still want to note this as a reminder to myself whenever I do programming in C#, and also might help or as a common guideline to the new C# developers.</p>
 
-<p>P/S: These are based on my experiences working as a C# Developer, developing awesome .NET software with awesome teammates in an awesome company.</p>
-
 <h3 id="use-of-proper-naming-conventions">Use of Proper Naming Conventions</h3>
 
 <p>Use of proper naming conventions ensure you an easy way to maintain your code, especially when the software is big or has thousand lines of code.</p>
+
+<hr />
 
 <blockquote>
   <p>Always use Camel case or Pascal when declaring variables/properties.</p>
@@ -164,6 +164,8 @@
 </code></pre>
 </div>
 
+<hr />
+
 <blockquote>
   <p>Use all uppercase when declaring constant variables.</p>
 </blockquote>
@@ -175,11 +177,15 @@
 </code></pre>
 </div>
 
+<hr />
+
 <blockquote>
   <p>Never use a name that begins with a numeric character.</p>
 </blockquote>
 
 <p>Instead of <code class="highlighter-rouge">1Person</code>, you can define as <code class="highlighter-rouge">OnePerson</code>.</p>
+
+<hr />
 
 <blockquote>
   <p>Always use meaningful names for class, property, method, variable, etc. Make it easily understandable. Good code is self-documented.</p>
@@ -187,11 +193,15 @@
 
 <p>Example: Instead of <code class="highlighter-rouge">Meas</code> class name, best to put in a complete term as <code class="highlighter-rouge">Measurement</code>.</p>
 
+<hr />
+
 <blockquote>
   <p>If you can, just avoid adding prefixes or suffixes for your identifiers. However, this is subjective/optional depending on your organization coding practices.</p>
 </blockquote>
 
 <p>As far as I know, it’s not that much useful to add prefix like <code class="highlighter-rouge">m_</code> or <code class="highlighter-rouge">_</code> to your variable declaration. But if you still want to use it, that’s okay for me if you think by adding those prefixes will help your code looks much more readable in recognizing the variable of <code class="highlighter-rouge">private</code> members.</p>
+
+<hr />
 
 <blockquote>
   <p>Always use <code class="highlighter-rouge">I</code> as a prefix for Interface. This is a common practice for declaring interfaces.</p>
@@ -222,6 +232,8 @@
 </code></pre>
 </div>
 
+<hr />
+
 <blockquote>
   <p>Always add <code class="highlighter-rouge">Exception</code> as suffix for your custom exception class. This will give better visibility to your exception class.</p>
 </blockquote>
@@ -234,6 +246,8 @@
 </span><span class="p">}</span>
 </code></pre>
 </div>
+
+<hr />
 
 <blockquote>
   <p>Never prefix or suffix the class name to its property names.</p>
@@ -256,6 +270,8 @@
 </code></pre>
 </div>
 
+<hr />
+
 <blockquote>
   <p>Recommended to use prefix like <code class="highlighter-rouge">Is</code>, <code class="highlighter-rouge">Has</code> or <code class="highlighter-rouge">Can</code> for Boolean properties, e.g. <code class="highlighter-rouge">IsVisible</code>, <code class="highlighter-rouge">HasChildren</code>, <code class="highlighter-rouge">CanExecute</code>. These will give proper meaning to the properties.</p>
 </blockquote>
@@ -263,6 +279,8 @@
 <p>Remember, good code is self-documented.</p>
 
 <h3 id="other-proper-practices">Other Proper Practices</h3>
+
+<hr />
 
 <blockquote>
   <p>Use Nullable Data Types whenever required.</p>
@@ -274,6 +292,8 @@
 </span><span class="kt">int</span><span class="p">?</span> <span class="n">index</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span> <span class="c1">// Nullable data type declaration
 </span></code></pre>
 </div>
+
+<hr />
 
 <blockquote>
   <p>Use runtime constants over compile time constants.</p>
@@ -289,6 +309,8 @@
 </div>
 
 <p>So, what is the need to prefer <code class="highlighter-rouge">readonly</code> over <code class="highlighter-rouge">const</code> variables? Compile time constants (<code class="highlighter-rouge">const</code>) must be initialized at the time of declaration and can’t be changed later. Also, they are limited to only numbers and strings. The IL replaces the <code class="highlighter-rouge">const</code> variable with the value of it over the whole code and thus it is a bit faster. Whereas, the Runtime constants (<code class="highlighter-rouge">readonly</code>) are initialized in the constructor and can be changed at different initialization time. The IL references the <code class="highlighter-rouge">readonly</code> variable and not the original value. So, when you have some critical situation, use <code class="highlighter-rouge">const</code> to make the code run faster. When you need a reliable code, always prefer <code class="highlighter-rouge">readonly</code> variables.</p>
+
+<hr />
 
 <blockquote>
   <p>Use “is” and “as” operators while casting.</p>
@@ -322,11 +344,15 @@
 
 <p>In the code above, I do the checking before converting it to the right type. If it is unable to convert, it will return as <code class="highlighter-rouge">null</code> but will not throw any exception. So, from here we can check whether the converted value is <code class="highlighter-rouge">null</code>.</p>
 
+<hr />
+
 <blockquote>
   <p>Use string.Format() or StringBuilder for string concatenation.</p>
 </blockquote>
 
 <p>It’s because of better memory management! <code class="highlighter-rouge">string.Format()</code> will not create multiple objects and <code class="highlighter-rouge">StringBuilder</code> is an immutable object which will not create separate memory for each operation.</p>
+
+<hr />
 
 <blockquote>
   <p>Use Conditional Attributes when necessary.</p>
@@ -357,6 +383,8 @@
 </code></pre>
 </div>
 
+<hr />
+
 <blockquote>
   <p>Use “0” (zero) as Default Value for Enum Value Types.</p>
 </blockquote>
@@ -381,11 +409,15 @@
 </code></pre>
 </div>
 
+<hr />
+
 <blockquote>
   <p>Always prefer the foreach(…) loop.</p>
 </blockquote>
 
 <p>The <code class="highlighter-rouge">foreach</code> statement is a variation of <code class="highlighter-rouge">do</code>, <code class="highlighter-rouge">while</code> or <code class="highlighter-rouge">for</code> loops. The best iteration code generation. The advantage is while looping through the Single Dimensional or Multi Dimensional array, you don’t have to write multiline <code class="highlighter-rouge">for</code> statements. The compiler internally will generate that code. Thus, increases your productivity.</p>
+
+<hr />
 
 <blockquote>
   <p>Properly utilize try-catch-finally blocks.</p>
@@ -421,11 +453,15 @@
 </code></pre>
 </div>
 
+<hr />
+
 <blockquote>
   <p>Catch only Exception that you can handle.</p>
 </blockquote>
 
 <p>People always use the generic <code class="highlighter-rouge">Exception</code> class to catch any exception which neither good for your app nor for the system performance. You may use this generic <code class="highlighter-rouge">Exception</code> to catch for unknown exceptions. If you know that you code might throwing <code class="highlighter-rouge">NullReferenceException</code> or <code class="highlighter-rouge">ArgumentException</code>, use it specifically in order to easily handle the problem.</p>
+
+<hr />
 
 <blockquote>
   <p>Use IDisposable interface.</p>
@@ -473,6 +509,8 @@
 </div>
 
 <p>If you’re using <code class="highlighter-rouge">using(...) { ... }</code> block, it will call the <code class="highlighter-rouge">Dispose()</code> method automatically to free up the class resources. You will not have to call the <code class="highlighter-rouge">Dispose()</code> explicitly for the class.</p>
+
+<hr />
 
 <blockquote>
   <p>Split you logic in several small and simple methods.</p>
