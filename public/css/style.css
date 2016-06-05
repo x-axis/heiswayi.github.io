@@ -158,6 +158,7 @@ pre {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     padding: 1rem;
+    max-height: 800px;
 }
 pre code {
     font-size: .7rem;
@@ -503,6 +504,9 @@ a.more-projects:hover {
         */
         padding: 10px;
         width: 47.5%;
+    }
+    pre {
+        max-height: 500px;
     }
 }
 @media only screen and (max-width : 400px) {
