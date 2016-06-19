@@ -1,3 +1,5 @@
-# Source Code
+# Attribution
+Design attribution to [heiswayi](https://github.com/heiswayi/heiswayi.github.io)
 
-https://github.com/heiswayi/heiswayi.github.io_jekyll_source
+# Source Code
+https://github.com/x-axis/heiswayi.github.io_jekyll_source
