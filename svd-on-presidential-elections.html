@@ -190,27 +190,23 @@
 
 <p>Import the ggplot library.</p>
 
-<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-<span class="k">namespace</span> <span class="nn">MultiThreading</span> <span class="p">{</span>
- <span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
- <span class="p">}</span>
- <span class="p">}</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">ggplot</span><span class="p">)</span>
+<div class="language-r highlighter-rouge"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">ggplot</span><span class="p">)</span>
 </code></pre>
 </div>
 
 <p>Import datasets.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>data &lt;- read.csv("complete_dataset.csv");
-A = t(df);			# Take the transpose 
-svd_A = prcomp(A);		# R uses the SVD method to perform PCA. 
-summary(svd_A);			# Output summary of SVD
-</code></pre>
+<div class="language-r highlighter-rouge"><pre class="highlight"><code><span class="n">data</span> <span class="o">&lt;-</span> <span class="n">read.csv</span><span class="p">(</span><span class="s2">"complete_dataset.csv"</span><span class="p">);</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">t</span><span class="p">(</span><span class="n">df</span><span class="p">);</span>			<span class="c1"># Take the transpose 
+</span><span class="n">svd_A</span> <span class="o">=</span> <span class="n">prcomp</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>		<span class="c1"># R uses the SVD method to perform PCA. 
+</span><span class="n">summary</span><span class="p">(</span><span class="n">svd_A</span><span class="p">);</span>			<span class="c1"># Output summary of SVD
+</span></code></pre>
 </div>
+
 <p>Function to draw a biplot in a pretty way.
 What about this method?</p>
 
-<figure class="highlight"><pre><code class="language-text" data-lang="text"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
 3
 4
@@ -226,23 +222,23 @@ What about this method?</p>
 14
 15
 16
-17</pre></td><td class="code"><pre>PCbiplot &lt;- function(PC, x="PC1", y="PC2") {
-	# Create new dataset of only first two principal components
-	data &lt;- data.frame(obsnames=row.names(PC$x), PC$x)
+17</pre></td><td class="code"><pre><span class="n">PCbiplot</span> <span class="o">&lt;-</span> <span class="k">function</span><span class="p">(</span><span class="n">PC</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">"PC1"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"PC2"</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1"># Create new dataset of only first two principal components
+</span>	<span class="n">data</span> <span class="o">&lt;-</span> <span class="n">data.frame</span><span class="p">(</span><span class="n">obsnames</span><span class="o">=</span><span class="n">row.names</span><span class="p">(</span><span class="n">PC</span><span class="o">$</span><span class="n">x</span><span class="p">),</span> <span class="n">PC</span><span class="o">$</span><span class="n">x</span><span class="p">)</span>
 	
-	# Plot the Presidential Outcomes (blue for Democrat, red for Republican)
-  plot &lt;- ggplot(data, aes_string(x=x, y=y)) 
-		+ geom_text(alpha=.4, size=4, aes(label=obsnames), 
-		  col=ifelse(
-				data$obsnames=="X2012" | 
-				data$obsnames=="X2008" | 
-				data$obsnames=="X1996" | 
-				data$obsnames=="X1992" | 
-				data$obsnames=="X1976", 
-				"blue", 
-				"red"
-				)
-			) <span class="w">
+	<span class="c1"># Plot the Presidential Outcomes (blue for Democrat, red for Republican)
+</span>  <span class="n">plot</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">aes_string</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">))</span> 
+		<span class="o">+</span> <span class="n">geom_text</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="m">.4</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="m">4</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="n">obsnames</span><span class="p">),</span> 
+		  <span class="n">col</span><span class="o">=</span><span class="n">ifelse</span><span class="p">(</span>
+				<span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X2012"</span> <span class="o">|</span> 
+				<span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X2008"</span> <span class="o">|</span> 
+				<span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X1996"</span> <span class="o">|</span> 
+				<span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X1992"</span> <span class="o">|</span> 
+				<span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X1976"</span><span class="p">,</span> 
+				<span class="s2">"blue"</span><span class="p">,</span> 
+				<span class="s2">"red"</span>
+				<span class="p">)</span>
+			<span class="p">)</span> <span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="analysis">Analysis</h3>
