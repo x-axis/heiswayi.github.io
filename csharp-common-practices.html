@@ -9,7 +9,7 @@
 
   <title>
     
-      C# Common Practices &middot; Heiswayi Nrird on Tech
+      C# Common Practices &middot; kg's log.
     
   </title>
 
@@ -20,8 +20,8 @@
   <meta name="author" content="Heiswayi Nrird">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@HeiswayiNrird">
-  <meta name="twitter:creator" content="@HeiswayiNrird">
+  <meta name="twitter:site" content="@keenangao">
+  <meta name="twitter:creator" content="@keenangao">
   
     <meta name="twitter:title" content="C# Common Practices">
     <meta name="twitter:description" content="Good coding practices make code looks professional and self-documented.">
@@ -93,8 +93,8 @@
       <div class="masthead">
         <div class="container">
           <h2 class="masthead-title">
-            <a href="/" title="Home">Heiswayi Nrird on Tech</a>
-            <small>Another Software Guy's Blog</small>
+            <a href="/" title="Home">kg's log.</a>
+            <small>What even is a tagline?</small>
           </h2>
 
           <div class="footer-social-links">
@@ -144,7 +144,7 @@
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Declaring variables using Camel case
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="c1">// Declaring variables using Camel case
 </span><span class="k">private</span> <span class="kt">double</span> <span class="n">numberOfSamples</span><span class="p">;</span>
 <span class="k">private</span> <span class="kt">int</span> <span class="n">primeNumber</span><span class="p">;</span>
 <span class="k">private</span> <span class="kt">object</span> <span class="n">myObject</span>
@@ -172,7 +172,7 @@
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">INVALID_VALUE</span> <span class="p">=</span> <span class="p">-</span><span class="m">1</span><span class="p">;</span>
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">INVALID_VALUE</span> <span class="p">=</span> <span class="p">-</span><span class="m">1</span><span class="p">;</span>
 <span class="k">public</span> <span class="k">const</span> <span class="kt">string</span> <span class="n">ERROR_MSG</span> <span class="p">=</span> <span class="s">"Application crashed. Please check the log file."</span>
 </code></pre>
 </div>
@@ -209,7 +209,7 @@
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">interface</span> <span class="n">IMyInterface</span>
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">interface</span> <span class="n">IMyInterface</span>
 <span class="p">{</span>
   <span class="k">void</span> <span class="nf">MethodToImplement</span><span class="p">();</span> <span class="c1">// Abstract method signature
 </span>  <span class="kt">double</span> <span class="n">MyProperties</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
@@ -240,7 +240,7 @@
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LoginException</span> <span class="p">:</span> <span class="n">System</span><span class="p">.</span><span class="n">exception</span>
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LoginException</span> <span class="p">:</span> <span class="n">System</span><span class="p">.</span><span class="n">exception</span>
 <span class="p">{</span>
   <span class="c1">// TODO stuffs here...
 </span><span class="p">}</span>
@@ -255,7 +255,7 @@
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">Person</span>
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">Person</span>
 <span class="p">{</span>
   <span class="k">public</span> <span class="kt">string</span> <span class="n">PersonFirstname</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="c1">// [❌] DON'T DO THIS
 </span>  <span class="k">public</span> <span class="kt">string</span> <span class="n">Firstname</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="c1">// [✓] DO THIS INSTEAD
@@ -286,7 +286,7 @@
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="n">index</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="c1">// Simple declaration of int
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="n">index</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="c1">// Simple declaration of int
 </span><span class="kt">int</span><span class="p">?</span> <span class="n">index</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span> <span class="c1">// Nullable data type declaration
 </span></code></pre>
 </div>
@@ -301,7 +301,7 @@
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">readonly</span> <span class="kt">string</span> <span class="n">LOG_FILENAME</span> <span class="p">=</span> <span class="s">"app.log"</span><span class="p">;</span> <span class="c1">// Runtime constants
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">readonly</span> <span class="kt">string</span> <span class="n">LOG_FILENAME</span> <span class="p">=</span> <span class="s">"app.log"</span><span class="p">;</span> <span class="c1">// Runtime constants
 </span><span class="k">public</span> <span class="k">const</span> <span class="kt">string</span> <span class="n">LOG_FILENAME</span> <span class="p">=</span> <span class="s">"app.log"</span><span class="p">;</span> <span class="c1">// Compile time constants
 </span></code></pre>
 </div>
@@ -318,13 +318,13 @@
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">var</span> <span class="n">employee</span> <span class="p">=</span> <span class="p">(</span><span class="n">Employee</span><span class="p">)</span><span class="n">person</span><span class="p">;</span>
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="n">var</span> <span class="n">employee</span> <span class="p">=</span> <span class="p">(</span><span class="n">Employee</span><span class="p">)</span><span class="n">person</span><span class="p">;</span>
 </code></pre>
 </div>
 
 <p>In the code above, suppose your person is a <code class="highlighter-rouge">Customer</code> type and when you’re converting it to <code class="highlighter-rouge">Employee</code> type, it will throw <code class="highlighter-rouge">Exception</code> and in that case, you have to handle it using <code class="highlighter-rouge">try-catch</code> block.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Check if the person is Employee type
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="c1">// Check if the person is Employee type
 </span><span class="k">if</span> <span class="p">(</span><span class="n">person</span> <span class="k">is</span> <span class="n">Employee</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="c1">// Convert person to Employee type
@@ -360,7 +360,7 @@
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">private</span> <span class="k">void</span> <span class="nf">printFirstname</span><span class="p">()</span>
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="k">private</span> <span class="k">void</span> <span class="nf">printFirstname</span><span class="p">()</span>
 <span class="p">{</span>
   <span class="kt">string</span> <span class="n">firstname</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
   <span class="err">#</span><span class="k">if</span> <span class="n">DEBUG</span>
@@ -389,7 +389,7 @@
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">enum</span> <span class="n">PersonType</span>
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">enum</span> <span class="n">PersonType</span>
 <span class="p">{</span>
   <span class="n">None</span> <span class="p">=</span> <span class="m">0</span><span class="p">,</span>
   <span class="n">Customer</span><span class="p">,</span>
@@ -425,7 +425,7 @@
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">void</span> <span class="nf">ReadFile</span><span class="p">(</span><span class="kt">int</span> <span class="n">index</span><span class="p">)</span>
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="k">void</span> <span class="nf">ReadFile</span><span class="p">(</span><span class="kt">int</span> <span class="n">index</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="c1">// To run this code, substitute a valid path from your local machine
 </span>  <span class="kt">string</span> <span class="n">path</span> <span class="p">=</span> <span class="s">@"c:\users\public\test.txt"</span><span class="p">;</span>
@@ -469,7 +469,7 @@
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">User</span> <span class="p">:</span> <span class="n">IDisposable</span>
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">User</span> <span class="p">:</span> <span class="n">IDisposable</span>
 <span class="p">{</span>
   <span class="k">public</span> <span class="kt">int</span> <span class="n">id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">protected</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
   <span class="k">public</span> <span class="kt">string</span> <span class="n">name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">protected</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
@@ -518,7 +518,7 @@
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Assuming I'm going to calculate the force due to
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="c1">// Assuming I'm going to calculate the force due to
 // gravitational acting on two bodies of mass A kg and B kg
 // separated by the distance X cm?
 //
@@ -558,8 +558,8 @@
 
 	  <div class="footer">
 	<div class="hrline"></div>
-	<div class="license">Unless otherwise stated, all original code presented on this site is licensed under the <a href="http://heiswayi.github.io/mit-license">MIT license</a>. All original photographs and text on this website are licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives</a> license. If you have any questions about using any of this material for commercial purposes, please <a href="https://github.com/heiswayi/ama">ask me here</a> or <a href="mailto:hnrird@gmail.com">write an email to me</a>.</div>
-	<div class="copyright">Made with <span style="color:#e00"><i class="fa fa-heart"></i></span> using <a href="http://jekyllrb.com">Jekyll</a> &middot; <i class="fa fa-code"></i> on <a href="https://github.com/heiswayi/heiswayi.github.io_jekyll_source">GitHub</a> <i class="fa fa-github-alt"></i><br>&copy; 2016 Heiswayi Nrird</div>
+	<div class="license">Unless otherwise stated, all original code presented on this site is licensed under the <a href="http://heiswayi.github.io/mit-license">MIT license</a>. All original photographs and text on this website are licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives</a> license. If you have any questions about using any of this material for commercial purposes, please <a href="https://github.com/heiswayi/ama">ask me here</a> or <a href="mailto:wendirful@gmail.com">write an email to me</a>.</div>
+	<div class="copyright">Made with <span style="color:#e00"><i class="fa fa-heart"></i></span> using <a href="http://jekyllrb.com">Jekyll</a> &middot; <i class="fa fa-code"></i> on <a href="https://github.com/heiswayi/heiswayi.github.io_jekyll_source">GitHub</a> <i class="fa fa-github-alt"></i><br>&copy; 2016 Keenan Gao</div>
 </div>
 
 <script>
@@ -578,7 +578,7 @@ $(window).load(function() {
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-58296043-7', 'auto');
+  ga('create', 'UA-79509497-1', 'auto');
   ga('send', 'pageview');
 </script>
 
