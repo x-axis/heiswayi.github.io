@@ -9,13 +9,13 @@
 
   <title>
     
-      The Plain &middot; ken's log.
+      Singular Value Decomposition on Presidential Elections &middot; ken's log.
     
   </title>
 
   
-    <meta name="description" content="A minimalist Jekyll theme that focuses on writing matters."/>
-    <meta name="keywords" content="minimalist, jekyll theme, personal blog">
+    <meta name="description" content="Analyzing voter demographics for past U.S. presidential elections from 1976 to 2012."/>
+    <meta name="keywords" content="svd, statistics, code">
   
   <meta name="author" content="Heiswayi Nrird">
 
@@ -23,16 +23,16 @@
   <meta name="twitter:site" content="@keenangao">
   <meta name="twitter:creator" content="@keenangao">
   
-    <meta name="twitter:title" content="The Plain">
-    <meta name="twitter:description" content="A minimalist Jekyll theme that focuses on writing matters.">
+    <meta name="twitter:title" content="Singular Value Decomposition on Presidential Elections">
+    <meta name="twitter:description" content="Analyzing voter demographics for past U.S. presidential elections from 1976 to 2012.">
   
 
   <meta property="og:type" content="website"/>
   
-    <meta property="og:title" content="The Plain"/>
-    <meta property="og:url" content="/the-plain.html"/>
-    <meta property="og:description" content="A minimalist Jekyll theme that focuses on writing matters."/>
-    <meta property="og:site_name" content="The Plain"/>
+    <meta property="og:title" content="Singular Value Decomposition on Presidential Elections"/>
+    <meta property="og:url" content="/svd-on-presidential-elections.html"/>
+    <meta property="og:description" content="Analyzing voter demographics for past U.S. presidential elections from 1976 to 2012."/>
+    <meta property="og:site_name" content="Singular Value Decomposition on Presidential Elections"/>
   
 
   <link rel="apple-touch-icon" sizes="57x57" href="/public/icons/apple-icon-57x57.png">
@@ -116,44 +116,136 @@
       <div class="container content">
         <div class="post">
   <div class="post-top-meta">
-    <div class="post-date">September 10, 2015 &middot; <span class="reading-time" title="Estimated Reading Time">
+    <div class="post-date">June 20, 2016 &middot; <span class="reading-time" title="Estimated Reading Time">
   
   
-    1 minute read
+    2 minutes read
   
 </span>
 </div>
-    <h1 class="post-title">The Plain</h1>
+    <h1 class="post-title">Singular Value Decomposition on Presidential Elections</h1>
   </div>
 
   <div class="hrline"></div>
 
-  <p>Introducing <strong>The Plain</strong>, a minimalist Jekyll theme that focues on writing matters. A great, white clean theme for personal blog use. Made with <a href="https://github.com/sass/sass">Sass</a> which automates the compression of the compiled CSS code, and cool <strong>Jekyll layout</strong> by <a href="http://jch.penibelst.de/">Anatol Broder</a> for compressing the HTML code on-the=fly. Typeface used is <a href="https://github.com/mozilla/Fira">Fira Sans font</a> by Mozilla.</p>
+  <p>We analyze the singular value decomposition of voter demographics for past United States presidential elections from 1976 to 2012. We aim to identify the demographics that have best predicted presidential election outcomes from the Carter presidency to the current Obama presidency.</p>
 
-<p><a href="http://heiswayi.github.io/the-plain/"><strong>Demo</strong></a> / <a href="https://github.com/heiswayi/the-plain">GitHub</a></p>
+<h3 id="data">Data</h3>
+<p>Unfortunately, I was unable to obtain a census of voter data from the U.S. Census Bureau. Instead, national exit polls from New York Times, CNN, Politico, and Gallup were aggregated into a raw data set. These polls captured 45 demographic groups which can be further grouped into 12 categories.</p>
 
-<h3 id="screenshot">Screenshot</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Ideology</th>
+      <th>Party</th>
+      <th>Gender</th>
+      <th>Married</th>
+      <th>Race</th>
+      <th>Religion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Liberals</td>
+      <td>Democrats</td>
+      <td>Men</td>
+      <td>Married</td>
+      <td>White</td>
+      <td>Protestant</td>
+    </tr>
+    <tr>
+      <td>Moderates</td>
+      <td>Republicans</td>
+      <td>Women</td>
+      <td>Unmarried</td>
+      <td>Black</td>
+      <td>Catholic</td>
+    </tr>
+    <tr>
+      <td>Conservatives</td>
+      <td>Independent</td>
+      <td> </td>
+      <td> </td>
+      <td>Black</td>
+      <td>Catholic</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Asian</td>
+      <td>Jewish</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Hispanic</td>
+      <td>Evangelical</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Other</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
-<p><img src="http://i.imgur.com/zAkZq0d.png" alt="Screenshot" /></p>
+<p>Import the ggplot library. 
+<code class="highlighter-rouge">r
+library(ggplot)
+</code></p>
 
-<h3 id="install-on-your-github-pages">Install on your GitHub Pages</h3>
+<p>Import datasets.
+<code class="highlighter-rouge">r
+data &lt;- read.csv("complete_dataset.csv");
+A = t(df);			# Take the transpose 
+svd_A = prcomp(A);		# R uses the SVD method to perform PCA. 
+summary(svd_A);			# Output summary of SVD
+</code>
+Function to draw a biplot in a pretty way.
+What about this method?</p>
 
-<ol>
-  <li><a href="https://github.com/heiswayi/the-plain/archive/master.zip">Download</a> or <a href="https://github.com/heiswayi/the-plain/fork">fork</a> the master branch of the repo into your GitHub account.</li>
-  <li>Rename the repo into something like <code class="highlighter-rouge">username.github.io</code>.</li>
-  <li>Edit <code class="highlighter-rouge">_config.yml</code> file to your preferences.</li>
-  <li>Edit <code class="highlighter-rouge">about.md</code> file for your About page.</li>
-  <li>Inside <code class="highlighter-rouge">_posts</code> folder, there are sample of blog entries. Learn from it and start yours.</li>
-  <li>Now visit <code class="highlighter-rouge">http://&lt;your_username&gt;.github.io</code> and you should see your blog is running.</li>
-</ol>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17</pre></td><td class="code"><pre><span class="n">PCbiplot</span> <span class="o">&lt;-</span> <span class="k">function</span><span class="p">(</span><span class="n">PC</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">"PC1"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"PC2"</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1"># Create new dataset of only first two principal components
+</span>	<span class="n">data</span> <span class="o">&lt;-</span> <span class="n">data.frame</span><span class="p">(</span><span class="n">obsnames</span><span class="o">=</span><span class="n">row.names</span><span class="p">(</span><span class="n">PC</span><span class="o">$</span><span class="n">x</span><span class="p">),</span> <span class="n">PC</span><span class="o">$</span><span class="n">x</span><span class="p">)</span>
+	
+	<span class="c1"># Plot the Presidential Outcomes (blue for Democrat, red for Republican)
+</span>  <span class="n">plot</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">aes_string</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">))</span> 
+		<span class="o">+</span> <span class="n">geom_text</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="m">.4</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="m">4</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="n">obsnames</span><span class="p">),</span> 
+		  <span class="n">col</span><span class="o">=</span><span class="n">ifelse</span><span class="p">(</span>
+				<span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X2012"</span> <span class="o">|</span> 
+				<span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X2008"</span> <span class="o">|</span> 
+				<span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X1996"</span> <span class="o">|</span> 
+				<span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X1992"</span> <span class="o">|</span> 
+				<span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X1976"</span><span class="p">,</span> 
+				<span class="s2">"blue"</span><span class="p">,</span> 
+				<span class="s2">"red"</span>
+				<span class="p">)</span>
+			<span class="p">)</span> <span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
-<p>If you use this theme as a <strong>project blog</strong>, you can skip step (2). But inside <code class="highlighter-rouge">_config.yml</code> file, you need to put your repo name in <code class="highlighter-rouge">baseurl</code>, e.g. <code class="highlighter-rouge">baseurl: "/myproject"</code>.</p>
-
-<p><strong>Question/Problem?</strong> Ask me or report it <a href="https://github.com/heiswayi/the-plain/issues">here</a>.</p>
-
-<hr />
-
-<p><em>This entry content has been updated on 12-06-2016.</em></p>
 
   
 </div>
