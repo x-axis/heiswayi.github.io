@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Jun 2016 02:15:58 -0500</pubDate>
-    <lastBuildDate>Mon, 20 Jun 2016 02:15:58 -0500</lastBuildDate>
+    <pubDate>Mon, 20 Jun 2016 02:35:27 -0500</pubDate>
+    <lastBuildDate>Mon, 20 Jun 2016 02:35:27 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -49,14 +49,6 @@
       &lt;td&gt;Independent&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Black&lt;/td&gt;
-      &lt;td&gt;Catholic&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
       &lt;td&gt;Asian&lt;/td&gt;
       &lt;td&gt;Jewish&lt;/td&gt;
     &lt;/tr&gt;
@@ -80,7 +72,7 @@
 &lt;/table&gt;
 
 &lt;p&gt;Import the ggplot library. 
-&lt;code class=&quot;highlighter-rouge&quot;&gt;r
+&lt;code class=&quot;highlighter-rouge&quot;&gt;csharp
 library(ggplot)
 &lt;/code&gt;&lt;/p&gt;
 
@@ -94,7 +86,7 @@ summary(svd_A);			# Output summary of SVD
 Function to draw a biplot in a pretty way.
 What about this method?&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -110,25 +102,72 @@ What about this method?&lt;/p&gt;
 14
 15
 16
-17&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;PCbiplot&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PC1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PC2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;# Create new dataset of only first two principal components
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data.frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;row.names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+17&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;PCbiplot &amp;lt;- function(PC, x=&quot;PC1&quot;, y=&quot;PC2&quot;) {
+	# Create new dataset of only first two principal components
+	data &amp;lt;- data.frame(obsnames=row.names(PC$x), PC$x)
 	
-	&lt;span class=&quot;c1&quot;&gt;# Plot the Presidential Outcomes (blue for Democrat, red for Republican)
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; 
-		&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;geom_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; 
-		  &lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ifelse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-				&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;X2012&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; 
-				&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;X2008&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; 
-				&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;X1996&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; 
-				&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;X1992&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; 
-				&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;X1976&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-				&lt;span class=&quot;s2&quot;&gt;&quot;blue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-				&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;
-				&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-			&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;w&quot;&gt;
+	# Plot the Presidential Outcomes (blue for Democrat, red for Republican)
+  plot &amp;lt;- ggplot(data, aes_string(x=x, y=y)) 
+		+ geom_text(alpha=.4, size=4, aes(label=obsnames), 
+		  col=ifelse(
+				data$obsnames==&quot;X2012&quot; | 
+				data$obsnames==&quot;X2008&quot; | 
+				data$obsnames==&quot;X1996&quot; | 
+				data$obsnames==&quot;X1992&quot; | 
+				data$obsnames==&quot;X1976&quot;, 
+				&quot;blue&quot;, 
+				&quot;red&quot;
+				)
+			) &lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;h3 id=&quot;analysis&quot;&gt;Analysis&lt;/h3&gt;
+&lt;p&gt;Carrying out the SVD in R, we can see the proportion of variance in the data that each principal component accounts for. Three principal components explains a cumulative 82.58% of the variance while four principal components explains 88.92%.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;PC1&lt;/th&gt;
+      &lt;th&gt;PC2&lt;/th&gt;
+      &lt;th&gt;PC3&lt;/th&gt;
+      &lt;th&gt;PC4&lt;/th&gt;
+      &lt;th&gt;PC5&lt;/th&gt;
+      &lt;th&gt;PC6&lt;/th&gt;
+      &lt;th&gt;PC7&lt;/th&gt;
+      &lt;th&gt;PC8&lt;/th&gt;
+      &lt;th&gt;PC9&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Proportion of Variance&lt;/td&gt;
+      &lt;td&gt;0.6023&lt;/td&gt;
+      &lt;td&gt;0.1401&lt;/td&gt;
+      &lt;td&gt;0.08354&lt;/td&gt;
+      &lt;td&gt;0.06334&lt;/td&gt;
+      &lt;td&gt;0.03156&lt;/td&gt;
+      &lt;td&gt;0.02662&lt;/td&gt;
+      &lt;td&gt;0.02079&lt;/td&gt;
+      &lt;td&gt;0.01767&lt;/td&gt;
+      &lt;td&gt;0.01415&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Cumulative Proportion&lt;/td&gt;
+      &lt;td&gt;0.6023&lt;/td&gt;
+      &lt;td&gt;0.7523&lt;/td&gt;
+      &lt;td&gt;0.82588&lt;/td&gt;
+      &lt;td&gt;0.88922&lt;/td&gt;
+      &lt;td&gt;0.92078&lt;/td&gt;
+      &lt;td&gt;0.94739&lt;/td&gt;
+      &lt;td&gt;0.96818&lt;/td&gt;
+      &lt;td&gt;0.98585&lt;/td&gt;
+      &lt;td&gt;1.00000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Projection!&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 Jun 2016 00:00:00 -0500</pubDate>
         <link>/svd-on-presidential-elections.html</link>
