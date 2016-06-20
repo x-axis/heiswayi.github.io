@@ -188,24 +188,26 @@
   </tbody>
 </table>
 
-<p>Import the ggplot library. 
-<code class="highlighter-rouge">csharp
-using System;
-namespace MultiThreading {
- class Program {
- }
- }
-library(ggplot)
-</code></p>
+<p>Import the ggplot library.</p>
 
-<p>Import datasets.
-<code class="highlighter-rouge">
-data &lt;- read.csv("complete_dataset.csv");
+<div class="language-csharp highlighter-rouge"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">namespace</span> <span class="nn">MultiThreading</span> <span class="p">{</span>
+ <span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
+ <span class="p">}</span>
+ <span class="p">}</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">ggplot</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Import datasets.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>data &lt;- read.csv("complete_dataset.csv");
 A = t(df);			# Take the transpose 
 svd_A = prcomp(A);		# R uses the SVD method to perform PCA. 
 summary(svd_A);			# Output summary of SVD
-</code>
-Function to draw a biplot in a pretty way.
+</code></pre>
+</div>
+<p>Function to draw a biplot in a pretty way.
 What about this method?</p>
 
 <figure class="highlight"><pre><code class="language-text" data-lang="text"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
