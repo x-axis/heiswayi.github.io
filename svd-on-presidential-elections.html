@@ -206,7 +206,23 @@
 <p>Function to draw a biplot in a pretty way.
 What about this method?</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">PCbiplot</span> <span class="o">&lt;-</span> <span class="k">function</span><span class="p">(</span><span class="n">PC</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">"PC1"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"PC2"</span><span class="p">)</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17</pre></td><td class="code"><pre><span class="n">PCbiplot</span> <span class="o">&lt;-</span> <span class="k">function</span><span class="p">(</span><span class="n">PC</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">"PC1"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"PC2"</span><span class="p">)</span> <span class="p">{</span>
 	<span class="c1"># Create new dataset of only first two principal components
 </span>	<span class="n">data</span> <span class="o">&lt;-</span> <span class="n">data.frame</span><span class="p">(</span><span class="n">obsnames</span><span class="o">=</span><span class="n">row.names</span><span class="p">(</span><span class="n">PC</span><span class="o">$</span><span class="n">x</span><span class="p">),</span> <span class="n">PC</span><span class="o">$</span><span class="n">x</span><span class="p">)</span>
 	
@@ -222,7 +238,8 @@ What about this method?</p>
 				<span class="s2">"blue"</span><span class="p">,</span> 
 				<span class="s2">"red"</span>
 				<span class="p">)</span>
-			<span class="p">)</span> </code></pre></figure>
+			<span class="p">)</span> <span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="analysis">Analysis</h3>
 <p>Carrying out the SVD in R, we can see the proportion of variance in the data that each principal component accounts for. Three principal components explains a cumulative 82.58% of the variance while four principal components explains 88.92%.</p>
