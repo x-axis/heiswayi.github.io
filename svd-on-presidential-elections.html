@@ -190,10 +190,10 @@
   </tbody>
 </table>
 
-<p>The voting behavior of each of the 45 groups are captured as a column vector consisting of {1, 0, -1}, representing whether or not the majority of that demographic voted for the winning presidential candidate. 0 represents a “buffer zone” for close splits of 55% to 45% or closer.</p>
+<p>The voting behavior of a demographic group are captured as a column vector consisting of {1, 0, -1}, representing whether or not a majority voted for the winning presidential candidate. 0 represents a “buffer zone” for close margins.</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
-Demographic_{\text{i'th presidential election since 1976}} = 
+\text{Demographic}_{i} = 
 \begin{cases}
 1 & \text{if greater than 55\% of group voted for winning candidate} \\
 -1 &\text{if fewer than 45\% of group voted for winning candidate} \\
