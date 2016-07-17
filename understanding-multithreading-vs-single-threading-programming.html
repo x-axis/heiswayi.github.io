@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" class="no-js">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
@@ -170,7 +171,7 @@
             <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"  (3) Threadpool"</span><span class="p">);</span>
             <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"  (4) Task"</span><span class="p">);</span>
             <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"  (5) BackgroundWorker"</span><span class="p">);</span>
-            <span class="n">var</span> <span class="n">input</span> <span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="nf">ReadLine</span><span class="p">();</span>
+            <span class="kt">var</span> <span class="n">input</span> <span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="nf">ReadLine</span><span class="p">();</span>
             <span class="k">if</span> <span class="p">(</span><span class="n">input</span><span class="p">.</span><span class="n">Length</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span>
             <span class="p">{</span>
                 <span class="n">Console</span><span class="p">.</span><span class="nf">Clear</span><span class="p">();</span>
@@ -203,7 +204,7 @@
                 <span class="n">Console</span><span class="p">.</span><span class="n">ForegroundColor</span> <span class="p">=</span> <span class="n">ConsoleColor</span><span class="p">.</span><span class="n">Red</span><span class="p">;</span>
                 <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Press Enter key to test again or Esc to quit"</span><span class="p">);</span>
                 <span class="n">Console</span><span class="p">.</span><span class="nf">ResetColor</span><span class="p">();</span>
-                <span class="n">var</span> <span class="n">key</span> <span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="nf">ReadKey</span><span class="p">();</span>
+                <span class="kt">var</span> <span class="n">key</span> <span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="nf">ReadKey</span><span class="p">();</span>
                 <span class="k">if</span> <span class="p">(</span><span class="n">key</span><span class="p">.</span><span class="n">Key</span> <span class="p">==</span> <span class="n">ConsoleKey</span><span class="p">.</span><span class="n">Enter</span><span class="p">)</span>
                 <span class="p">{</span>
                     <span class="n">Console</span><span class="p">.</span><span class="nf">Clear</span><span class="p">();</span>
@@ -333,7 +334,7 @@
             <span class="p">}</span>
 
             <span class="c1">// Waits for all the threads to finish.
-</span>            <span class="k">foreach</span> <span class="p">(</span><span class="n">var</span> <span class="n">ct</span> <span class="k">in</span> <span class="n">t</span><span class="p">)</span>
+</span>            <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">ct</span> <span class="k">in</span> <span class="n">t</span><span class="p">)</span>
             <span class="p">{</span>
                 <span class="n">ct</span><span class="p">.</span><span class="nf">Join</span><span class="p">();</span>
             <span class="p">}</span>
