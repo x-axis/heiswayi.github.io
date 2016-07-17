@@ -275,7 +275,7 @@ Demographic_i =
 
 <h3 id="principal-components">Principal Components</h3>
 
-<p>Note that R uses the singular value decomposition method to perform principal component analysis, so our matrix needs to be in time x measurements format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same {1, 0, -1} scale, no further processing is needed, e.g. mean-centering or normalization.</p>
+<p>Note that R uses the singular value decomposition method to perform principal component analysis, so our matrix needs to be in <em>time x measurements</em> format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same {1, 0, -1} scale, no further processing is needed, e.g. mean-centering or normalization.</p>
 
 <div class="language-r highlighter-rouge"><pre class="highlight"><code><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"complete_dataset.csv"</span><span class="p">);</span><span class="w">
 </span><span class="n">svd_df</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prcomp</span><span class="p">(</span><span class="n">df</span><span class="p">);</span><span class="w">    </span><span class="c1"># R uses the SVD method to perform PCA. 
