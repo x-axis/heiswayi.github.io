@@ -187,25 +187,20 @@
       <td>Other</td>
       <td> </td>
     </tr>
-    <tr>
-      <td>Stuff</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
   </tbody>
-  <tbody>
+</table>
+
+<table>
+  <thead>
     <tr>
-      <td>Age</td>
-      <td>Education</td>
-      <td>Income</td>
-      <td>Region</td>
-      <td>Community</td>
-      <td>Voting Status</td>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Income</th>
+      <th>Region</th>
+      <th>Community</th>
+      <th>Voting Status</th>
     </tr>
-  </tbody>
+  </thead>
   <tbody>
     <tr>
       <td>18-24 years</td>
@@ -258,14 +253,14 @@
   </tbody>
 </table>
 
-<p>The voting behavior of each demographic group are represented as a column vector capturing whether or not a majority voted for the winning presidential candidate in each election.</p>
+<p>The voting behavior of each demographic group across each of the elections are represented as a column vector capturing whether or not a majority voted for the winning presidential candidate.</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 Demographic_i = 
 \begin{cases}
 1 & \text{if greater than 55% of group voted for winning candidate} \\
--1 &\text{if fewer than 45% of group voted for winning candidate} \\
-0 &\text{if vote was within a 55/45 split or closer}
+0 &\text{if vote was within a 55/45 split or closer} \\
+-1 &\text{if fewer than 45% of group voted for winning candidate} 
 \end{cases} %]]></script>
 
 <p>Wave Equation</p>
@@ -278,46 +273,16 @@ Demographic_i =
 </code></pre>
 </div>
 
-<p>Import the ggplot library.</p>
+<h3 id="principal-components">Principal Components</h3>
 
-<div class="language-r highlighter-rouge"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">ggplot</span><span class="p">)</span><span class="w">
-</span></code></pre>
-</div>
+<p>Note that R uses the singular value decomposition method to perform principal component analysis, so our matrix needs to be in time x measurements format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same {1, 0, -1} scale, no further processing is needed, e.g. mean-centering or normalization.<br />
+<code class="highlighter-rouge">r
+df &lt;- read.csv("complete_dataset.csv");
+svd_df = prcomp(df);    # R uses the SVD method to perform PCA. 
+summary(svd_A);         # Output summary of SVD
+</code></p>
 
-<p>Import datasets.</p>
-
-<div class="language-r highlighter-rouge"><pre class="highlight"><code><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"complete_dataset.csv"</span><span class="p">);</span><span class="w">
-</span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">t</span><span class="p">(</span><span class="n">df</span><span class="p">);</span><span class="w">			</span><span class="c1"># Take the transpose 
-</span><span class="n">svd_A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prcomp</span><span class="p">(</span><span class="n">A</span><span class="p">);</span><span class="w">		</span><span class="c1"># R uses the SVD method to perform PCA. 
-</span><span class="n">summary</span><span class="p">(</span><span class="n">svd_A</span><span class="p">);</span><span class="w">			</span><span class="c1"># Output summary of SVD
-</span></code></pre>
-</div>
-
-<p>Function to draw a biplot in a pretty way.
-What about this method?</p>
-
-<div class="language-r highlighter-rouge"><pre class="highlight"><code><span class="n">PCbiplot</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">PC</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="o">=</span><span class="s2">"PC1"</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="s2">"PC2"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-	</span><span class="c1"># Create new dataset of only first two principal components
-</span><span class="w">	</span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">obsnames</span><span class="o">=</span><span class="n">row.names</span><span class="p">(</span><span class="n">PC</span><span class="o">$</span><span class="n">x</span><span class="p">),</span><span class="w"> </span><span class="n">PC</span><span class="o">$</span><span class="n">x</span><span class="p">)</span><span class="w">
-	
-	</span><span class="c1"># Plot the Presidential Outcomes (blue for Democrat, red for Republican)
-</span><span class="w">	</span><span class="n">plot</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">aes_string</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">))</span><span class="w"> 
-		</span><span class="o">+</span><span class="w"> </span><span class="n">geom_text</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="m">.4</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="o">=</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="n">obsnames</span><span class="p">),</span><span class="w"> 
-		  </span><span class="n">col</span><span class="o">=</span><span class="n">ifelse</span><span class="p">(</span><span class="w">
-				</span><span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X2012"</span><span class="w"> </span><span class="o">|</span><span class="w"> 
-				</span><span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X2008"</span><span class="w"> </span><span class="o">|</span><span class="w"> 
-				</span><span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X1996"</span><span class="w"> </span><span class="o">|</span><span class="w"> 
-				</span><span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X1992"</span><span class="w"> </span><span class="o">|</span><span class="w"> 
-				</span><span class="n">data</span><span class="o">$</span><span class="n">obsnames</span><span class="o">==</span><span class="s2">"X1976"</span><span class="p">,</span><span class="w"> 
-				</span><span class="s2">"blue"</span><span class="p">,</span><span class="w"> 
-				</span><span class="s2">"red"</span><span class="w">
-				</span><span class="p">)</span><span class="w">
-			</span><span class="p">)</span><span class="w"> 
-</span></code></pre>
-</div>
-
-<h3 id="analysis">Analysis</h3>
-<p>Carrying out the SVD in R, we can see the proportion of variance in the data that each principal component accounts for. Three principal components explains a cumulative 82.58% of the variance while four principal components explains 88.92%.</p>
+<p>In the summary, we can see the proportion of variance in the data that each principal component accounts for. Each principal component represents a “dimension” of the data, describing some underlying dynamic.</p>
 
 <table>
   <thead>
@@ -362,10 +327,17 @@ What about this method?</p>
   </tbody>
 </table>
 
-<p>Projection!</p>
+<p>More precisely, the principal components of a dataset form an orthogonal basis. Geometrically, basis vectors can be seen as the axes in a Cartesian coordinate system. Humans are comfortable seeing data represented in two dimensions: x and y, so we can project the first two principal components, PC1 and PC2, onto the standard x, y plane. Together, they capture 75% of variance in the data.</p>
 
 <p><img src="/images/elections_biplot-b4bc48b62b6ef9b1476976e4dd0de6db937695cd83cdf4ca03fac38e970dba49.png" width="3838" height="2100" alt="elections_biplot.png" /></p>
 
+<p>Here, the two principal components form the axes of the biplot above. There are two things to interpret: points and vectors. Points (presidential election years) that are close together have similar demographics while vectors (demographic groups) that are close together have similar voting behavior.</p>
+
+<h3 id="analysis">Analysis</h3>
+
+<p>Let’s focus on the first principal component, on how demographics are distributed along the x-axis. Demographics on the farthest left are Democrat, Liberal, Hispanic, Urban, and Jewish. On the farthest right, we have Republican, Conservative, Over $200k annual income, and Protestant. Recall that a principal component is supposed to capture some dimension dynamic of the data, so we can infer that the first component represents a political spectrum from Democrat to Republican. The farther away from the origin a demographic’s vector points along the x-axis, the more extreme it is.</p>
+
+<p>Interestingly, we see that the more recent the presidency, the more extreme they are on the x-axis. This reflects the historical trend that presidencies and voters have become more partisan over the years. Jimmy Carter’s presidency in 1976 and Ronald Reagan’s presidency in 1984 are much closer to the origin than Obama’s presidency in 2012 and W. Bush’s presidency in 2004.</p>
 
   
 </div>
