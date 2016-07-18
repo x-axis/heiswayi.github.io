@@ -5,13 +5,17 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Jul 2016 19:39:15 -0500</pubDate>
-    <lastBuildDate>Sun, 17 Jul 2016 19:39:15 -0500</lastBuildDate>
+    <pubDate>Sun, 17 Jul 2016 19:48:50 -0500</pubDate>
+    <lastBuildDate>Sun, 17 Jul 2016 19:48:50 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Blog Reference Sheet</title>
-        <description>&lt;h3 id=&quot;compilation&quot;&gt;Compilation&lt;/h3&gt;
+        <description>&lt;h1 id=&quot;do-i-really-need-this-header&quot;&gt;Do I really need this header&lt;/h1&gt;
+
+&lt;h2 id=&quot;blog&quot;&gt;Blog&lt;/h2&gt;
+
+&lt;h3 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h3&gt;
 
 &lt;p&gt;Build entire site.&lt;/p&gt;
 
@@ -25,9 +29,9 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&quot;git&quot;&gt;Git&lt;/h3&gt;
+&lt;h2 id=&quot;git&quot;&gt;Git&lt;/h2&gt;
 
-&lt;h2 id=&quot;flags&quot;&gt;Flags&lt;/h2&gt;
+&lt;h3 id=&quot;flags&quot;&gt;Flags&lt;/h3&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -44,17 +48,19 @@
       &lt;td&gt;Automatically stage all modified files but not new files.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;-m &lt;msg&gt;&lt;/msg&gt;&lt;/td&gt;
-      &lt;td&gt;–message=&lt;msg&gt;&lt;/msg&gt;&lt;/td&gt;
+      &lt;td&gt;-m &amp;lt;msg&amp;gt;&lt;/td&gt;
+      &lt;td&gt;–message=&amp;lt;msg&amp;gt;&lt;/td&gt;
       &lt;td&gt;Use the given &lt;msg&gt; as the commit message.&lt;/msg&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;-C &lt;commit&gt;&lt;/commit&gt;&lt;/td&gt;
-      &lt;td&gt;–reuse-message=&lt;commit&gt;&lt;/commit&gt;&lt;/td&gt;
-      &lt;td&gt;Reuse the log message and authorship from &lt;commit&gt;.&lt;/commit&gt;&lt;/td&gt;
+      &lt;td&gt;-C &amp;lt;commit&amp;gt;&lt;/td&gt;
+      &lt;td&gt;–reuse-message=&amp;lt;commit&amp;gt;&lt;/td&gt;
+      &lt;td&gt;Reuse the log message and authorship from &amp;lt;commit&amp;gt;.&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;h3 id=&quot;commits&quot;&gt;Commits&lt;/h3&gt;
 
 &lt;p&gt;Record changes to repository for all modified files with specified commit message.&lt;/p&gt;
 
@@ -62,9 +68,21 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h1 id=&quot;header&quot;&gt;Header&lt;/h1&gt;
+&lt;h3 id=&quot;push&quot;&gt;Push&lt;/h3&gt;
 
-&lt;h2 id=&quot;another-header&quot;&gt;Another header?&lt;/h2&gt;
+&lt;p&gt;Push stuff… idk…&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;revert-commits&quot;&gt;Revert commits&lt;/h3&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;latex&quot;&gt;LaTeX&lt;/h3&gt;
 
 </description>
         <pubDate>Sun, 17 Jul 2016 00:00:00 -0500</pubDate>
@@ -221,7 +239,7 @@ Demographic_i =
 
 &lt;h3 id=&quot;principal-components&quot;&gt;Principal Components&lt;/h3&gt;
 
-&lt;p&gt;Note that R uses the singular value decomposition method to perform principal component analysis, so our matrix needs to be in &lt;em&gt;time x measurements&lt;/em&gt; format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same scale of {1, 0, -1}, no further processing is needed, e.g. mean-centering or normalization.&lt;/p&gt;
+&lt;p&gt;Note that R uses the singular value decomposition method to perform principal component analysis, where the convention is to consider rows as observations and columns as variables, so our matrix needs to be in &lt;em&gt;election_year x demographic_group&lt;/em&gt; format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same scale of {1, 0, -1}, no further processing is needed, e.g. mean-centering or normalization.&lt;/p&gt;
 
 &lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;complete_dataset.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd_df&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prcomp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# R uses the SVD method to perform PCA. 
