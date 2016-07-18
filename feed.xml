@@ -5,16 +5,81 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Jul 2016 19:29:12 -0500</pubDate>
-    <lastBuildDate>Sat, 16 Jul 2016 19:29:12 -0500</lastBuildDate>
+    <pubDate>Sun, 17 Jul 2016 19:39:15 -0500</pubDate>
+    <lastBuildDate>Sun, 17 Jul 2016 19:39:15 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Blog Reference Sheet</title>
+        <description>&lt;h3 id=&quot;compilation&quot;&gt;Compilation&lt;/h3&gt;
+
+&lt;p&gt;Build entire site.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Build only modified files.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll build --incremental
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;git&quot;&gt;Git&lt;/h3&gt;
+
+&lt;h2 id=&quot;flags&quot;&gt;Flags&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Flag&lt;/th&gt;
+      &lt;th&gt;Long form&lt;/th&gt;
+      &lt;th&gt;Meaning&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-a&lt;/td&gt;
+      &lt;td&gt;–all&lt;/td&gt;
+      &lt;td&gt;Automatically stage all modified files but not new files.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-m &lt;msg&gt;&lt;/msg&gt;&lt;/td&gt;
+      &lt;td&gt;–message=&lt;msg&gt;&lt;/msg&gt;&lt;/td&gt;
+      &lt;td&gt;Use the given &lt;msg&gt; as the commit message.&lt;/msg&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-C &lt;commit&gt;&lt;/commit&gt;&lt;/td&gt;
+      &lt;td&gt;–reuse-message=&lt;commit&gt;&lt;/commit&gt;&lt;/td&gt;
+      &lt;td&gt;Reuse the log message and authorship from &lt;commit&gt;.&lt;/commit&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Record changes to repository for all modified files with specified commit message.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -a -m &lt;span class=&quot;s2&quot;&gt;&quot;Commit message.&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;header&quot;&gt;Header&lt;/h1&gt;
+
+&lt;h2 id=&quot;another-header&quot;&gt;Another header?&lt;/h2&gt;
+
+</description>
+        <pubDate>Sun, 17 Jul 2016 00:00:00 -0500</pubDate>
+        <link>/reference-sheet.html</link>
+        <guid isPermaLink="true">/reference-sheet.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Singular Value Decomposition on Presidential Elections</title>
         <description>&lt;p&gt;We analyze the singular value decomposition of voter demographics for past United States presidential elections from 1976 to 2012. We aim to identify the demographics that have best predicted presidential election outcomes from the Carter presidency to the current Obama presidency.&lt;/p&gt;
 
 &lt;h3 id=&quot;data&quot;&gt;Data&lt;/h3&gt;
-&lt;p&gt;Unfortunately, I was unable to obtain a census of voter data from the U.S. Census Bureau. Instead, national exit polls from New York Times, CNN, Politico, and Gallup were aggregated into a raw data set. These polls captured 45 demographic groups which can be further grouped into 12 categories.&lt;/p&gt;
+&lt;p&gt;National exit polls from Gallup and various news sources were aggregated into a raw data set. These polls captured 45 demographic groups which were further grouped into 12 categories.&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -29,23 +94,23 @@
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;Liberals&lt;/td&gt;
-      &lt;td&gt;Democrats&lt;/td&gt;
+      &lt;td&gt;Liberal&lt;/td&gt;
+      &lt;td&gt;Democrat&lt;/td&gt;
       &lt;td&gt;Men&lt;/td&gt;
       &lt;td&gt;Married&lt;/td&gt;
       &lt;td&gt;White&lt;/td&gt;
       &lt;td&gt;Protestant&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;Moderates&lt;/td&gt;
-      &lt;td&gt;Republicans&lt;/td&gt;
+      &lt;td&gt;Moderate&lt;/td&gt;
+      &lt;td&gt;Republican&lt;/td&gt;
       &lt;td&gt;Women&lt;/td&gt;
       &lt;td&gt;Unmarried&lt;/td&gt;
       &lt;td&gt;Black&lt;/td&gt;
       &lt;td&gt;Catholic&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;Conservatives&lt;/td&gt;
+      &lt;td&gt;Conservative&lt;/td&gt;
       &lt;td&gt;Independent&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
@@ -71,46 +136,100 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;Import the ggplot library.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+      &lt;th&gt;Education&lt;/th&gt;
+      &lt;th&gt;Income&lt;/th&gt;
+      &lt;th&gt;Region&lt;/th&gt;
+      &lt;th&gt;Community&lt;/th&gt;
+      &lt;th&gt;Voting Status&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;18-24 years&lt;/td&gt;
+      &lt;td&gt;Less than HS&lt;/td&gt;
+      &lt;td&gt;Under $30,000&lt;/td&gt;
+      &lt;td&gt;East&lt;/td&gt;
+      &lt;td&gt;Urban&lt;/td&gt;
+      &lt;td&gt;First-time voter&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;25-29 years&lt;/td&gt;
+      &lt;td&gt;High School&lt;/td&gt;
+      &lt;td&gt;$30,000-49,999&lt;/td&gt;
+      &lt;td&gt;Midwest&lt;/td&gt;
+      &lt;td&gt;Suburban&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;30-39 years&lt;/td&gt;
+      &lt;td&gt;Some College&lt;/td&gt;
+      &lt;td&gt;$50,000-99,999&lt;/td&gt;
+      &lt;td&gt;South&lt;/td&gt;
+      &lt;td&gt;Rural&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;40-49 years&lt;/td&gt;
+      &lt;td&gt;College&lt;/td&gt;
+      &lt;td&gt;$100,000-199,000&lt;/td&gt;
+      &lt;td&gt;West&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;50-64 years&lt;/td&gt;
+      &lt;td&gt;Postgraduate&lt;/td&gt;
+      &lt;td&gt;Over $200,000&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;65 and older&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;p&gt;Across each election, voting behavior of each demographic group are represented as a column vector capturing whether or not a majority voted for the winning presidential candidate.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+Demographic_i = 
+\begin{cases}
+1 &amp; \text{if the higher share voted for the winning candidate} \\
+0 &amp;\text{if vote was split within 55/45 or closer} \\
+-1 &amp;\text{if the higher share voted for the losing candidate} 
+\end{cases} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Wave Equation&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\delta E_{x}}{\delta t} = \frac{\delta f(z-ct)}{\delta t} = f^{\prime}(z - ct)\Big(\frac{\delta(z-ct)}{\delta t}\Big) = -c*f^{\prime}(z - ct)&lt;/script&gt;
+
+&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; E&lt;span class=&quot;p&quot;&gt;_{&lt;/span&gt;x&lt;span class=&quot;p&quot;&gt;}}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; = &lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; f(z-ct)&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; = f&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;(z - ct)&lt;span class=&quot;k&quot;&gt;\Big&lt;/span&gt;(&lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt;(z-ct)&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\Big&lt;/span&gt;) = -c*f&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;(z - ct)
+
+&lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;^&lt;/span&gt;2 E&lt;span class=&quot;p&quot;&gt;_{&lt;/span&gt;x&lt;span class=&quot;p&quot;&gt;}}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;^&lt;/span&gt;2&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; = &lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;\Big&lt;/span&gt;(&lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; Ex&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\Big&lt;/span&gt;)= f&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\prime\prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;(z - ct)&lt;span class=&quot;k&quot;&gt;\Big&lt;/span&gt;(&lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt;(z-ct)&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\Big&lt;/span&gt;) = c&lt;span class=&quot;p&quot;&gt;^&lt;/span&gt;2*f&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\prime\prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;(z - ct)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Import datasets.&lt;/p&gt;
+&lt;h3 id=&quot;principal-components&quot;&gt;Principal Components&lt;/h3&gt;
 
-&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;read.csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;complete_dataset.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;			&lt;span class=&quot;c1&quot;&gt;# Take the transpose 
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd_A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prcomp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;# R uses the SVD method to perform PCA. 
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd_A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;			&lt;span class=&quot;c1&quot;&gt;# Output summary of SVD
+&lt;p&gt;Note that R uses the singular value decomposition method to perform principal component analysis, so our matrix needs to be in &lt;em&gt;time x measurements&lt;/em&gt; format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same scale of {1, 0, -1}, no further processing is needed, e.g. mean-centering or normalization.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;complete_dataset.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd_df&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prcomp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# R uses the SVD method to perform PCA. 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd_A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;         &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# Output summary of SVD
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Function to draw a biplot in a pretty way.
-What about this method?&lt;/p&gt;
-
-&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;PCbiplot&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PC1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PC2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;# Create new dataset of only first two principal components
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data.frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;row.names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	
-	&lt;span class=&quot;c1&quot;&gt;# Plot the Presidential Outcomes (blue for Democrat, red for Republican)
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; 
-		&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;geom_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; 
-		  &lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ifelse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-				&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;X2012&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; 
-				&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;X2008&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; 
-				&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;X1996&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; 
-				&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;X1992&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; 
-				&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obsnames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;X1976&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-				&lt;span class=&quot;s2&quot;&gt;&quot;blue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-				&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;
-				&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-			&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;analysis&quot;&gt;Analysis&lt;/h3&gt;
-&lt;p&gt;Carrying out the SVD in R, we can see the proportion of variance in the data that each principal component accounts for. Three principal components explains a cumulative 82.58% of the variance while four principal components explains 88.92%.&lt;/p&gt;
+&lt;p&gt;In the summary, we can see the proportion of variance in the data that each principal component accounts for. Each principal component represents a “dimension” of the data, describing some underlying dynamic.&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -155,10 +274,59 @@ What about this method?&lt;/p&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;Projection!&lt;/p&gt;
+&lt;p&gt;More precisely, the principal components of a dataset form an orthogonal basis. Geometrically, basis vectors can be seen as the axes in a Cartesian coordinate system. Humans are comfortable seeing data represented in two dimensions: x and y, so we can project the first two principal components, PC1 and PC2, onto the standard x, y plane. Together, they capture 75% of variance in the data.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/_images/election_biplot.png&quot;&gt;uhhh…&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/elections_biplot-b4bc48b62b6ef9b1476976e4dd0de6db937695cd83cdf4ca03fac38e970dba49.png&quot; width=&quot;3838&quot; height=&quot;2100&quot; alt=&quot;elections_biplot.png&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;Here, the two principal components form the axes of the biplot above. There are two things to interpret: points and vectors. Points (presidential election years) that are close together have similar demographics while vectors (demographic groups) that are close together have similar voting behavior. We see that Democratic presidences are grouped on the left while Republican presidences are grouped on the right. Several demographics are clustered together:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Green&lt;/strong&gt;: Democrat, Liberal, Hispanic, Urban, Jewish&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Orange&lt;/strong&gt;: 18-24 years old, Women, Unmarried, East&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Blue&lt;/strong&gt;: Post-graduate education, First-time voter&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Yellow&lt;/strong&gt;: Republican, Protestant, $100,000-199,999 income&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;analysis&quot;&gt;Analysis&lt;/h3&gt;
+
+&lt;p&gt;Let’s focus on the first principal component, on how demographics are distributed along the x-axis. Demographics on the farthest left are Democrat, Liberal, Hispanic, Urban, and Jewish. On the farthest right, we have Republican, Conservative, Over $200k annual income, and Protestant. Recall that a principal component is supposed to capture some dimension dynamic of the data, so we can infer that the first component represents a political spectrum from Democrat to Republican. The farther away from the origin a demographic’s vector points along the x-axis, the more extreme it is.&lt;/p&gt;
+
+&lt;p&gt;Interestingly, we see that the more recent the presidency, the more extreme they are on the x-axis. This reflects the historical trend that presidencies and voters have become more partisan over the years. Jimmy Carter’s presidency in 1976 and Ronald Reagan’s presidency in 1984 are much closer to the origin than Obama’s presidency in 2012 and Bush’s presidency in 2004.&lt;/p&gt;
+
+&lt;p&gt;The second principal component appears to represent the predictive power of a demographic. Above the scale, knowing which candidate that Liberals, Conservatives, or Married people support tells us little about who will win. Below the scale, support from Independents, the West, and First-time voters have major predictive power. This reflects the enormous influence that swing states and California brings to the election.&lt;/p&gt;
+
+&lt;h3 id=&quot;weaknesses&quot;&gt;Weaknesses&lt;/h3&gt;
+
+&lt;p&gt;The biggest weakness of the analysis lies in the unavoidable lack of sample data; forty years of history only yields ten samples. The analysis could also be expanded by breaking down demographics even more, e.g. 18-24 year old Independent voters or Rural first-time voters. Instead of looking at national exit polls, we can also focus on the specific exit polls for states with the most electoral votes: California, Texas, New York, or look at exit polls for swing states only: Ohio, Pennsylvania, Florida, Colorado.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;In order to capture the White House, this year’s presidential candidates most likely need to be able to win Independents, the West, the blue cluster, and the orange cluster.&lt;/p&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Shlens, J., 2014. A tutorial on principal component analysis. arXiv preprint arXiv:1404.1100. &lt;a href=&quot;http://arxiv.org/pdf/1404.1100.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“2012 President Exit Polls.” The New York Times. &lt;a href=&quot;http://elections.nytimes.com/2012/results/president/exit-polls&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“How Groups Voted.” Roper Center for Public Opinion Research, Cornell University. &lt;a href=&quot;http://ropercenter.cornell.edu/polls/us-elections/how-groups-voted/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“2004 U.S. President National Exit Poll” CNN. &lt;a href=&quot;http://www.cnn.com/ELECTION/2004/pages/results/states/US/P/00/epolls.0.html&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;1992-1996 Voting Demographics. Gallup. &lt;a href=&quot;http://www.gallup.com/poll/9466/election-polls-vote-groups-19921996.aspx&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“CPI Inflation Calculator.” Bureau of Labor Statistics. &lt;a href=&quot;http://www.bls.gov/data/inflation_calculator.htm&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Used to normalize income across polling years.&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 Jun 2016 00:00:00 -0500</pubDate>
         <link>/svd-on-presidential-elections.html</link>
@@ -393,7 +561,7 @@ What about this method?&lt;/p&gt;
 
 &lt;p&gt;Example:&lt;/p&gt;
 
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;employee&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;employee&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -618,7 +786,7 @@ What about this method?&lt;/p&gt;
 
 &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GetForce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetDividend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GetDivisor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GetForce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetDividend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GetDivisor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ToString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -675,7 +843,7 @@ What about this method?&lt;/p&gt;
             &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;  (3) Threadpool&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;  (4) Task&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;  (5) BackgroundWorker&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ReadLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ReadLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
             &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Length&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
             &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
                 &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
@@ -708,7 +876,7 @@ What about this method?&lt;/p&gt;
                 &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ForegroundColor&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ConsoleColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
                 &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Press Enter key to test again or Esc to quit&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
                 &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ResetColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ReadKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+                &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ReadKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
                 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Key&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ConsoleKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Enter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
                 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
                     &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
@@ -838,7 +1006,7 @@ What about this method?&lt;/p&gt;
             &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
             &lt;span class=&quot;c1&quot;&gt;// Waits for all the threads to finish.
-&lt;/span&gt;            &lt;span class=&quot;k&quot;&gt;foreach&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ct&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/span&gt;            &lt;span class=&quot;k&quot;&gt;foreach&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ct&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
             &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
                 &lt;span class=&quot;n&quot;&gt;ct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
             &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
