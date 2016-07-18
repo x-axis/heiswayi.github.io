@@ -204,8 +204,16 @@ git commit --amend --no-edit
 </code></pre>
 </div>
 
-<h3 id="latex">LaTeX</h3>
-<p>Surround equations with double dollar signs.</p>
+<h2 id="latex">LaTeX</h2>
+<p>### Setup
+Add the MathJax script into the <code>head</code> block of page.
+<code class="highlighter-rouge">html
+&lt;script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"&gt;
+  &lt;/script&gt;
+</code>
+### Equations
+Surround equations with double dollar signs.</p>
 
 <script type="math/tex; mode=display">\frac{\delta E_{x}}{\delta t} = \frac{\delta f(z-ct)}{\delta t} = f^{\prime}(z - ct)\Big(\frac{\delta(z-ct)}{\delta t}\Big) = -c*f^{\prime}(z - ct)</script>
 
