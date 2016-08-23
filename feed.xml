@@ -5,17 +5,34 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Jul 2016 19:48:50 -0500</pubDate>
-    <lastBuildDate>Sun, 17 Jul 2016 19:48:50 -0500</lastBuildDate>
+    <pubDate>Tue, 23 Aug 2016 16:23:42 -0500</pubDate>
+    <lastBuildDate>Tue, 23 Aug 2016 16:23:42 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Blog Reference Sheet</title>
-        <description>&lt;h1 id=&quot;do-i-really-need-this-header&quot;&gt;Do I really need this header&lt;/h1&gt;
+        <description>&lt;h2 id=&quot;blog&quot;&gt;Blog&lt;/h2&gt;
+&lt;p&gt;At the core, this blog is written in &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;, which is a syntax that turns plain text into HTML. Created by John Gruber, his goal was to design a language whose syntax was “as readable as possible.”&lt;/p&gt;
 
-&lt;h2 id=&quot;blog&quot;&gt;Blog&lt;/h2&gt;
+&lt;p&gt;The “scaffold” of this blog – that is, the meta-programming technique that generates code from my Markdown text – is &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;. From &lt;a href=&quot;http://jekyllbootstrap.com/lessons/jekyll-introduction.html&quot;&gt;Jekyll Bootstrap&lt;/a&gt;,&lt;/p&gt;
 
-&lt;h3 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as “a simple, blog aware, static site generator”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Static websites do not depend on a live connection to a database or server-side code; therefore the user sees exactly what I have written at the time of publication. As a result, Jekyll only needs to parse the blog components once in order to generate a website, which is then served on a web-server.&lt;/p&gt;
+
+&lt;p&gt;The web server used is &lt;a href=&quot;https://pages.github.com&quot;&gt;GitHub Pages&lt;/a&gt;, which hosts my website from my GitHub repository. A repository is a central hub or location where things are stored. GitHub is a free service that hosts source code along with a variety of other formats. As per its namesake, GitHub uses the Git version control system to manage its repository. From Wikipedia,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Unlike Git, which is strictly a command-line tool, GitHub provides a Web-based graphical interface and desktop as well as mobile integration.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Incidentally, GitHub uses Jekyll to power GitHub Pages. Therefore, it is because I chose GitHub Pages as my web server, that I came to use Jekyll as my scaffold. I edit my blog locally on my computer through Terminal, the command line interface for Apple’s OS X, and push changes to my website through GitHub.&lt;/p&gt;
+
+&lt;p&gt;I should further note that the theme of this blog was designed by &lt;a href=&quot;http://heiswayi.github.io&quot;&gt;Heiswayi Nrird&lt;/a&gt;, who I think captured the spirit of minimalism quite well.&lt;/p&gt;
+
+&lt;h3 id=&quot;jekyll-in-terminal&quot;&gt;Jekyll in Terminal&lt;/h3&gt;
 
 &lt;p&gt;Build entire site.&lt;/p&gt;
 
@@ -23,13 +40,13 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Build only modified files.&lt;/p&gt;
+&lt;p&gt;Build only files that have been modified.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll build --incremental
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;git&quot;&gt;Git&lt;/h2&gt;
+&lt;h2 id=&quot;git-cheat-sheet&quot;&gt;Git Cheat Sheet&lt;/h2&gt;
 
 &lt;h3 id=&quot;flags&quot;&gt;Flags&lt;/h3&gt;
 
@@ -68,7 +85,12 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&quot;push&quot;&gt;Push&lt;/h3&gt;
+&lt;p&gt;Commit using most recent commit and message.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;shell
+git commit --amend --no-edit
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;pushing-changes&quot;&gt;Pushing Changes&lt;/h3&gt;
 
 &lt;p&gt;Push stuff… idk…&lt;/p&gt;
 
@@ -78,12 +100,29 @@
 
 &lt;h3 id=&quot;revert-commits&quot;&gt;Revert commits&lt;/h3&gt;
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;p&gt;Still working on figuring this out.&lt;/p&gt;
+
+&lt;h2 id=&quot;latex-formatting&quot;&gt;LaTeX Formatting&lt;/h2&gt;
+
+&lt;h3 id=&quot;setup&quot;&gt;Setup&lt;/h3&gt;
+
+&lt;p&gt;Add the MathJax script into the &lt;code&gt;&amp;lt;head&amp;rt;&lt;/code&gt; block of page.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;async&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&quot;latex&quot;&gt;LaTeX&lt;/h3&gt;
+&lt;h3 id=&quot;equations&quot;&gt;Equations&lt;/h3&gt;
 
+&lt;p&gt;In Markdown, surround equations with double dollar signs.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\delta E_{x}}{\delta t} = \frac{\delta f(z-ct)}{\delta t} = f^{\prime}(z - ct)\Big(\frac{\delta(z-ct)}{\delta t}\Big) = -c*f^{\prime}(z - ct)&lt;/script&gt;
+
+&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; E&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;_{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;z &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; ct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\Big&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\Big&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;z &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; ct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Sun, 17 Jul 2016 00:00:00 -0500</pubDate>
         <link>/reference-sheet.html</link>
@@ -364,25 +403,6 @@ Demographic_i =
         <pubDate>Sun, 19 Jun 2016 00:00:00 -0500</pubDate>
         <link>/initial-commit.html</link>
         <guid isPermaLink="true">/initial-commit.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Thinkspace</title>
-        <description>&lt;p&gt;Introducing &lt;strong&gt;Thinkspace&lt;/strong&gt;, just another minimalist Jekyll theme that focuses on technical writing. Designed for engineers to write their ranting and findings. A great minimalist, writing-focused theme for personal use or project blog. &lt;strong&gt;The front-page is the archives.&lt;/strong&gt; Typeface by &lt;a href=&quot;https://www.fontsquirrel.com/fonts/dejavu-sans-mono&quot;&gt;DejaVu Sans Mono&lt;/a&gt; and &lt;a href=&quot;http://fontawesome.io/&quot;&gt;Font Awesome&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://heiswayi.github.io/thinkspace/&quot;&gt;&lt;strong&gt;Demo&lt;/strong&gt;&lt;/a&gt; / &lt;a href=&quot;https://github.com/heiswayi/thinkspace&quot;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;screenshot&quot;&gt;Screenshot&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/WHcnbYF.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Be minimalist. No hypocrisy.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 10 Jun 2016 00:00:00 -0500</pubDate>
-        <link>/thinkspace.html</link>
-        <guid isPermaLink="true">/thinkspace.html</guid>
         
         
       </item>
