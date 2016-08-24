@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Aug 2016 21:36:25 -0500</pubDate>
-    <lastBuildDate>Tue, 23 Aug 2016 21:36:25 -0500</lastBuildDate>
+    <pubDate>Tue, 23 Aug 2016 22:21:22 -0500</pubDate>
+    <lastBuildDate>Tue, 23 Aug 2016 22:21:22 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -29,7 +29,7 @@
       <item>
         <title>Blog Reference Sheet</title>
         <description>&lt;h2 id=&quot;blog&quot;&gt;Blog&lt;/h2&gt;
-&lt;p&gt;At the core, this blog is written in &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;, which is a syntax that turns plain text into HTML. Created by John Gruber, his goal was to design a language whose syntax was “as readable as possible.”&lt;/p&gt;
+&lt;p&gt;At the core, this blog is written in &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;, which is a syntax that turns plain text into HTML. Its creator, John Gruber, sought to design a language whose syntax was “as readable as possible.” Indeed, Markdown was inspired by the format of plain text email, with as few formatting tags as possible.&lt;/p&gt;
 
 &lt;p&gt;The “scaffold” of this blog – that is, the meta-programming technique that generates code from my Markdown text – is &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;. From &lt;a href=&quot;http://jekyllbootstrap.com/lessons/jekyll-introduction.html&quot;&gt;Jekyll Bootstrap&lt;/a&gt;,&lt;/p&gt;
 
