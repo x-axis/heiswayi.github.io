@@ -5,9 +5,26 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Aug 2016 16:23:42 -0500</pubDate>
-    <lastBuildDate>Tue, 23 Aug 2016 16:23:42 -0500</lastBuildDate>
+    <pubDate>Tue, 23 Aug 2016 21:36:25 -0500</pubDate>
+    <lastBuildDate>Tue, 23 Aug 2016 21:36:25 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Summer in Review</title>
+        <description>&lt;p&gt;Another sun-soaked season comes to a close. It’s been a tremendously interesting summer, due to some unusual circumstances and a fantastic team. I was part of the Credit Risk department at a large commercial bank and, in particular, the model quants group. Our work revolves around adhering to Basel III, which is an international regulatory framework for banks that seeks to establish good banking practices for maintaining adequate capital, stress testing our models, and managing market liquidity risk.&lt;/p&gt;
+
+&lt;p&gt;The group I was in focused on the capital adequacy part. For each of the bank’s portfolios, we would model the probability of default (PD) and loss given default (LGD). The exposure at default (EAD) would be the current value of the loan. These three parameters help us calculate the expected loss of a portfolio, and the bank needs to hold enough “regulatory capital” to cover this expected loss. Mathematically,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\text{Expected Loss} = PD \times LGD \times EAD&lt;/script&gt;
+
+&lt;p&gt;The asset class that my internship focused on was mortgages and in particular, I spent a lot of time on the subprime mortgage portfolio. Older people will be familiar with this; the &lt;a href=&quot;https://en.wikipedia.org/wiki/Subprime_mortgage_crisis&quot;&gt;subprime mortgage crisis&lt;/a&gt; is what caused the 2007-2009 economic recession. I was still a kid at the time and before this internship, I barely understood what a mortgage was, let alone the factors that went into causing the financial crisis. A friend recently recommended &lt;a href=&quot;http://www.imdb.com/title/tt1596363/&quot;&gt;The Big Short&lt;/a&gt; to me, offers an educational and funny look into how subprime mortgages (and mortgage-backed securities) did the damage it did.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 23 Aug 2016 00:00:00 -0500</pubDate>
+        <link>/quant-internship.html</link>
+        <guid isPermaLink="true">/quant-internship.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Blog Reference Sheet</title>
@@ -28,7 +45,7 @@
   &lt;p&gt;Unlike Git, which is strictly a command-line tool, GitHub provides a Web-based graphical interface and desktop as well as mobile integration.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Incidentally, GitHub uses Jekyll to power GitHub Pages. Therefore, it is because I chose GitHub Pages as my web server, that I came to use Jekyll as my scaffold. I edit my blog locally on my computer through Terminal, the command line interface for Apple’s OS X, and push changes to my website through GitHub.&lt;/p&gt;
+&lt;p&gt;Incidentally, GitHub uses Jekyll to power GitHub Pages. Therefore, it is because I chose GitHub Pages as my web server, that I came to use Jekyll as my scaffold. I edit my blog locally on my computer through Terminal (the command line interface for Apple’s OS X), and push changes to my website through GitHub.&lt;/p&gt;
 
 &lt;p&gt;I should further note that the theme of this blog was designed by &lt;a href=&quot;http://heiswayi.github.io&quot;&gt;Heiswayi Nrird&lt;/a&gt;, who I think captured the spirit of minimalism quite well.&lt;/p&gt;
 
