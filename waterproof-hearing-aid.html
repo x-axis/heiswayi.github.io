@@ -126,17 +126,17 @@
 
   <div class="hrline"></div>
 
-  <p>Last updated: 8/24/2016</p>
+  <p>Last updated: 8/25/2016</p>
 
 <p>Since I was a kid, I’ve wished for a way to hear while in the water. As of 2016, there is only one <a href="http://www.siemens.com/press/en/pressrelease/?press=/en/pressrelease/2012/healthcare/h20121036.htm">waterproof hearing aid</a> on the market and even then, it is only for people with up to 65dB hearing loss. That counts me out.</p>
 
 <p>This is my journal of trying to figure something out anyway :)</p>
 
 <h2 id="section">12/29/2015</h2>
-<p>Fitted with <a href="http://www.resound.com/en-US/hearing-aids/enzo2">Resound Enzo<sup>2</sup></a>. This hearing aid has actually been life-changing. It is <a href="https://developer.apple.com/programs/mfi/">Made for iPhone®</a> and routes sound from my phone directly into my hearing aid’s internal microphone via Bluetooth. For the first time, I could Skype and not have to ask my friends to constantly repeat themselves because the max volume wasn’t loud enough.</p>
+<p>Got fitted with <a href="http://www.resound.com/en-US/hearing-aids/enzo2">Resound Enzo<sup>2</sup></a>. This hearing aid has actually been life-changing. It is <a href="https://developer.apple.com/programs/mfi/">Made for iPhone®</a> and routes sound from my phone directly into my hearing aid’s internal microphone via Bluetooth. For the first time, I could Skype and not have to ask my friends to constantly repeat themselves because the max volume wasn’t loud enough.</p>
 
 <h2 id="section-1">8/05/2016</h2>
-<p>Went river tubing with my friends! I had gone tubing before in a lake before, leaving my hearing aids behind, but this trip was a 3-hour trip down a lazy river. We would essentially be chilling and talking the entire time. I didn’t want to be left out so I wore my old pair from high school. I figured that if something happened to them, I’d still have my pair from undergrad and the ReSound hearing aids. The trip turned out to be a blast, my friends tied up our tubes together and blasted music while talking.</p>
+<p>Went tubing with my friends! I had taken out my hearing aids for tubing in a lake before, but this trip was a 3-hour trip down a lazy river. We would essentially be chilling and talking the entire time. I didn’t want to be left out so I wore my old pair from high school. I figured that if something happened to them, I’d still have my pair from undergrad and the ReSounds. The trip turned out to be a blast, my friends tied up our tubes together and blasted music while talking.</p>
 
 <p><img src="/images/river-tubing-44f64335dc8c58d964fb3fd33974ae7310a98f5fd5172520364cd3ad6368beab.jpg" width="2000" height="1333" alt="river-tubing.jpg" /> 
 <em>Image from Trinity River Vision Authority.</em></p>
@@ -146,7 +146,7 @@
 
 <h3 id="preliminary-research">Preliminary Research</h3>
 
-<p>Bluetooth is a wireless technology standard that operates on ultra high frequency radio waves in the <a href="https://en.wikipedia.org/wiki/ISM_band">ISM band</a> from 2.4 to 2.485GHz. In essence, it transmits signals through electromagnetic radiation but things get tricky when moving from air to water. In this case, signal loss can occur in two ways:</p>
+<p>Bluetooth is a wireless technology standard that operates on ultra high frequency radio waves in the <a href="https://en.wikipedia.org/wiki/ISM_band">ISM band</a> from 2.4 to 2.485GHz. In essence, it transmits signals through electromagnetic radiation but things get tricky when moving from air to water. Signal loss can occur throughs:</p>
 
 <ul>
   <li>transmission loss from reflection and refraction at the air/water boundary</li>
@@ -155,20 +155,20 @@
 
 <p>I think the first case shouldn’t be an issue since my headphones would already be in the water. That leaves the second case. Water’s high permittivity reduces any electric field around it, which is problematic since electromagnetic waves propagate via disturbances in the electric (and magnetic) fields.</p>
 
-<p><img src="/images/em-propagation-2f46022ce458aabca8926718f730276b5c57f21ba184ecf5d47ea72c53dca218.gif" width="412" height="179" alt="em-propagation.gif" />
-<em>Image from <a href="http://www.physicsclassroom.com/mmedia/waves/em.cfm">Physics Classroom</a></em></p>
+<p>-&gt; <img src="/images/em-propagation-2f46022ce458aabca8926718f730276b5c57f21ba184ecf5d47ea72c53dca218.gif" width="412" height="179" alt="em-propagation.gif" />
+<em>Image from <a href="http://www.physicsclassroom.com/mmedia/waves/em.cfm">Physics Classroom</a></em> &lt;-</p>
 
-<p>As a result, radio frequencies like Bluetooth suffer from high attenuation - its intensity decreases sharply upon contact with water molecules. <a href="http://www.hydro-international.com/content/article/underwater-electromagnetic-propagation">Rhodes</a> explains this process,</p>
+<p>Radio frequencies like Bluetooth suffer from high attenuation - its intensity decreases sharply upon contact with water molecules. <a href="http://www.hydro-international.com/content/article/underwater-electromagnetic-propagation">Rhodes</a> explains this process,</p>
 
 <blockquote>
   <p>Loss is largely due to the effect of conduction on the electric field component. Propagating waves continually cycle energy between the electric and magnetic fields; hence conduction leads to strong attenuation of electromagnetic propagating waves.</p>
 </blockquote>
 
-<p>Saltwater has a high conductivity while freshwater has relatively low conductivity - over 400x less. This means that trying to engineer a hearing solution for an activity like snorkeling will be more challenging than swimming in a lake.</p>
+<p>Saltwater has a high conductivity while freshwater has a relatively low conductivity. This means that trying to engineer a hearing solution for an activity like snorkeling will be more challenging than swimming in a lake.</p>
 
 <p>It turns out that Bluetooth has virtually nil connectivity. <a href="http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf">Jiang and Georgakopoulos (2011)</a> show that the optimum frequency for air-to-water communication is short-wave radiowaves in the 3 to 100 MHz range. In contrast, Bluetooth is almost two orders of magnitude bigger, falling under the spectrum of microwaves. Anyone who’s had a good middle school science teacher will remember that kitchen microwaves heats food by heating the water molecules, which absorbs the microwaves.</p>
 
-<p>Wireless frequencies that do work underwater include sonar and NFC. Apple implemented NFC chips in iPhone 6 for Apple Pay, but have banned access by third party apps. Regardless, it’s moot point since NFC headphones are so few and not at all waterproof. If I hope to use my phone, then bluetooth it’ll have to be.</p>
+<p>Wireless frequencies that do work underwater include sonar and NFC. Apple implemented NFC chips in iPhone 6 for Apple Pay, but have banned access by third party apps. Regardless, it’s a moot point since NFC headphones are so few and not at all waterproof. If I hope to use my phone, bluetooth it’ll have to be.</p>
 
 <p>For my purposes, I don’t really <em>need</em> a big range. If I am swimming with waterproof earbuds, then that’s just a depth of one feet. I spent a lot of time looking at forums for R/C submarines and… I am actually kinda appalled by how much misinformation there was. Some posters would attribute the ineffectiveness of Bluetooth to the resonant frequency of water, <a href="http://www.schoolphysics.co.uk/age16-19/Wave%2520properties/Wave%20properties/text/Microwave_ovens/index.html">which is incorrect</a>. I didn’t know anything just a few days ago, but it is problematic when veteran posters propagate incorrect information to newbies. Luckily, this is the Internet, and there is always somebody rushing to prove people wrong.</p>
 
