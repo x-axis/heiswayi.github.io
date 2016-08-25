@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 24 Aug 2016 20:29:52 -0500</pubDate>
-    <lastBuildDate>Wed, 24 Aug 2016 20:29:52 -0500</lastBuildDate>
+    <pubDate>Thu, 25 Aug 2016 01:58:23 -0500</pubDate>
+    <lastBuildDate>Thu, 25 Aug 2016 01:58:23 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -18,20 +18,47 @@
 &lt;p&gt;This is my journal of trying to figure something out anyway :)&lt;/p&gt;
 
 &lt;h2 id=&quot;section&quot;&gt;12/29/2015&lt;/h2&gt;
-&lt;p&gt;Fitted with &lt;a href=&quot;http://www.resound.com/en-US/hearing-aids/enzo2&quot;&gt;Resound Enzo&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;. This hearing aid has actually been life-changing. It is Made for iPhone® and has been able to route sound from my phone directly into my hearing aid’s internal microphone.&lt;/p&gt;
+&lt;p&gt;Fitted with &lt;a href=&quot;http://www.resound.com/en-US/hearing-aids/enzo2&quot;&gt;Resound Enzo&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;. This hearing aid has actually been life-changing. It is &lt;a href=&quot;https://developer.apple.com/programs/mfi/&quot;&gt;Made for iPhone®&lt;/a&gt; and routes sound from my phone directly into my hearing aid’s internal microphone via Bluetooth. For the first time, I could Skype and not have to ask my friends to constantly repeat themselves because the max volume wasn’t loud enough.&lt;/p&gt;
 
 &lt;h2 id=&quot;section-1&quot;&gt;8/05/2016&lt;/h2&gt;
-&lt;p&gt;Went river tubing with my friends. I had gone tubing before in a lake before, leaving my hearing aids behind, but this trip was a 3-hour trip down a lazy river. We would essentially be chilling and talking the entire time. I didn’t want to be left out so I wore my old pair from high school. I figured that if something happened to them, I’d still have my pair from undergrad and the ReSound hearing aids. The trip turned out to be a blast, my friends tied up our tubes together and blasted music while talking.&lt;/p&gt;
+&lt;p&gt;Went river tubing with my friends! I had gone tubing before in a lake before, leaving my hearing aids behind, but this trip was a 3-hour trip down a lazy river. We would essentially be chilling and talking the entire time. I didn’t want to be left out so I wore my old pair from high school. I figured that if something happened to them, I’d still have my pair from undergrad and the ReSound hearing aids. The trip turned out to be a blast, my friends tied up our tubes together and blasted music while talking.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/river-tubing-44f64335dc8c58d964fb3fd33974ae7310a98f5fd5172520364cd3ad6368beab.jpg&quot; width=&quot;2000&quot; height=&quot;1333&quot; alt=&quot;river-tubing.jpg&quot; /&gt; 
 &lt;em&gt;Image from Trinity River Vision Authority.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;section-2&quot;&gt;8/23/2016&lt;/h2&gt;
-&lt;p&gt;Hatched crazy idea of using iPhone as a microphone and pairing it to waterproof bluetooth headphones. Enclose iPhone in a waterproof case and swim in it. I had already gotten the case during tubing and discovered that I could still talk on the phone. My phone’s internal microphone could pick up sound even in a watertight case.&lt;/p&gt;
+&lt;p&gt;Hatched crazy idea of using iPhone as a microphone and pairing it to waterproof bluetooth headphones. Enclose iPhone in a waterproof case and swim in it. I had already gotten the case during tubing and discovered that I could still talk on the phone. My phone’s internal microphone could pick up sound even in a watertight case. Of course, this depends on the case actually working and me not destroying my phone in the process.&lt;/p&gt;
 
-&lt;h2 id=&quot;preliminary-research&quot;&gt;Preliminary Research&lt;/h2&gt;
+&lt;h3 id=&quot;preliminary-research&quot;&gt;Preliminary Research&lt;/h3&gt;
 
-&lt;p&gt;Bluetooth is a wireless technology standard that operates on ultra high frequency radio waves in the &lt;a href=&quot;https://en.wikipedia.org/wiki/ISM_band&quot;&gt;ISM band&lt;/a&gt; from 2.4 to 2.485GHz. In essence, it transmits signals through electromagnetic radiation but electromagnetic propagation through water is&lt;/p&gt;
+&lt;p&gt;Bluetooth is a wireless technology standard that operates on ultra high frequency radio waves in the &lt;a href=&quot;https://en.wikipedia.org/wiki/ISM_band&quot;&gt;ISM band&lt;/a&gt; from 2.4 to 2.485GHz. In essence, it transmits signals through electromagnetic radiation but things get tricky when moving from air to water. In this case, signal loss can occur in two ways:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;transmission loss from reflection and refraction at the air/water boundary&lt;/li&gt;
+  &lt;li&gt;propagation loss due to water’s high permittivity and electrical conductivity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I think the first case shouldn’t be an issue since my headphones would already be in the water. That leaves the second case. Water’s high permittivity reduces any electric field around it, which is problematic since electromagnetic waves propagate via disturbances in the electric (and magnetic) fields.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/em-propagation-2f46022ce458aabca8926718f730276b5c57f21ba184ecf5d47ea72c53dca218.gif&quot; width=&quot;412&quot; height=&quot;179&quot; alt=&quot;em-propagation.gif&quot; /&gt;
+&lt;em&gt;Image from &lt;a href=&quot;http://www.physicsclassroom.com/mmedia/waves/em.cfm&quot;&gt;Physics Classroom&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As a result, radio frequencies like Bluetooth suffer from high attenuation - its intensity decreases sharply upon contact with water molecules. &lt;a href=&quot;http://www.hydro-international.com/content/article/underwater-electromagnetic-propagation&quot;&gt;Rhodes&lt;/a&gt; explains this process,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Loss is largely due to the effect of conduction on the electric field component. Propagating waves continually cycle energy between the electric and magnetic fields; hence conduction leads to strong attenuation of electromagnetic propagating waves.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Saltwater has a high conductivity while freshwater has relatively low conductivity - over 400x less. This means that trying to engineer a hearing solution for an activity like snorkeling will be more challenging than swimming in a lake.&lt;/p&gt;
+
+&lt;p&gt;It turns out that Bluetooth has virtually nil connectivity. &lt;a href=&quot;http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf&quot;&gt;Jiang and Georgakopoulos (2011)&lt;/a&gt; show that the optimum frequency for air-to-water communication is short-wave radiowaves in the 3 to 100 MHz range. In contrast, Bluetooth is almost two orders of magnitude bigger, falling under the spectrum of microwaves. Anyone who’s had a good middle school science teacher will remember that kitchen microwaves heats food by heating the water molecules, which absorbs the microwaves.&lt;/p&gt;
+
+&lt;p&gt;Wireless frequencies that do work underwater include sonar and NFC. Apple implemented NFC chips in iPhone 6 for Apple Pay, but have banned access by third party apps. Regardless, it’s moot point since NFC headphones are so few and not at all waterproof. If I hope to use my phone, then bluetooth it’ll have to be.&lt;/p&gt;
+
+&lt;p&gt;For my purposes, I don’t really &lt;em&gt;need&lt;/em&gt; a big range. If I am swimming with waterproof earbuds, then that’s just a depth of one feet. I spent a lot of time looking at forums for R/C submarines and… I am actually kinda appalled by how much misinformation there was. Some posters would attribute the ineffectiveness of Bluetooth to the resonant frequency of water, &lt;a href=&quot;http://www.schoolphysics.co.uk/age16-19/Wave%2520properties/Wave%20properties/text/Microwave_ovens/index.html&quot;&gt;which is incorrect&lt;/a&gt;. I didn’t know anything just a few days ago, but it is problematic when veteran posters propagate incorrect information to newbies. Luckily, this is the Internet, and there is always somebody rushing to prove people wrong.&lt;/p&gt;
+
+&lt;p&gt;In the meantime,&lt;/p&gt;
+
 </description>
         <pubDate>Wed, 24 Aug 2016 00:00:00 -0500</pubDate>
         <link>/waterproof-hearing-aid.html</link>
@@ -42,11 +69,13 @@
     
       <item>
         <title>Summer in Review</title>
-        <description>&lt;p&gt;Another sun-soaked season comes to a close. Previous summers revolved around research, so I was happy to “break” into finance this year. It’s been a tremendously interesting internship, owing to some unusual circumstances and a fantastic team. I worked at a large commercial bank on the top floor (well, the C-Suite occupies the floor above us) and it was a thrill walking through the hustle of downtown every morning. I’ll be honest - pressing my floor in the elevator still hasn’t gotten old after 10 weeks.&lt;/p&gt;
+        <description>&lt;p&gt;Another sun-soaked season comes to a close. Previous summers revolved around research, so I was happy to “break” into finance this year. It’s been a tremendously interesting internship, owing to some unusual circumstances and a fantastic team. I worked at a large commercial bank on the top floor (well, the C-Suite occupies the floor above us) and I’ll be honest - pressing my floor in the elevator still hasn’t gotten old after 10 weeks.&lt;/p&gt;
 
 &lt;p&gt;A full-time hire started the same day as me and we were both assigned to the same portfolio. Working with him was a learning opportunity in and of itself; he was incredibly proactive with great interpersonal skills, and served as a good example for how to act as a new hire. We both hit the ground running from the beginning.&lt;/p&gt;
 
-&lt;p&gt;The asset class that we focused on during the first few weeks was mortgages, specifically, the subprime mortgage and mortgage-backed securities portfolios. Older people will be familiar with the fact that the &lt;a href=&quot;https://en.wikipedia.org/wiki/Subprime_mortgage_crisis&quot;&gt;subprime mortgage crisis&lt;/a&gt; caused the 2007-2009 economic recession. Back then, I was still a kid and before this internship, I barely understood what a mortgage was, let alone the factors that went into causing the crisis. A friend recently recommended &lt;a href=&quot;http://www.imdb.com/title/tt1596363/&quot;&gt;The Big Short&lt;/a&gt; to me and I found it an entertaining and educational look at how subprime mortgages and mortgage-backed securities did the damage it did. I had the opportunity to compare the 2015 model with the 2010 model and, put shortly, the model’s assumptions can vastly influence the result of its calculations with an impact of billions.&lt;/p&gt;
+&lt;p&gt;The asset class that we focused on during the first few weeks was mortgages, specifically, the subprime mortgage and mortgage-backed securities portfolios. Older people will be familiar with the fact that the &lt;a href=&quot;https://en.wikipedia.org/wiki/Subprime_mortgage_crisis&quot;&gt;subprime mortgage crisis&lt;/a&gt; caused the 2007-2009 economic recession. Back then, I was still a kid and before this internship, I barely understood what a mortgage was, let alone the factors that went into causing the crisis. A friend recently recommended &lt;a href=&quot;http://www.imdb.com/title/tt1596363/&quot;&gt;The Big Short&lt;/a&gt; to me and I found it an entertaining and educational look at how these did the damage they did.&lt;/p&gt;
+
+&lt;p&gt;I had the opportunity to compare the 2015 model with the 2010 model and, put shortly, the model’s assumptions can vastly influence the result of its calculations with an impact of billions.&lt;/p&gt;
 
 &lt;p&gt;Going through these portfolios was a steep learning curve. Part of modelling this portfolio meant that we had to pull data from various databases. The subprime mortgage portfolio sees considerably more trading activity than all the other portfolios so we had to clearly understand how the data flowed from an accounting perspective. In order to do that, we needed to know the life cycle of an MBS at every step. I spent considerable time&lt;/p&gt;
 
