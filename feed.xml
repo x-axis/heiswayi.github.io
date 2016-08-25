@@ -5,9 +5,40 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 24 Aug 2016 20:24:05 -0500</pubDate>
-    <lastBuildDate>Wed, 24 Aug 2016 20:24:05 -0500</lastBuildDate>
+    <pubDate>Wed, 24 Aug 2016 20:29:52 -0500</pubDate>
+    <lastBuildDate>Wed, 24 Aug 2016 20:29:52 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Operation HEAR</title>
+        <description>&lt;p&gt;Last updated: 8/24/2016&lt;/p&gt;
+
+&lt;p&gt;Since I was a kid, I’ve wished for a way to hear while in the water. As of 2016, there is only one &lt;a href=&quot;http://www.siemens.com/press/en/pressrelease/?press=/en/pressrelease/2012/healthcare/h20121036.htm&quot;&gt;waterproof hearing aid&lt;/a&gt; on the market and even then, it is only for people with up to 65dB hearing loss. That counts me out.&lt;/p&gt;
+
+&lt;p&gt;This is my journal of trying to figure something out anyway :)&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;12/29/2015&lt;/h2&gt;
+&lt;p&gt;Fitted with &lt;a href=&quot;http://www.resound.com/en-US/hearing-aids/enzo2&quot;&gt;Resound Enzo&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;. This hearing aid has actually been life-changing. It is Made for iPhone® and has been able to route sound from my phone directly into my hearing aid’s internal microphone.&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;8/05/2016&lt;/h2&gt;
+&lt;p&gt;Went river tubing with my friends. I had gone tubing before in a lake before, leaving my hearing aids behind, but this trip was a 3-hour trip down a lazy river. We would essentially be chilling and talking the entire time. I didn’t want to be left out so I wore my old pair from high school. I figured that if something happened to them, I’d still have my pair from undergrad and the ReSound hearing aids. The trip turned out to be a blast, my friends tied up our tubes together and blasted music while talking.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/river-tubing-44f64335dc8c58d964fb3fd33974ae7310a98f5fd5172520364cd3ad6368beab.jpg&quot; width=&quot;2000&quot; height=&quot;1333&quot; alt=&quot;river-tubing.jpg&quot; /&gt; 
+&lt;em&gt;Image from Trinity River Vision Authority.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;8/23/2016&lt;/h2&gt;
+&lt;p&gt;Hatched crazy idea of using iPhone as a microphone and pairing it to waterproof bluetooth headphones. Enclose iPhone in a waterproof case and swim in it. I had already gotten the case during tubing and discovered that I could still talk on the phone. My phone’s internal microphone could pick up sound even in a watertight case.&lt;/p&gt;
+
+&lt;h2 id=&quot;preliminary-research&quot;&gt;Preliminary Research&lt;/h2&gt;
+
+&lt;p&gt;Bluetooth is a wireless technology standard that operates on ultra high frequency radio waves in the &lt;a href=&quot;https://en.wikipedia.org/wiki/ISM_band&quot;&gt;ISM band&lt;/a&gt; from 2.4 to 2.485GHz. In essence, it transmits signals through electromagnetic radiation but electromagnetic propagation through water is&lt;/p&gt;
+</description>
+        <pubDate>Wed, 24 Aug 2016 00:00:00 -0500</pubDate>
+        <link>/waterproof-hearing-aid.html</link>
+        <guid isPermaLink="true">/waterproof-hearing-aid.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Summer in Review</title>
