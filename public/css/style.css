@@ -193,6 +193,13 @@ th {
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th { background-color: #f9f9f9 }
+.image-wrapper {
+    text-align: center;
+   .image-caption {
+        color: $grey-color;
+        margin-top: $spacing-unit / 3;
+    }
+}
 .lead {
     font-size: 1.25rem;
     font-weight: 300;
