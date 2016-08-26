@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Aug 2016 02:17:05 -0500</pubDate>
-    <lastBuildDate>Fri, 26 Aug 2016 02:17:05 -0500</lastBuildDate>
+    <pubDate>Fri, 26 Aug 2016 02:19:41 -0500</pubDate>
+    <lastBuildDate>Fri, 26 Aug 2016 02:19:41 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -65,7 +65,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h3 id=&quot;preliminary-research&quot;&gt;Preliminary Research&lt;/h3&gt;
+&lt;p&gt;t ### Preliminary Research&lt;/p&gt;
 
 &lt;p&gt;Bluetooth is a wireless technology standard that operates on ultra high frequency radio waves. In essence, it transmits signals through electromagnetic radiation but things get tricky when moving from air to water. Signal loss can occur throughs:&lt;/p&gt;
 
@@ -105,7 +105,7 @@
 
 &lt;p&gt;I’m still hung up on this underwater bluetooth range question. What is it REALLY? I have about two weeks left of summer vacation and I PROMISED myself I wouldn’t do any math, but here we go…&lt;/p&gt;
 
-&lt;p&gt;Radio frequency power is expressed in decibels. We can calculate the maximum distance as:&lt;/p&gt;
+&lt;p&gt;Radio frequency power is expressed in decibels. We can &lt;a href=&quot;https://en.wikipedia.org/wiki/Free-space_path_loss&quot;&gt;calculate the maximum distance&lt;/a&gt; as:&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{align} 
