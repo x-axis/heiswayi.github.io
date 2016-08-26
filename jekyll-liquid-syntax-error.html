@@ -144,19 +144,15 @@ jekyll 3.1.6 | Error: undefined method <span class="sb">`</span>logical_path<spa
 
 <p>For the record, this is how I was inserting images in my Markdown:</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>
-<span class="gp">{% </span>img river-tubing.jpg %<span class="o">}</span>
-
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">{% </span>img river-tubing.jpg %<span class="o">}</span>
 </code></pre>
 </div>
 
 <p>Quick and easy. I fixed it with <a href="https://superdevresources.com/image-caption-jekyll/">this workaround</a> (with new image captioning support). Now I would insert images like this:</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>
-<span class="gp">{% </span>include image.html
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">{% </span>include image.html
 	<span class="nv">img</span><span class="o">=</span><span class="s2">"images/river-tubing.jpg"</span>
 	<span class="nv">caption</span><span class="o">=</span><span class="s2">"Image from Trinity River Vision Authority."</span> %<span class="o">}</span>
-
 </code></pre>
 </div>
 
@@ -164,10 +160,8 @@ jekyll 3.1.6 | Error: undefined method <span class="sb">`</span>logical_path<spa
 
 <p>I saw a <a href="http://stackoverflow.com/questions/17990087/why-images-folder-is-not-copied-when-generating-an-octopress-with-jekyll-assets">similar complaint</a> and tried the following solution:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="w">
-</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">asset_path</span><span class="w"> </span><span class="err">river-tubing.jpg</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
-
-</span></code></pre>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">{% </span>asset_path river-tubing.jpg %<span class="o">}</span>
+</code></pre>
 </div>
 
 <p>Which would give me the following error:</p>
