@@ -121,7 +121,7 @@
     <div class="post-date">August 24, 2016 &middot; <span class="reading-time" title="Estimated Reading Time">
   
   
-    6 minutes read
+    7 minutes read
   
 </span>
 </div>
@@ -201,8 +201,17 @@
 
 <p>I think the first case shouldn’t be an issue since my headphones would already be in the water. That leaves the second case. Water’s high permittivity reduces any electric field around it, which is problematic since electromagnetic waves propagate via disturbances in the electric (and magnetic) fields.</p>
 
-<p><img src="/images/em-propagation.gif" alt="Visual representation of electromagnetic propagation" />
-<em>Image from <a href="http://www.physicsclassroom.com/mmedia/waves/em.cfm">Physics Classroom</a></em></p>
+<!-- _includes/image.html -->
+<!-- Source: https://superdevresources.com/image-caption-jekyll/ -->
+
+<div class="image-wrapper">
+	
+    	<img src="/images/em-propagation.jpg" alt="Visual representation of electromagnetic propagation" />
+	
+    
+    <p class="image-caption">Image from [Physics Classroom](http://www.physicsclassroom.com/mmedia/waves/em.cfm)</p>
+    
+</div>
 
 <p>Radio frequencies like Bluetooth suffer from high attenuation - its intensity decreases sharply upon contact with water molecules. <a href="http://www.hydro-international.com/content/article/underwater-electromagnetic-propagation">Rhodes</a> explains this process,</p>
 
@@ -252,8 +261,17 @@
 
 <p><a href="http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf">Jiang and Georgakopoulos</a> look at electromagnetic wave propagation in fresh water. The graphs below shows the propagation and transmission loss at varying depths as frequency increases.</p>
 
-<p><img src="/images/propagation-loss.png" alt="Figure of propagation loss in water" />
-<em>Figures from <a href="http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf">Jiang and Georgakopoulos</a>, page 263</em></p>
+<!-- _includes/image.html -->
+<!-- Source: https://superdevresources.com/image-caption-jekyll/ -->
+
+<div class="image-wrapper">
+	
+    	<img src="/images/propagation-loss.png" alt="Propagation loss in water" />
+	
+    
+    <p class="image-caption">Figures from [Jiang and Georgakopoulos](http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf), page 263</p>
+    
+</div>
 
 <p>Bluetooth is around 2.4 GHz, which is 
 The solid line at 10<sup>9</sup> Hz (or 1GHz) is what I’m interested in. A depth of 0.5m is, in American, 1.6 feet. It looks like the propagation loss is about 25 dB.</p>
