@@ -5,9 +5,68 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Aug 2016 13:36:27 -0500</pubDate>
-    <lastBuildDate>Fri, 26 Aug 2016 13:36:27 -0500</lastBuildDate>
+    <pubDate>Fri, 26 Aug 2016 15:34:44 -0500</pubDate>
+    <lastBuildDate>Fri, 26 Aug 2016 15:34:44 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Liquid Syntax Errors in Jekyll 3.2.1</title>
+        <description>&lt;p&gt;Two days ago, I encountered the following error message when building my site:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Asset inconsitency, expected
+jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;logical_path&lt;span class=&quot;s1&quot;&gt;' for nil:NilClass
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;I hadn’t encountered this before, so I just ran &lt;code&gt;jekyll clean&lt;/code&gt; which flushed my caches and everything in &lt;code&gt;/_site/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Well, it fixed the error but then I got a new one:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Liquid Exception: Liquid syntax error &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;line 12&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: Unknown tag &lt;span class=&quot;s1&quot;&gt;'img'&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For the record, this is how I was inserting images in my Markdown:&lt;/p&gt;
+
+&lt;p&gt;{% img river-tubing.jpg %}&lt;/p&gt;
+
+&lt;p&gt;Quick and easy. I fixed it with &lt;a href=&quot;https://superdevresources.com/image-caption-jekyll/&quot;&gt;this workaround&lt;/a&gt; (with new image captioning support). Now I would insert images like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- _includes/image.html --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Source: https://superdevresources.com/image-caption-jekyll/ --&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image-wrapper&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	
+    	&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/images/river-tubing.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+	
+    
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image-caption&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Image from Trinity River Vision Authority.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But I was REALLY SAD that the original method didn’t work. Why?! So I upgrade from Jekyll 3.1 to 3.2.1 to see if it worked – it didn’t. Well, then I found out that my images weren’t copying over in Jekyll because they were never being referenced.&lt;/p&gt;
+
+&lt;p&gt;I saw a &lt;a href=&quot;http://stackoverflow.com/questions/17990087/why-images-folder-is-not-copied-when-generating-an-octopress-with-jekyll-assets&quot;&gt;similar complaint&lt;/a&gt; and tried the following solution:&lt;/p&gt;
+
+&lt;p&gt;{% asset_path river-tubing.jpg %}&lt;/p&gt;
+
+&lt;p&gt;Which would give me the following error:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Liquid syntax error &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;line 12&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: Unknown tag &lt;span class=&quot;s1&quot;&gt;'asset_path'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So it’s not an issue with Jekyll, it’s an issue with my configuration. At this point I have spent enough time on it and really want to get back to my bluetooth project.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 26 Aug 2016 00:00:00 -0500</pubDate>
+        <link>/jekyll-liquid-syntax-error.html</link>
+        <guid isPermaLink="true">/jekyll-liquid-syntax-error.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Operation HEAR</title>
@@ -71,7 +130,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;t ### Preliminary Research&lt;/p&gt;
+&lt;h3 id=&quot;preliminary-research&quot;&gt;Preliminary Research&lt;/h3&gt;
 
 &lt;p&gt;Bluetooth is a wireless technology standard that operates on ultra high frequency radio waves. In essence, it transmits signals through electromagnetic radiation but things get tricky when moving from air to water. Signal loss can occur throughs:&lt;/p&gt;
 
@@ -82,8 +141,17 @@
 
 &lt;p&gt;I think the first case shouldn’t be an issue since my headphones would already be in the water. That leaves the second case. Water’s high permittivity reduces any electric field around it, which is problematic since electromagnetic waves propagate via disturbances in the electric (and magnetic) fields.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/em-propagation.gif&quot; alt=&quot;Visual representation of electromagnetic propagation&quot; /&gt;
-&lt;em&gt;Image from &lt;a href=&quot;http://www.physicsclassroom.com/mmedia/waves/em.cfm&quot;&gt;Physics Classroom&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;!-- _includes/image.html --&gt;
+&lt;!-- Source: https://superdevresources.com/image-caption-jekyll/ --&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+	
+    	&lt;img src=&quot;/images/em-propagation.jpg&quot; alt=&quot;&quot; /&gt;
+	
+    
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Image from &lt;a href=&quot;http://www.physicsclassroom.com/mmedia/waves/em.cfm&quot;&gt;Physics Classroom&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Radio frequencies like Bluetooth suffer from high attenuation - its intensity decreases sharply upon contact with water molecules. &lt;a href=&quot;http://www.hydro-international.com/content/article/underwater-electromagnetic-propagation&quot;&gt;Rhodes&lt;/a&gt; explains this process,&lt;/p&gt;
 
@@ -133,8 +201,17 @@
 
 &lt;p&gt;&lt;a href=&quot;http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf&quot;&gt;Jiang and Georgakopoulos&lt;/a&gt; look at electromagnetic wave propagation in fresh water. The graphs below shows the propagation and transmission loss at varying depths as frequency increases.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/propagation-loss.png&quot; alt=&quot;Figure of propagation loss in water&quot; /&gt;
-&lt;em&gt;Figures from &lt;a href=&quot;http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf&quot;&gt;Jiang and Georgakopoulos&lt;/a&gt;, page 263&lt;/em&gt;&lt;/p&gt;
+&lt;!-- _includes/image.html --&gt;
+&lt;!-- Source: https://superdevresources.com/image-caption-jekyll/ --&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+	
+    	&lt;img src=&quot;/image/propagation-loss.png&quot; alt=&quot;&quot; /&gt;
+	
+    
+    &lt;p class=&quot;image-caption&quot;&gt;Figure on page 263&lt;/p&gt;
+    
+&lt;/div&gt;
 
 &lt;p&gt;Bluetooth is around 2.4 GHz, which is 
 The solid line at 10&lt;sup&gt;9&lt;/sup&gt; Hz (or 1GHz) is what I’m interested in. A depth of 0.5m is, in American, 1.6 feet. It looks like the propagation loss is about 25 dB.&lt;/p&gt;
