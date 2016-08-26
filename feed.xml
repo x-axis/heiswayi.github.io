@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Aug 2016 15:34:44 -0500</pubDate>
-    <lastBuildDate>Fri, 26 Aug 2016 15:34:44 -0500</lastBuildDate>
+    <pubDate>Fri, 26 Aug 2016 15:38:03 -0500</pubDate>
+    <lastBuildDate>Fri, 26 Aug 2016 15:38:03 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -17,9 +17,7 @@
 jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;logical_path&lt;span class=&quot;s1&quot;&gt;' for nil:NilClass
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;p&gt;I hadn’t encountered this before, so I just ran &lt;code&gt;jekyll clean&lt;/code&gt; which flushed my caches and everything in &lt;code&gt;/_site/&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Well, it fixed the error but then I got a new one:&lt;/p&gt;
+&lt;p&gt;I hadn’t encountered this before, so I just ran &lt;code&gt;jekyll clean&lt;/code&gt; which flushed my caches and everything in &lt;code&gt;/_site/&lt;/code&gt;. Well, it fixed the error but then I got a new one:&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Liquid Exception: Liquid syntax error &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;line 12&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: Unknown tag &lt;span class=&quot;s1&quot;&gt;'img'&lt;/span&gt; 
 &lt;/code&gt;&lt;/pre&gt;
@@ -27,7 +25,11 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;For the record, this is how I was inserting images in my Markdown:&lt;/p&gt;
 
-&lt;p&gt;{% img river-tubing.jpg %}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;river-tubing.jpg&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Quick and easy. I fixed it with &lt;a href=&quot;https://superdevresources.com/image-caption-jekyll/&quot;&gt;this workaround&lt;/a&gt; (with new image captioning support). Now I would insert images like this:&lt;/p&gt;
 
@@ -50,7 +52,11 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;I saw a &lt;a href=&quot;http://stackoverflow.com/questions/17990087/why-images-folder-is-not-copied-when-generating-an-octopress-with-jekyll-assets&quot;&gt;similar complaint&lt;/a&gt; and tried the following solution:&lt;/p&gt;
 
-&lt;p&gt;{% asset_path river-tubing.jpg %}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;asset_path&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;river-tubing.jpg&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Which would give me the following error:&lt;/p&gt;
 
