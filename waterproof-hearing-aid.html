@@ -128,7 +128,7 @@
 
   <p>Last updated: 8/26/2016</p>
 
-<h3 id="introduction">Introduction</h3>
+<h2 id="introduction">Introduction</h2>
 <p>Since I was a kid, I’ve wished for a way to hear while in the water. As of 2016, there is only one <a href="http://www.siemens.com/press/en/pressrelease/?press=/en/pressrelease/2012/healthcare/h20121036.htm">waterproof hearing aid</a> on the market. Someday I would like one but for now, this is my journal of trying to figure something more cost-effective :)</p>
 
 <h2 id="section">12/29/2015</h2>
@@ -140,6 +140,7 @@
 <center>
 <img src="/images/river-tubing-44f64335dc8c58d964fb3fd33974ae7310a98f5fd5172520364cd3ad6368beab.jpg" width="2000" height="1333" alt="river-tubing.jpg" /> 
 *Image from Trinity River Vision Authority.*
+
 </center>
 
 <h2 id="section-2">8/23/2016</h2>
@@ -189,20 +190,22 @@
 
 <script type="math/tex; mode=display">% <![CDATA[
 \begin{align} 
-\text{FSPL_{dB}} &= 10\log_{10}\left(\left( \frac{4\pi d}{c}^2\right)\right) \\\\
-&= 20\log_{10}(d) + 20\log_{10}(f) + 20\log_{10} \left( \frac{4\pi}{c}\right) \\\\
+\text{FSPL}_{dB} &= 10\log_{10}\left(\left( \frac{4\pi d}{c}^2\right)\right) \\
+&= 20\log_{10}(d) + 20\log_{10}(f) + 20\log_{10} \left( \frac{4\pi}{c}\right) \\
 &= 20\log_{10}(d) + 20\log_{10}(f) - 147.55
 \end{align} %]]></script>
 
 <p>If we measure frequency in GHz instead of Hz, the equation becomes,
 <script type="math/tex">% <![CDATA[
 \begin{align}
-\text{FSPL_{dB}} &= 20\log_{10}(d) + 20\log_{10}(f \cdot 10^9) - 147.55 \\\\ 
-&= 20\log_{10}(d) + 20\log_{10}(f) + 20\log_{10}(10^9) - 147.55 \\\\
+\text{FSPL_{dB}} &= 20\log_{10}(d) + 20\log_{10}(f \cdot 10^9) - 147.55 \\ 
+&= 20\log_{10}(d) + 20\log_{10}(f) + 20\log_{10}(10^9) - 147.55 \\
 &= 20\log_{10}(d) + 20\log_{10}(f) - 32.45
-\end{align} %]]></script>
-Rearranging the equation above to find distance, we get
-<script type="math/tex">d = 10^{\frac{1}{20}(FSPL - 20\log{f} - 32.45)}</script></p>
+\end{align} %]]></script></p>
+
+<p>Rearranging the equation above to find distance, we get</p>
+
+<script type="math/tex; mode=display">d = 10^{\frac{1}{20}(FSPL - 20\log(f) - 32.45)}</script>
 
 <p><a href="http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf">Jiang and Georgakopoulos</a> look at electromagnetic wave propagation in fresh water. The graphs below shows the propagation and transmission loss at varying depths as frequency increases. 
 <img src="/images/propagation-loss-fa6fd9b8144be4a58f85cb7ae716e3c83e892b5fbcc925dfe5e2b17050fe4ff4.png" width="865" height="685" alt="propagation-loss.png" /> <img src="/images/transmission-loss-ad6115a269c8ea0094c865315ffd72a60112acea4f26da18dd7eb3806a9503ba.png" width="865" height="685" alt="transmission-loss.png" />
