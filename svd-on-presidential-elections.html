@@ -277,9 +277,9 @@ Demographic_i =
 
 <p>Note that R uses the singular value decomposition method to perform principal component analysis, where the convention is to consider rows as observations and columns as variables, so our matrix needs to be in <em>election_year x demographic_group</em> format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same scale of {1, 0, -1}, no further processing is needed, e.g. mean-centering or normalization.</p>
 
-<div class="language-r highlighter-rouge"><pre class="highlight"><code><span class="n">df</span> <span class="o">&lt;-</span> <span class="n">read.csv</span><span class="p">(</span><span class="s2">"complete_dataset.csv"</span><span class="p">);</span>
-<span class="n">svd_df</span> <span class="o">=</span> <span class="n">prcomp</span><span class="p">(</span><span class="n">df</span><span class="p">);</span>    <span class="c1"># R uses the SVD method to perform PCA. 
-</span><span class="n">summary</span><span class="p">(</span><span class="n">svd_A</span><span class="p">);</span>         <span class="c1"># Output summary of SVD
+<div class="language-r highlighter-rouge"><pre class="highlight"><code><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"complete_dataset.csv"</span><span class="p">);</span><span class="w">
+</span><span class="n">svd_df</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prcomp</span><span class="p">(</span><span class="n">df</span><span class="p">);</span><span class="w">    </span><span class="c1"># R uses the SVD method to perform PCA. 
+</span><span class="n">summary</span><span class="p">(</span><span class="n">svd_A</span><span class="p">);</span><span class="w">         </span><span class="c1"># Output summary of SVD
 </span></code></pre>
 </div>
 
