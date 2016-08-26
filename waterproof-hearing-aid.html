@@ -121,7 +121,7 @@
     <div class="post-date">August 24, 2016 &middot; <span class="reading-time" title="Estimated Reading Time">
   
   
-    5 minutes read
+    6 minutes read
   
 </span>
 </div>
@@ -147,8 +147,42 @@
 
 </center>
 
-<h2 id="section-2">8/23/2016</h2>
-<p>Hatched crazy idea of using iPhone as a microphone and pairing it to waterproof bluetooth headphones. Enclose iPhone in a waterproof case and swim in it. I had already gotten the case during tubing and discovered that I could still talk on the phone. My phone’s internal microphone could pick up sound even in a watertight case. Of course, this depends on the case actually working and me not destroying my phone in the process.</p>
+<h2 id="section-2">8/19/2016</h2>
+<p>Hatched crazy idea of using iPhone as a microphone and pairing it to waterproof bluetooth headphones. Then I simply enclose my iPhone in a waterproof case and swim with it. I had already gotten the case during tubing and discovered that I could still talk on the phone. My phone’s internal microphone could pick up sound even in a watertight case. Of course, this depends on the case actually working and me not destroying my phone in the process.</p>
+
+<h3 id="preliminary-testing">Preliminary Testing</h3>
+
+<p>Apps that can turn the iPhone into a microphone are many! Preliminary testing using my hearing aids as bluetooth headphones reveals that the internal iPhone microphone is surprisingly good and can switch from near and far range. I turned off my hearing aid’s external microphone so that the only sound came from the iPhone’s internal microphone. I could hear my parents yelling my name from downstairs and hold a conversation with them in the car and at the dinner table.</p>
+
+<p>Sound quality is extremely polluted. There is a lot of ambient / background noise and it is annoyingly loud. My voice sounds disturbingly different, I can’t describe it. My parents also sound different.</p>
+
+<p>Overall, results are optimistic and this idea looks possible.</p>
+
+<h2 id="section-3">8/20/2016</h2>
+<p>Research waterproof ratings. Apparently they are on an “IPX” scale from 0 (zero protection) to 8 (fully waterproof).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Protection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6</td>
+      <td>Can withstand water jets at 100 liters/min for 3 min</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Immersion up to 1 meter for 30 minutes</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Continuous immersion up to 3 meters</td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="preliminary-research">Preliminary Research</h3>
 
@@ -182,15 +216,15 @@
 
 <p>It was actually REALLY hard to find published results about underwater bluetooth range. You’d think this would be a common question - and it is - but I guess since it is so ineffective that few sought to quantify it.</p>
 
-<h3 id="section-3">8/23/2016</h3>
+<h3 id="section-4">8/23/2016</h3>
 
 <p>Today, I spent a lot of time looking at forums for R/C submarines and… I am actually kinda appalled by how much misinformation there was. Some posters would attribute the ineffectiveness of Bluetooth to the resonant frequency of water, <a href="http://www.schoolphysics.co.uk/age16-19/Wave%2520properties/Wave%20properties/text/Microwave_ovens/index.html">which is incorrect</a>. I didn’t know anything just a few days ago, but it is problematic when veteran posters propagate incorrect information to newbies. Luckily, this is the Internet, and there is always somebody rushing to prove people wrong.</p>
 
-<h3 id="section-4">8/25/2016</h3>
+<h3 id="section-5">8/25/2016</h3>
 
 <p>I’m still hung up on this underwater bluetooth range question. What is it REALLY? I have about two weeks left of summer vacation and I PROMISED myself I wouldn’t do any math, but here we go…</p>
 
-<p>Radio frequency power is expressed in decibels. We can calculate the maximum distance</p>
+<p>Radio frequency power is expressed in decibels. We can calculate the maximum distance as:</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 \begin{align} 
@@ -199,23 +233,24 @@
 &= 20\log_{10}(d) + 20\log_{10}(f) - 147.55
 \end{align} %]]></script>
 
-<p>If we measure frequency in GHz instead of Hz, the equation becomes,
-<script type="math/tex">% <![CDATA[
+<p>If we measure frequency in GHz instead of Hz, the equation becomes,</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
 \begin{align}
-\text{FSPL_{dB}} &= 20\log_{10}(d) + 20\log_{10}(f \cdot 10^9) - 147.55 \\ 
+\text{FSPL}_{dB} &= 20\log_{10}(d) + 20\log_{10}(f \cdot 10^9) - 147.55 \\ 
 &= 20\log_{10}(d) + 20\log_{10}(f) + 20\log_{10}(10^9) - 147.55 \\
 &= 20\log_{10}(d) + 20\log_{10}(f) - 32.45
-\end{align} %]]></script></p>
+\end{align} %]]></script>
 
 <p>Rearranging the equation above to find distance, we get</p>
 
-<script type="math/tex; mode=display">d = 10^{\frac{1}{20}(FSPL - 20\log(f) - 32.45)}</script>
+<script type="math/tex; mode=display">d = 10^{\frac{1}{20}\left(FSPL - 20\log(f) - 32.45\right)}</script>
 
 <p><a href="http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf">Jiang and Georgakopoulos</a> look at electromagnetic wave propagation in fresh water. The graphs below shows the propagation and transmission loss at varying depths as frequency increases. 
 <img src="/images/propagation-loss-fa6fd9b8144be4a58f85cb7ae716e3c83e892b5fbcc925dfe5e2b17050fe4ff4.png" width="865" height="685" alt="propagation-loss.png" /> <img src="/images/transmission-loss-ad6115a269c8ea0094c865315ffd72a60112acea4f26da18dd7eb3806a9503ba.png" width="865" height="685" alt="transmission-loss.png" />
 <em>Figures from <a href="http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf">Jiang and Georgakopoulos</a>, page 263</em></p>
 
-<p>Bluetooth is around 2.4GHz, which is 
+<p>Bluetooth is around 2.4 GHz, which is 
 The solid line at 10<sup>9</sup> Hz (or 1GHz) is what I’m interested in. A depth of 0.5m is, in American, 1.6 feet. It looks like the propagation loss is about 25 dB.</p>
 
 
