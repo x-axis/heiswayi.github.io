@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Aug 2016 15:38:03 -0500</pubDate>
-    <lastBuildDate>Fri, 26 Aug 2016 15:38:03 -0500</lastBuildDate>
+    <pubDate>Fri, 26 Aug 2016 15:48:41 -0500</pubDate>
+    <lastBuildDate>Fri, 26 Aug 2016 15:48:41 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -25,26 +25,15 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;For the record, this is how I was inserting images in my Markdown:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;river-tubing.jpg&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;{% &lt;/span&gt;img river-tubing.jpg %&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Quick and easy. I fixed it with &lt;a href=&quot;https://superdevresources.com/image-caption-jekyll/&quot;&gt;this workaround&lt;/a&gt; (with new image captioning support). Now I would insert images like this:&lt;/p&gt;
 
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- _includes/image.html --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Source: https://superdevresources.com/image-caption-jekyll/ --&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image-wrapper&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-	
-    	&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/images/river-tubing.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-	
-    
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image-caption&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Image from Trinity River Vision Authority.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-    
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;{% &lt;/span&gt;include image.html
+	&lt;span class=&quot;nv&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;images/river-tubing.jpg&quot;&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Image from Trinity River Vision Authority.&quot;&lt;/span&gt; %&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -52,10 +41,8 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;I saw a &lt;a href=&quot;http://stackoverflow.com/questions/17990087/why-images-folder-is-not-copied-when-generating-an-octopress-with-jekyll-assets&quot;&gt;similar complaint&lt;/a&gt; and tried the following solution:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;asset_path&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;river-tubing.jpg&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;{% &lt;/span&gt;asset_path river-tubing.jpg %&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Which would give me the following error:&lt;/p&gt;
@@ -92,7 +79,7 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;div class=&quot;image-wrapper&quot;&gt;
 	
-    	&lt;img src=&quot;/images/river-tubing.jpg&quot; alt=&quot;&quot; /&gt;
+    	&lt;img src=&quot;//images/river-tubing.jpg&quot; alt=&quot;&quot; /&gt;
 	
     
     &lt;p class=&quot;image-caption&quot;&gt;Image from Trinity River Vision Authority.&lt;/p&gt;
@@ -152,7 +139,7 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;div class=&quot;image-wrapper&quot;&gt;
 	
-    	&lt;img src=&quot;/images/em-propagation.jpg&quot; alt=&quot;&quot; /&gt;
+    	&lt;img src=&quot;//images/em-propagation.jpg&quot; alt=&quot;&quot; /&gt;
 	
     
 &lt;/div&gt;
@@ -212,7 +199,7 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;div class=&quot;image-wrapper&quot;&gt;
 	
-    	&lt;img src=&quot;/image/propagation-loss.png&quot; alt=&quot;&quot; /&gt;
+    	&lt;img src=&quot;//images/propagation-loss.png&quot; alt=&quot;&quot; /&gt;
 	
     
     &lt;p class=&quot;image-caption&quot;&gt;Figure on page 263&lt;/p&gt;
@@ -590,7 +577,7 @@ Demographic_i =
 
 &lt;p&gt;More precisely, the principal components of a dataset form an orthogonal basis. Geometrically, basis vectors can be seen as the axes in a Cartesian coordinate system. Humans are comfortable seeing data represented in two dimensions: x and y, so we can project the first two principal components, PC1 and PC2, onto the standard x, y plane. Together, they capture 75% of variance in the data.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/elections-biplot.png&quot; alt=&quot;Presidential Election biplot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/elections_biplot.png&quot; alt=&quot;Presidential Election biplot&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Here, the two principal components form the axes of the biplot above. There are two things to interpret: points and vectors. Points (presidential election years) that are close together have similar demographics while vectors (demographic groups) that are close together have similar voting behavior. We see that Democratic presidences are grouped on the left while Republican presidences are grouped on the right. Several demographics are clustered together:&lt;/p&gt;
 
