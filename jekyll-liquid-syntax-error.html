@@ -144,25 +144,18 @@ jekyll 3.1.6 | Error: undefined method <span class="sb">`</span>logical_path<spa
 
 <p>For the record, this is how I was inserting images in my Markdown:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="w">
-</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">img</span><span class="w"> </span><span class="err">river-tubing.jpg</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code>
+<span class="gp">{% </span>img river-tubing.jpg %<span class="o">}</span>
 
-</span></code></pre>
+</code></pre>
 </div>
 
 <p>Quick and easy. I fixed it with <a href="https://superdevresources.com/image-caption-jekyll/">this workaround</a> (with new image captioning support). Now I would insert images like this:</p>
 
-<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="c">&lt;!-- _includes/image.html --&gt;</span>
-<span class="c">&lt;!-- Source: https://superdevresources.com/image-caption-jekyll/ --&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"image-wrapper"</span> <span class="nt">&gt;</span>
-	
-    	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/river-tubing.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">/&gt;</span>
-	
-    
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"image-caption"</span><span class="nt">&gt;</span>Image from Trinity River Vision Authority.<span class="nt">&lt;/p&gt;</span>
-    
-<span class="nt">&lt;/div&gt;</span>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code>
+<span class="gp">{% </span>include image.html
+	<span class="nv">img</span><span class="o">=</span><span class="s2">"images/river-tubing.jpg"</span>
+	<span class="nv">caption</span><span class="o">=</span><span class="s2">"Image from Trinity River Vision Authority."</span> %<span class="o">}</span>
 
 </code></pre>
 </div>
