@@ -277,9 +277,9 @@ Demographic_i =
 
 <p>Note that R uses the singular value decomposition method to perform principal component analysis, where the convention is to consider rows as observations and columns as variables, so our matrix needs to be in <em>election_year x demographic_group</em> format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same scale of {1, 0, -1}, no further processing is needed, e.g. mean-centering or normalization.</p>
 
-<div class="language-r highlighter-rouge"><pre class="highlight"><code><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"complete_dataset.csv"</span><span class="p">);</span><span class="w">
-</span><span class="n">svd_df</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prcomp</span><span class="p">(</span><span class="n">df</span><span class="p">);</span><span class="w">    </span><span class="c1"># R uses the SVD method to perform PCA. 
-</span><span class="n">summary</span><span class="p">(</span><span class="n">svd_A</span><span class="p">);</span><span class="w">         </span><span class="c1"># Output summary of SVD
+<div class="language-r highlighter-rouge"><pre class="highlight"><code><span class="n">df</span> <span class="o">&lt;-</span> <span class="n">read.csv</span><span class="p">(</span><span class="s2">"complete_dataset.csv"</span><span class="p">);</span>
+<span class="n">svd_df</span> <span class="o">=</span> <span class="n">prcomp</span><span class="p">(</span><span class="n">df</span><span class="p">);</span>    <span class="c1"># R uses the SVD method to perform PCA. 
+</span><span class="n">summary</span><span class="p">(</span><span class="n">svd_A</span><span class="p">);</span>         <span class="c1"># Output summary of SVD
 </span></code></pre>
 </div>
 
@@ -330,7 +330,7 @@ Demographic_i =
 
 <p>More precisely, the principal components of a dataset form an orthogonal basis. Geometrically, basis vectors can be seen as the axes in a Cartesian coordinate system. Humans are comfortable seeing data represented in two dimensions: x and y, so we can project the first two principal components, PC1 and PC2, onto the standard x, y plane. Together, they capture 75% of variance in the data.</p>
 
-<p><img src="/images/elections_biplot-b4bc48b62b6ef9b1476976e4dd0de6db937695cd83cdf4ca03fac38e970dba49.png" width="3838" height="2100" alt="elections_biplot.png" /></p>
+<p><img src="/images/elections-biplot.png" alt="Presidential Election biplot" /></p>
 
 <p>Here, the two principal components form the axes of the biplot above. There are two things to interpret: points and vectors. Points (presidential election years) that are close together have similar demographics while vectors (demographic groups) that are close together have similar voting behavior. We see that Democratic presidences are grouped on the left while Republican presidences are grouped on the right. Several demographics are clustered together:</p>
 

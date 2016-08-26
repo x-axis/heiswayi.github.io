@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Aug 2016 12:05:10 -0500</pubDate>
-    <lastBuildDate>Fri, 26 Aug 2016 12:05:10 -0500</lastBuildDate>
+    <pubDate>Fri, 26 Aug 2016 12:33:28 -0500</pubDate>
+    <lastBuildDate>Fri, 26 Aug 2016 12:33:28 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -23,7 +23,7 @@
 &lt;p&gt;Went tubing with my friends! I had taken out my hearing aids for tubing in a lake before, but this trip was a 3-hour trip down a lazy river. We would essentially be chilling and talking the entire time. I didn’t want to be left out so I wore my old pair from high school. I figured that if something happened to them, I’d still have my pair from undergrad and the ReSounds. The trip turned out to be a blast, my friends tied up our tubes together and blasted music while talking.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/river-tubing-44f64335dc8c58d964fb3fd33974ae7310a98f5fd5172520364cd3ad6368beab.jpg&quot; width=&quot;2000&quot; height=&quot;1333&quot; alt=&quot;river-tubing.jpg&quot; /&gt; 
+![River tubing photo](/images/river-tubing.jpg)
 *Image from Trinity River Vision Authority.*
 
 &lt;/center&gt;
@@ -77,7 +77,7 @@
 &lt;p&gt;I think the first case shouldn’t be an issue since my headphones would already be in the water. That leaves the second case. Water’s high permittivity reduces any electric field around it, which is problematic since electromagnetic waves propagate via disturbances in the electric (and magnetic) fields.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/em-propagation-2f46022ce458aabca8926718f730276b5c57f21ba184ecf5d47ea72c53dca218.gif&quot; width=&quot;412&quot; height=&quot;179&quot; alt=&quot;em-propagation.gif&quot; /&gt;
+![Visual representation of electromagnetic propagation](/images/em-propagation.gif)
 *Image from [Physics Classroom](http://www.physicsclassroom.com/mmedia/waves/em.cfm)* 
 &lt;/center&gt;
 
@@ -128,7 +128,7 @@
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;d = 10^{\frac{1}{20}\left(FSPL - 20\log(f) - 32.45\right)}&lt;/script&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf&quot;&gt;Jiang and Georgakopoulos&lt;/a&gt; look at electromagnetic wave propagation in fresh water. The graphs below shows the propagation and transmission loss at varying depths as frequency increases. 
-&lt;img src=&quot;/images/propagation-loss-fa6fd9b8144be4a58f85cb7ae716e3c83e892b5fbcc925dfe5e2b17050fe4ff4.png&quot; width=&quot;865&quot; height=&quot;685&quot; alt=&quot;propagation-loss.png&quot; /&gt; &lt;img src=&quot;/images/transmission-loss-ad6115a269c8ea0094c865315ffd72a60112acea4f26da18dd7eb3806a9503ba.png&quot; width=&quot;865&quot; height=&quot;685&quot; alt=&quot;transmission-loss.png&quot; /&gt;
+&lt;img src=&quot;/images/propagation-loss.png&quot; alt=&quot;Figure of propagation loss in water&quot; /&gt;
 &lt;em&gt;Figures from &lt;a href=&quot;http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf&quot;&gt;Jiang and Georgakopoulos&lt;/a&gt;, page 263&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Bluetooth is around 2.4 GHz, which is 
@@ -449,9 +449,9 @@ Demographic_i =
 
 &lt;p&gt;Note that R uses the singular value decomposition method to perform principal component analysis, where the convention is to consider rows as observations and columns as variables, so our matrix needs to be in &lt;em&gt;election_year x demographic_group&lt;/em&gt; format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same scale of {1, 0, -1}, no further processing is needed, e.g. mean-centering or normalization.&lt;/p&gt;
 
-&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;complete_dataset.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd_df&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prcomp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# R uses the SVD method to perform PCA. 
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd_A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;         &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# Output summary of SVD
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;read.csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;complete_dataset.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;svd_df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prcomp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# R uses the SVD method to perform PCA. 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd_A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;         &lt;span class=&quot;c1&quot;&gt;# Output summary of SVD
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -502,7 +502,7 @@ Demographic_i =
 
 &lt;p&gt;More precisely, the principal components of a dataset form an orthogonal basis. Geometrically, basis vectors can be seen as the axes in a Cartesian coordinate system. Humans are comfortable seeing data represented in two dimensions: x and y, so we can project the first two principal components, PC1 and PC2, onto the standard x, y plane. Together, they capture 75% of variance in the data.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/elections_biplot-b4bc48b62b6ef9b1476976e4dd0de6db937695cd83cdf4ca03fac38e970dba49.png&quot; width=&quot;3838&quot; height=&quot;2100&quot; alt=&quot;elections_biplot.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/elections-biplot.png&quot; alt=&quot;Presidential Election biplot&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Here, the two principal components form the axes of the biplot above. There are two things to interpret: points and vectors. Points (presidential election years) that are close together have similar demographics while vectors (demographic groups) that are close together have similar voting behavior. We see that Democratic presidences are grouped on the left while Republican presidences are grouped on the right. Several demographics are clustered together:&lt;/p&gt;
 
