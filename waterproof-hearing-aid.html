@@ -239,11 +239,13 @@
 
 <p>It is actually REALLY hard to find published results about underwater bluetooth range. You’d think this would be a common question - and it is - but I guess since it is so ineffective that few sought to quantify it.</p>
 
-<h3 id="section-7">8/25/2016</h3>
+<h1 id="section-7">8/25/2016</h1>
 
 <p>Today, I spent a lot of time looking at forums for R/C submarines and… I am actually kinda appalled by how much misinformation there was. Some posters would attribute the ineffectiveness of Bluetooth to the resonant frequency of water, <a href="http://www.schoolphysics.co.uk/age16-19/Wave%2520properties/Wave%20properties/text/Microwave_ovens/index.html">which is incorrect</a>. I didn’t know anything just a few days ago, but it is problematic when veteran posters propagate incorrect information to newbies. Luckily, this is the Internet, and there is always somebody rushing to prove people wrong.</p>
 
-<h3 id="section-8">8/26/2016</h3>
+<h1 id="section-8">8/26/2016</h1>
+
+<h3 id="theoretical-bluetooth-underwater-range">Theoretical Bluetooth Underwater Range</h3>
 
 <p>I’m still hung up on this underwater bluetooth range question. What is it REALLY? I have about two weeks left of summer vacation and I PROMISED myself I wouldn’t do any math, but here we go…</p>
 
@@ -269,7 +271,7 @@
 
 <script type="math/tex; mode=display">d = 10^{\frac{1}{20}\left(FSPL - 20\log(f) - 32.45\right)}</script>
 
-<p>Bluetooth frequency is a known value, but what about the path loss? <a href="http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf">Jiang and Georgakopoulos</a> look at signal loss in fresh water, producing the following graphs of propagation and transmission loss at various depths.</p>
+<p>Bluetooth frequency is a known value, but what about the path loss? <a href="http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf">Jiang and Georgakopoulos</a> look at wireless signal loss in fresh water, producing the following graph of propagation loss at various depths.</p>
 
 <p><img src="/images/propagation-loss.png" alt="Propagation loss of electromagnetic waves" /></p>
 
@@ -285,11 +287,13 @@ d &= 10^{\frac{1}{20}\left(25 - 20\log(2.4) - 32.45\right)} \\
 
 <p>Thus, our theoretical range in freshwater is 17.67 centimeters. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3355409/">Lloret et al.</a> achieved bluetooth connectivity at average depths of 16-17 cm in a swimming pool filled with freshwater, which is pretty close to the theoretical calculations.</p>
 
-<h2 id="section-9">8/27/2016</h2>
+<h1 id="section-9">8/27/2016</h1>
 
 <p>Now that I have a theoretical (and empirical) distance of bluetooth range in freshwater, it seems pretty pointless to extend this result to seawater. 16 cm is about 6.3 inches, so my head would be just under the surface of the water before I lose connectivity. If I can just modify my headphones such that my phone doesn’t recognize a microphone, then I should have bluetooth audio without the sound quality problem.</p>
 
-<h2 id="section-10">8/28/2016</h2>
+<h1 id="section-10">8/28/2016</h1>
+
+<h3 id="hacking-attempts">Hacking Attempts</h3>
 
 <p>Today, I tried to hack and reprogram my bluetooth headphones. <a href="https://www.amazon.com/gp/product/B01G8JO5F2">Senso ActivBuds</a> use Bluetooth v4.1+EDR, which stands for Enhanced Data Rate. Bluetooth devices interact with each other through “profiles,” and the profiles that Apple supports are <a href="https://support.apple.com/en-us/HT204387">here</a>. It looks like my headset might have the <a href="https://developer.bluetooth.org/TechnologyOverview/Pages/HFP.aspx">HFP profile</a>. Now the question is: is there an <a href="https://developer.bluetooth.org/TechnologyOverview/Pages/A2DP.aspx">A2DP profile</a> as with wired headphones?</p>
 
@@ -312,6 +316,8 @@ d &= 10^{\frac{1}{20}\left(25 - 20\log(2.4) - 32.45\right)} \\
 </ul>
 
 <p>This is all I’ve found so far for today. I don’t know anything about engineering so it’s taken a lot of time reading through documentation and figuring out what to look for. I haven’t found a guide that tells you how profiles get put on bluetooth “modules” (chips) – there might not even be one. I’m feeling pretty discouraged about being able to hack my ActivBuds.</p>
+
+<h3 id="turn-of-events">Turn of Events</h3>
 
 <p>On the bright side, waterproof case showed up today! It has a line-in for plugging wireless earbuds in and they worked pretty well. Then I wondered if the iPhone would stay in A2DP profile if I plugged in my Apple earbuds while having the Senso ActivBuds paired. The answer is no.</p>
 
