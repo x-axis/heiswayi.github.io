@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 27 Aug 2016 01:58:04 -0500</pubDate>
-    <lastBuildDate>Sat, 27 Aug 2016 01:58:04 -0500</lastBuildDate>
+    <pubDate>Sat, 27 Aug 2016 02:04:15 -0500</pubDate>
+    <lastBuildDate>Sat, 27 Aug 2016 02:04:15 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -65,32 +65,28 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
         <title>Operation HEAR</title>
         <description>&lt;p&gt;Last updated: 8/29/2016&lt;/p&gt;
 
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Since I was a kid, I’ve wished for a way to hear while in the water. As of 2016, there is only one &lt;a href=&quot;http://www.siemens.com/press/en/pressrelease/?press=/en/pressrelease/2012/healthcare/h20121036.htm&quot;&gt;waterproof hearing aid&lt;/a&gt; on the market. Someday I would like one but for now, this is my journal of trying to figure something more cost-effective :)&lt;/p&gt;
 
-&lt;h2 id=&quot;section&quot;&gt;12/29/2015&lt;/h2&gt;
+&lt;h1 id=&quot;section&quot;&gt;12/29/2015&lt;/h1&gt;
 &lt;p&gt;Got fitted with &lt;a href=&quot;http://www.resound.com/en-US/hearing-aids/enzo2&quot;&gt;Resound Enzo&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;. This hearing aid has actually been life-changing. It is &lt;a href=&quot;https://developer.apple.com/programs/mfi/&quot;&gt;Made for iPhone®&lt;/a&gt; and routes sound from my phone directly into my hearing aid’s internal microphone via Bluetooth. For the first time, I could Skype and not have to ask my friends to constantly repeat themselves because the max volume wasn’t loud enough.&lt;/p&gt;
 
-&lt;h2 id=&quot;section-1&quot;&gt;8/05/2016&lt;/h2&gt;
+&lt;h1 id=&quot;section-1&quot;&gt;8/05/2016&lt;/h1&gt;
 &lt;p&gt;Went tubing with my friends! I had taken out my hearing aids for tubing in a lake before, but this trip was a 3-hour trip down a lazy river. We would essentially be chilling and talking the entire time. I didn’t want to be left out so I wore my old pair from high school. I figured that if something happened to them, I’d still have my pair from undergrad and the ReSounds. The trip turned out to be a blast, my friends tied up our tubes together and blasted music while talking.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/river-tubing.jpg&quot; alt=&quot;River tubing&quot; /&gt;
 &lt;em&gt;Image from Trinity River Vision Authority.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;section-2&quot;&gt;8/19/2016&lt;/h2&gt;
+&lt;h1 id=&quot;section-2&quot;&gt;8/19/2016&lt;/h1&gt;
 &lt;p&gt;Hatched crazy idea of using iPhone as a microphone and pairing it to waterproof bluetooth headphones. Then I simply enclose my iPhone in a waterproof case and swim with it. I had already gotten the case during tubing and discovered that I could still talk on the phone. My phone’s internal microphone could pick up sound even in a watertight case. Of course, this depends on the case actually working and me not destroying my phone in the process.&lt;/p&gt;
-
-&lt;h3 id=&quot;preliminary-testing&quot;&gt;Preliminary Testing&lt;/h3&gt;
 
 &lt;p&gt;Apps that can turn the iPhone into a microphone are many! Preliminary testing using my hearing aids as bluetooth headphones reveals that the internal iPhone microphone is surprisingly good and can switch from near and far range. I turned off my hearing aid’s external microphone so that the only sound came from the iPhone’s internal microphone. I could hear my parents yelling my name from downstairs and hold a conversation with them in the car and at the dinner table.&lt;/p&gt;
 
 &lt;p&gt;Sound quality is extremely polluted. There is a lot of ambient / background noise and it is annoyingly loud. My voice sounds disturbingly different, I can’t describe it. My parents also sound different.&lt;/p&gt;
 
-&lt;h3 id=&quot;thoughts&quot;&gt;Thoughts&lt;/h3&gt;
-
 &lt;p&gt;Overall, results are optimistic and this idea looks possible.&lt;/p&gt;
 
-&lt;h2 id=&quot;section-3&quot;&gt;8/20/2016&lt;/h2&gt;
+&lt;h1 id=&quot;section-3&quot;&gt;8/20/2016&lt;/h1&gt;
 &lt;p&gt;Research waterproof ratings. Apparently they are on an “IPX” scale from 0 (zero protection) to 8 (fully waterproof).&lt;/p&gt;
 
 &lt;table&gt;
@@ -118,34 +114,27 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;Ordered a pair of &lt;a href=&quot;https://www.amazon.com/gp/product/B01G8JO5F2/&quot;&gt;IPX7 Bluetooth earbuds&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;section-4&quot;&gt;8/22/2016&lt;/h2&gt;
+&lt;h1 id=&quot;section-4&quot;&gt;8/22/2016&lt;/h1&gt;
 
 &lt;p&gt;Bluetooth headphones arrive. Comfortable and tightly snug in ear.&lt;/p&gt;
 
-&lt;h3 id=&quot;testing&quot;&gt;Testing&lt;/h3&gt;
 &lt;p&gt;The range is fine, I can hear a noise when my parents are yelling my name from downstairs. Sound quality… beyond salvageable. It sharply degrades with distance, with speech intelligibility at 3 feet, but unintelligible beyond 1 meter. It is difficult to discern changes in pitch and tone. These results are puzzling considering how well this worked when I paired my hearing aids.&lt;/p&gt;
 
 &lt;p&gt;Further investigation shows that the iPhone is automatically using the microphone in my bluetooth headphones instead of its own internal microphone. This seems to be the default behavior; there is no existing method to choose which microphone my phone uses. I tried several &lt;a href=&quot;http://petralex.pro/en/article/view?id=1&quot;&gt;hearing algorithms&lt;/a&gt;: Petralax, NAL, Berger, and POGO. I generally prefer POGO, but in all cases they failed epically.&lt;/p&gt;
 
 &lt;p&gt;Exhaustive search for all IPX6, IPX7, and IPX8 wireless headphones without a built-in microphone. There are none.&lt;/p&gt;
 
-&lt;h3 id=&quot;thoughts-1&quot;&gt;Thoughts&lt;/h3&gt;
-
 &lt;p&gt;Since trials using my hearing aid worked well, I think this should still work if I can force my phone to use its internal microphone. To be sure, I’ll repeat tests using wired earbuds.&lt;/p&gt;
 
-&lt;h2 id=&quot;section-5&quot;&gt;8/23/2016&lt;/h2&gt;
+&lt;h1 id=&quot;section-5&quot;&gt;8/23/2016&lt;/h1&gt;
 
 &lt;p&gt;I borrowed my dad’s Apple earbuds.&lt;/p&gt;
 
-&lt;h3 id=&quot;testing-1&quot;&gt;Testing&lt;/h3&gt;
-
 &lt;p&gt;Results were even better than expected! As predicted, my iPhone used its internal microphones to pick up audio and routed it through my earbuds. The sound quality was the pleasant surprise. In tests with my hearing aid, I complained about how annoying the background noise was. Here, there was no background noise simply by virtue of the fact that I couldn’t hear it. My hearing aid has a built-in amplifier that boosts all sound, but normal wired earbuds don’t have such a thing. The only volume control would come from the iPhone, and it turned out that the only audio I could hear were sounds above background noise, i.e. spoken audio and people yelling.&lt;/p&gt;
-
-&lt;h3 id=&quot;thoughts-2&quot;&gt;Thoughts&lt;/h3&gt;
 
 &lt;p&gt;My thoughts were confirmed by this test: I just need to figure out a way to remove the microphone profile from my bluetooth headphones. That, or find waterproof wired earbuds which might be easier. For now I still have a couple weeks before I go anywhere but I ordered a &lt;a href=&quot;https://www.amazon.com/gp/product/B01243EJ7A/&quot;&gt;waterproof case&lt;/a&gt; that has an armband and a place to plug in earbuds. It also floats, so that will be useful.&lt;/p&gt;
 
-&lt;h3 id=&quot;section-6&quot;&gt;8/24/2016&lt;/h3&gt;
+&lt;h1 id=&quot;section-6&quot;&gt;8/24/2016&lt;/h1&gt;
 
 &lt;p&gt;Mmm, I looked for waterproof earbuds today and found the following candidates:&lt;/p&gt;
 
