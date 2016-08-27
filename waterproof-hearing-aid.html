@@ -235,9 +235,7 @@
 
 <p>Wireless frequencies that do work underwater include sonar and NFC. Apple implemented NFC chips in iPhone 6 for Apple Pay, but have banned access by third party apps. Regardless, it’s a moot point since NFC headphones are so few and not at all waterproof. If I hope to use my phone, then bluetooth it’ll have to be.</p>
 
-<p>For my purposes, I don’t really <em>need</em> a big range. If I am swimming with waterproof earbuds, then that’s a max depth of one foot. <a href="http://bib.irb.hr/datoteka/686678.Miskovic_et_al_final_paper.pdf">Mišković et al.</a> found thatunder calm sea conditions, bluetooth connection could be established at depths of fewer than 15cm.</p>
-
-<p>It is actually REALLY hard to find published results about underwater bluetooth range. You’d think this would be a common question - and it is - but I guess since it is so ineffective that few sought to quantify it.</p>
+<p>For my purposes, I don’t really <em>need</em> a big range. If I am swimming with waterproof earbuds, then that’s a max depth of one foot. I am having a REALLY hard time finding out what the underwater bluetooth range is. You’d think this would be a common question - and it is - but I guess since it is so ineffective that few sought to quantify it.</p>
 
 <h1 id="section-7">8/25/2016</h1>
 
@@ -247,7 +245,7 @@
 
 <h3 id="theoretical-bluetooth-underwater-range">Theoretical Bluetooth Underwater Range</h3>
 
-<p>I’m still hung up on this underwater bluetooth range question. What is it REALLY? I have about two weeks left of summer vacation and I PROMISED myself I wouldn’t do any math, but here we go…</p>
+<p>I’m still hung up on this underwater bluetooth range thing. I could make life easier for myself and just go with the wired earbuds but… no. I have about two weeks left of summer vacation and I PROMISED myself that I wouldn’t do any math, but here we go…</p>
 
 <p>Radio frequency power is expressed in decibels. We can calculate the maximum distance using the formula for <a href="https://en.wikipedia.org/wiki/Free-space_path_loss">free-space path loss</a> as:</p>
 
@@ -285,13 +283,12 @@ d &= 10^{\frac{1}{20}\left(25 - 20\log(2.45) - 32.45\right)} \\
 &= 0.1731 \text{ m}
 \end{align} %]]></script>
 
-<p>Thus, our theoretical range in freshwater is 17.31 centimeters, without accounting for transmission loss. In a swimming pool filled with freshwater, <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3355409/">Lloret et al.</a> achieved bluetooth connectivity at average depths of 16-17 cm, which is pretty close to the theoretical calculations.</p>
+<p>Thus, our theoretical range in freshwater is 17.31 centimeters, without accounting for transmission loss. In a swimming pool filled with freshwater, <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3355409/">Lloret et al.</a> achieved bluetooth connectivity at average depths of 16-17 cm. <a href="http://bib.irb.hr/datoteka/686678.Miskovic_et_al_final_paper.pdf">Mišković et al.</a> found that under calm sea conditions, bluetooth connection was established at depths of fewer than 15cm.
+# 8/27/2016</p>
 
-<h1 id="section-9">8/27/2016</h1>
+<p>Now that I have a theoretical (and empirical) distance of bluetooth range in freshwater, it seems pretty pointless to extend the theoretical result to seawater. 15 cm about 5.91 inches, so my head would be just under the surface of the water before I lose connectivity. This is still good for my purposes, so I’m going to go ahead with trying to modify the ActivBuds such that my phone stops using the bluetooth microphone. That will fix the sound quality issue.</p>
 
-<p>Now that I have a theoretical (and empirical) distance of bluetooth range in freshwater, it seems pretty pointless to extend this result to seawater. 16 cm is about 6.3 inches, so my head would be just under the surface of the water before I lose connectivity. If I can just modify my headphones such that my phone doesn’t use the bluetooth microphone, then I shouldn’t have the sound quality issue anymore.</p>
-
-<h1 id="section-10">8/28/2016</h1>
+<h1 id="section-9">8/28/2016</h1>
 
 <h3 id="hacking-attempts">Hacking Attempts</h3>
 
