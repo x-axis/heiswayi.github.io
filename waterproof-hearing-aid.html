@@ -130,7 +130,7 @@
 
   <div class="hrline"></div>
 
-  <p>Last updated: 8/26/2016</p>
+  <p>Last updated: 8/29/2016</p>
 
 <h2 id="introduction">Introduction</h2>
 <p>Since I was a kid, I’ve wished for a way to hear while in the water. As of 2016, there is only one <a href="http://www.siemens.com/press/en/pressrelease/?press=/en/pressrelease/2012/healthcare/h20121036.htm">waterproof hearing aid</a> on the market. Someday I would like one but for now, this is my journal of trying to figure something more cost-effective :)</p>
@@ -278,8 +278,7 @@
 
 <p>Rearranging the equation above to find distance, we get</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-d = 10^{\frac{1}{20}\left(FSPL - 20\log(f) - 32.45\right)} & (*) %]]></script>
+<script type="math/tex; mode=display">d = 10^{\frac{1}{20}\left(FSPL - 20\log(f) - 32.45\right)}</script>
 
 <p>Bluetooth frequency is a known value, but what about the path loss? <a href="http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf">Jiang and Georgakopoulos</a> look at signal loss in fresh water, producing the following graphs of propagation and transmission loss at various depths.</p>
 
@@ -287,12 +286,12 @@ d = 10^{\frac{1}{20}\left(FSPL - 20\log(f) - 32.45\right)} & (*) %]]></script>
 
 <p>Bluetooth is around 2.4 GHz and I am not looking to go deep, so the solid line at 10<sup>9</sup> Hz (or 1GHz) is what I’m interested in. A depth of 0.5m is, in American, 1.6 feet. It looks like the propagation loss is about 25 dB.</p>
 
-<p>Now we can substitute the values into the equation above to get the theoretic distance:</p>
+<p>Now we can substitute the values into the equation above to get the theoretical distance:</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 \begin{align}
 d &= 10^{\frac{1}{20}\left(25 - 20\log(2.4) - 32.45\right)} \\
-&= 0.1767 \text{m}
+&= 0.1767 \text{ m}
 \end{align} %]]></script>
 
 <p>Thus, our theoretical range in freshwater is 17.67 centimeters. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3355409/">Lloret et al.</a> achieved bluetooth connectivity at average depths of 16-17 cm in a swimming pool filled with freshwater, which is pretty close to the theoretical calculations.</p>
@@ -311,7 +310,7 @@ d &= 10^{\frac{1}{20}\left(25 - 20\log(2.4) - 32.45\right)} \\
 
 <p>From the picture above, we see that it supports the HFP protocol (as predicted), but also <a href="https://developer.bluetooth.org/TechnologyOverview/pages/a2dp.aspx">A2DP Sink</a>, which is the profile for receiving a digital-audio stream delivered from a source.</p>
 
-<p>After some more digging, I suspect that it has a <a href="http://www.csr.com/products/csr8635">CSR635</a> chip. According to its <a href="http://www.csr.com/sites/default/files/csr8635_qfn_technical_overview.pdf">technical specs</a>, it has a transmit power of 8dBm and receiver sensitivity of -89dBm. I don’t know if this info will come in handy later, but I’m writing it here anyway.</p>
+<p>After some more digging, I suspect that it has a <a href="http://www.csr.com/products/csr8635">CSR635</a> chip. According to its <a href="http://www.csr.com/sites/default/files/csr8635_qfn_technical_overview.pdf">technical specs</a>, it has a transmit power of 8dBm and receiver sensitivity of -89dBm. <a href="http://electronicdesign.com/communications/understanding-wireless-range-calculations">ElectronicDesign</a> calculates wireless range using these two numbers but I don’t feel like recalculating anymore. The author does use the FSPL formula that I used, though.</p>
 
 <p><img src="/images/activbuds-protocols.png" alt="ActivBuds Bluetooth protocols" /></p>
 

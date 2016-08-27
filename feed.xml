@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 27 Aug 2016 01:47:23 -0500</pubDate>
-    <lastBuildDate>Sat, 27 Aug 2016 01:47:23 -0500</lastBuildDate>
+    <pubDate>Sat, 27 Aug 2016 01:58:04 -0500</pubDate>
+    <lastBuildDate>Sat, 27 Aug 2016 01:58:04 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -63,7 +63,7 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
     
       <item>
         <title>Operation HEAR</title>
-        <description>&lt;p&gt;Last updated: 8/26/2016&lt;/p&gt;
+        <description>&lt;p&gt;Last updated: 8/29/2016&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Since I was a kid, I’ve wished for a way to hear while in the water. As of 2016, there is only one &lt;a href=&quot;http://www.siemens.com/press/en/pressrelease/?press=/en/pressrelease/2012/healthcare/h20121036.htm&quot;&gt;waterproof hearing aid&lt;/a&gt; on the market. Someday I would like one but for now, this is my journal of trying to figure something more cost-effective :)&lt;/p&gt;
@@ -211,8 +211,7 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;Rearranging the equation above to find distance, we get&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-d = 10^{\frac{1}{20}\left(FSPL - 20\log(f) - 32.45\right)} &amp; (*) %]]&gt;&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;d = 10^{\frac{1}{20}\left(FSPL - 20\log(f) - 32.45\right)}&lt;/script&gt;
 
 &lt;p&gt;Bluetooth frequency is a known value, but what about the path loss? &lt;a href=&quot;http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf&quot;&gt;Jiang and Georgakopoulos&lt;/a&gt; look at signal loss in fresh water, producing the following graphs of propagation and transmission loss at various depths.&lt;/p&gt;
 
@@ -220,12 +219,12 @@ d = 10^{\frac{1}{20}\left(FSPL - 20\log(f) - 32.45\right)} &amp; (*) %]]&gt;&lt;
 
 &lt;p&gt;Bluetooth is around 2.4 GHz and I am not looking to go deep, so the solid line at 10&lt;sup&gt;9&lt;/sup&gt; Hz (or 1GHz) is what I’m interested in. A depth of 0.5m is, in American, 1.6 feet. It looks like the propagation loss is about 25 dB.&lt;/p&gt;
 
-&lt;p&gt;Now we can substitute the values into the equation above to get the theoretic distance:&lt;/p&gt;
+&lt;p&gt;Now we can substitute the values into the equation above to get the theoretical distance:&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{align}
 d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.4) - 32.45\right)} \\
-&amp;= 0.1767 \text{m}
+&amp;= 0.1767 \text{ m}
 \end{align} %]]&gt;&lt;/script&gt;
 
 &lt;p&gt;Thus, our theoretical range in freshwater is 17.67 centimeters. &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3355409/&quot;&gt;Lloret et al.&lt;/a&gt; achieved bluetooth connectivity at average depths of 16-17 cm in a swimming pool filled with freshwater, which is pretty close to the theoretical calculations.&lt;/p&gt;
@@ -244,7 +243,7 @@ d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.4) - 32.45\right)} \\
 
 &lt;p&gt;From the picture above, we see that it supports the HFP protocol (as predicted), but also &lt;a href=&quot;https://developer.bluetooth.org/TechnologyOverview/pages/a2dp.aspx&quot;&gt;A2DP Sink&lt;/a&gt;, which is the profile for receiving a digital-audio stream delivered from a source.&lt;/p&gt;
 
-&lt;p&gt;After some more digging, I suspect that it has a &lt;a href=&quot;http://www.csr.com/products/csr8635&quot;&gt;CSR635&lt;/a&gt; chip. According to its &lt;a href=&quot;http://www.csr.com/sites/default/files/csr8635_qfn_technical_overview.pdf&quot;&gt;technical specs&lt;/a&gt;, it has a transmit power of 8dBm and receiver sensitivity of -89dBm. I don’t know if this info will come in handy later, but I’m writing it here anyway.&lt;/p&gt;
+&lt;p&gt;After some more digging, I suspect that it has a &lt;a href=&quot;http://www.csr.com/products/csr8635&quot;&gt;CSR635&lt;/a&gt; chip. According to its &lt;a href=&quot;http://www.csr.com/sites/default/files/csr8635_qfn_technical_overview.pdf&quot;&gt;technical specs&lt;/a&gt;, it has a transmit power of 8dBm and receiver sensitivity of -89dBm. &lt;a href=&quot;http://electronicdesign.com/communications/understanding-wireless-range-calculations&quot;&gt;ElectronicDesign&lt;/a&gt; calculates wireless range using these two numbers but I don’t feel like recalculating anymore. The author does use the FSPL formula that I used, though.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/activbuds-protocols.png&quot; alt=&quot;ActivBuds Bluetooth protocols&quot; /&gt;&lt;/p&gt;
 
