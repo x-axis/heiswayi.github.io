@@ -121,7 +121,7 @@
     <div class="post-date">August 24, 2016 &middot; <span class="reading-time" title="Estimated Reading Time">
   
   
-    6 minutes read
+    11 minutes read
   
 </span>
 </div>
@@ -153,6 +153,8 @@
 
 <p>Sound quality is extremely polluted. There is a lot of ambient / background noise and it is annoyingly loud. My voice sounds disturbingly different, I can’t describe it. My parents also sound different.</p>
 
+<h3 id="thoughts">Thoughts</h3>
+
 <p>Overall, results are optimistic and this idea looks possible.</p>
 
 <h2 id="section-3">8/20/2016</h2>
@@ -180,6 +182,43 @@
     </tr>
   </tbody>
 </table>
+
+<p>Ordered a pair of <a href="https://www.amazon.com/gp/product/B01G8JO5F2/">IPX7 Bluetooth earbuds</a>.</p>
+
+<h2 id="section-4">8/22/2016</h2>
+
+<p>Bluetooth headphones arrive. Comfortable and tightly snug in ear.</p>
+
+<h3 id="testing">Testing</h3>
+<p>The range is fine, I can hear a noise when my parents are yelling my name from downstairs. Sound quality… beyond salvageable. It sharply degrades with distance, with speech intelligibility at 3 feet, but unintelligible beyond 1 meter. It is difficult to discern changes in pitch and tone. These results are puzzling considering how well this worked when I paired my hearing aids.</p>
+
+<p>Further investigation shows that the iPhone is automatically using the microphone in my bluetooth headphones instead of its own internal microphone. This seems to be the default behavior; there is no existing method to choose which microphone my phone uses. I tried several <a href="http://petralex.pro/en/article/view?id=1">hearing algorithms</a>: Petralax, NAL, Berger, and POGO. I generally prefer POGO, but in all cases they failed epically.</p>
+
+<p>Exhaustive search for all IPX6, IPX7, and IPX8 wireless headphones without a built-in microphone. There are none.</p>
+
+<h3 id="thoughts-1">Thoughts</h3>
+
+<p>Since trials using my hearing aid worked well, I think this should still work if I can force the my phone to use its internal microphone. To be sure, I’ll repeat tests using wired earbuds.</p>
+
+<h2 id="section-5">8/23/2016</h2>
+
+<p>I borrowed my dad’s Apple earbuds.</p>
+
+<h3 id="testing-1">Testing</h3>
+
+<p>Results were even better than expected! As predicted, my iPhone used its internal microphones to pick up audio and routed it through my earbuds. The sound quality was the pleasant surprise. In tests with my hearing aid, I complained about how annoying the background noise was. Here, there was no background noise simply by virtue of the fact that I couldn’t hear it. My hearing aid has a built-in amplifier that boosts all sound, but normal wired earbuds don’t have such a thing. The only volume control would come from the iPhone, and it turned out that the only audio I could hear were sounds above background noise, i.e. spoken audio and people yelling.</p>
+
+<h3 id="thoughts-2">Thoughts</h3>
+
+<p>My thoughts were confirmed by this test: I just need to figure out a way to remove the microphone profile from my bluetooth headphones. That, or find waterproof wired earbuds which might be easier. For now I still have a couple weeks before I go anywhere but I ordered a <a href="https://www.amazon.com/gp/product/B01243EJ7A/">waterproof case</a> that has an armband and a place to plug in earbuds. It also floats, so that will be useful.</p>
+
+<h3 id="section-6">8/24/2016</h3>
+
+<p>Mmm, I looked for waterproof earbuds today and found the following candidates:</p>
+
+<p>[ insert table ]</p>
+
+<p>Also want to do research on bluetooth range. My iPhone would floating at the top while I swim so I want to know how far my head can go into the water.</p>
 
 <h3 id="preliminary-research">Preliminary Research</h3>
 
@@ -211,11 +250,11 @@
 
 <p>It was actually REALLY hard to find published results about underwater bluetooth range. You’d think this would be a common question - and it is - but I guess since it is so ineffective that few sought to quantify it.</p>
 
-<h3 id="section-4">8/23/2016</h3>
+<h3 id="section-7">8/25/2016</h3>
 
 <p>Today, I spent a lot of time looking at forums for R/C submarines and… I am actually kinda appalled by how much misinformation there was. Some posters would attribute the ineffectiveness of Bluetooth to the resonant frequency of water, <a href="http://www.schoolphysics.co.uk/age16-19/Wave%2520properties/Wave%20properties/text/Microwave_ovens/index.html">which is incorrect</a>. I didn’t know anything just a few days ago, but it is problematic when veteran posters propagate incorrect information to newbies. Luckily, this is the Internet, and there is always somebody rushing to prove people wrong.</p>
 
-<h3 id="section-5">8/25/2016</h3>
+<h3 id="section-8">8/26/2016</h3>
 
 <p>I’m still hung up on this underwater bluetooth range question. What is it REALLY? I have about two weeks left of summer vacation and I PROMISED myself I wouldn’t do any math, but here we go…</p>
 
@@ -248,6 +287,40 @@
 
 <p>Bluetooth is around 2.4 GHz, which is 
 The solid line at 10<sup>9</sup> Hz (or 1GHz) is what I’m interested in. A depth of 0.5m is, in American, 1.6 feet. It looks like the propagation loss is about 25 dB.</p>
+
+<h2 id="section-9">8/26/2016</h2>
+
+<p>I want to hack and reprogram my bluetooth headphones. <a href="https://www.amazon.com/gp/product/B01G8JO5F2">Senso ActivBuds</a> use Bluetooth v4.1+EDR, which stands for Enhanced Data Rate. The Bluetooth profiles that Apple supports are <a href="https://support.apple.com/en-us/HT204387">here</a>, so it looks like my headset might have the <a href="https://developer.bluetooth.org/TechnologyOverview/Pages/HFP.aspx">HFP profile</a>. Now the question is: is there an <a href="https://developer.bluetooth.org/TechnologyOverview/Pages/A2DP.aspx">A2DP profile</a> as with wired headphones?</p>
+
+<p>I downloaded Bluetooth Explorer (in <a href="https://developer.apple.com/download/more/">Hardware IO Tools for Xcode</a>) and paired the ActivBuds to my laptop.</p>
+
+<p><img src="/images/activbuds-profiles.png" alt="ActivBuds profiles" /></p>
+
+<p>From the picture above, we see that it supports the HFP protocol (as predicted), but also <a href="https://developer.bluetooth.org/TechnologyOverview/pages/a2dp.aspx">A2DP Sink</a>, which is the profile for receiving a digital-audio stream delivered from a source.</p>
+
+<p>After some more digging, I suspect that it has a <a href="http://www.csr.com/products/csr8635">CSR635</a> chip.</p>
+
+<p><img src="/images/activbuds-protocols.png" alt="ActivBuds Bluetooth protocols" /></p>
+
+<p>From the picture above, we see the following protocols:</p>
+
+<ul>
+  <li><strong><a href="https://en.wikipedia.org/wiki/Bluetooth#AVDTP">AVDTP</a></strong>: used to stream music to stereo headsets over an L2CAP channel</li>
+  <li><strong><a href="https://en.wikipedia.org/wiki/Bluetooth#RFCOMM">RFCOMM</a></strong>: generates a serial data stream</li>
+  <li><strong><a href="https://en.wikipedia.org/wiki/Bluetooth#AVCTP">AVCTP</a></strong>: used by the remote control profile to transfer AV/C commands, e.g. music control buttons</li>
+</ul>
+
+<p>All bluetooth devices interact with each other through profiles. I downloaded <a href="https://itunes.apple.com/us/app/lightblue/id639944780">LightBlue</a> from the Mac App Store to see which profiles are on the Senso.</p>
+
+<h2 id="section-10">8/27/2016</h2>
+
+<p>My waterproof case showed up today! It has a line-in for plugging wireless earbuds in and they worked pretty well. Then I wondered if the iPhone would stay in A2DP profile if I plugged in my Apple earbuds while having the Senso ActivBuds paired. The answer is no.</p>
+
+<p>But then all of a sudden, I heard my mom talking on the phone! While ActivBuds were in! I paid attention and realized I could distinguish what she was saying. Until now, I had only been testing these things with NPR Radio and TED Talks from my computer and those tests had failed epically.</p>
+
+<p>I was using the <a href="https://itunes.apple.com/us/app/petralex-hearing-aid/id816133779">Petralex</a> amplifier. There is also the <a href="https://itunes.apple.com/us/app/hearyounow-your-personal-sound/id569522474">HearYouNow</a> which performed awfully - I still couldn’t hear my mom talking. However, this was the app that performed best with the Apple earbuds. Really interesting.</p>
+
+<p>Maybe I might not have to do any tweaking on the ActivBuds after all. Tomorrow morning I’m going to visit my mom’s workplace and I’m going to try the ActivBuds again with the Petralex app in real-time.</p>
 
 
   

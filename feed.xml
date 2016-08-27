@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Aug 2016 16:07:00 -0500</pubDate>
-    <lastBuildDate>Fri, 26 Aug 2016 16:07:00 -0500</lastBuildDate>
+    <pubDate>Fri, 26 Aug 2016 23:15:18 -0500</pubDate>
+    <lastBuildDate>Fri, 26 Aug 2016 23:15:18 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -86,6 +86,8 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;Sound quality is extremely polluted. There is a lot of ambient / background noise and it is annoyingly loud. My voice sounds disturbingly different, I can’t describe it. My parents also sound different.&lt;/p&gt;
 
+&lt;h3 id=&quot;thoughts&quot;&gt;Thoughts&lt;/h3&gt;
+
 &lt;p&gt;Overall, results are optimistic and this idea looks possible.&lt;/p&gt;
 
 &lt;h2 id=&quot;section-3&quot;&gt;8/20/2016&lt;/h2&gt;
@@ -113,6 +115,43 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;p&gt;Ordered a pair of &lt;a href=&quot;https://www.amazon.com/gp/product/B01G8JO5F2/&quot;&gt;IPX7 Bluetooth earbuds&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;8/22/2016&lt;/h2&gt;
+
+&lt;p&gt;Bluetooth headphones arrive. Comfortable and tightly snug in ear.&lt;/p&gt;
+
+&lt;h3 id=&quot;testing&quot;&gt;Testing&lt;/h3&gt;
+&lt;p&gt;The range is fine, I can hear a noise when my parents are yelling my name from downstairs. Sound quality… beyond salvageable. It sharply degrades with distance, with speech intelligibility at 3 feet, but unintelligible beyond 1 meter. It is difficult to discern changes in pitch and tone. These results are puzzling considering how well this worked when I paired my hearing aids.&lt;/p&gt;
+
+&lt;p&gt;Further investigation shows that the iPhone is automatically using the microphone in my bluetooth headphones instead of its own internal microphone. This seems to be the default behavior; there is no existing method to choose which microphone my phone uses. I tried several &lt;a href=&quot;http://petralex.pro/en/article/view?id=1&quot;&gt;hearing algorithms&lt;/a&gt;: Petralax, NAL, Berger, and POGO. I generally prefer POGO, but in all cases they failed epically.&lt;/p&gt;
+
+&lt;p&gt;Exhaustive search for all IPX6, IPX7, and IPX8 wireless headphones without a built-in microphone. There are none.&lt;/p&gt;
+
+&lt;h3 id=&quot;thoughts-1&quot;&gt;Thoughts&lt;/h3&gt;
+
+&lt;p&gt;Since trials using my hearing aid worked well, I think this should still work if I can force the my phone to use its internal microphone. To be sure, I’ll repeat tests using wired earbuds.&lt;/p&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;8/23/2016&lt;/h2&gt;
+
+&lt;p&gt;I borrowed my dad’s Apple earbuds.&lt;/p&gt;
+
+&lt;h3 id=&quot;testing-1&quot;&gt;Testing&lt;/h3&gt;
+
+&lt;p&gt;Results were even better than expected! As predicted, my iPhone used its internal microphones to pick up audio and routed it through my earbuds. The sound quality was the pleasant surprise. In tests with my hearing aid, I complained about how annoying the background noise was. Here, there was no background noise simply by virtue of the fact that I couldn’t hear it. My hearing aid has a built-in amplifier that boosts all sound, but normal wired earbuds don’t have such a thing. The only volume control would come from the iPhone, and it turned out that the only audio I could hear were sounds above background noise, i.e. spoken audio and people yelling.&lt;/p&gt;
+
+&lt;h3 id=&quot;thoughts-2&quot;&gt;Thoughts&lt;/h3&gt;
+
+&lt;p&gt;My thoughts were confirmed by this test: I just need to figure out a way to remove the microphone profile from my bluetooth headphones. That, or find waterproof wired earbuds which might be easier. For now I still have a couple weeks before I go anywhere but I ordered a &lt;a href=&quot;https://www.amazon.com/gp/product/B01243EJ7A/&quot;&gt;waterproof case&lt;/a&gt; that has an armband and a place to plug in earbuds. It also floats, so that will be useful.&lt;/p&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;8/24/2016&lt;/h3&gt;
+
+&lt;p&gt;Mmm, I looked for waterproof earbuds today and found the following candidates:&lt;/p&gt;
+
+&lt;p&gt;[ insert table ]&lt;/p&gt;
+
+&lt;p&gt;Also want to do research on bluetooth range. My iPhone would floating at the top while I swim so I want to know how far my head can go into the water.&lt;/p&gt;
 
 &lt;h3 id=&quot;preliminary-research&quot;&gt;Preliminary Research&lt;/h3&gt;
 
@@ -144,11 +183,11 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;It was actually REALLY hard to find published results about underwater bluetooth range. You’d think this would be a common question - and it is - but I guess since it is so ineffective that few sought to quantify it.&lt;/p&gt;
 
-&lt;h3 id=&quot;section-4&quot;&gt;8/23/2016&lt;/h3&gt;
+&lt;h3 id=&quot;section-7&quot;&gt;8/25/2016&lt;/h3&gt;
 
 &lt;p&gt;Today, I spent a lot of time looking at forums for R/C submarines and… I am actually kinda appalled by how much misinformation there was. Some posters would attribute the ineffectiveness of Bluetooth to the resonant frequency of water, &lt;a href=&quot;http://www.schoolphysics.co.uk/age16-19/Wave%2520properties/Wave%20properties/text/Microwave_ovens/index.html&quot;&gt;which is incorrect&lt;/a&gt;. I didn’t know anything just a few days ago, but it is problematic when veteran posters propagate incorrect information to newbies. Luckily, this is the Internet, and there is always somebody rushing to prove people wrong.&lt;/p&gt;
 
-&lt;h3 id=&quot;section-5&quot;&gt;8/25/2016&lt;/h3&gt;
+&lt;h3 id=&quot;section-8&quot;&gt;8/26/2016&lt;/h3&gt;
 
 &lt;p&gt;I’m still hung up on this underwater bluetooth range question. What is it REALLY? I have about two weeks left of summer vacation and I PROMISED myself I wouldn’t do any math, but here we go…&lt;/p&gt;
 
@@ -181,6 +220,40 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;Bluetooth is around 2.4 GHz, which is 
 The solid line at 10&lt;sup&gt;9&lt;/sup&gt; Hz (or 1GHz) is what I’m interested in. A depth of 0.5m is, in American, 1.6 feet. It looks like the propagation loss is about 25 dB.&lt;/p&gt;
+
+&lt;h2 id=&quot;section-9&quot;&gt;8/26/2016&lt;/h2&gt;
+
+&lt;p&gt;I want to hack and reprogram my bluetooth headphones. &lt;a href=&quot;https://www.amazon.com/gp/product/B01G8JO5F2&quot;&gt;Senso ActivBuds&lt;/a&gt; use Bluetooth v4.1+EDR, which stands for Enhanced Data Rate. The Bluetooth profiles that Apple supports are &lt;a href=&quot;https://support.apple.com/en-us/HT204387&quot;&gt;here&lt;/a&gt;, so it looks like my headset might have the &lt;a href=&quot;https://developer.bluetooth.org/TechnologyOverview/Pages/HFP.aspx&quot;&gt;HFP profile&lt;/a&gt;. Now the question is: is there an &lt;a href=&quot;https://developer.bluetooth.org/TechnologyOverview/Pages/A2DP.aspx&quot;&gt;A2DP profile&lt;/a&gt; as with wired headphones?&lt;/p&gt;
+
+&lt;p&gt;I downloaded Bluetooth Explorer (in &lt;a href=&quot;https://developer.apple.com/download/more/&quot;&gt;Hardware IO Tools for Xcode&lt;/a&gt;) and paired the ActivBuds to my laptop.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/activbuds-profiles.png&quot; alt=&quot;ActivBuds profiles&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From the picture above, we see that it supports the HFP protocol (as predicted), but also &lt;a href=&quot;https://developer.bluetooth.org/TechnologyOverview/pages/a2dp.aspx&quot;&gt;A2DP Sink&lt;/a&gt;, which is the profile for receiving a digital-audio stream delivered from a source.&lt;/p&gt;
+
+&lt;p&gt;After some more digging, I suspect that it has a &lt;a href=&quot;http://www.csr.com/products/csr8635&quot;&gt;CSR635&lt;/a&gt; chip.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/activbuds-protocols.png&quot; alt=&quot;ActivBuds Bluetooth protocols&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From the picture above, we see the following protocols:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Bluetooth#AVDTP&quot;&gt;AVDTP&lt;/a&gt;&lt;/strong&gt;: used to stream music to stereo headsets over an L2CAP channel&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Bluetooth#RFCOMM&quot;&gt;RFCOMM&lt;/a&gt;&lt;/strong&gt;: generates a serial data stream&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Bluetooth#AVCTP&quot;&gt;AVCTP&lt;/a&gt;&lt;/strong&gt;: used by the remote control profile to transfer AV/C commands, e.g. music control buttons&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All bluetooth devices interact with each other through profiles. I downloaded &lt;a href=&quot;https://itunes.apple.com/us/app/lightblue/id639944780&quot;&gt;LightBlue&lt;/a&gt; from the Mac App Store to see which profiles are on the Senso.&lt;/p&gt;
+
+&lt;h2 id=&quot;section-10&quot;&gt;8/27/2016&lt;/h2&gt;
+
+&lt;p&gt;My waterproof case showed up today! It has a line-in for plugging wireless earbuds in and they worked pretty well. Then I wondered if the iPhone would stay in A2DP profile if I plugged in my Apple earbuds while having the Senso ActivBuds paired. The answer is no.&lt;/p&gt;
+
+&lt;p&gt;But then all of a sudden, I heard my mom talking on the phone! While ActivBuds were in! I paid attention and realized I could distinguish what she was saying. Until now, I had only been testing these things with NPR Radio and TED Talks from my computer and those tests had failed epically.&lt;/p&gt;
+
+&lt;p&gt;I was using the &lt;a href=&quot;https://itunes.apple.com/us/app/petralex-hearing-aid/id816133779&quot;&gt;Petralex&lt;/a&gt; amplifier. There is also the &lt;a href=&quot;https://itunes.apple.com/us/app/hearyounow-your-personal-sound/id569522474&quot;&gt;HearYouNow&lt;/a&gt; which performed awfully - I still couldn’t hear my mom talking. However, this was the app that performed best with the Apple earbuds. Really interesting.&lt;/p&gt;
+
+&lt;p&gt;Maybe I might not have to do any tweaking on the ActivBuds after all. Tomorrow morning I’m going to visit my mom’s workplace and I’m going to try the ActivBuds again with the Petralex app in real-time.&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 24 Aug 2016 00:00:00 -0500</pubDate>
