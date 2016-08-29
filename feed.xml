@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 27 Aug 2016 02:04:15 -0500</pubDate>
-    <lastBuildDate>Sat, 27 Aug 2016 02:04:15 -0500</lastBuildDate>
+    <pubDate>Sun, 28 Aug 2016 22:36:21 -0500</pubDate>
+    <lastBuildDate>Sun, 28 Aug 2016 22:36:21 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -77,7 +77,7 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 &lt;p&gt;&lt;img src=&quot;/images/river-tubing.jpg&quot; alt=&quot;River tubing&quot; /&gt;
 &lt;em&gt;Image from Trinity River Vision Authority.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;8/19/2016&lt;/h1&gt;
+&lt;h1 id=&quot;section-2&quot;&gt;8/18/2016&lt;/h1&gt;
 &lt;p&gt;Hatched crazy idea of using iPhone as a microphone and pairing it to waterproof bluetooth headphones. Then I simply enclose my iPhone in a waterproof case and swim with it. I had already gotten the case during tubing and discovered that I could still talk on the phone. My phone’s internal microphone could pick up sound even in a watertight case. Of course, this depends on the case actually working and me not destroying my phone in the process.&lt;/p&gt;
 
 &lt;p&gt;Apps that can turn the iPhone into a microphone are many! Preliminary testing using my hearing aids as bluetooth headphones reveals that the internal iPhone microphone is surprisingly good and can switch from near and far range. I turned off my hearing aid’s external microphone so that the only sound came from the iPhone’s internal microphone. I could hear my parents yelling my name from downstairs and hold a conversation with them in the car and at the dinner table.&lt;/p&gt;
@@ -86,7 +86,7 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;Overall, results are optimistic and this idea looks possible.&lt;/p&gt;
 
-&lt;h1 id=&quot;section-3&quot;&gt;8/20/2016&lt;/h1&gt;
+&lt;h1 id=&quot;section-3&quot;&gt;8/19/2016&lt;/h1&gt;
 &lt;p&gt;Research waterproof ratings. Apparently they are on an “IPX” scale from 0 (zero protection) to 8 (fully waterproof).&lt;/p&gt;
 
 &lt;table&gt;
@@ -132,15 +132,64 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;Results were even better than expected! As predicted, my iPhone used its internal microphones to pick up audio and routed it through my earbuds. The sound quality was the pleasant surprise. In tests with my hearing aid, I complained about how annoying the background noise was. Here, there was no background noise simply by virtue of the fact that I couldn’t hear it. My hearing aid has a built-in amplifier that boosts all sound, but normal wired earbuds don’t have such a thing. The only volume control would come from the iPhone, and it turned out that the only audio I could hear were sounds above background noise, i.e. spoken audio and people yelling.&lt;/p&gt;
 
-&lt;p&gt;My thoughts were confirmed by this test: I just need to figure out a way to remove the microphone profile from my bluetooth headphones. That, or find waterproof wired earbuds which might be easier. For now I still have a couple weeks before I go anywhere but I ordered a &lt;a href=&quot;https://www.amazon.com/gp/product/B01243EJ7A/&quot;&gt;waterproof case&lt;/a&gt; that has an armband and a place to plug in earbuds. It also floats, so that will be useful.&lt;/p&gt;
+&lt;p&gt;My thoughts were confirmed by this test: I just need to figure out a way to remove the microphone profile from my bluetooth headphones. That, or find waterproof wired earbuds which might be easier. The best wired waterproof earbuds I found are:&lt;/p&gt;
 
-&lt;h1 id=&quot;section-6&quot;&gt;8/24/2016&lt;/h1&gt;
+&lt;table id=&quot;EarbudsTable&quot; class=&quot;tablesorter&quot;&gt;
+&lt;thead&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Product&lt;/th&gt;
+		&lt;th&gt;IPX&lt;/th&gt;
+		&lt;th&gt;Price&lt;/th&gt;
+		&lt;th&gt;Rating&lt;/th&gt;
+	&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/Avantree-Hippocampus-WATERPROOF-Underwater-Headphones/dp/B01GDRC35S/&quot;&gt;Avantree Hippocampus&lt;/a&gt;&lt;/td&gt;
+		&lt;td&gt;8&lt;/td&gt;
+		&lt;td&gt;$16.99&lt;/td&gt;
+		&lt;td&gt;3.5&lt;/td&gt;
+	&lt;/tr&gt;
 
-&lt;p&gt;Mmm, I looked for waterproof earbuds today and found the following candidates:&lt;/p&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/Waterfi-SwimActive-Waterproof-Headphones-Technology/dp/B01GW39XII/&quot;&gt;Waterfi SwimActive&lt;/a&gt;&lt;/td&gt;
+		&lt;td&gt;8&lt;/td&gt;
+		&lt;td&gt;$39.95&lt;/td&gt;
+		&lt;td&gt;3.6&lt;/td&gt;
+	&lt;/tr&gt;
 
-&lt;p&gt;[ insert table ]&lt;/p&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/Travelon-Waterproof-Headphones-White-Yellow/dp/B00CBT9K0Y/&quot;&gt;Travelon Headphones&lt;/a&gt;&lt;/td&gt;
+		&lt;td&gt;8&lt;/td&gt;
+		&lt;td&gt;$13.17&lt;/td&gt;
+		&lt;td&gt;4.0&lt;/td&gt;
+	&lt;/tr&gt;
 
-&lt;p&gt;I think that wired earbuds will be the easiest solution but I’m still hung up on trying to make this work with bluetooth. That brings up a new question: what is the underwater range of bluetooth?&lt;/p&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/Black-Swimbuds-100%25-Waterproof-Headphones/dp/B01BTFHYIU/&quot;&gt;Swimbuds Black&lt;/a&gt;&lt;/td&gt;
+		&lt;td&gt;8&lt;/td&gt;
+		&lt;td&gt;$40.00&lt;/td&gt;
+		&lt;td&gt;4.3&lt;/td&gt;
+	&lt;/tr&gt;
+
+	&lt;tr&gt;
+		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/Baakyeek-Waterproof-Underwater-Swimming-Headphone/dp/B00IIEHZDK/&quot;&gt;Baakyeek Headphones&lt;/a&gt;&lt;/td&gt;
+		&lt;td&gt;8&lt;/td&gt;
+		&lt;td&gt;$4.59&lt;/td&gt;
+		&lt;td&gt;4.3&lt;/td&gt;
+	&lt;/tr&gt;
+
+	&lt;tr&gt;
+		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/IEN2-BK-X-Audio-Sportwrap-Waterproof-Headphones/dp/B00AJD0H8I/&quot;&gt;H2O Audio Surge&lt;/a&gt;&lt;/td&gt;
+		&lt;td&gt;8&lt;/td&gt;
+		&lt;td&gt;$24.99&lt;/td&gt;
+		&lt;td&gt;3.2&lt;/td&gt;
+	&lt;/tr&gt;
+
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;While looking for earbuds, I found this &lt;a href=&quot;https://www.amazon.com/gp/product/B01243EJ7A/&quot;&gt;waterproof case&lt;/a&gt; that has an armband and a place to plug in earbuds. It also floats! It looks like wired earbuds are going to be the easiest solutions, but I’m still hung up on trying to make this work with bluetooth. For now I have a couple weeks before I go anywhere so I might as well try. That brings up a new question: what is the underwater range of bluetooth?&lt;/p&gt;
 
 &lt;h3 id=&quot;preliminary-research&quot;&gt;Preliminary Research&lt;/h3&gt;
 
@@ -168,17 +217,17 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;Wireless frequencies that do work underwater include sonar and NFC. Apple implemented NFC chips in iPhone 6 for Apple Pay, but have banned access by third party apps. Regardless, it’s a moot point since NFC headphones are so few and not at all waterproof. If I hope to use my phone, then bluetooth it’ll have to be.&lt;/p&gt;
 
-&lt;p&gt;For my purposes, I don’t really &lt;em&gt;need&lt;/em&gt; a big range. If I am swimming with waterproof earbuds, then that’s a max depth of one foot. &lt;a href=&quot;http://bib.irb.hr/datoteka/686678.Miskovic_et_al_final_paper.pdf&quot;&gt;Mišković et al.&lt;/a&gt; found thatunder calm sea conditions, bluetooth connection could be established at depths of fewer than 15cm.&lt;/p&gt;
+&lt;p&gt;For my purposes, I don’t really &lt;em&gt;need&lt;/em&gt; a big range. If I am swimming with waterproof earbuds, then that’s a max depth of one foot. I am having a REALLY hard time finding out what the underwater bluetooth range is. You’d think this would be a common question - and it is - but I guess since it is so ineffective that few sought to quantify it.&lt;/p&gt;
 
-&lt;p&gt;It is actually REALLY hard to find published results about underwater bluetooth range. You’d think this would be a common question - and it is - but I guess since it is so ineffective that few sought to quantify it.&lt;/p&gt;
-
-&lt;h3 id=&quot;section-7&quot;&gt;8/25/2016&lt;/h3&gt;
+&lt;h1 id=&quot;section-6&quot;&gt;8/25/2016&lt;/h1&gt;
 
 &lt;p&gt;Today, I spent a lot of time looking at forums for R/C submarines and… I am actually kinda appalled by how much misinformation there was. Some posters would attribute the ineffectiveness of Bluetooth to the resonant frequency of water, &lt;a href=&quot;http://www.schoolphysics.co.uk/age16-19/Wave%2520properties/Wave%20properties/text/Microwave_ovens/index.html&quot;&gt;which is incorrect&lt;/a&gt;. I didn’t know anything just a few days ago, but it is problematic when veteran posters propagate incorrect information to newbies. Luckily, this is the Internet, and there is always somebody rushing to prove people wrong.&lt;/p&gt;
 
-&lt;h3 id=&quot;section-8&quot;&gt;8/26/2016&lt;/h3&gt;
+&lt;h1 id=&quot;section-7&quot;&gt;8/26/2016&lt;/h1&gt;
 
-&lt;p&gt;I’m still hung up on this underwater bluetooth range question. What is it REALLY? I have about two weeks left of summer vacation and I PROMISED myself I wouldn’t do any math, but here we go…&lt;/p&gt;
+&lt;h3 id=&quot;theoretical-bluetooth-underwater-range&quot;&gt;Theoretical Bluetooth Underwater Range&lt;/h3&gt;
+
+&lt;p&gt;I’m still hung up on this underwater bluetooth range thing. I could make life easier for myself and just go with the wired earbuds but… no. I have about two weeks left of summer vacation and I PROMISED myself that I wouldn’t do any math, but here we go…&lt;/p&gt;
 
 &lt;p&gt;Radio frequency power is expressed in decibels. We can calculate the maximum distance using the formula for &lt;a href=&quot;https://en.wikipedia.org/wiki/Free-space_path_loss&quot;&gt;free-space path loss&lt;/a&gt; as:&lt;/p&gt;
 
@@ -202,7 +251,7 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;d = 10^{\frac{1}{20}\left(FSPL - 20\log(f) - 32.45\right)}&lt;/script&gt;
 
-&lt;p&gt;Bluetooth frequency is a known value, but what about the path loss? &lt;a href=&quot;http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf&quot;&gt;Jiang and Georgakopoulos&lt;/a&gt; look at signal loss in fresh water, producing the following graphs of propagation and transmission loss at various depths.&lt;/p&gt;
+&lt;p&gt;Bluetooth frequency is a known value, but what about the path loss? &lt;a href=&quot;http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf&quot;&gt;Jiang and Georgakopoulos&lt;/a&gt; look at wireless signal loss in fresh water, producing the following graph of propagation loss at various depths.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/propagation-loss.png&quot; alt=&quot;Propagation loss of electromagnetic waves&quot; /&gt;&lt;/p&gt;
 
@@ -212,17 +261,19 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{align}
-d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.4) - 32.45\right)} \\
-&amp;= 0.1767 \text{ m}
+d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.45) - 32.45\right)} \\
+&amp;= 0.1731 \text{ m}
 \end{align} %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;Thus, our theoretical range in freshwater is 17.67 centimeters. &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3355409/&quot;&gt;Lloret et al.&lt;/a&gt; achieved bluetooth connectivity at average depths of 16-17 cm in a swimming pool filled with freshwater, which is pretty close to the theoretical calculations.&lt;/p&gt;
+&lt;p&gt;Thus, our theoretical range in freshwater is 17.31 centimeters, without accounting for transmission loss. In a swimming pool filled with freshwater, &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3355409/&quot;&gt;Lloret et al.&lt;/a&gt; achieved bluetooth connectivity at average depths of 16-17 cm. &lt;a href=&quot;http://bib.irb.hr/datoteka/686678.Miskovic_et_al_final_paper.pdf&quot;&gt;Mišković et al.&lt;/a&gt; found that under calm sea conditions, bluetooth connection was established at depths of fewer than 15cm.&lt;/p&gt;
 
-&lt;h2 id=&quot;section-9&quot;&gt;8/27/2016&lt;/h2&gt;
+&lt;h1 id=&quot;section-8&quot;&gt;8/25/2016&lt;/h1&gt;
 
-&lt;p&gt;Now that I have a theoretical (and empirical) distance of bluetooth range in freshwater, it seems pretty pointless to extend this result to seawater. 16 cm is about 6.3 inches, so my head would be just under the surface of the water before I lose connectivity. If I can just modify my headphones such that my phone doesn’t recognize a microphone, then I should have bluetooth audio without the sound quality problem.&lt;/p&gt;
+&lt;p&gt;Now that I have a theoretical (and empirical) distance of bluetooth range in freshwater, it seems pretty pointless to extend the theoretical result to seawater. 15 cm is about 5.91 inches, so my head would be just under the surface of the water before I lose connectivity. This is still good for my purposes, so I’m going to go ahead with trying to modify the ActivBuds such that my phone stops using the bluetooth microphone. That will fix the sound quality issue.&lt;/p&gt;
 
-&lt;h2 id=&quot;section-10&quot;&gt;8/28/2016&lt;/h2&gt;
+&lt;h1 id=&quot;section-9&quot;&gt;8/26/2016&lt;/h1&gt;
+
+&lt;h3 id=&quot;hacking-attempts&quot;&gt;Hacking Attempts&lt;/h3&gt;
 
 &lt;p&gt;Today, I tried to hack and reprogram my bluetooth headphones. &lt;a href=&quot;https://www.amazon.com/gp/product/B01G8JO5F2&quot;&gt;Senso ActivBuds&lt;/a&gt; use Bluetooth v4.1+EDR, which stands for Enhanced Data Rate. Bluetooth devices interact with each other through “profiles,” and the profiles that Apple supports are &lt;a href=&quot;https://support.apple.com/en-us/HT204387&quot;&gt;here&lt;/a&gt;. It looks like my headset might have the &lt;a href=&quot;https://developer.bluetooth.org/TechnologyOverview/Pages/HFP.aspx&quot;&gt;HFP profile&lt;/a&gt;. Now the question is: is there an &lt;a href=&quot;https://developer.bluetooth.org/TechnologyOverview/Pages/A2DP.aspx&quot;&gt;A2DP profile&lt;/a&gt; as with wired headphones?&lt;/p&gt;
 
@@ -246,6 +297,8 @@ d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.4) - 32.45\right)} \\
 
 &lt;p&gt;This is all I’ve found so far for today. I don’t know anything about engineering so it’s taken a lot of time reading through documentation and figuring out what to look for. I haven’t found a guide that tells you how profiles get put on bluetooth “modules” (chips) – there might not even be one. I’m feeling pretty discouraged about being able to hack my ActivBuds.&lt;/p&gt;
 
+&lt;h3 id=&quot;turn-of-events&quot;&gt;Turn of Events&lt;/h3&gt;
+
 &lt;p&gt;On the bright side, waterproof case showed up today! It has a line-in for plugging wireless earbuds in and they worked pretty well. Then I wondered if the iPhone would stay in A2DP profile if I plugged in my Apple earbuds while having the Senso ActivBuds paired. The answer is no.&lt;/p&gt;
 
 &lt;p&gt;But then all of a sudden, I heard my mom talking on the phone! While ActivBuds were in! I paid attention and realized I could distinguish what she was saying. Until now, I had only been testing these things with NPR Radio and TED Talks from my computer and those tests had failed epically.&lt;/p&gt;
@@ -254,6 +307,9 @@ d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.4) - 32.45\right)} \\
 
 &lt;p&gt;Maybe I might not have to do any tweaking on the ActivBuds after all. Tomorrow morning I’m going to visit my mom’s workplace and I’m going to try the ActivBuds again with the Petralex app in real-time.&lt;/p&gt;
 
+&lt;h1 id=&quot;section-10&quot;&gt;8/28/2016&lt;/h1&gt;
+
+&lt;p&gt;I had a&lt;/p&gt;
 </description>
         <pubDate>Wed, 24 Aug 2016 00:00:00 -0500</pubDate>
         <link>/waterproof-hearing-aid.html</link>
@@ -374,10 +430,11 @@ d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.4) - 32.45\right)} \\
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Commit using most recent commit and message.
-&lt;code class=&quot;highlighter-rouge&quot;&gt;shell
-git commit --amend --no-edit
-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Commit using most recent commit and message.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit --amend --no-edit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;pushing-changes&quot;&gt;Pushing Changes&lt;/h3&gt;
 

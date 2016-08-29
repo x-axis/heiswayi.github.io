@@ -1,4 +1,13 @@
 (function($) {
+
+	$(document).ready(function() {
+		$("#EarbudsTable").tablesorter({
+				sortList: [[3,0]} );
+				}
+			}
+);
+
+	
 	$.extend({
 		tablesorterPager: new function() {
 			
@@ -181,4 +190,6 @@
         tablesorterPager: $.tablesorterPager.construct
 	});
 	
-})(jQuery);				
+})(jQuery);			
+
+
