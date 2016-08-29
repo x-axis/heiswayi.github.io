@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Aug 2016 23:41:29 -0500</pubDate>
-    <lastBuildDate>Sun, 28 Aug 2016 23:41:29 -0500</lastBuildDate>
+    <pubDate>Sun, 28 Aug 2016 23:54:12 -0500</pubDate>
+    <lastBuildDate>Sun, 28 Aug 2016 23:54:12 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -300,17 +300,19 @@ d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.45) - 32.45\right)} \\
 
 &lt;p&gt;On the bright side, waterproof case showed up today! It has a line-in for plugging wireless earbuds in and they worked pretty well. Then I wondered if the iPhone would stay in A2DP profile if I plugged in my Apple earbuds while having the Senso ActivBuds paired. The answer is no.&lt;/p&gt;
 
-&lt;p&gt;But then all of a sudden, I heard my mom talking on the phone! While ActivBuds were in! I paid attention and realized I could distinguish what she was saying. Until now, I had only been testing these things with NPR Radio and TED Talks from my computer and those tests had failed epically.&lt;/p&gt;
+&lt;p&gt;But then all of a sudden, I heard my mom talking on the phone! While ActivBuds were in! I paid attention and realized I could distinguish what she was saying. Until now, I had only been testing these things by listening to NPR Radio and TED Talks from my computer at max volume and it was impossible to make out anything.&lt;/p&gt;
 
-&lt;p&gt;I was using the &lt;a href=&quot;https://itunes.apple.com/us/app/petralex-hearing-aid/id816133779&quot;&gt;Petralex&lt;/a&gt; amplifier. There is also the &lt;a href=&quot;https://itunes.apple.com/us/app/hearyounow-your-personal-sound/id569522474&quot;&gt;HearYouNow&lt;/a&gt; which performed awfully - I still couldn’t hear my mom talking. However, this was the app that performed best with the Apple earbuds. Really interesting.&lt;/p&gt;
+&lt;p&gt;This time, I was using the &lt;a href=&quot;https://itunes.apple.com/us/app/petralex-hearing-aid/id816133779&quot;&gt;Petralex&lt;/a&gt; amplifier which actually gives you a hearing test first and then “fits” the amplification using several proprietary algorithms: Petralex, NAL, Berger, and POGO. I don’t know what the differences are but find that Berger and POGO perform best with higher pitches.&lt;/p&gt;
+
+&lt;p&gt;Previously, I had been using the &lt;a href=&quot;https://itunes.apple.com/us/app/hearyounow-your-personal-sound/id569522474&quot;&gt;HearYouNow&lt;/a&gt; app and I couldn’t understand my mom with these. However, this app performed best with the Apple earbuds. Really interesting.&lt;/p&gt;
 
 &lt;p&gt;Maybe I might not have to do any tweaking on the ActivBuds after all. Tomorrow morning I’m going to visit my mom’s workplace and I’m going to try the ActivBuds again with the Petralex app in real-time.&lt;/p&gt;
 
 &lt;h1 id=&quot;section-10&quot;&gt;8/28/2016&lt;/h1&gt;
 
-&lt;p&gt;Yesterday night, I went to a party and tried the ActivBuds/Petralex combo. It was actually quite good. We played board games and I could more or less unkeep up with the overlapping chatter.&lt;/p&gt;
+&lt;p&gt;Yesterday night, I went to a party and tried the ActivBuds/Petralex combo. It was actually quite good. We played board games and I could more or less keep up with the overlapping chatter. It is unclear why I can understand live human speech, but not speech from my computer.&lt;/p&gt;
 
-&lt;p&gt;Today, I got in touch with a hardware engineer who specializes in embedded stuff and hardware/software interactions who has been able to clear up a lot of things for me. (If you’re reading this, you’re great!) We discussed &lt;a href=&quot;http://www.bragi.com&quot;&gt;The Dash&lt;/a&gt; smart earphone that he owns, which are also IPX7. It has an &lt;a href=&quot;https://support.bragi.com/hc/en-us/articles/203178271-Adjust-volume-and-audio-transparency&quot;&gt;Audio Transparency&lt;/a&gt; mode which amplifies the sounds of the ambient environment with a Master Volume setting. That was interesting, since it’s essentially what I’ve been trying to do. However, the Dash still uses the microphone internal to the Dash as the transparency feature’s signal doesn’t go to the phone over Bluetooth. Ultimately, the device has a lot of promise but doesn’t do as well on the connectivity and amplification side so I would not get it (and it’s $300).&lt;/p&gt;
+&lt;p&gt;Today, I got in touch with a hardware engineer who specializes in embedded stuff and hardware/software interactions and he cleared up a lot of things for me. (If you’re reading this, you’re great!) We discussed &lt;a href=&quot;http://www.bragi.com&quot;&gt;The Dash&lt;/a&gt; smart earphone that he owns, which are also IPX7. It has an &lt;a href=&quot;https://support.bragi.com/hc/en-us/articles/203178271-Adjust-volume-and-audio-transparency&quot;&gt;Audio Transparency&lt;/a&gt; mode which amplifies the sounds of the ambient environment with a Master Volume setting. That was interesting, since it’s essentially what I’ve been trying to do. However, the Dash still uses the microphone internal to the Dash as the transparency feature’s signal doesn’t go to the phone over Bluetooth. Ultimately, the device has a lot of promise but doesn’t do as well on the connectivity and amplification side so I would not get it (and it’s $300).&lt;/p&gt;
 
 &lt;p&gt;We also discussed viable ways forward. Trying to modify the Bluetooth chip is probably hopeless, as that seems to be controlled by proprietary firmware. If anything, you would write a software that interfaces with the profiles the chip supports. As a result, I am better off trying to write my own app that pulls real-time audio from the iPhone microphone and streams it via A2DP. Overall it shouldn’t be difficult, I don’t see why streaming from a microphone to headphones is any different from streaming to a speaker, yet there’s so few viable products.&lt;/p&gt;
 
