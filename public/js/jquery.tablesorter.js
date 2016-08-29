@@ -1,13 +1,18 @@
-(function($) {
+$(document).ready(function () {
+	$("table").tablesorter( {
+		sortList: [[3,0], [2,0]]
+	});
+});
 
+(function($) {
 	$(document).ready(function() {
-		$("#EarbudsTable").tablesorter({
-				sortList: [[3,0]} );
-				}
-			}
+	$("EarbudsTable").tablesorter({
+		sortList: [[3,0]} );
+		}
+	}
 );
 
-	
+
 	$.extend({
 		tablesorterPager: new function() {
 			
