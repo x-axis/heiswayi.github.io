@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Aug 2016 22:51:14 -0500</pubDate>
-    <lastBuildDate>Sun, 28 Aug 2016 22:51:14 -0500</lastBuildDate>
+    <pubDate>Sun, 28 Aug 2016 23:41:29 -0500</pubDate>
+    <lastBuildDate>Sun, 28 Aug 2016 23:41:29 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -132,7 +132,7 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;Results were even better than expected! As predicted, my iPhone used its internal microphones to pick up audio and routed it through my earbuds. The sound quality was the pleasant surprise. In tests with my hearing aid, I complained about how annoying the background noise was. Here, there was no background noise simply by virtue of the fact that I couldn’t hear it. My hearing aid has a built-in amplifier that boosts all sound, but normal wired earbuds don’t have such a thing. The only volume control would come from the iPhone, and it turned out that the only audio I could hear were sounds above background noise, i.e. spoken audio and people yelling.&lt;/p&gt;
 
-&lt;p&gt;My thoughts were confirmed by this test: I just need to figure out a way to remove the microphone profile from my bluetooth headphones. That, or find waterproof wired earbuds which might be easier. The best wired waterproof earbuds I found are:&lt;/p&gt;
+&lt;p&gt;My thoughts were confirmed by this test: I just need to figure out a way to remove the microphone profile from my bluetooth headphones. That, or find waterproof wired earbuds which might be easier. The best wired waterproof earbuds I found (sorted by Amazon rating) are:&lt;/p&gt;
 
 &lt;table id=&quot;EarbudsTable&quot; class=&quot;tablesorter&quot;&gt;
 &lt;thead&gt;
@@ -145,31 +145,10 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 &lt;/thead&gt;
 &lt;tbody&gt;
 	&lt;tr&gt;
-		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/Avantree-Hippocampus-WATERPROOF-Underwater-Headphones/dp/B01GDRC35S/&quot;&gt;Avantree Hippocampus&lt;/a&gt;&lt;/td&gt;
-		&lt;td&gt;8&lt;/td&gt;
-		&lt;td&gt;$16.99&lt;/td&gt;
-		&lt;td&gt;3.5&lt;/td&gt;
-	&lt;/tr&gt;
-
-	&lt;tr&gt;
-		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/Waterfi-SwimActive-Waterproof-Headphones-Technology/dp/B01GW39XII/&quot;&gt;Waterfi SwimActive&lt;/a&gt;&lt;/td&gt;
-		&lt;td&gt;8&lt;/td&gt;
-		&lt;td&gt;$39.95&lt;/td&gt;
-		&lt;td&gt;3.6&lt;/td&gt;
-	&lt;/tr&gt;
-
-	&lt;tr&gt;
 		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/Travelon-Waterproof-Headphones-White-Yellow/dp/B00CBT9K0Y/&quot;&gt;Travelon Headphones&lt;/a&gt;&lt;/td&gt;
 		&lt;td&gt;8&lt;/td&gt;
 		&lt;td&gt;$13.17&lt;/td&gt;
 		&lt;td&gt;4.0&lt;/td&gt;
-	&lt;/tr&gt;
-
-	&lt;tr&gt;
-		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/Black-Swimbuds-100%25-Waterproof-Headphones/dp/B01BTFHYIU/&quot;&gt;Swimbuds Black&lt;/a&gt;&lt;/td&gt;
-		&lt;td&gt;8&lt;/td&gt;
-		&lt;td&gt;$40.00&lt;/td&gt;
-		&lt;td&gt;4.3&lt;/td&gt;
 	&lt;/tr&gt;
 
 	&lt;tr&gt;
@@ -180,11 +159,31 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 	&lt;/tr&gt;
 
 	&lt;tr&gt;
+		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/Black-Swimbuds-100%25-Waterproof-Headphones/dp/B01BTFHYIU/&quot;&gt;Swimbuds Black&lt;/a&gt;&lt;/td&gt;
+		&lt;td&gt;8&lt;/td&gt;
+		&lt;td&gt;$40.00&lt;/td&gt;
+		&lt;td&gt;4.3&lt;/td&gt;
+	&lt;/tr&gt;
+
+	&lt;tr&gt;
+		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/Waterfi-SwimActive-Waterproof-Headphones-Technology/dp/B01GW39XII/&quot;&gt;Waterfi SwimActive&lt;/a&gt;&lt;/td&gt;
+		&lt;td&gt;8&lt;/td&gt;
+		&lt;td&gt;$39.95&lt;/td&gt;
+		&lt;td&gt;3.6&lt;/td&gt;
+	&lt;/tr&gt;
+
+	&lt;tr&gt;
+		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/Avantree-Hippocampus-WATERPROOF-Underwater-Headphones/dp/B01GDRC35S/&quot;&gt;Avantree Hippocampus&lt;/a&gt;&lt;/td&gt;
+		&lt;td&gt;8&lt;/td&gt;
+		&lt;td&gt;$16.99&lt;/td&gt;
+		&lt;td&gt;3.5&lt;/td&gt;
+	&lt;/tr&gt;
+
 		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/IEN2-BK-X-Audio-Sportwrap-Waterproof-Headphones/dp/B00AJD0H8I/&quot;&gt;H2O Audio Surge&lt;/a&gt;&lt;/td&gt;
 		&lt;td&gt;8&lt;/td&gt;
 		&lt;td&gt;$24.99&lt;/td&gt;
 		&lt;td&gt;3.2&lt;/td&gt;
-	&lt;/tr&gt;
+	&amp;lt;/tr&amp;gt;
 
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -309,7 +308,20 @@ d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.45) - 32.45\right)} \\
 
 &lt;h1 id=&quot;section-10&quot;&gt;8/28/2016&lt;/h1&gt;
 
-&lt;p&gt;I had a&lt;/p&gt;
+&lt;p&gt;Yesterday night, I went to a party and tried the ActivBuds/Petralex combo. It was actually quite good. We played board games and I could more or less unkeep up with the overlapping chatter.&lt;/p&gt;
+
+&lt;p&gt;Today, I got in touch with a hardware engineer who specializes in embedded stuff and hardware/software interactions who has been able to clear up a lot of things for me. (If you’re reading this, you’re great!) We discussed &lt;a href=&quot;http://www.bragi.com&quot;&gt;The Dash&lt;/a&gt; smart earphone that he owns, which are also IPX7. It has an &lt;a href=&quot;https://support.bragi.com/hc/en-us/articles/203178271-Adjust-volume-and-audio-transparency&quot;&gt;Audio Transparency&lt;/a&gt; mode which amplifies the sounds of the ambient environment with a Master Volume setting. That was interesting, since it’s essentially what I’ve been trying to do. However, the Dash still uses the microphone internal to the Dash as the transparency feature’s signal doesn’t go to the phone over Bluetooth. Ultimately, the device has a lot of promise but doesn’t do as well on the connectivity and amplification side so I would not get it (and it’s $300).&lt;/p&gt;
+
+&lt;p&gt;We also discussed viable ways forward. Trying to modify the Bluetooth chip is probably hopeless, as that seems to be controlled by proprietary firmware. If anything, you would write a software that interfaces with the profiles the chip supports. As a result, I am better off trying to write my own app that pulls real-time audio from the iPhone microphone and streams it via A2DP. Overall it shouldn’t be difficult, I don’t see why streaming from a microphone to headphones is any different from streaming to a speaker, yet there’s so few viable products.&lt;/p&gt;
+
+&lt;p&gt;There’s documentation in the &lt;a href=&quot;https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW6&quot;&gt;iOS Developer Library&lt;/a&gt; with sample source code for &lt;a href=&quot;https://developer.apple.com/library/ios/samplecode/aurioTouch/Introduction/Intro.html&quot;&gt;aurioTouch&lt;/a&gt;. Also found &lt;a href=&quot;https://audiostream.readthedocs.io/en/latest/&quot;&gt;Audiostream&lt;/a&gt;. Commercially, the &lt;a href=&quot;http://www.binpress.com/app/radiotunes-sdk/596&quot;&gt;RadioTunes SDK&lt;/a&gt; looks pretty neat.
+I’ve found a couple old threads about this, &lt;a href=&quot;http://forum.unity3d.com/threads/real-time-audio-from-microphone.145686/&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://forum.unity3d.com/threads/blow-detection-using-ios-microphone.118215/&quot;&gt;here&lt;/a&gt;. &lt;a href=&quot;http://stackoverflow.com/questions/10501236/stream-media-from-iphone&quot;&gt;This&lt;/a&gt; seems like a good StackOverflow question to start from. &lt;a href=&quot;https://audiob.us&quot;&gt;Audiobus&lt;/a&gt; can send audio from one app to another to mix music.&lt;/p&gt;
+
+&lt;p&gt;I’m pretty tired right now, it’s 12:35 AM. This afternoon I have an appointment with my audiologist and I’m going to ask what the risks of this are to my ears.&lt;/p&gt;
+
+&lt;h1 id=&quot;section-11&quot;&gt;8/29/2016&lt;/h1&gt;
+
+&lt;p&gt;TBD.&lt;/p&gt;
 </description>
         <pubDate>Wed, 24 Aug 2016 00:00:00 -0500</pubDate>
         <link>/waterproof-hearing-aid.html</link>
