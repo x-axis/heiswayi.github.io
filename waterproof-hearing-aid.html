@@ -121,7 +121,7 @@
     <div class="post-date">August 24, 2016 &middot; <span class="reading-time" title="Estimated Reading Time">
   
   
-    13 minutes read
+    15 minutes read
   
 </span>
 </div>
@@ -199,7 +199,7 @@
 
 <p>Results were even better than expected! As predicted, my iPhone used its internal microphones to pick up audio and routed it through my earbuds. The sound quality was the pleasant surprise. In tests with my hearing aid, I complained about how annoying the background noise was. Here, there was no background noise simply by virtue of the fact that I couldn’t hear it. My hearing aid has a built-in amplifier that boosts all sound, but normal wired earbuds don’t have such a thing. The only volume control would come from the iPhone, and it turned out that the only audio I could hear were sounds above background noise, i.e. spoken audio and people yelling.</p>
 
-<p>My thoughts were confirmed by this test: I just need to figure out a way to remove the microphone profile from my bluetooth headphones. That, or find waterproof wired earbuds which might be easier. The best wired waterproof earbuds I found are:</p>
+<p>My thoughts were confirmed by this test: I just need to figure out a way to remove the microphone profile from my bluetooth headphones. That, or find waterproof wired earbuds which might be easier. The best wired waterproof earbuds I found (sorted by Amazon rating) are:</p>
 
 <table id="EarbudsTable" class="tablesorter">
 <thead>
@@ -212,31 +212,10 @@
 </thead>
 <tbody>
 	<tr>
-		<td><a href="https://www.amazon.com/Avantree-Hippocampus-WATERPROOF-Underwater-Headphones/dp/B01GDRC35S/">Avantree Hippocampus</a></td>
-		<td>8</td>
-		<td>$16.99</td>
-		<td>3.5</td>
-	</tr>
-
-	<tr>
-		<td><a href="https://www.amazon.com/Waterfi-SwimActive-Waterproof-Headphones-Technology/dp/B01GW39XII/">Waterfi SwimActive</a></td>
-		<td>8</td>
-		<td>$39.95</td>
-		<td>3.6</td>
-	</tr>
-
-	<tr>
 		<td><a href="https://www.amazon.com/Travelon-Waterproof-Headphones-White-Yellow/dp/B00CBT9K0Y/">Travelon Headphones</a></td>
 		<td>8</td>
 		<td>$13.17</td>
 		<td>4.0</td>
-	</tr>
-
-	<tr>
-		<td><a href="https://www.amazon.com/Black-Swimbuds-100%25-Waterproof-Headphones/dp/B01BTFHYIU/">Swimbuds Black</a></td>
-		<td>8</td>
-		<td>$40.00</td>
-		<td>4.3</td>
 	</tr>
 
 	<tr>
@@ -247,11 +226,31 @@
 	</tr>
 
 	<tr>
+		<td><a href="https://www.amazon.com/Black-Swimbuds-100%25-Waterproof-Headphones/dp/B01BTFHYIU/">Swimbuds Black</a></td>
+		<td>8</td>
+		<td>$40.00</td>
+		<td>4.3</td>
+	</tr>
+
+	<tr>
+		<td><a href="https://www.amazon.com/Waterfi-SwimActive-Waterproof-Headphones-Technology/dp/B01GW39XII/">Waterfi SwimActive</a></td>
+		<td>8</td>
+		<td>$39.95</td>
+		<td>3.6</td>
+	</tr>
+
+	<tr>
+		<td><a href="https://www.amazon.com/Avantree-Hippocampus-WATERPROOF-Underwater-Headphones/dp/B01GDRC35S/">Avantree Hippocampus</a></td>
+		<td>8</td>
+		<td>$16.99</td>
+		<td>3.5</td>
+	</tr>
+
 		<td><a href="https://www.amazon.com/IEN2-BK-X-Audio-Sportwrap-Waterproof-Headphones/dp/B00AJD0H8I/">H2O Audio Surge</a></td>
 		<td>8</td>
 		<td>$24.99</td>
 		<td>3.2</td>
-	</tr>
+	&lt;/tr&gt;
 
 </tbody>
 </table>
@@ -376,7 +375,20 @@ d &= 10^{\frac{1}{20}\left(25 - 20\log(2.45) - 32.45\right)} \\
 
 <h1 id="section-10">8/28/2016</h1>
 
-<p>I had a</p>
+<p>Yesterday night, I went to a party and tried the ActivBuds/Petralex combo. It was actually quite good. We played board games and I could more or less unkeep up with the overlapping chatter.</p>
+
+<p>Today, I got in touch with a hardware engineer who specializes in embedded stuff and hardware/software interactions who has been able to clear up a lot of things for me. (If you’re reading this, you’re great!) We discussed <a href="http://www.bragi.com">The Dash</a> smart earphone that he owns, which are also IPX7. It has an <a href="https://support.bragi.com/hc/en-us/articles/203178271-Adjust-volume-and-audio-transparency">Audio Transparency</a> mode which amplifies the sounds of the ambient environment with a Master Volume setting. That was interesting, since it’s essentially what I’ve been trying to do. However, the Dash still uses the microphone internal to the Dash as the transparency feature’s signal doesn’t go to the phone over Bluetooth. Ultimately, the device has a lot of promise but doesn’t do as well on the connectivity and amplification side so I would not get it (and it’s $300).</p>
+
+<p>We also discussed viable ways forward. Trying to modify the Bluetooth chip is probably hopeless, as that seems to be controlled by proprietary firmware. If anything, you would write a software that interfaces with the profiles the chip supports. As a result, I am better off trying to write my own app that pulls real-time audio from the iPhone microphone and streams it via A2DP. Overall it shouldn’t be difficult, I don’t see why streaming from a microphone to headphones is any different from streaming to a speaker, yet there’s so few viable products.</p>
+
+<p>There’s documentation in the <a href="https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW6">iOS Developer Library</a> with sample source code for <a href="https://developer.apple.com/library/ios/samplecode/aurioTouch/Introduction/Intro.html">aurioTouch</a>. Also found <a href="https://audiostream.readthedocs.io/en/latest/">Audiostream</a>. Commercially, the <a href="http://www.binpress.com/app/radiotunes-sdk/596">RadioTunes SDK</a> looks pretty neat.
+I’ve found a couple old threads about this, <a href="http://forum.unity3d.com/threads/real-time-audio-from-microphone.145686/">here</a> and <a href="http://forum.unity3d.com/threads/blow-detection-using-ios-microphone.118215/">here</a>. <a href="http://stackoverflow.com/questions/10501236/stream-media-from-iphone">This</a> seems like a good StackOverflow question to start from. <a href="https://audiob.us">Audiobus</a> can send audio from one app to another to mix music.</p>
+
+<p>I’m pretty tired right now, it’s 12:35 AM. This afternoon I have an appointment with my audiologist and I’m going to ask what the risks of this are to my ears.</p>
+
+<h1 id="section-11">8/29/2016</h1>
+
+<p>TBD.</p>
 
   
 </div>
