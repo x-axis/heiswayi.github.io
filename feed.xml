@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Aug 2016 23:54:12 -0500</pubDate>
-    <lastBuildDate>Sun, 28 Aug 2016 23:54:12 -0500</lastBuildDate>
+    <pubDate>Tue, 30 Aug 2016 05:25:36 -0500</pubDate>
+    <lastBuildDate>Tue, 30 Aug 2016 05:25:36 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -314,12 +314,12 @@ d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.45) - 32.45\right)} \\
 
 &lt;p&gt;Today, I got in touch with a hardware engineer who specializes in embedded stuff and hardware/software interactions and he cleared up a lot of things for me. (If you’re reading this, you’re great!) We discussed &lt;a href=&quot;http://www.bragi.com&quot;&gt;The Dash&lt;/a&gt; smart earphone that he owns, which are also IPX7. It has an &lt;a href=&quot;https://support.bragi.com/hc/en-us/articles/203178271-Adjust-volume-and-audio-transparency&quot;&gt;Audio Transparency&lt;/a&gt; mode which amplifies the sounds of the ambient environment with a Master Volume setting. That was interesting, since it’s essentially what I’ve been trying to do. However, the Dash still uses the microphone internal to the Dash as the transparency feature’s signal doesn’t go to the phone over Bluetooth. Ultimately, the device has a lot of promise but doesn’t do as well on the connectivity and amplification side so I would not get it (and it’s $300).&lt;/p&gt;
 
-&lt;p&gt;We also discussed viable ways forward. Trying to modify the Bluetooth chip is probably hopeless, as that seems to be controlled by proprietary firmware. If anything, you would write a software that interfaces with the profiles the chip supports. As a result, I am better off trying to write my own app that pulls real-time audio from the iPhone microphone and streams it via A2DP. Overall it shouldn’t be difficult, I don’t see why streaming from a microphone to headphones is any different from streaming to a speaker, yet there’s so few viable products.&lt;/p&gt;
+&lt;p&gt;We also discussed viable paths forward. Trying to modify the Bluetooth chip is probably hopeless, as that seems to be controlled by proprietary firmware. If anything, you would write a software that interfaces with the profiles the chip supports. As a result, I am better off trying to write my own app that pulls real-time audio from the iPhone microphone and streams it via A2DP. Overall it shouldn’t be difficult, I don’t see why streaming from a microphone to headphones is any different from streaming to a speaker, yet there’s so few viable products.&lt;/p&gt;
 
 &lt;p&gt;There’s documentation in the &lt;a href=&quot;https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW6&quot;&gt;iOS Developer Library&lt;/a&gt; with sample source code for &lt;a href=&quot;https://developer.apple.com/library/ios/samplecode/aurioTouch/Introduction/Intro.html&quot;&gt;aurioTouch&lt;/a&gt;. Also found &lt;a href=&quot;https://audiostream.readthedocs.io/en/latest/&quot;&gt;Audiostream&lt;/a&gt;. Commercially, the &lt;a href=&quot;http://www.binpress.com/app/radiotunes-sdk/596&quot;&gt;RadioTunes SDK&lt;/a&gt; looks pretty neat.
-I’ve found a couple old threads about this, &lt;a href=&quot;http://forum.unity3d.com/threads/real-time-audio-from-microphone.145686/&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://forum.unity3d.com/threads/blow-detection-using-ios-microphone.118215/&quot;&gt;here&lt;/a&gt;. &lt;a href=&quot;http://stackoverflow.com/questions/10501236/stream-media-from-iphone&quot;&gt;This&lt;/a&gt; seems like a good StackOverflow question to start from. &lt;a href=&quot;https://audiob.us&quot;&gt;Audiobus&lt;/a&gt; can send audio from one app to another to mix music.&lt;/p&gt;
+I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/threads/real-time-audio-from-microphone.145686/&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://forum.unity3d.com/threads/blow-detection-using-ios-microphone.118215/&quot;&gt;here&lt;/a&gt;. The best starting point looks like &lt;a href=&quot;http://stackoverflow.com/questions/10501236/stream-media-from-iphone&quot;&gt;this StackOverflow question&lt;/a&gt;. &lt;a href=&quot;https://audiob.us&quot;&gt;Audiobus&lt;/a&gt; can send audio from one app to another to mix music.&lt;/p&gt;
 
-&lt;p&gt;I’m pretty tired right now, it’s 12:35 AM. This afternoon I have an appointment with my audiologist and I’m going to ask what the risks of this are to my ears.&lt;/p&gt;
+&lt;p&gt;It is 12:56 AM and I’m pretty tired right now. In the afternoon I have an appointment with my audiologist and I’m going to ask what the risks of this are to my ears.&lt;/p&gt;
 
 &lt;h1 id=&quot;section-11&quot;&gt;8/29/2016&lt;/h1&gt;
 
@@ -340,30 +340,106 @@ I’ve found a couple old threads about this, &lt;a href=&quot;http://forum.unit
 
 &lt;p&gt;We were on the subprime mortgage and mortgage-backed securities portfolios. Older people will be familiar with how the &lt;a href=&quot;https://en.wikipedia.org/wiki/Subprime_mortgage_crisis&quot;&gt;subprime mortgage crisis&lt;/a&gt; caused the 2007-2009 economic recession. Back then, I was still a kid and before this internship, I barely understood what a mortgage was, let alone what happened. A friend recommended &lt;a href=&quot;http://www.imdb.com/title/tt1596363/&quot;&gt;The Big Short&lt;/a&gt; to me and I found it an entertaining and educational look at how these did the damage they did.&lt;/p&gt;
 
-&lt;p&gt;From the get-go, it felt like I was drinking from the firehose. The learning curve was steep, mostly because there was just so much information. We needed to pull data from various databases but in order to know what sources to pull it from, we needed to understand what’s in the portfolio and how the assets worked. Not just conceptually, but also from an accounting perspective in understanding how the bank structures its data. I must have read hundreds of pages of documentation and paperwork. I made a lot of flowcharts to help me process it all. Microsoft Visio is pretty awesome.&lt;/p&gt;
+&lt;p&gt;From the get-go, it felt like I was drinking from the firehose. The learning curve was steep, mostly because there was just so much information. We needed to pull data from various databases but in order to know what sources to pull it from, we needed to understand what’s in the portfolio and how the assets worked. Not just conceptually, but also from an accounting perspective in understanding how the bank structures its data. I must have read hundreds of pages of documentation and paperwork – if you look in my notebook, you’ll see a ton of flowcharts, graphs, and diagrams helping me process it all.&lt;/p&gt;
 
-&lt;p&gt;Every intern also got a mentor. Mine was one of my interviewers and out of three people, he had asked the toughest technical questions. He was a former math professor and I don’t think I could have had a better mentor! He was always busy, but would often give me lectures on the spot from mathematical theory to financial news to the bank’s history. I think what set him apart was that he didn’t just give me guidance, but also opportunities for me to set myself apart. He brought me to all of his meetings whether or not they related to my work, and often “went to bat” for me with my manager by recommending additional projects for me to take on. With his support, I was able to do a lot in 10 weeks. I am pretty grateful and I want to be what he was to me, to somebody else someday.&lt;/p&gt;
+&lt;p&gt;Every intern also got a mentor. Mine was one of my interviewers and out of three people, he had asked the toughest technical questions – former math professor, go figure. Looking back, I don’t think I could have had a better mentor! Even though he was a busy person, he often gave me lectures on the spot covering topics from mathematical theory to financial news to the bank’s history. But above all, I think what set him apart was how he didn’t just give me guidance, but also opportunities for me to set myself apart. He brought me to all of his meetings whether or not they related to my work, and often “went to bat” for me with my manager by recommending additional things for me to take on. With his support, I was able to do a lot in 10 weeks. I am pretty grateful and someday, I want to be to somebody else what he was to me.&lt;/p&gt;
 
-&lt;p&gt;There is so much I could say about this internship, but I think I’ll just stick to the key takeaways.&lt;/p&gt;
+&lt;p&gt;There is so much I could say about this summer, but I want to focus on what I think makes for a successful intern. Like other things in life, being remembered comes down to two things: having information, and using it well.&lt;/p&gt;
 
-&lt;h3 id=&quot;general-life-stuff&quot;&gt;General Life Stuff&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Get the information you need.&lt;/strong&gt; This was said over and over again in my first week - being proactive means asking questions early and asking questions often. Don’t waste your time.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Know what makes you happy in a job.&lt;/strong&gt; We had a bunch of team meetings just on this topic, talking about so many things. Compensation, work/life balance, recognition, opportunities for advancement, etc. Your happiness is influenced more by what your day-to-day looks like than what your specific area of finance is.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;personal-lessons&quot;&gt;Personal Lessons&lt;/h3&gt;
+&lt;h3 id=&quot;information-is-power&quot;&gt;Information is Power&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Deep work.&lt;/li&gt;
-  &lt;li&gt;Workaholic.&lt;/li&gt;
-  &lt;li&gt;Be authentic.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Get the information you need.&lt;/strong&gt; One of the senior quants said this to me over and over in my first week and it internalizes a deeper mentality: being proactive. In his context, it was about understanding how subprime mortgages work and figuring that out by not just reading things, but also talking to the portfolio managers, the traders, and the accounting people. Being proactive meant asking questions early and asking questions often, going to where the information was instead of waiting for the information to somehow come to you. In a way, this mentality is similar to that of advocating for yourself, which is what every hard-of-hearing and deaf person has had to learn.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Good social skills make getting information easier.&lt;/strong&gt; At the core, this skill is about being able to develop chemistry with others.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;In the short-term, chemistry not only helps you with getting information from others, but also in collaborating with people on projects. When your coworkers feel natural and comfortable interacting with you, communication is smoother, issues can be addressed more quickly, and direction is clearer when everyone is on the same page. When management likes you, they remember your name and serve as good advisors and mentors.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;In the long-term, you learn about prevailing trends, issues, and opportunities to “add value.” Chance, indeed, favors the prepared mind.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Be authentic.&lt;/strong&gt; Frankly, developing social skills isn’t easy; it is a muscle that only improves through consistent practice. I think there is so much advice out there that gives shortcuts and “hacks” on “getting people to like you,” which is often executed at the expense of sincerity. On the other end, people champion authenticity but it’s important to realize that being authentic isn’t something you do for other people. It means having confidence in yourself and believing that there is value in who you are. It means recognizing that you cannot please everybody and being at peace with that. Plus, you do better work when you feel comfortable in your own skin instead of when you’re trying to be somebody you’re not.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&quot;being-indispensible&quot;&gt;Being Indispensible&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Add value.&lt;/strong&gt; This action can be broken into two components: making yourself indispensible to the company, and making yourself indispensible to other people. having the initiative to make other people’s lives easier.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;The first component is about improving the company as a whole. Examples include becoming a subject matter expert e.g. on an asset class, or taking initiative on finding ways to comprove the bottom line, or taking on a much-needed but ignored issue.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;The second component is about making other people’s jobs easier. This can be as straightforward as when you generate weekly risk reports to your boss &lt;em&gt;exactly&lt;/em&gt; the way they like to read it, or as altruistic as helping a busy coworker tackle obstacles in their work, or even serving in an advisory or mentorship capacity to others.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Write good code, or write good papers.&lt;/strong&gt; Both were a big part of my internship and this seems to be the general trend in the quant space of finance. That leads to the next bullet point…&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Learn to focus without distraction on cognitively demanding tasks.&lt;/strong&gt; You really cannot be a good (quant) intern if you cannot consistently produce work that isn’t easy to reproduce. Focusing on hard things that people unambiguously value, day after day, week after week, is more or less the whole ball game and to do that, you need to learn how to do &lt;a href=&quot;http://calnewport.com/books/deep-work/&quot;&gt;deep work&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
 </description>
         <pubDate>Tue, 23 Aug 2016 00:00:00 -0500</pubDate>
         <link>/quant-internship.html</link>
         <guid isPermaLink="true">/quant-internship.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Compiling Python Code in Vim</title>
+        <description>&lt;p&gt;At the beginning of the summer, I configured my vim environment for Python development, including being able to compile my code within the editor. Today, I pulled up some old files and couldn’t remember how to run it anymore…&lt;/p&gt;
+
+&lt;p&gt;I looked in my vimrc file and it looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&quot; Set makeprg to compile current Python file&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; makprg&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;python\ %
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; noswapfile
+
+&lt;span class=&quot;c&quot;&gt;&quot; Map keys to compile Python scripts&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;nnoremap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;S&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;b1 &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;bar&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;bar&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;bd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;bar&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;b1 &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;bar&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;botright&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;vnew&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;bar&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;read &lt;span class=&quot;p&quot;&gt;!&lt;/span&gt;python &lt;span class=&quot;k&quot;&gt;lol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;m&lt;/span&gt; json&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;tool &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;CR&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;What is this ugliness?! It looks like hitting Shift+B results in the following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Loads the first buffer (presumably where my code is)&lt;/li&gt;
+  &lt;li&gt;Writes the file (saves it)&lt;/li&gt;
+  &lt;li&gt;Closes buffers 1 through 1000 (in other words, closes all buffers). I assume the exclamation forces this action without saving the other buffers.&lt;/li&gt;
+  &lt;li&gt;Reloads the first buffer&lt;/li&gt;
+  &lt;li&gt;Opens a new vertical buffer in the bottom right part of vim&lt;/li&gt;
+  &lt;li&gt;Runs the shell command &lt;code&gt;python lol.py&lt;/code&gt; within vim and reads the output into a new buffer.&lt;/li&gt;
+  &lt;li&gt;Run the Python module, json.tool&lt;/li&gt;
+  &lt;li&gt;Hit enter&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ignoring the fact that I apparently hardcoded a build sequence for one file, the output doesn’t look too bad. The results look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/python-in-vim.png&quot; alt=&quot;Python output in vim buffer&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 19 Jul 2016 00:00:00 -0500</pubDate>
+        <link>/compiling-python-code-in-vim.html</link>
+        <guid isPermaLink="true">/compiling-python-code-in-vim.html</guid>
+        
+        <category>notes</category>
         
         
       </item>
