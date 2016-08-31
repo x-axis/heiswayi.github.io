@@ -5,8 +5,8 @@
     <description>Yes? No?</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Aug 2016 05:32:45 -0500</pubDate>
-    <lastBuildDate>Tue, 30 Aug 2016 05:32:45 -0500</lastBuildDate>
+    <pubDate>Wed, 31 Aug 2016 07:28:27 -0500</pubDate>
+    <lastBuildDate>Wed, 31 Aug 2016 07:28:27 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -63,26 +63,26 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
     
       <item>
         <title>Operation HEAR</title>
-        <description>&lt;p&gt;Last updated: 8/29/2016&lt;/p&gt;
+        <description>&lt;p&gt;Log last updated: 8/30/2016&lt;/p&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;Since I was a kid, I’ve wished for a way to hear while in the water. As of 2016, there is only one &lt;a href=&quot;http://www.siemens.com/press/en/pressrelease/?press=/en/pressrelease/2012/healthcare/h20121036.htm&quot;&gt;waterproof hearing aid&lt;/a&gt; on the market. Someday I would like one but for now, this is my journal of trying to figure something more cost-effective :)&lt;/p&gt;
+&lt;p&gt;Since I was a kid, I’ve wished for a way to hear while in the water. As of 2016, the only waterproof hearing aid on the market is the &lt;a href=&quot;http://www.siemens.com/press/en/pressrelease/?press=/en/pressrelease/2012/healthcare/h20121036.htm&quot;&gt;Siemens Aquaris&lt;/a&gt;. Someday I would like one but for now, this is my journal of trying to figure out something more cost-effective :).&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;12/29/2015&lt;/h1&gt;
-&lt;p&gt;Got fitted with &lt;a href=&quot;http://www.resound.com/en-US/hearing-aids/enzo2&quot;&gt;Resound Enzo&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;. This hearing aid has actually been life-changing. It is &lt;a href=&quot;https://developer.apple.com/programs/mfi/&quot;&gt;Made for iPhone®&lt;/a&gt; and routes sound from my phone directly into my hearing aid’s internal microphone via Bluetooth. For the first time, I could Skype and not have to ask my friends to constantly repeat themselves because the max volume wasn’t loud enough.&lt;/p&gt;
+&lt;h1 id=&quot;section&quot;&gt;12/29/2014&lt;/h1&gt;
+&lt;p&gt;Got fitted with &lt;a href=&quot;http://www.resound.com/en-US/hearing-aids/enzo2&quot;&gt;Resound Enzo&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;. This hearing aid has actually been life-changing. As a &lt;a href=&quot;https://developer.apple.com/programs/mfi/&quot;&gt;Made for iPhone®&lt;/a&gt; product, it streams sound from my phone directly into my hearing aid’s internal microphone via Bluetooth. The external microphone can also be disabled, effectively resulting in 100% noise-cancellation. For the first time, I could Skype without having to ask my friends to constantly repeat themselves because the max volume wasn’t loud enough. I looked forward to FaceTiming my family instead of anxiously wishing I could hang up.&lt;/p&gt;
 
 &lt;h1 id=&quot;section-1&quot;&gt;8/05/2016&lt;/h1&gt;
-&lt;p&gt;Went tubing with my friends! I had taken out my hearing aids for tubing in a lake before, but this trip was a 3-hour trip down a lazy river. We would essentially be chilling and talking the entire time. I didn’t want to be left out so I wore my old pair from high school. I figured that if something happened to them, I’d still have my pair from undergrad and the ReSounds. The trip turned out to be a blast, my friends tied up our tubes together and blasted music while talking.&lt;/p&gt;
+&lt;p&gt;Went tubing with my friends! I had taken out my hearing aids for tubing in a lake before, but this trip was a 3-hour trip down a lazy river. We would essentially be chilling and talking the entire time. I didn’t want to be left out so I wore my old pair from high school. I figured that if something happened to them, I’d still have my pair from undergrad and the ReSounds. The trip turned out to be a blast; we tied our tubes together and played music while talking.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/river-tubing.jpg&quot; alt=&quot;River tubing&quot; /&gt;
 &lt;em&gt;Image from Trinity River Vision Authority.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;section-2&quot;&gt;8/18/2016&lt;/h1&gt;
-&lt;p&gt;Hatched crazy idea of using iPhone as a microphone and pairing it to waterproof bluetooth headphones. Then I simply enclose my iPhone in a waterproof case and swim with it. I had already gotten the case during tubing and discovered that I could still talk on the phone. My phone’s internal microphone could pick up sound even in a watertight case. Of course, this depends on the case actually working and me not destroying my phone in the process.&lt;/p&gt;
+&lt;p&gt;Hatched crazy idea of using iPhone as a microphone and pairing it to waterproof Bluetooth headphones. Then I simply enclose my iPhone in a waterproof case and swim with it. I had already gotten such a case for tubing and discovered that I could still talk on the phone. That is, my phone’s internal microphone could pick up sound even in a watertight case. Of course, this idea depends on the case staying waterproof and not destroying my phone in the process.&lt;/p&gt;
 
-&lt;p&gt;Apps that can turn the iPhone into a microphone are many! Preliminary testing using my hearing aids as bluetooth headphones reveals that the internal iPhone microphone is surprisingly good and can switch from near and far range. I turned off my hearing aid’s external microphone so that the only sound came from the iPhone’s internal microphone. I could hear my parents yelling my name from downstairs and hold a conversation with them in the car and at the dinner table.&lt;/p&gt;
+&lt;p&gt;Apps that can turn the iPhone into a microphone are many! Preliminary testing using my hearing aids as Bluetooth headphones revealed that the internal iPhone microphone is surprisingly good and can switch between near and far range. I turned off my hearing aid’s external microphone so that the only sound came from the iPhone’s internal microphone. I could hear my parents yelling my name from downstairs and hold a conversation with them in the car and at the dinner table.&lt;/p&gt;
 
-&lt;p&gt;Sound quality is extremely polluted. There is a lot of ambient / background noise and it is annoyingly loud. My voice sounds disturbingly different, I can’t describe it. My parents also sound different.&lt;/p&gt;
+&lt;p&gt;Sound quality is extremely polluted. There is a lot of ambient / background noise and it is annoyingly loud. My voice also sounds disturbingly different, I can’t describe it. My parents also sound different.&lt;/p&gt;
 
 &lt;p&gt;Overall, results are optimistic and this idea looks possible.&lt;/p&gt;
 
@@ -118,21 +118,21 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;Bluetooth headphones arrive. Comfortable and tightly snug in ear.&lt;/p&gt;
 
-&lt;p&gt;The range is fine, I can hear a noise when my parents are yelling my name from downstairs. Sound quality… beyond salvageable. It sharply degrades with distance, with speech intelligibility at 3 feet, but unintelligible beyond 1 meter. It is difficult to discern changes in pitch and tone. These results are puzzling considering how well this worked when I paired my hearing aids.&lt;/p&gt;
+&lt;p&gt;The range is fine, I can hear a “noise” when my parents are yelling my name from downstairs but the sound quality… beyond salvageable. It sharply degrades with distance, with speech intelligibility at 3 feet, but unintelligible beyond 1 meter. It is difficult to discern changes in pitch and tone. These results are puzzling considering how well this worked when I paired my hearing aid.&lt;/p&gt;
 
-&lt;p&gt;Further investigation shows that the iPhone is automatically using the microphone in my bluetooth headphones instead of its own internal microphone. This seems to be the default behavior; there is no existing method to choose which microphone my phone uses. I tried several &lt;a href=&quot;http://petralex.pro/en/article/view?id=1&quot;&gt;hearing algorithms&lt;/a&gt;: Petralax, NAL, Berger, and POGO. I generally prefer POGO, but in all cases they failed epically.&lt;/p&gt;
+&lt;p&gt;Further investigation shows that the iPhone is automatically using the microphone in my Bluetooth headphones instead of its own internal microphone. This seems to be the default behavior; there is no existing method to choose which microphone my phone uses. I tried several &lt;a href=&quot;http://petralex.pro/en/article/view?id=1&quot;&gt;hearing algorithms&lt;/a&gt;: Petralax, NAL, Berger, and POGO. I generally prefer POGO, but in all cases the algorithms failed epically.&lt;/p&gt;
 
 &lt;p&gt;Exhaustive search for all IPX6, IPX7, and IPX8 wireless headphones without a built-in microphone. There are none.&lt;/p&gt;
 
-&lt;p&gt;Since trials using my hearing aid worked well, I think this should still work if I can force my phone to use its internal microphone. To be sure, I’ll repeat tests using wired earbuds.&lt;/p&gt;
+&lt;p&gt;Since trials with my hearing aid worked well, I think this should still work if I can force my phone to use its internal microphone. To be sure, I’ll repeat tests using wired earbuds.&lt;/p&gt;
 
 &lt;h1 id=&quot;section-5&quot;&gt;8/23/2016&lt;/h1&gt;
 
 &lt;p&gt;I borrowed my dad’s Apple earbuds.&lt;/p&gt;
 
-&lt;p&gt;Results were even better than expected! As predicted, my iPhone used its internal microphones to pick up audio and routed it through my earbuds. The sound quality was the pleasant surprise. In tests with my hearing aid, I complained about how annoying the background noise was. Here, there was no background noise simply by virtue of the fact that I couldn’t hear it. My hearing aid has a built-in amplifier that boosts all sound, but normal wired earbuds don’t have such a thing. The only volume control would come from the iPhone, and it turned out that the only audio I could hear were sounds above background noise, i.e. spoken audio and people yelling.&lt;/p&gt;
+&lt;p&gt;Results were even better than expected! As predicted, my iPhone used its internal microphone to pick up audio and routed it through my earbuds. The sound quality was the pleasant surprise. In tests with my hearing aid, I had complained about how annoying the background noise was. Here, there was no background noise simply by virtue of the fact that I couldn’t hear it. My hearing aid is an amplifier that boosts all sound, but normal wired earbuds don’t have such a thing. The only volume control would come from the iPhone, and it turned out that the only sounds I could hear were those considerably above background noise, i.e. loud spoken audio.&lt;/p&gt;
 
-&lt;p&gt;My thoughts were confirmed by this test: I just need to figure out a way to remove the microphone profile from my bluetooth headphones. That, or find waterproof wired earbuds which might be easier. The best wired waterproof earbuds I found (sorted by Amazon rating) are:&lt;/p&gt;
+&lt;p&gt;My thoughts were confirmed by this test: I just need to figure out a way to remove the microphone profile from my Bluetooth headphones. That, or find waterproof wired earbuds which might be an easier task. The best wired waterproof earbuds I found (sorted by Amazon rating) are:&lt;/p&gt;
 
 &lt;table id=&quot;EarbudsTable&quot; class=&quot;tablesorter&quot;&gt;
 &lt;thead&gt;
@@ -179,16 +179,17 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 		&lt;td&gt;3.5&lt;/td&gt;
 	&lt;/tr&gt;
 
+	&lt;tr&gt;
 		&lt;td&gt;&lt;a href=&quot;https://www.amazon.com/IEN2-BK-X-Audio-Sportwrap-Waterproof-Headphones/dp/B00AJD0H8I/&quot;&gt;H2O Audio Surge&lt;/a&gt;&lt;/td&gt;
 		&lt;td&gt;8&lt;/td&gt;
 		&lt;td&gt;$24.99&lt;/td&gt;
 		&lt;td&gt;3.2&lt;/td&gt;
-	&amp;lt;/tr&amp;gt;
+	&lt;/tr&gt;
 
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;While looking for earbuds, I found this &lt;a href=&quot;https://www.amazon.com/gp/product/B01243EJ7A/&quot;&gt;waterproof case&lt;/a&gt; that has an armband and a place to plug in earbuds. It also floats! It looks like wired earbuds are going to be the easiest solutions, but I’m still hung up on trying to make this work with bluetooth. For now I have a couple weeks before I go anywhere so I might as well try. That brings up a new question: what is the underwater range of bluetooth?&lt;/p&gt;
+&lt;p&gt;While looking for earbuds, I found a &lt;a href=&quot;https://www.amazon.com/gp/product/B01243EJ7A/&quot;&gt;waterproof case&lt;/a&gt; that has an armband and a place to plug in earbuds. It also floats! It looks like wired earbuds will be the easiest solution, but I’m still hung up on trying to make this work with Bluetooth. For now I have a couple weeks before I go anywhere so I might as well try. That brings up a new question: what is the underwater range of Bluetooth?&lt;/p&gt;
 
 &lt;h3 id=&quot;preliminary-research&quot;&gt;Preliminary Research&lt;/h3&gt;
 
@@ -212,11 +213,11 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;Saltwater has a high conductivity while freshwater has a relatively low conductivity. This means that it’ll be more challenging to engineer a hearing solution for snorkeling in the ocean compared to swimming in a lake.&lt;/p&gt;
 
-&lt;p&gt;It turns out that Bluetooth has virtually nil connectivity. &lt;a href=&quot;http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf&quot;&gt;Jiang and Georgakopoulos&lt;/a&gt; show that the optimum frequency for air-to-water communication is short-wave radiowaves in the 3 to 100 MHz range. In contrast, Bluetooth is almost two orders of magnitude bigger, falling under the spectrum of microwaves at 2.4 to 2.4835GHz. Anyone who’s had a good middle school science teacher will remember that kitchen microwaves heats food by heating the water molecules, which absorbs the microwaves.&lt;/p&gt;
+&lt;p&gt;It turns out that Bluetooth has virtually nil connectivity. &lt;a href=&quot;http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf&quot;&gt;Jiang and Georgakopoulos&lt;/a&gt; show that the optimum frequency for air-to-water communication is short-wave radiowaves in the 3 to 100 MHz range. In contrast, Bluetooth is almost two orders of magnitude bigger, falling under the spectrum of microwaves at 2.4 to 2.4835 GHz. Anyone who’s had a good middle school science teacher will remember that kitchen microwaves heats food by heating the water molecules, which absorbs the microwaves.&lt;/p&gt;
 
-&lt;p&gt;Wireless frequencies that do work underwater include sonar and NFC. Apple implemented NFC chips in iPhone 6 for Apple Pay, but have banned access by third party apps. Regardless, it’s a moot point since NFC headphones are so few and not at all waterproof. If I hope to use my phone, then bluetooth it’ll have to be.&lt;/p&gt;
+&lt;p&gt;Wireless frequencies that do work underwater include sonar and NFC. Apple implemented NFC chips in iPhone 6 for Apple Pay, but have banned access by third party apps. Regardless, it’s a moot point since NFC headphones are so few and not at all waterproof. If I hope to use my phone, then Bluetooth it’ll have to be.&lt;/p&gt;
 
-&lt;p&gt;For my purposes, I don’t really &lt;em&gt;need&lt;/em&gt; a big range. If I am swimming with waterproof earbuds, then that’s a max depth of one foot. I am having a REALLY hard time finding out what the underwater bluetooth range is. You’d think this would be a common question - and it is - but I guess since it is so ineffective that few sought to quantify it.&lt;/p&gt;
+&lt;p&gt;For my purposes, I don’t really &lt;em&gt;need&lt;/em&gt; a big range. If I am swimming with waterproof earbuds, then that’s a max depth of one foot. I am having a REALLY hard time finding out what the underwater Bluetooth range is. You’d think this would be a common question - and it is - but I guess it is so ineffective that few sought to quantify it.&lt;/p&gt;
 
 &lt;h1 id=&quot;section-6&quot;&gt;8/25/2016&lt;/h1&gt;
 
@@ -224,15 +225,15 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;h1 id=&quot;section-7&quot;&gt;8/26/2016&lt;/h1&gt;
 
-&lt;h3 id=&quot;theoretical-bluetooth-underwater-range&quot;&gt;Theoretical Bluetooth Underwater Range&lt;/h3&gt;
+&lt;h3 id=&quot;theoretical-underwater-bluetooth-range&quot;&gt;Theoretical Underwater Bluetooth Range&lt;/h3&gt;
 
-&lt;p&gt;I’m still hung up on this underwater bluetooth range thing. I could make life easier for myself and just go with the wired earbuds but… no. I have about two weeks left of summer vacation and I PROMISED myself that I wouldn’t do any math, but here we go…&lt;/p&gt;
+&lt;p&gt;I’m still hung up on this underwater Bluetooth range thing. I could make life easier for myself and just go with the wired earbuds but… no. I have about two weeks left of summer vacation and I PROMISED myself that I wouldn’t do any math, but here we go…&lt;/p&gt;
 
-&lt;p&gt;Radio frequency power is expressed in decibels. We can calculate the maximum distance using the formula for &lt;a href=&quot;https://en.wikipedia.org/wiki/Free-space_path_loss&quot;&gt;free-space path loss&lt;/a&gt; as:&lt;/p&gt;
+&lt;p&gt;Radio frequency power is expressed in decibels. Using the formula for &lt;a href=&quot;https://en.wikipedia.org/wiki/Free-space_path_loss&quot;&gt;free-space path loss&lt;/a&gt;, we can calculate the maximum distance (&lt;script type=&quot;math/tex&quot;&gt;d&lt;/script&gt;) of a wireless signal as a function of path loss (&lt;script type=&quot;math/tex&quot;&gt;FSPL&lt;/script&gt;), frequency (&lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt;), and the speed of light in a vacuum (&lt;script type=&quot;math/tex&quot;&gt;c&lt;/script&gt;):&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{align} 
-\text{FSPL}_{dB} &amp;= 10\log_{10}\left(\left( \frac{4\pi d}{c}^2\right)\right) \\
+\text{FSPL}_{dB} &amp;= 10\log_{10}\left(\left( \frac{4\pi df}{c}\right)^2\right) \\
 &amp;= 20\log_{10}(d) + 20\log_{10}(f) + 20\log_{10} \left( \frac{4\pi}{c}\right) \\
 &amp;= 20\log_{10}(d) + 20\log_{10}(f) - 147.55
 \end{align} %]]&gt;&lt;/script&gt;
@@ -243,10 +244,10 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 \begin{align}
 \text{FSPL}_{dB} &amp;= 20\log_{10}(d) + 20\log_{10}(f \cdot 10^9) - 147.55 \\ 
 &amp;= 20\log_{10}(d) + 20\log_{10}(f) + 20\log_{10}(10^9) - 147.55 \\
-&amp;= 20\log_{10}(d) + 20\log_{10}(f) - 32.45
+&amp;= 20\log_{10}(d) + 20\log_{10}(f) + 32.45
 \end{align} %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;Rearranging the equation above to find distance, we get&lt;/p&gt;
+&lt;p&gt;Rearranging the equation above to find distance, we get:&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;d = 10^{\frac{1}{20}\left(FSPL - 20\log(f) - 32.45\right)}&lt;/script&gt;
 
@@ -254,9 +255,9 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;&lt;img src=&quot;/images/propagation-loss.png&quot; alt=&quot;Propagation loss of electromagnetic waves&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Bluetooth is around 2.4 GHz and I am not looking to go deep, so the solid line at 10&lt;sup&gt;9&lt;/sup&gt; Hz (or 1GHz) is what I’m interested in. A depth of 0.5m is, in American, 1.6 feet. It looks like the propagation loss is about 25 dB.&lt;/p&gt;
+&lt;p&gt;A depth of 0.5 m is, in American, 1.6 feet. Bluetooth is around 2.45 GHz and I am not looking to go deep, so the solid line at 10&lt;sup&gt;9&lt;/sup&gt; Hz (or 1 GHz) is what I’m interested in. It looks like the propagation loss is about 25 dB.&lt;/p&gt;
 
-&lt;p&gt;Now we can substitute the values into the equation above to get the theoretical distance:&lt;/p&gt;
+&lt;p&gt;Now we can substitute values into the equation above to get the theoretical distance:&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{align}
@@ -264,25 +265,25 @@ d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.45) - 32.45\right)} \\
 &amp;= 0.1731 \text{ m}
 \end{align} %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;Thus, our theoretical range in freshwater is 17.31 centimeters, without accounting for transmission loss. In a swimming pool filled with freshwater, &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3355409/&quot;&gt;Lloret et al.&lt;/a&gt; achieved bluetooth connectivity at average depths of 16-17 cm. &lt;a href=&quot;http://bib.irb.hr/datoteka/686678.Miskovic_et_al_final_paper.pdf&quot;&gt;Mišković et al.&lt;/a&gt; found that under calm sea conditions, bluetooth connection was established at depths of fewer than 15cm.&lt;/p&gt;
+&lt;p&gt;Thus, our theoretical range in freshwater, without accounting for transmission loss, is 17.31 centimeters. &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3355409/&quot;&gt;Lloret et al.&lt;/a&gt; achieved Bluetooth connectivity at average depths of 16-17 cm in a swimming pool filled with freshwater. &lt;a href=&quot;http://bib.irb.hr/datoteka/686678.Miskovic_et_al_final_paper.pdf&quot;&gt;Mišković et al.&lt;/a&gt; found that under calm sea conditions, Bluetooth connection can be established at depths of fewer than 15 cm.&lt;/p&gt;
 
 &lt;h1 id=&quot;section-8&quot;&gt;8/25/2016&lt;/h1&gt;
 
-&lt;p&gt;Now that I have a theoretical (and empirical) distance of bluetooth range in freshwater, it seems pretty pointless to extend the theoretical result to seawater. 15 cm is about 5.91 inches, so my head would be just under the surface of the water before I lose connectivity. This is still good for my purposes, so I’m going to go ahead with trying to modify the ActivBuds such that my phone stops using the bluetooth microphone. That will fix the sound quality issue.&lt;/p&gt;
+&lt;p&gt;Now that I have a theoretical (and empirical) distance of Bluetooth range in freshwater, it seems pretty pointless to extend the theoretical result to seawater. 15 cm is about 5.91 inches, so my head would be just under the surface of the water before I lose connectivity. This is still good for my purposes, so I’m going to go ahead with trying to modify the ActivBuds such that my phone stops using the Bluetooth microphone. That will fix the sound quality issue.&lt;/p&gt;
 
 &lt;h1 id=&quot;section-9&quot;&gt;8/26/2016&lt;/h1&gt;
 
 &lt;h3 id=&quot;hacking-attempts&quot;&gt;Hacking Attempts&lt;/h3&gt;
 
-&lt;p&gt;Today, I tried to hack and reprogram my bluetooth headphones. &lt;a href=&quot;https://www.amazon.com/gp/product/B01G8JO5F2&quot;&gt;Senso ActivBuds&lt;/a&gt; use Bluetooth v4.1+EDR, which stands for Enhanced Data Rate. Bluetooth devices interact with each other through “profiles,” and the profiles that Apple supports are &lt;a href=&quot;https://support.apple.com/en-us/HT204387&quot;&gt;here&lt;/a&gt;. It looks like my headset might have the &lt;a href=&quot;https://developer.bluetooth.org/TechnologyOverview/Pages/HFP.aspx&quot;&gt;HFP profile&lt;/a&gt;. Now the question is: is there an &lt;a href=&quot;https://developer.bluetooth.org/TechnologyOverview/Pages/A2DP.aspx&quot;&gt;A2DP profile&lt;/a&gt; as with wired headphones?&lt;/p&gt;
+&lt;p&gt;Today, I tried to hack and reprogram my Bluetooth headphones. &lt;a href=&quot;https://www.amazon.com/gp/product/B01G8JO5F2&quot;&gt;Senso ActivBuds&lt;/a&gt; use Bluetooth v4.0+EDR, which stands for Enhanced Data Rate. Bluetooth devices interact with each other through “profiles,” and the profiles that Apple supports are &lt;a href=&quot;https://support.apple.com/en-us/HT204387&quot;&gt;here&lt;/a&gt;. It looks like my headset might have the &lt;a href=&quot;https://developer.bluetooth.org/TechnologyOverview/Pages/HFP.aspx&quot;&gt;HFP profile&lt;/a&gt;. Now the question is: do the headphones support the &lt;a href=&quot;https://developer.bluetooth.org/TechnologyOverview/Pages/A2DP.aspx&quot;&gt;A2DP profile&lt;/a&gt; as with wired headphones?&lt;/p&gt;
 
 &lt;p&gt;To see which profiles are on my ActivBuds, I downloaded Bluetooth Explorer (in &lt;a href=&quot;https://developer.apple.com/download/more/&quot;&gt;Hardware IO Tools for Xcode&lt;/a&gt;) and paired the ActivBuds to my laptop.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/activbuds-profiles.png&quot; alt=&quot;ActivBuds profiles&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;From the picture above, we see that it supports the HFP protocol (as predicted), but also &lt;a href=&quot;https://developer.bluetooth.org/TechnologyOverview/pages/a2dp.aspx&quot;&gt;A2DP Sink&lt;/a&gt;, which is the profile for receiving a digital-audio stream delivered from a source.&lt;/p&gt;
+&lt;p&gt;From the picture above, we see that it supports the HFP protocol (as predicted), but also &lt;a href=&quot;https://developer.bluetooth.org/TechnologyOverview/pages/a2dp.aspx&quot;&gt;A2DP Sink&lt;/a&gt;, which is the profile for receiving a digital-audio stream delivered from a source. Later, I realized that music streaming happens over A2DP and you can listen to music with headphones so obviously it must have supported that profile :).&lt;/p&gt;
 
-&lt;p&gt;After some more digging, I suspect that it has a &lt;a href=&quot;http://www.csr.com/products/csr8635&quot;&gt;CSR635&lt;/a&gt; chip. According to its &lt;a href=&quot;http://www.csr.com/sites/default/files/csr8635_qfn_technical_overview.pdf&quot;&gt;technical specs&lt;/a&gt;, it has a transmit power of 8dBm and receiver sensitivity of -89dBm. &lt;a href=&quot;http://electronicdesign.com/communications/understanding-wireless-range-calculations&quot;&gt;ElectronicDesign&lt;/a&gt; calculates wireless range using these two numbers but I don’t feel like recalculating anymore. The author does use the FSPL formula that I used, though.&lt;/p&gt;
+&lt;p&gt;After some more digging, I suspect that it has a &lt;a href=&quot;http://www.csr.com/products/csr8635&quot;&gt;CSR635&lt;/a&gt; chip. According to its &lt;a href=&quot;http://www.csr.com/sites/default/files/csr8635_qfn_technical_overview.pdf&quot;&gt;technical specs&lt;/a&gt;, it has a transmit power of 8 dBm and receiver sensitivity of -89 dBm. &lt;a href=&quot;http://electronicdesign.com/communications/understanding-wireless-range-calculations&quot;&gt;ElectronicDesign&lt;/a&gt; calculates wireless range using these two numbers but I don’t feel like recalculating anymore. The author does use the FSPL formula that I used, though.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/activbuds-protocols.png&quot; alt=&quot;ActivBuds Bluetooth protocols&quot; /&gt;&lt;/p&gt;
 
@@ -294,13 +295,15 @@ d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.45) - 32.45\right)} \\
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Bluetooth#AVCTP&quot;&gt;AVCTP&lt;/a&gt;&lt;/strong&gt;: used by the remote control profile to transfer AV/C commands, e.g. music control buttons&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;This is all I’ve found so far for today. I don’t know anything about engineering so it’s taken a lot of time reading through documentation and figuring out what to look for. I haven’t found a guide that tells you how profiles get put on bluetooth “modules” (chips) – there might not even be one. I’m feeling pretty discouraged about being able to hack my ActivBuds.&lt;/p&gt;
+&lt;p&gt;This is all I’ve found so far for today. I don’t know anything about engineering so it’s taken a lot of time reading through documentation and figuring out what to look for. I haven’t found a guide that tells you how profiles get put on Bluetooth “modules” (chips) – there might not even be one. I’m feeling pretty discouraged about being able to hack my ActivBuds.&lt;/p&gt;
 
 &lt;h3 id=&quot;turn-of-events&quot;&gt;Turn of Events&lt;/h3&gt;
 
-&lt;p&gt;On the bright side, waterproof case showed up today! It has a line-in for plugging wireless earbuds in and they worked pretty well. Then I wondered if the iPhone would stay in A2DP profile if I plugged in my Apple earbuds while having the Senso ActivBuds paired. The answer is no.&lt;/p&gt;
+&lt;p&gt;On the bright side, waterproof case showed up today! In the photo below, you can see that it is buoyed by the inflated borders. It also has a line-in for wired earbuds and they worked pretty well. Then I wondered if the iPhone would stay in A2DP profile if I plugged in my Apple earbuds while having the Senso ActivBuds paired. The answer is no.&lt;/p&gt;
 
-&lt;p&gt;But then all of a sudden, I heard my mom talking on the phone! While ActivBuds were in! I paid attention and realized I could distinguish what she was saying. Until now, I had only been testing these things by listening to NPR Radio and TED Talks from my computer at max volume and it was impossible to make out anything.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/smarco-case.jpg&quot; alt=&quot;Smarco Waterproof Case&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But then all of a sudden, I heard my mom talking on the phone! While the ActivBuds were in! I paid attention and realized I could distinguish what she was saying. Until now, I had only been testing these things by listening to NPR Radio and TED Talks from my computer at max volume and it was impossible to make out anything.&lt;/p&gt;
 
 &lt;p&gt;This time, I was using the &lt;a href=&quot;https://itunes.apple.com/us/app/petralex-hearing-aid/id816133779&quot;&gt;Petralex&lt;/a&gt; amplifier which actually gives you a hearing test first and then “fits” the amplification using several proprietary algorithms: Petralex, NAL, Berger, and POGO. I don’t know what the differences are but find that Berger and POGO perform best with higher pitches.&lt;/p&gt;
 
@@ -314,7 +317,7 @@ d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.45) - 32.45\right)} \\
 
 &lt;p&gt;Today, I got in touch with a hardware engineer who specializes in embedded stuff and hardware/software interactions and he cleared up a lot of things for me. (If you’re reading this, you’re great!) We discussed &lt;a href=&quot;http://www.bragi.com&quot;&gt;The Dash&lt;/a&gt; smart earphone that he owns, which are also IPX7. It has an &lt;a href=&quot;https://support.bragi.com/hc/en-us/articles/203178271-Adjust-volume-and-audio-transparency&quot;&gt;Audio Transparency&lt;/a&gt; mode which amplifies the sounds of the ambient environment with a Master Volume setting. That was interesting, since it’s essentially what I’ve been trying to do. However, the Dash still uses the microphone internal to the Dash as the transparency feature’s signal doesn’t go to the phone over Bluetooth. Ultimately, the device has a lot of promise but doesn’t do as well on the connectivity and amplification side so I would not get it (and it’s $300).&lt;/p&gt;
 
-&lt;p&gt;We also discussed viable paths forward. Trying to modify the Bluetooth chip is probably hopeless, as that seems to be controlled by proprietary firmware. If anything, you would write a software that interfaces with the profiles the chip supports. As a result, I am better off trying to write my own app that pulls real-time audio from the iPhone microphone and streams it via A2DP. Overall it shouldn’t be difficult, I don’t see why streaming from a microphone to headphones is any different from streaming to a speaker, yet there’s so few viable products.&lt;/p&gt;
+&lt;p&gt;We also discussed viable paths forward in my own project. Trying to modify the Bluetooth chip is hopeless, as the profiles are controlled by proprietary firmware. If anything, you would write a software that interfaces with the profiles that the chip supports. As a result, I am better off trying to write my own app would stream real-time audio from my iPhone’s via A2DP. Conceptually, it shouldn’t be difficult. I don’t see why streaming from a microphone to headphones is any different from streaming to a speaker and there are plenty of those apps.&lt;/p&gt;
 
 &lt;p&gt;There’s documentation in the &lt;a href=&quot;https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW6&quot;&gt;iOS Developer Library&lt;/a&gt; with sample source code for &lt;a href=&quot;https://developer.apple.com/library/ios/samplecode/aurioTouch/Introduction/Intro.html&quot;&gt;aurioTouch&lt;/a&gt;. Also found &lt;a href=&quot;https://audiostream.readthedocs.io/en/latest/&quot;&gt;Audiostream&lt;/a&gt;. Commercially, the &lt;a href=&quot;http://www.binpress.com/app/radiotunes-sdk/596&quot;&gt;RadioTunes SDK&lt;/a&gt; looks pretty neat.
 I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/threads/real-time-audio-from-microphone.145686/&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://forum.unity3d.com/threads/blow-detection-using-ios-microphone.118215/&quot;&gt;here&lt;/a&gt;. The best starting point looks like &lt;a href=&quot;http://stackoverflow.com/questions/10501236/stream-media-from-iphone&quot;&gt;this StackOverflow question&lt;/a&gt;. &lt;a href=&quot;https://audiob.us&quot;&gt;Audiobus&lt;/a&gt; can send audio from one app to another to mix music.&lt;/p&gt;
@@ -323,7 +326,16 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
 
 &lt;h1 id=&quot;section-11&quot;&gt;8/29/2016&lt;/h1&gt;
 
-&lt;p&gt;TBD.&lt;/p&gt;
+&lt;p&gt;I talked to my audiologist today and she didn’t seem too concerned about my project, other than telling me to avoid prolonged exposure to more than 85 dB. It shouldn’t be difficult to build in a sound check.&lt;/p&gt;
+
+&lt;p&gt;A friend recommended that I reach out to professors at R.I.T. It hosts the &lt;a href=&quot;https://en.wikipedia.org/wiki/National_Technical_Institute_for_the_Deaf&quot;&gt;National Technical Institute for the Deaf&lt;/a&gt; which is the largest technological college for the deaf and hard-of-hearing so in my friend’s words, “if there’s any group that’s doing research about this stuff, it’s them.” At the very least, they would have a better idea of the latest research, could provide me with better terminology, or lead me to someone else helpful.&lt;/p&gt;
+
+&lt;h1 id=&quot;section-12&quot;&gt;8/30/2016&lt;/h1&gt;
+&lt;p&gt;Today I got an email that my library books were due so I went over and wore the ActivBuds instead of my hearing aid. I’m getting more accustomed to how everything sounds (really weird, btw) and I’m going to the beach this weekend to conduct tests in saltwater. As for building my own app, well, there’s one week left of summer. Realistically, I have never built an iOS app before or written in Swift so between school, my fall internship, and full-time job hunting, I can’t see a prototype coming out until next summer.&lt;/p&gt;
+
+&lt;p&gt;For the forseeable future, my setup will be the Senso/Petralex pairing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/senso-selfie.jpg&quot; alt=&quot;Senso ActivBuds&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 24 Aug 2016 00:00:00 -0500</pubDate>
         <link>/waterproof-hearing-aid.html</link>
@@ -365,7 +377,7 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Be authentic.&lt;/strong&gt; Frankly, developing social skills isn’t easy; it is a muscle that only improves through consistent practice. I think there is so much advice out there that gives shortcuts and “hacks” on “getting people to like you,” which is often executed at the expense of sincerity. On the other end, people champion authenticity but it’s important to realize that being authentic isn’t something you do for other people. It means having confidence in yourself and believing that there is value in who you are. It means recognizing that you cannot please everybody and being at peace with that. Plus, you do better work when you feel comfortable in your own skin instead of when you’re trying to be somebody you’re not.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Be authentic.&lt;/strong&gt; Frankly, developing social skills isn’t easy; it is a muscle that only improves through consistent practice. I think there is so much advice out there that gives shortcuts and “hacks” on “getting people to like you,” which are often executed at the expense of sincerity. On the other end, people champion authenticity but it’s important to realize that being authentic isn’t something you do for other people. It means having confidence in yourself and believing that there is value in who you are. It means recognizing that you cannot please everybody and being at peace with that. Plus, you do better work when you feel comfortable in your own skin instead of when you’re trying to be somebody you’re not.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -373,14 +385,14 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Add value.&lt;/strong&gt; This action can be broken into two components: making yourself indispensible to the company, and making yourself indispensible to other people. having the initiative to make other people’s lives easier.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Add value.&lt;/strong&gt; This action can be broken into two components: making yourself indispensible to the company, and making yourself indispensible to other people.&lt;/p&gt;
 
     &lt;ul&gt;
       &lt;li&gt;
         &lt;p&gt;The first component is about improving the company as a whole. Examples include becoming a subject matter expert e.g. on an asset class, or taking initiative on finding ways to comprove the bottom line, or taking on a much-needed but ignored issue.&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;p&gt;The second component is about making other people’s jobs easier. This can be as straightforward as when you generate weekly risk reports to your boss &lt;em&gt;exactly&lt;/em&gt; the way they like to read it, or as altruistic as helping a busy coworker tackle obstacles in their work, or even serving in an advisory or mentorship capacity to others.&lt;/p&gt;
+        &lt;p&gt;The second component is about making other people’s jobs easier. This can be as straightforward as generating weekly risk reports to your boss &lt;em&gt;exactly&lt;/em&gt; the way they like to read it, or as altruistic as helping a busy coworker tackle obstacles in their work, or even serving in an advisory or mentorship capacity to others.&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -422,12 +434,12 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
 &lt;ol&gt;
   &lt;li&gt;Loads the first buffer (presumably where my code is)&lt;/li&gt;
   &lt;li&gt;Writes the file (saves it)&lt;/li&gt;
-  &lt;li&gt;Closes buffers 1 through 1000 (in other words, closes all buffers). I assume the exclamation forces this action without saving the other buffers.&lt;/li&gt;
+  &lt;li&gt;Closes buffers 1 through 1000 (essentially closes all buffers). I assume the exclamation forces this action without saving the other buffers.&lt;/li&gt;
   &lt;li&gt;Reloads the first buffer&lt;/li&gt;
   &lt;li&gt;Opens a new vertical buffer in the bottom right part of vim&lt;/li&gt;
-  &lt;li&gt;Runs the shell command &lt;code&gt;python lol.py&lt;/code&gt; within vim and reads the output into a new buffer.&lt;/li&gt;
-  &lt;li&gt;Run the Python module, json.tool&lt;/li&gt;
-  &lt;li&gt;Hit enter&lt;/li&gt;
+  &lt;li&gt;Runs the shell command &lt;code&gt;python lol.py&lt;/code&gt; and reads the output into a new buffer&lt;/li&gt;
+  &lt;li&gt;Runs the Python module, json.tool&lt;/li&gt;
+  &lt;li&gt;Hits enter&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Ignoring the fact that I apparently hardcoded a build sequence for one file, the output doesn’t look too bad. The results look like this:&lt;/p&gt;
@@ -568,10 +580,11 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
       </item>
     
       <item>
-        <title>Singular Value Decomposition on Presidential Elections</title>
-        <description>&lt;p&gt;We analyze the singular value decomposition of voter demographics for past United States presidential elections from 1976 to 2012. We aim to identify the demographics that have best predicted presidential election outcomes from the Carter presidency to the current Obama presidency.&lt;/p&gt;
+        <title>Principal Component Analysis of Presidential Elections</title>
+        <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Using national exit polls, we undertake a principal component analysis of voter demographics for United States presidential elections from 1976 to 2012. We aim to quantify the dynamics of voters and identify the demographics that have best predicted presidential election outcomes from the Carter presidency to the current Obama presidency.&lt;/p&gt;
 
-&lt;h3 id=&quot;data&quot;&gt;Data&lt;/h3&gt;
+&lt;h1 id=&quot;data&quot;&gt;Data&lt;/h1&gt;
 &lt;p&gt;National exit polls from Gallup and various news sources were aggregated into a raw data set. These polls captured 45 demographic groups which were further grouped into 12 categories.&lt;/p&gt;
 
 &lt;table&gt;
@@ -692,37 +705,23 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;Across each election, voting behavior of each demographic group are represented as a column vector capturing whether or not a majority voted for the winning presidential candidate.&lt;/p&gt;
+&lt;p&gt;In each election, the voting behavior of each demographic group are represented as a column vector capturing whether or not the greater proportion voted for the winning presidential candidate.&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 Demographic_i = 
 \begin{cases}
 1 &amp; \text{if the higher share voted for the winning candidate} \\
-0 &amp;\text{if vote was split within 55/45 or closer} \\
+0 &amp;\text{if the difference in voting share was within 5%} \\
 -1 &amp;\text{if the higher share voted for the losing candidate} 
 \end{cases} %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;Wave Equation&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\delta E_{x}}{\delta t} = \frac{\delta f(z-ct)}{\delta t} = f^{\prime}(z - ct)\Big(\frac{\delta(z-ct)}{\delta t}\Big) = -c*f^{\prime}(z - ct)&lt;/script&gt;
-
-&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; E&lt;span class=&quot;p&quot;&gt;_{&lt;/span&gt;x&lt;span class=&quot;p&quot;&gt;}}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; = &lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; f(z-ct)&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; = f&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;(z - ct)&lt;span class=&quot;k&quot;&gt;\Big&lt;/span&gt;(&lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt;(z-ct)&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\Big&lt;/span&gt;) = -c*f&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;(z - ct)
-
-&lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;^&lt;/span&gt;2 E&lt;span class=&quot;p&quot;&gt;_{&lt;/span&gt;x&lt;span class=&quot;p&quot;&gt;}}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;^&lt;/span&gt;2&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; = &lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;\Big&lt;/span&gt;(&lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; Ex&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\Big&lt;/span&gt;)= f&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\prime\prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;(z - ct)&lt;span class=&quot;k&quot;&gt;\Big&lt;/span&gt;(&lt;span class=&quot;k&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt;(z-ct)&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\delta&lt;/span&gt; t&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\Big&lt;/span&gt;) = c&lt;span class=&quot;p&quot;&gt;^&lt;/span&gt;2*f&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\prime\prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;(z - ct)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;principal-components&quot;&gt;Principal Components&lt;/h3&gt;
-
 &lt;p&gt;Note that R uses the singular value decomposition method to perform principal component analysis, where the convention is to consider rows as observations and columns as variables, so our matrix needs to be in &lt;em&gt;election_year x demographic_group&lt;/em&gt; format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same scale of {1, 0, -1}, no further processing is needed, e.g. mean-centering or normalization.&lt;/p&gt;
 
-&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;complete_dataset.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd_df&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prcomp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# R uses the SVD method to perform PCA. 
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd_A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;         &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# Output summary of SVD
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;h1 id=&quot;principal-component-analysis&quot;&gt;Principal Component Analysis&lt;/h1&gt;
 
-&lt;p&gt;In the summary, we can see the proportion of variance in the data that each principal component accounts for. Each principal component represents a “dimension” of the data, describing some underlying dynamic.&lt;/p&gt;
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;Each principal component represents a “dimension” of the data, describing some underlying dynamic. The table below shows the proportion of variance in the data that each principal component accounts for.&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -767,36 +766,83 @@ Demographic_i =
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;More precisely, the principal components of a dataset form an orthogonal basis. Geometrically, basis vectors can be seen as the axes in a Cartesian coordinate system. Humans are comfortable seeing data represented in two dimensions: x and y, so we can project the first two principal components, PC1 and PC2, onto the standard x, y plane. Together, they capture 75% of variance in the data.&lt;/p&gt;
+&lt;p&gt;Mathematically, the principal components of a dataset form an orthogonal basis. Geometrically, basis vectors can be seen as the axes in a Cartesian coordinate system. Humans are comfortable seeing data represented in two dimensions: x and y, so we can project the first two principal components, PC1 and PC2, onto the standard x, y plane. Together, they capture 75% of variance in the data.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/elections_biplot.png&quot; alt=&quot;Presidential Election biplot&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Here, the two principal components form the axes of the biplot above. There are two things to interpret: points and vectors. Points (presidential election years) that are close together have similar demographics while vectors (demographic groups) that are close together have similar voting behavior. We see that Democratic presidences are grouped on the left while Republican presidences are grouped on the right. Several demographics are clustered together:&lt;/p&gt;
+&lt;p&gt;Here, the largest two principal components form the axes of the biplot above. There are two things to interpret: points and vectors. Points (presidential election years) that are close together have similar demographics while vectors (demographic groups) that are close together have similar voting behavior. We see that Democratic presidences are grouped on the left while Republican presidences are grouped on the right. Several demographics are clustered together:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Green&lt;/strong&gt;: Democrat, Liberal, Hispanic, Urban, Jewish&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Green&lt;/strong&gt;: Democrat, Liberal, Hispanic, Urban, Jewish, Black&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Orange&lt;/strong&gt;: 18-24 years old, Women, Unmarried, East&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Blue&lt;/strong&gt;: Post-graduate education, First-time voter&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Yellow&lt;/strong&gt;: Republican, Protestant, $100,000-199,999 income&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;analysis&quot;&gt;Analysis&lt;/h3&gt;
+&lt;h2 id=&quot;analysis&quot;&gt;Analysis&lt;/h2&gt;
 
-&lt;p&gt;Let’s focus on the first principal component, on how demographics are distributed along the x-axis. Demographics on the farthest left are Democrat, Liberal, Hispanic, Urban, and Jewish. On the farthest right, we have Republican, Conservative, Over $200k annual income, and Protestant. Recall that a principal component is supposed to capture some dimension dynamic of the data, so we can infer that the first component represents a political spectrum from Democrat to Republican. The farther away from the origin a demographic’s vector points along the x-axis, the more extreme it is.&lt;/p&gt;
+&lt;p&gt;Let’s focus on the first principal component, on how demographics are distributed along the x-axis. Demographics on the farthest left are Democrat, Liberal, Hispanic, Urban, Jewish, and Black. On the farthest right, we have Republican, Conservative, Over $200k annual income, and Protestant. Recall that a principal component is supposed to capture some dynamic of the data in a certain dimension, so we can infer that the first component represents a political spectrum from Democratic to Republican. The farther away from the origin a demographic group’s vector goes in along the x-axis, the more politically united it is.&lt;/p&gt;
 
-&lt;p&gt;Interestingly, we see that the more recent the presidency, the more extreme they are on the x-axis. This reflects the historical trend that presidencies and voters have become more partisan over the years. Jimmy Carter’s presidency in 1976 and Ronald Reagan’s presidency in 1984 are much closer to the origin than Obama’s presidency in 2012 and Bush’s presidency in 2004.&lt;/p&gt;
+&lt;p&gt;Interestingly, we see that the more recent the presidency, the further out they are on the x-axis. This reflects the historical trend that presidencies and voters have become more partisan over the years. Jimmy Carter’s presidency in 1976 and Ronald Reagan’s presidency in 1984 are much closer to the origin than Obama’s presidency in 2012 and Bush’s presidency in 2004.&lt;/p&gt;
 
-&lt;p&gt;The second principal component appears to represent the predictive power of a demographic. Above the scale, knowing which candidate that Liberals, Conservatives, or Married people support tells us little about who will win. Below the scale, support from Independents, the West, and First-time voters have major predictive power. This reflects the enormous influence that swing states and California brings to the election.&lt;/p&gt;
+&lt;p&gt;The second principal component appears to represent the predictive power of a demographic. Above the scale, knowing which candidate that Liberals, Conservatives, or Married people support tells us little about who will actually win. Below the scale, support from Independents, the West, and First-time voters have major predictive power. This reflects the enormous influence that swing states and California bring to the election.&lt;/p&gt;
 
-&lt;h3 id=&quot;weaknesses&quot;&gt;Weaknesses&lt;/h3&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
 
-&lt;p&gt;The biggest weakness of the analysis lies in the unavoidable lack of sample data; forty years of history only yields ten samples. The analysis could also be expanded by breaking down demographics even more, e.g. 18-24 year old Independent voters or Rural first-time voters. Instead of looking at national exit polls, we can also focus on the specific exit polls for states with the most electoral votes: California, Texas, New York, or look at exit polls for swing states only: Ohio, Pennsylvania, Florida, Colorado.&lt;/p&gt;
+&lt;p&gt;In order to capture the White House, this year’s presidential candidates most likely need to be able to win Independents, the West, the blue cluster (post-graduates and first-time voters), and the orange cluster (18-24 year olds, women, and the East). The orange cluster also includes unmarried people, but presumably the 18-24 year old demographic encapsulates this group.&lt;/p&gt;
 
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;h2 id=&quot;weaknesses&quot;&gt;Weaknesses&lt;/h2&gt;
 
-&lt;p&gt;In order to capture the White House, this year’s presidential candidates most likely need to be able to win Independents, the West, the blue cluster, and the orange cluster.&lt;/p&gt;
+&lt;h3 id=&quot;sample-data&quot;&gt;Sample Data&lt;/h3&gt;
+&lt;p&gt;Arguably the biggest weakness of the analysis lies in the dataset itself, in its small size and its imprecise demographic groups. Forty years of history only yields ten samples, leaving it difficult to create meaningful demographic groups. Demographic groups such as Married are too broad and can be broken down even further, e.g. Married Independent voters or Married with College degree, but this makes it even more difficult to normalize exit poll questions across years.&lt;/p&gt;
 
-&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+&lt;p&gt;Recent polls offer more specific classifications, but earlier polls do not go into such depth so there is a trade-off between specificity and sample size. For example, national exit polls did not track distinguish sexual orientation until the 1996 presidential election between Bill Clinton and Al Gore.&lt;/p&gt;
+
+&lt;h3 id=&quot;pca-assumptions&quot;&gt;PCA Assumptions&lt;/h3&gt;
+&lt;p&gt;PCA seeks to draw out the dynamics of a system and is robust against time, but this strength is a weakness when applied to presidential elections. The very nature of winning elections requires identifying and capitalizing on recent trends, and this analysis missed the new influence of minority groups.&lt;/p&gt;
+
+&lt;p&gt;It is widely agreed that Obama won in 2008 and again in 2012 by capturing the women, youth, and minority vote. The analysis does highlight the significance of women and young voters, but placed Hispanics and Blacks (part of the Green cluster) as poorly predictive. Moreover, the analysis places Independent voters as strongly significant, but the dataset shows a declining influence over the past 12 years.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Demographic&lt;/th&gt;
+      &lt;th&gt;2012&lt;/th&gt;
+      &lt;th&gt;2008&lt;/th&gt;
+      &lt;th&gt;2004&lt;/th&gt;
+      &lt;th&gt;2000&lt;/th&gt;
+      &lt;th&gt;1996&lt;/th&gt;
+      &lt;th&gt;1992&lt;/th&gt;
+      &lt;th&gt;1988&lt;/th&gt;
+      &lt;th&gt;1984&lt;/th&gt;
+      &lt;th&gt;1980&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Independent&lt;/td&gt;
+      &lt;td&gt;-1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;-1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;In addition, PCA presupposes a linear dynamic in how demographics influence the outcome of a presidential election. This may seem reasonable as we expect elections to be zero-sum, i.e. a person can only vote for one person. We also expect a demographic’s influence to vary linearly with size and unity and that each person’s vote is equally weighted, i.e. presidential candidates win simply by being more popular. However, elections are won in the Electoral College rather than by popular vote, so the influence of a demographic group may not necessarily be linear with the probability of the outcome.&lt;/p&gt;
+
+&lt;h2 id=&quot;extensions&quot;&gt;Extensions&lt;/h2&gt;
+
+&lt;p&gt;Instead of looking at national exit polls, the analysis can focus on exit polls in states with the most electoral votes: California, Texas, New York, or look at exit polls in swing states only: Ohio, Pennsylvania, Florida, Colorado.&lt;/p&gt;
+
+&lt;p&gt;A survey of Hilary Clinton and Donald Trump’s electorate base would also supplement this study.&lt;/p&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -815,11 +861,9 @@ Demographic_i =
     &lt;p&gt;1992-1996 Voting Demographics. Gallup. &lt;a href=&quot;http://www.gallup.com/poll/9466/election-polls-vote-groups-19921996.aspx&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;“CPI Inflation Calculator.” Bureau of Labor Statistics. &lt;a href=&quot;http://www.bls.gov/data/inflation_calculator.htm&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;“CPI Inflation Calculator.” Bureau of Labor Statistics. &lt;a href=&quot;http://www.bls.gov/data/inflation_calculator.htm&quot;&gt;link&lt;/a&gt; &lt;em&gt;Used to normalize income across polling years.&lt;/em&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt;&lt;em&gt;Used to normalize income across polling years.&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 Jun 2016 00:00:00 -0500</pubDate>
         <link>/svd-on-presidential-elections.html</link>
