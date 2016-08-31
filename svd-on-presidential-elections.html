@@ -10,7 +10,7 @@
 
   <title>
     
-      Singular Value Decomposition on Presidential Elections &middot; keenan's log.
+      Principal Component Analysis of Presidential Elections &middot; keenan's log.
     
   </title>
 
@@ -24,16 +24,16 @@
   <meta name="twitter:site" content="@keenangao">
   <meta name="twitter:creator" content="@keenangao">
   
-    <meta name="twitter:title" content="Singular Value Decomposition on Presidential Elections">
+    <meta name="twitter:title" content="Principal Component Analysis of Presidential Elections">
     <meta name="twitter:description" content="Analyzing voter demographics for past U.S. presidential elections from 1976 to 2012.">
   
 
   <meta property="og:type" content="website"/>
   
-    <meta property="og:title" content="Singular Value Decomposition on Presidential Elections"/>
+    <meta property="og:title" content="Principal Component Analysis of Presidential Elections"/>
     <meta property="og:url" content="/svd-on-presidential-elections.html"/>
     <meta property="og:description" content="Analyzing voter demographics for past U.S. presidential elections from 1976 to 2012."/>
-    <meta property="og:site_name" content="Singular Value Decomposition on Presidential Elections"/>
+    <meta property="og:site_name" content="Principal Component Analysis of Presidential Elections"/>
   
 
   <link rel="apple-touch-icon" sizes="57x57" href="/public/icons/apple-icon-57x57.png">
@@ -87,7 +87,7 @@
               <li><a class="resume" href="http://x-axis.github.io/resume/"><i class="fa fa-file-text-o"></i> Resume</a></li>
               <li><a class="special" href="http://x-axis.github.io/my-repos/"><i class="fa fa-github-alt"></i> Repositories</a></li>
               <li><a class="special" href="http://x-axis.github.io/my-gists/"><i class="fa fa-code"></i> Gists</a></li>
-              <li><a class="unique" href="http://heiswayi.nrird.com"><i class="fa fa-camera-retro"></i> Photography</a></li>
+              <li><a class="unique" href="http://keenan.ml"><i class="fa fa-camera-retro"></i> Photography</a></li>
             </ul>
         </div>
       </div>
@@ -96,19 +96,15 @@
         <div class="container">
           <h2 class="masthead-title">
             <a href="/" title="Home">keenan's log.</a>
-            <small>What even is a tagline?</small>
+            <small>Blue sky.</small>
           </h2>
 
           <div class="footer-social-links">
-  <a href="http://heiswayi.nrird.com/atom.xml" title="RSS Feed" target="_blank"><i class="fa fa-rss"></i></a>
-  <a href="https://my.linkedin.com/in/nrird" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
-  <a href="https://www.facebook.com/profile.php?id=1257583160" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-  <a href="https://twitter.com/HeiswayiNrird" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-  <a href="https://github.com/heiswayi" title="GitHub" target="_blank"><i class="fa fa-github-alt"></i></a>
-  <a href="https://gist.github.com/heiswayi" title="GitHub Gist" target="_blank"><i class="fa fa-code"></i></a>
-  <a href="http://codepen.io/heiswayi/" title="CodePen" target="_blank"><i class="fa fa-codepen"></i></a>
-  <a href="https://500px.com/heiswayi_nrird" title="500px" target="_blank"><i class="fa fa-500px"></i></a>
-  <a href="https://instagram.com/heiswayi.nrird/" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+  <a href="https://my.linkedin.com/in/keenan-gan" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
+  <a href="https://twitter.com/keenangao" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+  <a href="https://github.com/x-axis" title="GitHub" target="_blank"><i class="fa fa-github-alt"></i></a>
+  <a href="https://gist.github.com/x-axis" title="GitHub Gist" target="_blank"><i class="fa fa-code"></i></a>
+  <a href="https://500px.com/keenangao" title="500px" target="_blank"><i class="fa fa-500px"></i></a>
 </div>
 
 
@@ -121,18 +117,19 @@
     <div class="post-date">June 20, 2016 &middot; <span class="reading-time" title="Estimated Reading Time">
   
   
-    6 minutes read
+    7 minutes read
   
 </span>
 </div>
-    <h1 class="post-title">Singular Value Decomposition on Presidential Elections</h1>
+    <h1 class="post-title">Principal Component Analysis of Presidential Elections</h1>
   </div>
 
   <div class="hrline"></div>
 
-  <p>We analyze the singular value decomposition of voter demographics for past United States presidential elections from 1976 to 2012. We aim to identify the demographics that have best predicted presidential election outcomes from the Carter presidency to the current Obama presidency.</p>
+  <h1 id="introduction">Introduction</h1>
+<p>Using national exit polls, we undertake a principal component analysis of voter demographics for United States presidential elections from 1976 to 2012. We aim to quantify the dynamics of voters and identify the demographics that have best predicted presidential election outcomes from the Carter presidency to the current Obama presidency.</p>
 
-<h3 id="data">Data</h3>
+<h1 id="data">Data</h1>
 <p>National exit polls from Gallup and various news sources were aggregated into a raw data set. These polls captured 45 demographic groups which were further grouped into 12 categories.</p>
 
 <table>
@@ -253,37 +250,23 @@
   </tbody>
 </table>
 
-<p>Across each election, voting behavior of each demographic group are represented as a column vector capturing whether or not a majority voted for the winning presidential candidate.</p>
+<p>In each election, the voting behavior of each demographic group are represented as a column vector capturing whether or not the greater proportion voted for the winning presidential candidate.</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 Demographic_i = 
 \begin{cases}
 1 & \text{if the higher share voted for the winning candidate} \\
-0 &\text{if vote was split within 55/45 or closer} \\
+0 &\text{if the difference in voting share was within 5%} \\
 -1 &\text{if the higher share voted for the losing candidate} 
 \end{cases} %]]></script>
 
-<p>Wave Equation</p>
-
-<script type="math/tex; mode=display">\frac{\delta E_{x}}{\delta t} = \frac{\delta f(z-ct)}{\delta t} = f^{\prime}(z - ct)\Big(\frac{\delta(z-ct)}{\delta t}\Big) = -c*f^{\prime}(z - ct)</script>
-
-<div class="language-latex highlighter-rouge"><pre class="highlight"><code><span class="k">\frac</span><span class="p">{</span><span class="k">\delta</span> E<span class="p">_{</span>x<span class="p">}}{</span><span class="k">\delta</span> t<span class="p">}</span> = <span class="k">\frac</span><span class="p">{</span><span class="k">\delta</span> f(z-ct)<span class="p">}{</span><span class="k">\delta</span> t<span class="p">}</span> = f<span class="p">^{</span><span class="k">\prime</span><span class="p">}</span>(z - ct)<span class="k">\Big</span>(<span class="k">\frac</span><span class="p">{</span><span class="k">\delta</span>(z-ct)<span class="p">}{</span><span class="k">\delta</span> t<span class="p">}</span><span class="k">\Big</span>) = -c*f<span class="p">^{</span><span class="k">\prime</span><span class="p">}</span>(z - ct)
-
-<span class="k">\frac</span><span class="p">{</span><span class="k">\delta</span><span class="p">^</span>2 E<span class="p">_{</span>x<span class="p">}}{</span><span class="k">\delta</span> t<span class="p">^</span>2<span class="p">}</span> = <span class="k">\frac</span><span class="p">{</span><span class="k">\delta</span><span class="p">}{</span><span class="k">\delta</span> t<span class="p">}</span> <span class="k">\Big</span>(<span class="k">\frac</span><span class="p">{</span><span class="k">\delta</span> Ex<span class="p">}{</span><span class="k">\delta</span> t<span class="p">}</span><span class="k">\Big</span>)= f<span class="p">^{</span><span class="k">\prime\prime</span><span class="p">}</span>(z - ct)<span class="k">\Big</span>(<span class="k">\frac</span><span class="p">{</span><span class="k">\delta</span>(z-ct)<span class="p">}{</span><span class="k">\delta</span> t<span class="p">}</span><span class="k">\Big</span>) = c<span class="p">^</span>2*f<span class="p">^{</span><span class="k">\prime\prime</span><span class="p">}</span>(z - ct)
-</code></pre>
-</div>
-
-<h3 id="principal-components">Principal Components</h3>
-
 <p>Note that R uses the singular value decomposition method to perform principal component analysis, where the convention is to consider rows as observations and columns as variables, so our matrix needs to be in <em>election_year x demographic_group</em> format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same scale of {1, 0, -1}, no further processing is needed, e.g. mean-centering or normalization.</p>
 
-<div class="language-r highlighter-rouge"><pre class="highlight"><code><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"complete_dataset.csv"</span><span class="p">);</span><span class="w">
-</span><span class="n">svd_df</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prcomp</span><span class="p">(</span><span class="n">df</span><span class="p">);</span><span class="w">    </span><span class="c1"># R uses the SVD method to perform PCA. 
-</span><span class="n">summary</span><span class="p">(</span><span class="n">svd_A</span><span class="p">);</span><span class="w">         </span><span class="c1"># Output summary of SVD
-</span></code></pre>
-</div>
+<h1 id="principal-component-analysis">Principal Component Analysis</h1>
 
-<p>In the summary, we can see the proportion of variance in the data that each principal component accounts for. Each principal component represents a “dimension” of the data, describing some underlying dynamic.</p>
+<h2 id="results">Results</h2>
+
+<p>Each principal component represents a “dimension” of the data, describing some underlying dynamic. The table below shows the proportion of variance in the data that each principal component accounts for.</p>
 
 <table>
   <thead>
@@ -328,36 +311,83 @@ Demographic_i =
   </tbody>
 </table>
 
-<p>More precisely, the principal components of a dataset form an orthogonal basis. Geometrically, basis vectors can be seen as the axes in a Cartesian coordinate system. Humans are comfortable seeing data represented in two dimensions: x and y, so we can project the first two principal components, PC1 and PC2, onto the standard x, y plane. Together, they capture 75% of variance in the data.</p>
+<p>Mathematically, the principal components of a dataset form an orthogonal basis. Geometrically, basis vectors can be seen as the axes in a Cartesian coordinate system. Humans are comfortable seeing data represented in two dimensions: x and y, so we can project the first two principal components, PC1 and PC2, onto the standard x, y plane. Together, they capture 75% of variance in the data.</p>
 
 <p><img src="/images/elections_biplot.png" alt="Presidential Election biplot" /></p>
 
-<p>Here, the two principal components form the axes of the biplot above. There are two things to interpret: points and vectors. Points (presidential election years) that are close together have similar demographics while vectors (demographic groups) that are close together have similar voting behavior. We see that Democratic presidences are grouped on the left while Republican presidences are grouped on the right. Several demographics are clustered together:</p>
+<p>Here, the largest two principal components form the axes of the biplot above. There are two things to interpret: points and vectors. Points (presidential election years) that are close together have similar demographics while vectors (demographic groups) that are close together have similar voting behavior. We see that Democratic presidences are grouped on the left while Republican presidences are grouped on the right. Several demographics are clustered together:</p>
 
 <ul>
-  <li><strong>Green</strong>: Democrat, Liberal, Hispanic, Urban, Jewish</li>
+  <li><strong>Green</strong>: Democrat, Liberal, Hispanic, Urban, Jewish, Black</li>
   <li><strong>Orange</strong>: 18-24 years old, Women, Unmarried, East</li>
   <li><strong>Blue</strong>: Post-graduate education, First-time voter</li>
   <li><strong>Yellow</strong>: Republican, Protestant, $100,000-199,999 income</li>
 </ul>
 
-<h3 id="analysis">Analysis</h3>
+<h2 id="analysis">Analysis</h2>
 
-<p>Let’s focus on the first principal component, on how demographics are distributed along the x-axis. Demographics on the farthest left are Democrat, Liberal, Hispanic, Urban, and Jewish. On the farthest right, we have Republican, Conservative, Over $200k annual income, and Protestant. Recall that a principal component is supposed to capture some dimension dynamic of the data, so we can infer that the first component represents a political spectrum from Democrat to Republican. The farther away from the origin a demographic’s vector points along the x-axis, the more extreme it is.</p>
+<p>Let’s focus on the first principal component, on how demographics are distributed along the x-axis. Demographics on the farthest left are Democrat, Liberal, Hispanic, Urban, Jewish, and Black. On the farthest right, we have Republican, Conservative, Over $200k annual income, and Protestant. Recall that a principal component is supposed to capture some dynamic of the data in a certain dimension, so we can infer that the first component represents a political spectrum from Democratic to Republican. The farther away from the origin a demographic group’s vector goes in along the x-axis, the more politically united it is.</p>
 
-<p>Interestingly, we see that the more recent the presidency, the more extreme they are on the x-axis. This reflects the historical trend that presidencies and voters have become more partisan over the years. Jimmy Carter’s presidency in 1976 and Ronald Reagan’s presidency in 1984 are much closer to the origin than Obama’s presidency in 2012 and Bush’s presidency in 2004.</p>
+<p>Interestingly, we see that the more recent the presidency, the further out they are on the x-axis. This reflects the historical trend that presidencies and voters have become more partisan over the years. Jimmy Carter’s presidency in 1976 and Ronald Reagan’s presidency in 1984 are much closer to the origin than Obama’s presidency in 2012 and Bush’s presidency in 2004.</p>
 
-<p>The second principal component appears to represent the predictive power of a demographic. Above the scale, knowing which candidate that Liberals, Conservatives, or Married people support tells us little about who will win. Below the scale, support from Independents, the West, and First-time voters have major predictive power. This reflects the enormous influence that swing states and California brings to the election.</p>
+<p>The second principal component appears to represent the predictive power of a demographic. Above the scale, knowing which candidate that Liberals, Conservatives, or Married people support tells us little about who will actually win. Below the scale, support from Independents, the West, and First-time voters have major predictive power. This reflects the enormous influence that swing states and California bring to the election.</p>
 
-<h3 id="weaknesses">Weaknesses</h3>
+<h1 id="conclusion">Conclusion</h1>
 
-<p>The biggest weakness of the analysis lies in the unavoidable lack of sample data; forty years of history only yields ten samples. The analysis could also be expanded by breaking down demographics even more, e.g. 18-24 year old Independent voters or Rural first-time voters. Instead of looking at national exit polls, we can also focus on the specific exit polls for states with the most electoral votes: California, Texas, New York, or look at exit polls for swing states only: Ohio, Pennsylvania, Florida, Colorado.</p>
+<p>In order to capture the White House, this year’s presidential candidates most likely need to be able to win Independents, the West, the blue cluster (post-graduates and first-time voters), and the orange cluster (18-24 year olds, women, and the East). The orange cluster also includes unmarried people, but presumably the 18-24 year old demographic encapsulates this group.</p>
 
-<h3 id="conclusion">Conclusion</h3>
+<h2 id="weaknesses">Weaknesses</h2>
 
-<p>In order to capture the White House, this year’s presidential candidates most likely need to be able to win Independents, the West, the blue cluster, and the orange cluster.</p>
+<h3 id="sample-data">Sample Data</h3>
+<p>Arguably the biggest weakness of the analysis lies in the dataset itself, in its small size and its imprecise demographic groups. Forty years of history only yields ten samples, leaving it difficult to create meaningful demographic groups. Demographic groups such as Married are too broad and can be broken down even further, e.g. Married Independent voters or Married with College degree, but this makes it even more difficult to normalize exit poll questions across years.</p>
 
-<h3 id="references">References</h3>
+<p>Recent polls offer more specific classifications, but earlier polls do not go into such depth so there is a trade-off between specificity and sample size. For example, national exit polls did not track distinguish sexual orientation until the 1996 presidential election between Bill Clinton and Al Gore.</p>
+
+<h3 id="pca-assumptions">PCA Assumptions</h3>
+<p>PCA seeks to draw out the dynamics of a system and is robust against time, but this strength is a weakness when applied to presidential elections. The very nature of winning elections requires identifying and capitalizing on recent trends, and this analysis missed the new influence of minority groups.</p>
+
+<p>It is widely agreed that Obama won in 2008 and again in 2012 by capturing the women, youth, and minority vote. The analysis does highlight the significance of women and young voters, but placed Hispanics and Blacks (part of the Green cluster) as poorly predictive. Moreover, the analysis places Independent voters as strongly significant, but the dataset shows a declining influence over the past 12 years.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Demographic</th>
+      <th>2012</th>
+      <th>2008</th>
+      <th>2004</th>
+      <th>2000</th>
+      <th>1996</th>
+      <th>1992</th>
+      <th>1988</th>
+      <th>1984</th>
+      <th>1980</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Independent</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In addition, PCA presupposes a linear dynamic in how demographics influence the outcome of a presidential election. This may seem reasonable as we expect elections to be zero-sum, i.e. a person can only vote for one person. We also expect a demographic’s influence to vary linearly with size and unity and that each person’s vote is equally weighted, i.e. presidential candidates win simply by being more popular. However, elections are won in the Electoral College rather than by popular vote, so the influence of a demographic group may not necessarily be linear with the probability of the outcome.</p>
+
+<h2 id="extensions">Extensions</h2>
+
+<p>Instead of looking at national exit polls, the analysis can focus on exit polls in states with the most electoral votes: California, Texas, New York, or look at exit polls in swing states only: Ohio, Pennsylvania, Florida, Colorado.</p>
+
+<p>A survey of Hilary Clinton and Donald Trump’s electorate base would also supplement this study.</p>
+
+<h1 id="references">References</h1>
 
 <ol>
   <li>
@@ -376,11 +406,9 @@ Demographic_i =
     <p>1992-1996 Voting Demographics. Gallup. <a href="http://www.gallup.com/poll/9466/election-polls-vote-groups-19921996.aspx">link</a></p>
   </li>
   <li>
-    <p>“CPI Inflation Calculator.” Bureau of Labor Statistics. <a href="http://www.bls.gov/data/inflation_calculator.htm">link</a></p>
+    <p>“CPI Inflation Calculator.” Bureau of Labor Statistics. <a href="http://www.bls.gov/data/inflation_calculator.htm">link</a> <em>Used to normalize income across polling years.</em></p>
   </li>
 </ol>
-
-<p><em>Used to normalize income across polling years.</em></p>
 
   
 </div>
