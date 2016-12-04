@@ -5,61 +5,9 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Dec 2016 05:02:24 -0600</pubDate>
-    <lastBuildDate>Sun, 04 Dec 2016 05:02:24 -0600</lastBuildDate>
+    <pubDate>Sun, 04 Dec 2016 05:04:00 -0600</pubDate>
+    <lastBuildDate>Sun, 04 Dec 2016 05:04:00 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
-    
-      <item>
-        <title>Liquid Syntax Errors in Jekyll 3.2.1</title>
-        <description>&lt;p&gt;Two days ago, I encountered the following error message when building my site:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Asset inconsitency, expected
-jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;logical_path&lt;span class=&quot;s1&quot;&gt;' for nil:NilClass
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;I hadn’t encountered this before, so I just ran &lt;code&gt;jekyll clean&lt;/code&gt; which flushed my caches and everything in &lt;code&gt;/_site/&lt;/code&gt;. Well, it fixed the error but then I got a new one:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Liquid Exception: Liquid syntax error &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;line 12&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: Unknown tag &lt;span class=&quot;s1&quot;&gt;'img'&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;For the record, this is how I was inserting images in my Markdown:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;{% &lt;/span&gt;img river-tubing.jpg %&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Quick and easy. I fixed it with &lt;a href=&quot;https://superdevresources.com/image-caption-jekyll/&quot;&gt;this workaround&lt;/a&gt; (with new image captioning support). Now I would insert images like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;{% &lt;/span&gt;include image.html
-	&lt;span class=&quot;nv&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;images/river-tubing.jpg&quot;&lt;/span&gt;
-	&lt;span class=&quot;nv&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Image from Trinity River Vision Authority.&quot;&lt;/span&gt; %&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;But I was REALLY SAD that the original method didn’t work. Why?! So I upgrade from Jekyll 3.1 to 3.2.1 to see if it worked – it didn’t. Well, then I found out that my images weren’t copying over in Jekyll because they were never being referenced.&lt;/p&gt;
-
-&lt;p&gt;I saw a &lt;a href=&quot;http://stackoverflow.com/questions/17990087/why-images-folder-is-not-copied-when-generating-an-octopress-with-jekyll-assets&quot;&gt;similar complaint&lt;/a&gt; and tried the following solution:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;{% &lt;/span&gt;asset_path river-tubing.jpg %&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Which would give me the following error:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Liquid syntax error &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;line 12&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: Unknown tag &lt;span class=&quot;s1&quot;&gt;'asset_path'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;So it’s not an issue with Jekyll, it’s an issue with my configuration. At this point I have spent enough time on it and really want to get back to my bluetooth project.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 26 Aug 2016 00:00:00 -0500</pubDate>
-        <link>/jekyll-liquid-syntax-error.html</link>
-        <guid isPermaLink="true">/jekyll-liquid-syntax-error.html</guid>
-        
-        
-      </item>
     
       <item>
         <title>Operation HEAR</title>
@@ -397,9 +345,61 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
 &lt;p&gt;The company has already has a track record in this space: the &lt;a href=&quot;https://www.jacoti.com/listenapp/&quot;&gt;Jacoti ListenApp&lt;/a&gt; is &lt;a href=&quot;http://www.news-medical.net/news/20150331/Jacoti-releases-first-FDA-registered-medical-device-hearing-aid-application-for-smartphones.aspx&quot;&gt;the first FDA registered medical device&lt;/a&gt; for hearing loss. Their product does not service my severity of hearing loss, but I want to try it out anyway.&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 24 Aug 2016 00:00:00 -0500</pubDate>
+        <pubDate>Sat, 03 Dec 2016 00:00:00 -0600</pubDate>
         <link>/waterproof-hearing-aid.html</link>
         <guid isPermaLink="true">/waterproof-hearing-aid.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Liquid Syntax Errors in Jekyll 3.2.1</title>
+        <description>&lt;p&gt;Two days ago, I encountered the following error message when building my site:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Asset inconsitency, expected
+jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;logical_path&lt;span class=&quot;s1&quot;&gt;' for nil:NilClass
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;I hadn’t encountered this before, so I just ran &lt;code&gt;jekyll clean&lt;/code&gt; which flushed my caches and everything in &lt;code&gt;/_site/&lt;/code&gt;. Well, it fixed the error but then I got a new one:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Liquid Exception: Liquid syntax error &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;line 12&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: Unknown tag &lt;span class=&quot;s1&quot;&gt;'img'&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For the record, this is how I was inserting images in my Markdown:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;{% &lt;/span&gt;img river-tubing.jpg %&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Quick and easy. I fixed it with &lt;a href=&quot;https://superdevresources.com/image-caption-jekyll/&quot;&gt;this workaround&lt;/a&gt; (with new image captioning support). Now I would insert images like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;{% &lt;/span&gt;include image.html
+	&lt;span class=&quot;nv&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;images/river-tubing.jpg&quot;&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Image from Trinity River Vision Authority.&quot;&lt;/span&gt; %&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But I was REALLY SAD that the original method didn’t work. Why?! So I upgrade from Jekyll 3.1 to 3.2.1 to see if it worked – it didn’t. Well, then I found out that my images weren’t copying over in Jekyll because they were never being referenced.&lt;/p&gt;
+
+&lt;p&gt;I saw a &lt;a href=&quot;http://stackoverflow.com/questions/17990087/why-images-folder-is-not-copied-when-generating-an-octopress-with-jekyll-assets&quot;&gt;similar complaint&lt;/a&gt; and tried the following solution:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;{% &lt;/span&gt;asset_path river-tubing.jpg %&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Which would give me the following error:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Liquid syntax error &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;line 12&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: Unknown tag &lt;span class=&quot;s1&quot;&gt;'asset_path'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So it’s not an issue with Jekyll, it’s an issue with my configuration. At this point I have spent enough time on it and really want to get back to my bluetooth project.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 26 Aug 2016 00:00:00 -0500</pubDate>
+        <link>/jekyll-liquid-syntax-error.html</link>
+        <guid isPermaLink="true">/jekyll-liquid-syntax-error.html</guid>
         
         
       </item>
