@@ -5,8 +5,8 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Dec 2016 05:17:05 -0600</pubDate>
-    <lastBuildDate>Mon, 12 Dec 2016 05:17:05 -0600</lastBuildDate>
+    <pubDate>Mon, 12 Dec 2016 05:20:41 -0600</pubDate>
+    <lastBuildDate>Mon, 12 Dec 2016 05:20:41 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -353,7 +353,7 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
       </item>
     
       <item>
-        <title>Modeling Extreme Log Returns of S&amp;P 500 Index</title>
+        <title>Calculating Value-at-Risk using Extreme Value Theory</title>
         <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Prior to Robert Engle’s introduction of ARCH processes in 1982, little methodology existed for modeling the variance of financial returns. At the time, conventional time series models tended to assume constant variance which fell short in capturing the dynamics of financial markets. The ARCH model developed by Engle offered a method of forecasting variance, by weighting a fixed number of previous observations. In 1986, Tim Bollerslev generalized this approach with the GARCH model, which assigned declining weights to all observations and let very old weights approach zero.&lt;/p&gt;
 
