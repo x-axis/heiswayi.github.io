@@ -5,8 +5,8 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Dec 2016 05:15:16 -0600</pubDate>
-    <lastBuildDate>Mon, 12 Dec 2016 05:15:16 -0600</lastBuildDate>
+    <pubDate>Mon, 12 Dec 2016 05:17:05 -0600</pubDate>
+    <lastBuildDate>Mon, 12 Dec 2016 05:17:05 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -358,6 +358,8 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
 &lt;p&gt;Prior to Robert Engle’s introduction of ARCH processes in 1982, little methodology existed for modeling the variance of financial returns. At the time, conventional time series models tended to assume constant variance which fell short in capturing the dynamics of financial markets. The ARCH model developed by Engle offered a method of forecasting variance, by weighting a fixed number of previous observations. In 1986, Tim Bollerslev generalized this approach with the GARCH model, which assigned declining weights to all observations and let very old weights approach zero.&lt;/p&gt;
 
 &lt;p&gt;These initial models have proved to be simple and robust, but receive criticism for failing to consider the direction of returns. ARCH/GARCH treat negative returns and positive returns symmetrically, but both economic theory and historical trends suggest that volatility responds asymmetrically to market information. In particular, financial markets exhibit a &lt;em&gt;leverage effect&lt;/em&gt;, where losses impact volatility more than gains. This asymmetric response naturally leads to an asymmetry in distribution, where the distribution of losses exhibit heavier tails than the distribution of gains.&lt;/p&gt;
+
+&lt;p&gt;Drawing on results from Extreme Value Theory, we model daily log returns for the S&amp;amp;P 500 Index over ten years and produce a one-day value-at-risk for the next trading day. The 2% left tail is fit by a Generalized Pareto distribution using maximum likelihood estimation, representing the distribution of the fifty worst returns over ten years. To ensure stable parameter estimates for the Generalized Pareto, we fit on the returns after adjusting for volatility, by “degarching” the time series using a leveraged GARCH model. This adjustment accounts for the market tendency to display higher volatility in response to negative shocks, resulting in a more accurate portrayal of value-at-risk than the traditional GARCH model.&lt;/p&gt;
 
 &lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
 

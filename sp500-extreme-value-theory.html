@@ -117,7 +117,7 @@
     <div class="post-date">October 19, 2016 &middot; <span class="reading-time" title="Estimated Reading Time">
   
   
-    2 minutes read
+    3 minutes read
   
 </span>
 </div>
@@ -130,6 +130,8 @@
 <p>Prior to Robert Engle’s introduction of ARCH processes in 1982, little methodology existed for modeling the variance of financial returns. At the time, conventional time series models tended to assume constant variance which fell short in capturing the dynamics of financial markets. The ARCH model developed by Engle offered a method of forecasting variance, by weighting a fixed number of previous observations. In 1986, Tim Bollerslev generalized this approach with the GARCH model, which assigned declining weights to all observations and let very old weights approach zero.</p>
 
 <p>These initial models have proved to be simple and robust, but receive criticism for failing to consider the direction of returns. ARCH/GARCH treat negative returns and positive returns symmetrically, but both economic theory and historical trends suggest that volatility responds asymmetrically to market information. In particular, financial markets exhibit a <em>leverage effect</em>, where losses impact volatility more than gains. This asymmetric response naturally leads to an asymmetry in distribution, where the distribution of losses exhibit heavier tails than the distribution of gains.</p>
+
+<p>Drawing on results from Extreme Value Theory, we model daily log returns for the S&amp;P 500 Index over ten years and produce a one-day value-at-risk for the next trading day. The 2% left tail is fit by a Generalized Pareto distribution using maximum likelihood estimation, representing the distribution of the fifty worst returns over ten years. To ensure stable parameter estimates for the Generalized Pareto, we fit on the returns after adjusting for volatility, by “degarching” the time series using a leveraged GARCH model. This adjustment accounts for the market tendency to display higher volatility in response to negative shocks, resulting in a more accurate portrayal of value-at-risk than the traditional GARCH model.</p>
 
 <h1 id="setup">Setup</h1>
 
