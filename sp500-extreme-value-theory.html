@@ -15,7 +15,7 @@
   </title>
 
   
-    <meta name="description" content="Applying results from Extreme Value Theory to ten years of daily log returns for the S&P 500 Index."/>
+    <meta name="description" content="Applying Extreme Value Theory to ten years of daily log returns for the S&P 500 Index."/>
     <meta name="keywords" content="extreme value theory, gjr-garch, generalized pareto, value-at-risk">
   
   <meta name="author" content="Heiswayi Nrird">
@@ -25,14 +25,14 @@
   <meta name="twitter:creator" content="@keenangao">
   
     <meta name="twitter:title" content="Modeling Extreme Log Returns of S&P 500 Index">
-    <meta name="twitter:description" content="Applying results from Extreme Value Theory to ten years of daily log returns for the S&P 500 Index.">
+    <meta name="twitter:description" content="Applying Extreme Value Theory to ten years of daily log returns for the S&P 500 Index.">
   
 
   <meta property="og:type" content="website"/>
   
     <meta property="og:title" content="Modeling Extreme Log Returns of S&P 500 Index"/>
     <meta property="og:url" content="/sp500-extreme-value-theory.html"/>
-    <meta property="og:description" content="Applying results from Extreme Value Theory to ten years of daily log returns for the S&P 500 Index."/>
+    <meta property="og:description" content="Applying Extreme Value Theory to ten years of daily log returns for the S&P 500 Index."/>
     <meta property="og:site_name" content="Modeling Extreme Log Returns of S&P 500 Index"/>
   
 
@@ -133,27 +133,35 @@
 
 <h1 id="setup">Setup</h1>
 
-<p>Daily adjusted closing prices for the S&amp;P 500 Index from Thursday November 2, 2006 to Friday October 7th, 2016, with 2,501 days in total. In order to make meaningful comparisons across time by using an invariant quantity, the time series was converted into log returns.  The final dataset consisted of 2,500 daily log returns. Data was sourced from Yahoo Finance under the \textasciicircum GSPC ticker.</p>
+<p>Daily adjusted closing prices for the S&amp;P 500 Index from Thursday November 2, 2006 to Friday October 7th, 2016, with 2,501 days in total. In order to make meaningful comparisons across time by using an invariant quantity, the time series was converted into log returns.  The final dataset consisted of 2,500 daily log returns. Data was sourced from Yahoo Finance under the ^GSPC ticker.</p>
 
-<p>Analysis and results were produced in MATLAB.$$</p>
+<p>Analysis and results were produced in MATLAB.</p>
 
 <h1 id="gjr-garch11-model">GJR-GARCH(1,1) Model</h1>
 
 <p>In 1993, Glosten, Jagannathan, and Runkle addressed the early ARCH/GARCH criticisms with the GJR-GARCH model, in which asymmetric response weight was differentiated for positive and negative shocks.</p>
 
-<p>For a time series of returns <script type="math/tex">\{r_i\}_{i=1}^n</script>, a drift process <script type="math/tex">\{\mu_t\}</script>, and residuals <script type="math/tex">\varepsilon_i = r_i - \mu_i</script>, the “leveraged” GARCH model can be parameterized as:
-<script type="math/tex">\begin{equation} 
-\sigma^2_t = \alpha_0 + \alpha_1(\varepsilon_{t-1} + \delta\abs{\varepsilon_{t-1}})^2 + \beta_1\sigma^2_{t-1}
-\end{equation}</script></p>
+<p>For a time series of returns <script type="math/tex">\{r_i\}_{i=1}^n</script>, a drift process <script type="math/tex">\{\mu_t\}</script>, and residuals <script type="math/tex">\varepsilon_i = r_i - \mu_i</script>, the “leveraged” GARCH model can be parameterized as:</p>
 
-<p>with <script type="math/tex">% <![CDATA[
-\abs{\delta} < 1 %]]></script>. An additional constraint is required for the existence of unconditional variance, given by <script type="math/tex">% <![CDATA[
-\alpha_1(1+\delta^2) + \beta_1 < 1 %]]></script>.</p>
+<script type="math/tex; mode=display">\begin{equation} 
+\sigma^2_t = \alpha_0 + \alpha_1(\varepsilon_{t-1} + \delta|\varepsilon_{t-1}|)^2 + \beta_1\sigma^2_{t-1}
+\end{equation}</script>
 
-<p>The quasi-log likelihood is:
-<script type="math/tex">\begin{equation} 
+<table>
+  <tbody>
+    <tr>
+      <td>with $$</td>
+      <td>\delta</td>
+      <td>&lt; 1<script type="math/tex">. An additional constraint is required for the existence of unconditional variance, given by</script>\alpha_1(1+\delta^2) + \beta_1 &lt; 1$$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The quasi-log likelihood is:</p>
+
+<script type="math/tex; mode=display">\begin{equation} 
 \log \ell_{\theta | \sigma_i} = \frac{1}{2}\sum_{i=1}^n \left[ \left(\frac{\varepsilon_i}{\sigma_i}\right)^2 + \log(2\pi\sigma_i^2)\right]
-\end{equation}</script></p>
+\end{equation}</script>
 
 <p>where <script type="math/tex">\theta</script> represents the vector of parameters to be simultaneously estimated and <script type="math/tex">\sigma_i^2</script> is specified by Equation (1).</p>
 

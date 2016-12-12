@@ -5,8 +5,8 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Dec 2016 05:05:18 -0600</pubDate>
-    <lastBuildDate>Mon, 12 Dec 2016 05:05:18 -0600</lastBuildDate>
+    <pubDate>Mon, 12 Dec 2016 05:11:09 -0600</pubDate>
+    <lastBuildDate>Mon, 12 Dec 2016 05:11:09 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -361,27 +361,35 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
 
 &lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
 
-&lt;p&gt;Daily adjusted closing prices for the S&amp;amp;P 500 Index from Thursday November 2, 2006 to Friday October 7th, 2016, with 2,501 days in total. In order to make meaningful comparisons across time by using an invariant quantity, the time series was converted into log returns.  The final dataset consisted of 2,500 daily log returns. Data was sourced from Yahoo Finance under the \textasciicircum GSPC ticker.&lt;/p&gt;
+&lt;p&gt;Daily adjusted closing prices for the S&amp;amp;P 500 Index from Thursday November 2, 2006 to Friday October 7th, 2016, with 2,501 days in total. In order to make meaningful comparisons across time by using an invariant quantity, the time series was converted into log returns.  The final dataset consisted of 2,500 daily log returns. Data was sourced from Yahoo Finance under the ^GSPC ticker.&lt;/p&gt;
 
-&lt;p&gt;Analysis and results were produced in MATLAB.$$&lt;/p&gt;
+&lt;p&gt;Analysis and results were produced in MATLAB.&lt;/p&gt;
 
 &lt;h1 id=&quot;gjr-garch11-model&quot;&gt;GJR-GARCH(1,1) Model&lt;/h1&gt;
 
 &lt;p&gt;In 1993, Glosten, Jagannathan, and Runkle addressed the early ARCH/GARCH criticisms with the GJR-GARCH model, in which asymmetric response weight was differentiated for positive and negative shocks.&lt;/p&gt;
 
-&lt;p&gt;For a time series of returns &lt;script type=&quot;math/tex&quot;&gt;\{r_i\}_{i=1}^n&lt;/script&gt;, a drift process &lt;script type=&quot;math/tex&quot;&gt;\{\mu_t\}&lt;/script&gt;, and residuals &lt;script type=&quot;math/tex&quot;&gt;\varepsilon_i = r_i - \mu_i&lt;/script&gt;, the “leveraged” GARCH model can be parameterized as:
-&lt;script type=&quot;math/tex&quot;&gt;\begin{equation} 
-\sigma^2_t = \alpha_0 + \alpha_1(\varepsilon_{t-1} + \delta\abs{\varepsilon_{t-1}})^2 + \beta_1\sigma^2_{t-1}
-\end{equation}&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;For a time series of returns &lt;script type=&quot;math/tex&quot;&gt;\{r_i\}_{i=1}^n&lt;/script&gt;, a drift process &lt;script type=&quot;math/tex&quot;&gt;\{\mu_t\}&lt;/script&gt;, and residuals &lt;script type=&quot;math/tex&quot;&gt;\varepsilon_i = r_i - \mu_i&lt;/script&gt;, the “leveraged” GARCH model can be parameterized as:&lt;/p&gt;
 
-&lt;p&gt;with &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-\abs{\delta} &lt; 1 %]]&gt;&lt;/script&gt;. An additional constraint is required for the existence of unconditional variance, given by &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-\alpha_1(1+\delta^2) + \beta_1 &lt; 1 %]]&gt;&lt;/script&gt;.&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation} 
+\sigma^2_t = \alpha_0 + \alpha_1(\varepsilon_{t-1} + \delta|\varepsilon_{t-1}|)^2 + \beta_1\sigma^2_{t-1}
+\end{equation}&lt;/script&gt;
 
-&lt;p&gt;The quasi-log likelihood is:
-&lt;script type=&quot;math/tex&quot;&gt;\begin{equation} 
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;with $$&lt;/td&gt;
+      &lt;td&gt;\delta&lt;/td&gt;
+      &lt;td&gt;&amp;lt; 1&lt;script type=&quot;math/tex&quot;&gt;. An additional constraint is required for the existence of unconditional variance, given by&lt;/script&gt;\alpha_1(1+\delta^2) + \beta_1 &amp;lt; 1$$.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The quasi-log likelihood is:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation} 
 \log \ell_{\theta | \sigma_i} = \frac{1}{2}\sum_{i=1}^n \left[ \left(\frac{\varepsilon_i}{\sigma_i}\right)^2 + \log(2\pi\sigma_i^2)\right]
-\end{equation}&lt;/script&gt;&lt;/p&gt;
+\end{equation}&lt;/script&gt;
 
 &lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;\theta&lt;/script&gt; represents the vector of parameters to be simultaneously estimated and &lt;script type=&quot;math/tex&quot;&gt;\sigma_i^2&lt;/script&gt; is specified by Equation (1).&lt;/p&gt;
 
