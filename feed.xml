@@ -5,8 +5,8 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Dec 2016 04:59:00 -0600</pubDate>
-    <lastBuildDate>Mon, 12 Dec 2016 04:59:00 -0600</lastBuildDate>
+    <pubDate>Mon, 12 Dec 2016 05:05:18 -0600</pubDate>
+    <lastBuildDate>Mon, 12 Dec 2016 05:05:18 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -353,31 +353,41 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
       </item>
     
       <item>
-        <title>Sp500 Extreme Value Theory</title>
-        <description>&lt;p&gt;—&lt;script type=&quot;math/tex&quot;&gt;layout: post&lt;/script&gt;
-title: Modeling Extreme Log Returns of S&amp;amp;P 500 Index&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-description: Applying results from Extreme Value Theory to ten years of daily log returns for the S&amp;P 500 Index. %]]&gt;&lt;/script&gt;
-keywords: extreme value theory, gjr-garch, generalized pareto, value-at-risk&lt;script type=&quot;math/tex&quot;&gt;---&lt;/script&gt;
-$$&lt;/p&gt;
-&lt;h1 id=&quot;introduction-&quot;&gt;Introduction $$&lt;/h1&gt;
-&lt;p&gt;Prior to Robert Engle’s introduction of ARCH processes in 1982, little methodology existed for modeling the variance of financial returns. At the time, conventional time series models tended to assume constant variance which fell short in capturing the dynamics of financial markets. The ARCH model developed by Engle offered a method of forecasting variance, by weighting a fixed number of previous observations. In 1986, Tim Bollerslev generalized this approach with the GARCH model, which assigned declining weights to all observations and let very old weights approach zero. &lt;script type=&quot;math/tex&quot;&gt;&lt;/script&gt;
-These initial models have proved to be simple and robust, but receive criticism for failing to consider the direction of returns. ARCH/GARCH treat negative returns and positive returns symmetrically, but both economic theory and historical trends suggest that volatility responds asymmetrically to market information. In particular, financial markets exhibit a &lt;em&gt;leverage effect&lt;/em&gt;, where losses impact volatility more than gains. This asymmetric response naturally leads to an asymmetry in distribution, where the distribution of losses exhibit heavier tails than the distribution of gains.&lt;script type=&quot;math/tex&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;h1 id=&quot;setup&quot;&gt;Setup$$&lt;/h1&gt;
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-Daily adjusted closing prices for the S&amp;P 500 Index from Thursday November 2, 2006 to Friday October 7th, 2016, with 2,501 days in total. In order to make meaningful comparisons across time by using an invariant quantity, the time series was converted into log returns.  The final dataset consisted of 2,500 daily log returns. Data was sourced from Yahoo Finance under the \textasciicircum GSPC ticker. %]]&gt;&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;Analysis and results were produced in MATLAB.&lt;/script&gt;
-$$&lt;/p&gt;
-&lt;h1 id=&quot;gjr-garch11-model&quot;&gt;GJR-GARCH(1,1) Model$$&lt;/h1&gt;
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;In 1993, Glosten, Jagannathan, and Runkle addressed the early ARCH/GARCH criticisms with the GJR-GARCH model, in which asymmetric response weight was differentiated for positive and negative shocks.&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;For a time series of returns $\{r_i\}_{i=1}^n$,  a  drift process $\{\mu_t\}$, and residuals $\varepsilon_i = r_i - \mu_i$, the ``leveraged&quot; GARCH model \cite{GJR93} can be parameterized as:&lt;/script&gt;
-\begin{equation} \label{gjr_garch}&lt;script type=&quot;math/tex&quot;&gt;\sigma^2_t = \alpha_0 + \alpha_1(\varepsilon_{t-1} + \delta\abs{\varepsilon_{t-1}})^2 + \beta_1\sigma^2_{t-1}&lt;/script&gt;
-\end{equation}&lt;script type=&quot;math/tex&quot;&gt;&lt;/script&gt;
-with $\abs{\delta} &amp;lt; 1$. An additional constraint is required for the existence of unconditional variance, given by $\alpha_1(1+\delta^2) + \beta_1 &amp;lt; 1$. &lt;script type=&quot;math/tex&quot;&gt;&lt;/script&gt;
-The quasi-log likelihood is:&lt;script type=&quot;math/tex&quot;&gt;\begin{equation} \label{gjr_qmle}&lt;/script&gt;
-\log \ell_{\theta | \sigma_i} = \frac{1}{2}\sum_{i=1}^n \left[ \left(\frac{\varepsilon_i}{\sigma_i}\right)^2 + \log(2\pi\sigma_i^2)\right]&lt;script type=&quot;math/tex&quot;&gt;\end{equation}&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;where $\theta$ represents the vector of parameters to be simultaneously estimated and $\sigma_i^2$ is specified by Equation (1).&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;Due to the extremely short time horizon of one day, we can reasonably assume that daily returns have zero drift. Historically, daily equity returns have shown zero or nearly zero drift. Therefore, the residuals used to outfit the quasi-log likelihood are simply the log returns as specified in the Setup section.&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;A grid of initial seeds was created with initial values of $\alpha_0$ and $\alpha_1$ fixed at 0.1 and 0.01, varying negatively for $\delta$, and varying positively for $\beta_1$. The negative quasi-likelihood was minimized for all seeds to find the estimates producing the smallest negative log likelihood. The results are shown in Table I.&lt;/script&gt;&lt;/p&gt;
+        <title>Modeling Extreme Log Returns of S&amp;P 500 Index</title>
+        <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Prior to Robert Engle’s introduction of ARCH processes in 1982, little methodology existed for modeling the variance of financial returns. At the time, conventional time series models tended to assume constant variance which fell short in capturing the dynamics of financial markets. The ARCH model developed by Engle offered a method of forecasting variance, by weighting a fixed number of previous observations. In 1986, Tim Bollerslev generalized this approach with the GARCH model, which assigned declining weights to all observations and let very old weights approach zero.&lt;/p&gt;
+
+&lt;p&gt;These initial models have proved to be simple and robust, but receive criticism for failing to consider the direction of returns. ARCH/GARCH treat negative returns and positive returns symmetrically, but both economic theory and historical trends suggest that volatility responds asymmetrically to market information. In particular, financial markets exhibit a &lt;em&gt;leverage effect&lt;/em&gt;, where losses impact volatility more than gains. This asymmetric response naturally leads to an asymmetry in distribution, where the distribution of losses exhibit heavier tails than the distribution of gains.&lt;/p&gt;
+
+&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+
+&lt;p&gt;Daily adjusted closing prices for the S&amp;amp;P 500 Index from Thursday November 2, 2006 to Friday October 7th, 2016, with 2,501 days in total. In order to make meaningful comparisons across time by using an invariant quantity, the time series was converted into log returns.  The final dataset consisted of 2,500 daily log returns. Data was sourced from Yahoo Finance under the \textasciicircum GSPC ticker.&lt;/p&gt;
+
+&lt;p&gt;Analysis and results were produced in MATLAB.$$&lt;/p&gt;
+
+&lt;h1 id=&quot;gjr-garch11-model&quot;&gt;GJR-GARCH(1,1) Model&lt;/h1&gt;
+
+&lt;p&gt;In 1993, Glosten, Jagannathan, and Runkle addressed the early ARCH/GARCH criticisms with the GJR-GARCH model, in which asymmetric response weight was differentiated for positive and negative shocks.&lt;/p&gt;
+
+&lt;p&gt;For a time series of returns &lt;script type=&quot;math/tex&quot;&gt;\{r_i\}_{i=1}^n&lt;/script&gt;, a drift process &lt;script type=&quot;math/tex&quot;&gt;\{\mu_t\}&lt;/script&gt;, and residuals &lt;script type=&quot;math/tex&quot;&gt;\varepsilon_i = r_i - \mu_i&lt;/script&gt;, the “leveraged” GARCH model can be parameterized as:
+&lt;script type=&quot;math/tex&quot;&gt;\begin{equation} 
+\sigma^2_t = \alpha_0 + \alpha_1(\varepsilon_{t-1} + \delta\abs{\varepsilon_{t-1}})^2 + \beta_1\sigma^2_{t-1}
+\end{equation}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;with &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\abs{\delta} &lt; 1 %]]&gt;&lt;/script&gt;. An additional constraint is required for the existence of unconditional variance, given by &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\alpha_1(1+\delta^2) + \beta_1 &lt; 1 %]]&gt;&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;The quasi-log likelihood is:
+&lt;script type=&quot;math/tex&quot;&gt;\begin{equation} 
+\log \ell_{\theta | \sigma_i} = \frac{1}{2}\sum_{i=1}^n \left[ \left(\frac{\varepsilon_i}{\sigma_i}\right)^2 + \log(2\pi\sigma_i^2)\right]
+\end{equation}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;\theta&lt;/script&gt; represents the vector of parameters to be simultaneously estimated and &lt;script type=&quot;math/tex&quot;&gt;\sigma_i^2&lt;/script&gt; is specified by Equation (1).&lt;/p&gt;
+
+&lt;p&gt;Due to the extremely short time horizon of one day, we can reasonably assume that daily returns have zero drift. Historically, daily equity returns have shown zero or nearly zero drift. Therefore, the residuals used to outfit the quasi-log likelihood are simply the log returns as specified in the Setup section.&lt;/p&gt;
+
+&lt;p&gt;A grid of initial seeds was created with initial values of &lt;script type=&quot;math/tex&quot;&gt;\alpha_0&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\alpha_1&lt;/script&gt; fixed at 0.1 and 0.01, varying negatively for &lt;script type=&quot;math/tex&quot;&gt;\delta&lt;/script&gt;, and varying positively for &lt;script type=&quot;math/tex&quot;&gt;\beta_1&lt;/script&gt;. The negative quasi-likelihood was minimized for all seeds to find the estimates producing the smallest negative log likelihood. The results are shown in Table I.&lt;/p&gt;
 </description>
         <pubDate>Wed, 19 Oct 2016 00:00:00 -0500</pubDate>
         <link>/sp500-extreme-value-theory.html</link>
