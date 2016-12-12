@@ -1,0 +1,24 @@
+<p>—<script type="math/tex">layout: post</script>
+title: Modeling Extreme Log Returns of S&amp;P 500 Index<script type="math/tex">% <![CDATA[
+description: Applying results from Extreme Value Theory to ten years of daily log returns for the S&P 500 Index. %]]></script>
+keywords: extreme value theory, gjr-garch, generalized pareto, value-at-risk<script type="math/tex">---</script>
+$$</p>
+<h1 id="introduction-">Introduction $$</h1>
+<p>Prior to Robert Engle’s introduction of ARCH processes in 1982, little methodology existed for modeling the variance of financial returns. At the time, conventional time series models tended to assume constant variance which fell short in capturing the dynamics of financial markets. The ARCH model developed by Engle offered a method of forecasting variance, by weighting a fixed number of previous observations. In 1986, Tim Bollerslev generalized this approach with the GARCH model, which assigned declining weights to all observations and let very old weights approach zero. <script type="math/tex"></script>
+These initial models have proved to be simple and robust, but receive criticism for failing to consider the direction of returns. ARCH/GARCH treat negative returns and positive returns symmetrically, but both economic theory and historical trends suggest that volatility responds asymmetrically to market information. In particular, financial markets exhibit a <em>leverage effect</em>, where losses impact volatility more than gains. This asymmetric response naturally leads to an asymmetry in distribution, where the distribution of losses exhibit heavier tails than the distribution of gains.<script type="math/tex"></script></p>
+<h1 id="setup">Setup$$</h1>
+<p><script type="math/tex">% <![CDATA[
+Daily adjusted closing prices for the S&P 500 Index from Thursday November 2, 2006 to Friday October 7th, 2016, with 2,501 days in total. In order to make meaningful comparisons across time by using an invariant quantity, the time series was converted into log returns.  The final dataset consisted of 2,500 daily log returns. Data was sourced from Yahoo Finance under the \textasciicircum GSPC ticker. %]]></script>
+<script type="math/tex">Analysis and results were produced in MATLAB.</script>
+$$</p>
+<h1 id="gjr-garch11-model">GJR-GARCH(1,1) Model$$</h1>
+<p><script type="math/tex">In 1993, Glosten, Jagannathan, and Runkle addressed the early ARCH/GARCH criticisms with the GJR-GARCH model, in which asymmetric response weight was differentiated for positive and negative shocks.</script>
+<script type="math/tex">For a time series of returns $\{r_i\}_{i=1}^n$,  a  drift process $\{\mu_t\}$, and residuals $\varepsilon_i = r_i - \mu_i$, the ``leveraged" GARCH model \cite{GJR93} can be parameterized as:</script>
+\begin{equation} \label{gjr_garch}<script type="math/tex">\sigma^2_t = \alpha_0 + \alpha_1(\varepsilon_{t-1} + \delta\abs{\varepsilon_{t-1}})^2 + \beta_1\sigma^2_{t-1}</script>
+\end{equation}<script type="math/tex"></script>
+with $\abs{\delta} &lt; 1$. An additional constraint is required for the existence of unconditional variance, given by $\alpha_1(1+\delta^2) + \beta_1 &lt; 1$. <script type="math/tex"></script>
+The quasi-log likelihood is:<script type="math/tex">\begin{equation} \label{gjr_qmle}</script>
+\log \ell_{\theta | \sigma_i} = \frac{1}{2}\sum_{i=1}^n \left[ \left(\frac{\varepsilon_i}{\sigma_i}\right)^2 + \log(2\pi\sigma_i^2)\right]<script type="math/tex">\end{equation}</script>
+<script type="math/tex">where $\theta$ represents the vector of parameters to be simultaneously estimated and $\sigma_i^2$ is specified by Equation (1).</script>
+<script type="math/tex">Due to the extremely short time horizon of one day, we can reasonably assume that daily returns have zero drift. Historically, daily equity returns have shown zero or nearly zero drift. Therefore, the residuals used to outfit the quasi-log likelihood are simply the log returns as specified in the Setup section.</script>
+<script type="math/tex">A grid of initial seeds was created with initial values of $\alpha_0$ and $\alpha_1$ fixed at 0.1 and 0.01, varying negatively for $\delta$, and varying positively for $\beta_1$. The negative quasi-likelihood was minimized for all seeds to find the estimates producing the smallest negative log likelihood. The results are shown in Table I.</script></p>
