@@ -5,8 +5,8 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Dec 2016 05:11:09 -0600</pubDate>
-    <lastBuildDate>Mon, 12 Dec 2016 05:11:09 -0600</lastBuildDate>
+    <pubDate>Mon, 12 Dec 2016 05:13:11 -0600</pubDate>
+    <lastBuildDate>Mon, 12 Dec 2016 05:13:11 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -375,15 +375,9 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
 \sigma^2_t = \alpha_0 + \alpha_1(\varepsilon_{t-1} + \delta|\varepsilon_{t-1}|)^2 + \beta_1\sigma^2_{t-1}
 \end{equation}&lt;/script&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;with $$&lt;/td&gt;
-      &lt;td&gt;\delta&lt;/td&gt;
-      &lt;td&gt;&amp;lt; 1&lt;script type=&quot;math/tex&quot;&gt;. An additional constraint is required for the existence of unconditional variance, given by&lt;/script&gt;\alpha_1(1+\delta^2) + \beta_1 &amp;lt; 1$$.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;with &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\delta^2 &lt; 1 %]]&gt;&lt;/script&gt;. An additional constraint is required for the existence of unconditional variance, given by &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\alpha_1(1+\delta^2) + \beta_1 &lt; 1 %]]&gt;&lt;/script&gt;.&lt;/p&gt;
 
 &lt;p&gt;The quasi-log likelihood is:&lt;/p&gt;
 
