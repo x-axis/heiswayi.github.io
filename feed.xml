@@ -5,8 +5,8 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Dec 2016 05:13:11 -0600</pubDate>
-    <lastBuildDate>Mon, 12 Dec 2016 05:13:11 -0600</lastBuildDate>
+    <pubDate>Mon, 12 Dec 2016 05:15:16 -0600</pubDate>
+    <lastBuildDate>Mon, 12 Dec 2016 05:15:16 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -361,7 +361,7 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
 
 &lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
 
-&lt;p&gt;Daily adjusted closing prices for the S&amp;amp;P 500 Index from Thursday November 2, 2006 to Friday October 7th, 2016, with 2,501 days in total. In order to make meaningful comparisons across time by using an invariant quantity, the time series was converted into log returns.  The final dataset consisted of 2,500 daily log returns. Data was sourced from Yahoo Finance under the ^GSPC ticker.&lt;/p&gt;
+&lt;p&gt;The dataset consists of daily adjusted closing prices for the S&amp;amp;P 500 Index from Thursday November 2, 2006 to Friday October 7th, 2016, with 2,501 days in total. In order to make meaningful comparisons across time by using an invariant quantity, the time series was converted into log returns.  The final dataset consisted of 2,500 daily log returns. Data was sourced from Yahoo Finance under the ^GSPC ticker.&lt;/p&gt;
 
 &lt;p&gt;Analysis and results were produced in MATLAB.&lt;/p&gt;
 
