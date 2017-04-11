@@ -5,13 +5,13 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Dec 2016 05:23:09 -0600</pubDate>
-    <lastBuildDate>Mon, 12 Dec 2016 05:23:09 -0600</lastBuildDate>
+    <pubDate>Mon, 10 Apr 2017 21:04:19 -0500</pubDate>
+    <lastBuildDate>Mon, 10 Apr 2017 21:04:19 -0500</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Operation HEAR</title>
-        <description>&lt;p&gt;Log last updated: 12/03/2016&lt;/p&gt;
+        <description>&lt;p&gt;Log last updated: 04/17/2017&lt;/p&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Since I was a kid, I’ve wished for a way to hear while in the water. As of 2016, the only waterproof hearing aid on the market is the &lt;a href=&quot;http://www.siemens.com/press/en/pressrelease/?press=/en/pressrelease/2012/healthcare/h20121036.htm&quot;&gt;Siemens Aquaris&lt;/a&gt;. Someday I would like one but for now, this is my journal of trying to figure out something more cost-effective :).&lt;/p&gt;
@@ -344,8 +344,19 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
 
 &lt;p&gt;The company has already has a track record in this space: the &lt;a href=&quot;https://www.jacoti.com/listenapp/&quot;&gt;Jacoti ListenApp&lt;/a&gt; is &lt;a href=&quot;http://www.news-medical.net/news/20150331/Jacoti-releases-first-FDA-registered-medical-device-hearing-aid-application-for-smartphones.aspx&quot;&gt;the first FDA registered medical device&lt;/a&gt; for hearing loss. Their product does not service my severity of hearing loss, but I want to try it out anyway.&lt;/p&gt;
 
+&lt;h1 id=&quot;4102017&quot;&gt;4/10/2017&lt;/h1&gt;
+
+&lt;p&gt;This update is long overdue. In my defense, I was &lt;em&gt;really&lt;/em&gt; busy because I had an international competition to train for, on top of my job and my schoolwork. Now I just have a few weeks left until the end of the semester :)!&lt;/p&gt;
+
+&lt;p&gt;Over winter break, my family and I went to the Caribbeans and I brought my setup along. There were two possible environments for field testing: the water park complex that my family stayed at and the deep ocean where where a sailboat took us snorkeling. To recap, the Bluetooth ActivBuds have been holding up well in normal use, with a few annoyances. The connection intermittently cuts in and out for brief periods at a time but thenworks fine the rest of the time. It is possible that some of the internal hardware rusted due to the snorkeling tests from the past summer. They are, after all, IPX7 and not IPX8. As a result, I used the SwimBuds for this set of field tests since they are truly IPX8.&lt;/p&gt;
+
+&lt;p&gt;The logistics were really annoying to deal with during the water park. It was uncomfortable having the iPhone hanging off from my bikini’s shoulder strap and the wires were frustrating to deal with. I also had to recalibrate the microphone several times while walking with my family because I didn’t have any of the presets saved. Once I set it up however, it wasn’t too bad. My family and I went a few rounds on the lazy river and I could hear my family members yelling to each other from their tubes. The intelligibility was pretty bad in the beginning as I was trying to get used to the different sounds. As I got used to it, I could start make out a few words at a time but overall my ability to distinguish speech between people on the tube was poor.&lt;/p&gt;
+
+&lt;p&gt;There isn’t much need to talk when snorkeling in the deep ocean. The warbles from the sound of the oceans were REALLY disorienting and I had to turn the volume way down. For the most part, I swam alongside my dad but then off in the distance, I saw my mom struggling with her mask. It seems like both my dad and my brother were too far off in the distance to hear her (and so was I, even with the Swimbuds). By the time I swam up to her, one of the guides from the sailboat had gotten to her and the three of us were all hanging onto a life tube. At that face-to-face distance, I was able to understand the entire conversation.&lt;/p&gt;
+
+&lt;p&gt;Overall, I am pleased that the Swimbuds continue to perform acceptably when conversation is required in close-proximity conditions. However, the logistics of having to tie a bulky case to my bikini straps is really annoying and I’m always a little bit afraid that the case will fail and damage my phone in the process. At the time of this writing, the current iPhone 7 has an IP67 rating – the same as my ActivBuds. In &lt;a href=&quot;https://www.cnet.com/news/how-water-resistant-is-the-iphone-7/&quot;&gt;CNET’s field tests&lt;/a&gt;, the iPhone 7 seems to do OK but the iPhone 8 is &lt;a href=&quot;http://www.cultofmac.com/462289/iphone-8-may-even-higher-waterproof-rating/&quot;&gt;rumored to be IP68&lt;/a&gt; which would be a drastic upgrade. If a future upgrade of Apple AirPods sees an IP67 rating, I will have to try it out and see if the W1 chip in the AirPods results in a better connection quality.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 03 Dec 2016 00:00:00 -0600</pubDate>
+        <pubDate>Mon, 10 Apr 2017 00:00:00 -0500</pubDate>
         <link>/waterproof-hearing-aid.html</link>
         <guid isPermaLink="true">/waterproof-hearing-aid.html</guid>
         
