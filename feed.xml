@@ -1,13 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>keenan's log.</title>
-    <description></description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Apr 2017 21:09:25 -0500</pubDate>
-    <lastBuildDate>Mon, 10 Apr 2017 21:09:25 -0500</lastBuildDate>
+    <title>Keenan's Personal Log</title>
+    <description>Project log of things I have done in my free time.</description>
+    <link>https://x-axis.github.io/</link>
+    <atom:link href="https://x-axis.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 29 Apr 2017 18:48:26 -0500</pubDate>
+    <lastBuildDate>Sat, 29 Apr 2017 18:48:26 -0500</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Sonnet No. 116</title>
+        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Let me not to the marriage of true minds  
+Admit singularities; continuity is not continuity  
+Which alters when it alteration finds,  
+Nor does it bend with the remover who removes.
+
+O no, it is an ever-smooth function  
+Which looks on tempest, and is never shaken. 
+It is the star to every indefinite integral  
+Whose area's unknown, although its height be taken.  
+
+Continuity is not Time's fool; though minima and peaks 
+Traverse within the bending Euclidean vicinity.
+Continuity alters not to its brief hours and weeks,
+But bears it out even to the edge of infinity 
+
+If this be wrong, and upon me proved,  
+Then I never derived, nor no curve ever smoothed. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;note&quot;&gt;Note&lt;/h3&gt;
+
+&lt;p&gt;The inspiration for this followed immediately after reading Sonnet 116 – for what is enduring love, but continuity for all time? So far this draft is just a series of cheap transpositions but I hope to improve on it further some other day.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 13 Apr 2017 00:00:00 -0500</pubDate>
+        <link>https://x-axis.github.io/2017/sonnet-116</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2017/sonnet-116</guid>
+        
+        <category>poetry</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Sonnet No. 18</title>
+        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Shall I compare thee to a harmonic series?  
+Thou art more lovely and more temperate.  
+Rough winds do shake the n'th terms to zeros  
+And its divergence hath all too slow a rate.
+
+Sometime to infinity this sequence shines,  
+And arbitrarily large are his partials summ'd.  
+And every term from term sometime declines  
+By chance or nature's changing course, untrimm'd.  
+
+But thy eternal series shall not fade,  
+Nor lose possession of that fair limit thou ow'st,  
+Nor shall Fourier brag that thou wander'st in his shade,  
+When in infinite sums to Time, thou grow'st.  
+
+So long as Cauchy can breathe and Gauss can see,  
+So long converges this, and this gives life to thee.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
+
+&lt;p&gt;My past few weeks have been filled with Shakespeare and I feel compelled to translate one of his most famous sonnets into mathematics. The difficult part is in maintaining the rhyme and syllable scheme.&lt;/p&gt;
+
+&lt;p&gt;The harmonic series is an infinite series which represents the harmonic tones in music. It is often considered “beautiful” in mathematics and is popularly used by architects to define portions and establish harmonic relationships between different spaces.&lt;/p&gt;
+
+&lt;p&gt;As the number of terms in a harmonic series becomes infinite, the limit of its &lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;‘th term approaches zero. However, despite that fact, the harmonic series is still a divergent series – albeit at an extremely slow rate. The sums of its partial terms become infinitely large even as the value of the next term decreases over time by nature of the series.&lt;/p&gt;
+
+&lt;p&gt;Convergent infinite series is used as a representation of the love’s beauty. Like an inifnite series, their beauty shall never fade. As is required of convergence, the series never loses its limit.&lt;/p&gt;
+
+&lt;p&gt;The Fourier transform is a powerful tool used in harmonic analysis to determine divergence. Gauss and Cauchy also discovered many of the tests used today to determine convergence.&lt;/p&gt;
+
+&lt;p&gt;As long as these verses are read, so long lives my love.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 12 Apr 2017 00:00:00 -0500</pubDate>
+        <link>https://x-axis.github.io/2017/sonnet-18</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2017/sonnet-18</guid>
+        
+        <category>poetry</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Somewhere In Infinity</title>
+        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A line from a faraway coordinate; 
+These real-valued constants sketch out limits --
+Fated for the two of us to converge.
+
+Derivatives follow the gradient's path;
+An infinitesimal moment in time
+passes by as we lock our eyes as one.
+
+Over that field, they are all there in sight;
+Smooth curves and functions that are beautiful --
+I need you to trust all that I can see.
+
+From back in the day when you'd look above
+And see the scalars soaring with my love -- 
+That we'd be here today was meant to be.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
+
+&lt;p&gt;At work today, I was listening to &lt;a href=&quot;https://www.youtube.com/watch?v=nA9rMYn-2nE&quot;&gt;Bokura no Natsu no Yume&lt;/a&gt; (translated: &lt;em&gt;Our Summer Dream&lt;/em&gt;) and was inspired to pen this piece instead of reading papers and working on the literature review like I was supposed to. This song is so hopeful and nostalgic and it reminded me of so many childhood memories.&lt;/p&gt;
+
+&lt;p&gt;I have been reading about iambic pentameter lately so each line has ten syllables.  This poem feels like it’s in the first stages of something larger. The final stanza seems awkward but with some revision, a few more lines, and a rhyme scene, this could someday become a sonnet. Now &lt;em&gt;that&lt;/em&gt; would be nice :)&lt;/p&gt;
+</description>
+        <pubDate>Tue, 11 Apr 2017 00:00:00 -0500</pubDate>
+        <link>https://x-axis.github.io/2017/somewhere-in-infinity</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2017/somewhere-in-infinity</guid>
+        
+        <category>poetry</category>
+        
+        
+      </item>
     
       <item>
         <title>Operation HEAR</title>
@@ -22,7 +137,7 @@
 &lt;h1 id=&quot;8052016&quot;&gt;8/05/2016&lt;/h1&gt;
 &lt;p&gt;Went tubing with my friends! I had taken out my hearing aids for tubing in a lake before, but this trip was a 3-hour trip down a lazy river. We would essentially be chilling and talking the entire time. I didn’t want to be left out so I wore my old pair from high school. I figured that if something happened to them, I’d still have the ReSounds. The trip turned out to be a blast; we tied our tubes together and played music while talking.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/river-tubing.jpg&quot; alt=&quot;River tubing&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/x9UHNwn.jpg&quot; alt=&quot;River tubing&quot; /&gt;
 &lt;em&gt;Image from Trinity River Vision Authority.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;8182016&quot;&gt;8/18/2016&lt;/h1&gt;
@@ -150,7 +265,7 @@
 
 &lt;p&gt;I think the first case shouldn’t be an issue since my headphones would already be in the water. &lt;a href=&quot;https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0220823&quot;&gt;Zeng&lt;/a&gt; does a survey of underwater wireless communication in seawater and finds that scattering is low at long wavelengths like RF (radio frequency), so that leaves the second case. Water’s high permittivity reduces any electric field around it, which is problematic since electromagnetic waves propagate via disturbances in the electric (and magnetic) fields.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/em-propagation.gif&quot; alt=&quot;Visualization of EM propagation&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Uyo59pz.gif&quot; alt=&quot;Visualization of EM propagation&quot; /&gt;
 &lt;em&gt;Image from &lt;a href=&quot;http://www.physicsclassroom.com/mmedia/waves/em.cfm&quot;&gt;Physics Classroom&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Radio frequencies like Bluetooth suffer from high attenuation - its intensity decreases sharply upon contact with water molecules. &lt;a href=&quot;http://www.hydro-international.com/content/article/underwater-electromagnetic-propagation&quot;&gt;Rhodes&lt;/a&gt; explains this process,&lt;/p&gt;
@@ -201,7 +316,7 @@
 
 &lt;p&gt;Bluetooth frequency is a known value, but what about the path loss? &lt;a href=&quot;http://file.scirp.org/pdf/JEMAA20110700001_18390291.pdf&quot;&gt;Jiang and Georgakopoulos&lt;/a&gt; look at wireless signal loss in fresh water, producing the following graph of propagation loss at various depths.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/propagation-loss.png&quot; alt=&quot;Propagation loss of electromagnetic waves&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/G8KWKBg.png&quot; alt=&quot;Propagation loss of electromagnetic waves&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A depth of 0.5 m is, in American, 1.6 feet. Bluetooth is around 2.45 GHz and I am not looking to go deep, so the solid line at 10&lt;sup&gt;9&lt;/sup&gt; Hz (or 1 GHz) is what I’m interested in. It looks like the propagation loss is about 25 dB.&lt;/p&gt;
 
@@ -227,13 +342,13 @@ d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.45) - 32.45\right)} \\
 
 &lt;p&gt;To see which profiles are on my ActivBuds, I downloaded Bluetooth Explorer (in &lt;a href=&quot;https://developer.apple.com/download/more/&quot;&gt;Hardware IO Tools for Xcode&lt;/a&gt;) and paired the ActivBuds to my laptop.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/activbuds-profiles.png&quot; alt=&quot;ActivBuds profiles&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Me8oOfO.png&quot; alt=&quot;ActivBuds profiles&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;From the picture above, we see that it supports the HFP protocol (as predicted), but also &lt;a href=&quot;https://developer.bluetooth.org/TechnologyOverview/pages/a2dp.aspx&quot;&gt;A2DP Sink&lt;/a&gt;, which is the profile for receiving a digital-audio stream delivered from a source. Later, I realized that music streaming happens over A2DP and you can listen to music with headphones so obviously it must have supported that profile :).&lt;/p&gt;
 
 &lt;p&gt;After some more digging, I suspect that it has a &lt;a href=&quot;http://www.csr.com/products/csr8635&quot;&gt;CSR635&lt;/a&gt; chip. According to its &lt;a href=&quot;http://www.csr.com/sites/default/files/csr8635_qfn_technical_overview.pdf&quot;&gt;technical specs&lt;/a&gt;, it has a transmit power of 8 dBm and receiver sensitivity of -89 dBm. &lt;a href=&quot;http://electronicdesign.com/communications/understanding-wireless-range-calculations&quot;&gt;ElectronicDesign&lt;/a&gt; calculates wireless range using these two numbers but I don’t feel like recalculating anymore. The author does use the FSPL formula that I used, though.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/activbuds-protocols.png&quot; alt=&quot;ActivBuds Bluetooth protocols&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/d7ceqLJ.png&quot; alt=&quot;ActivBuds Bluetooth protocols&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;From the picture above, we see the following protocols:&lt;/p&gt;
 
@@ -249,7 +364,7 @@ d &amp;= 10^{\frac{1}{20}\left(25 - 20\log(2.45) - 32.45\right)} \\
 
 &lt;p&gt;On the bright side, waterproof case showed up today! In the photo below, you can see that it is buoyed by the inflated borders. It also has a line-in for wired earbuds and they worked pretty well. Then I wondered if the iPhone would stay in A2DP profile if I plugged in my Apple earbuds while having the Senso ActivBuds paired. The answer is no.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/smarco-case.jpg&quot; alt=&quot;Smarco Waterproof Case&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/NU8twwP.jpg&quot; alt=&quot;Smarco Waterproof Case&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;But then all of a sudden, I heard my mom talking on the phone! While the ActivBuds were in! I paid attention and realized I could distinguish what she was saying. Until now, I had only been testing these things by listening to NPR Radio and TED Talks from my computer at max volume and it was impossible to make out anything.&lt;/p&gt;
 
@@ -357,8 +472,53 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
 &lt;p&gt;Overall, I am pleased that the Swimbuds continue to perform acceptably when conversation is required in close-proximity conditions. However, the logistics of having to tie a bulky case to my bikini straps is really annoying and I’m always a little bit afraid that the case will fail and damage my phone in the process. At the time of this writing, the current iPhone 7 has an IP67 rating – the same as my ActivBuds. In &lt;a href=&quot;https://www.cnet.com/news/how-water-resistant-is-the-iphone-7/&quot;&gt;CNET’s field tests&lt;/a&gt;, the iPhone 7 seems to do OK but the iPhone 8 is &lt;a href=&quot;http://www.cultofmac.com/462289/iphone-8-may-even-higher-waterproof-rating/&quot;&gt;rumored to be IP68&lt;/a&gt; which would be a drastic upgrade. If a future upgrade of Apple AirPods sees an IP67 rating, I will have to try it out and see if the W1 chip in the AirPods results in a better connection quality.&lt;/p&gt;
 </description>
         <pubDate>Mon, 10 Apr 2017 00:00:00 -0500</pubDate>
-        <link>/waterproof-hearing-aid.html</link>
-        <guid isPermaLink="true">/waterproof-hearing-aid.html</guid>
+        <link>https://x-axis.github.io/2017/waterproof-hearing-aid</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2017/waterproof-hearing-aid</guid>
+        
+        <category>projects</category>
+        
+        <category>logs</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Ode to 0110001101100100</title>
+        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;You believed in linear projections and initial conditions,  
+In neither ergodicity nor embedded good behavior.  
+There were no trivial autmorphisms in your infinite measure;
+It was not in the heart of your group.
+
+In my vector space I see structure, but I also see manifolds  
+Confined not in Cartesian space, but beyond Banach;  
+Eclipsing Euclidean, held in Hilbert space and time  
+Renouncing these classic decompositions of love.
+
+Though uncertainty infinitely partitioned my heart,  
+I sought to create one-to-one correspondence.  
+With our log normally distributed as any other process,  
+Could I generate moments between us for all time?  
+
+A series grows.
+
+In time, the partial sums of your effort revealed  
+The distance disguised by your harmonic terms.  
+With neither a limit nor your support,  
+I diverge.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
+
+&lt;p&gt;This poem arose after I confessed a bit of heartbreak to a mentor of mine. He had stumbled upon the first poem I wrote several years ago and encouraged me to keep writing – the first verse belongs entirely to him.&lt;/p&gt;
+
+&lt;p&gt;By this time, my studies have progressed deeper into probability theory. Again, I find so many parallels between mathematics and my life. In addition to vector spaces analogies, there are log-normal distributions, moment-generating functions, and divergent series.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 14 Jan 2017 00:00:00 -0600</pubDate>
+        <link>https://x-axis.github.io/2017/0110001101100100</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2017/0110001101100100</guid>
+        
+        <category>poetry</category>
         
         
       </item>
@@ -405,8 +565,14 @@ I’ve found a couple old threads, &lt;a href=&quot;http://forum.unity3d.com/thr
 &lt;p&gt;A grid of initial seeds was created with initial values of &lt;script type=&quot;math/tex&quot;&gt;\alpha_0&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\alpha_1&lt;/script&gt; fixed at 0.1 and 0.01, varying negatively for &lt;script type=&quot;math/tex&quot;&gt;\delta&lt;/script&gt;, and varying positively for &lt;script type=&quot;math/tex&quot;&gt;\beta_1&lt;/script&gt;. The negative quasi-likelihood was minimized for all seeds to find the estimates producing the smallest negative log likelihood. The results are shown in Table I.&lt;/p&gt;
 </description>
         <pubDate>Wed, 19 Oct 2016 00:00:00 -0500</pubDate>
-        <link>/sp500-extreme-value-theory.html</link>
-        <guid isPermaLink="true">/sp500-extreme-value-theory.html</guid>
+        <link>https://x-axis.github.io/2016/sp500-extreme-value-theory</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2016/sp500-extreme-value-theory</guid>
+        
+        <category>math</category>
+        
+        <category>statistics</category>
+        
+        <category>writeups</category>
         
         
       </item>
@@ -457,8 +623,10 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 </description>
         <pubDate>Fri, 26 Aug 2016 00:00:00 -0500</pubDate>
-        <link>/jekyll-liquid-syntax-error.html</link>
-        <guid isPermaLink="true">/jekyll-liquid-syntax-error.html</guid>
+        <link>https://x-axis.github.io/2016/jekyll-liquid-syntax-error</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2016/jekyll-liquid-syntax-error</guid>
+        
+        <category>bugs</category>
         
         
       </item>
@@ -534,8 +702,16 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 </description>
         <pubDate>Tue, 23 Aug 2016 00:00:00 -0500</pubDate>
-        <link>/quant-internship.html</link>
-        <guid isPermaLink="true">/quant-internship.html</guid>
+        <link>https://x-axis.github.io/2016/quant-internship</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2016/quant-internship</guid>
+        
+        <category>personal</category>
+        
+        <category>finance</category>
+        
+        <category>internship</category>
+        
+        <category>jobs</category>
         
         
       </item>
@@ -572,14 +748,18 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 
 &lt;p&gt;Ignoring the fact that I apparently hardcoded a build sequence for one file, the output doesn’t look too bad. The results look like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/python-in-vim.png&quot; alt=&quot;Python output in vim buffer&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/lv2Iw89.png&quot; alt=&quot;Python output in vim buffer&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 19 Jul 2016 00:00:00 -0500</pubDate>
-        <link>/compiling-python-code-in-vim.html</link>
-        <guid isPermaLink="true">/compiling-python-code-in-vim.html</guid>
+        <link>https://x-axis.github.io/2016/compiling-python-code-in-vim</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2016/compiling-python-code-in-vim</guid>
         
         <category>notes</category>
+        
+        <category>reference</category>
+        
+        <category>code</category>
         
         
       </item>
@@ -701,324 +881,16 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 17 Jul 2016 00:00:00 -0500</pubDate>
-        <link>/reference-sheet.html</link>
-        <guid isPermaLink="true">/reference-sheet.html</guid>
+        <link>https://x-axis.github.io/2016/reference-sheet</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2016/reference-sheet</guid>
         
+        <category>jekyll</category>
         
-      </item>
-    
-      <item>
-        <title>Principal Component Analysis of Presidential Elections</title>
-        <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;Using national exit polls, we undertake a principal component analysis of voter demographics for United States presidential elections from 1976 to 2012. We aim to quantify the dynamics of voters and identify the demographics that have best predicted presidential election outcomes from the Carter presidency to the current Obama presidency.&lt;/p&gt;
-
-&lt;h1 id=&quot;data&quot;&gt;Data&lt;/h1&gt;
-&lt;p&gt;National exit polls from Gallup and various news sources were aggregated into a raw data set. These polls captured 45 demographic groups which were further grouped into 12 categories.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Ideology&lt;/th&gt;
-      &lt;th&gt;Party&lt;/th&gt;
-      &lt;th&gt;Gender&lt;/th&gt;
-      &lt;th&gt;Married&lt;/th&gt;
-      &lt;th&gt;Race&lt;/th&gt;
-      &lt;th&gt;Religion&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Liberal&lt;/td&gt;
-      &lt;td&gt;Democrat&lt;/td&gt;
-      &lt;td&gt;Men&lt;/td&gt;
-      &lt;td&gt;Married&lt;/td&gt;
-      &lt;td&gt;White&lt;/td&gt;
-      &lt;td&gt;Protestant&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Moderate&lt;/td&gt;
-      &lt;td&gt;Republican&lt;/td&gt;
-      &lt;td&gt;Women&lt;/td&gt;
-      &lt;td&gt;Unmarried&lt;/td&gt;
-      &lt;td&gt;Black&lt;/td&gt;
-      &lt;td&gt;Catholic&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Conservative&lt;/td&gt;
-      &lt;td&gt;Independent&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Asian&lt;/td&gt;
-      &lt;td&gt;Jewish&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Hispanic&lt;/td&gt;
-      &lt;td&gt;Evangelical&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Other&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Age&lt;/th&gt;
-      &lt;th&gt;Education&lt;/th&gt;
-      &lt;th&gt;Income&lt;/th&gt;
-      &lt;th&gt;Region&lt;/th&gt;
-      &lt;th&gt;Community&lt;/th&gt;
-      &lt;th&gt;Voting Status&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;18-24 years&lt;/td&gt;
-      &lt;td&gt;Less than HS&lt;/td&gt;
-      &lt;td&gt;Under $30,000&lt;/td&gt;
-      &lt;td&gt;East&lt;/td&gt;
-      &lt;td&gt;Urban&lt;/td&gt;
-      &lt;td&gt;First-time voter&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;25-29 years&lt;/td&gt;
-      &lt;td&gt;High School&lt;/td&gt;
-      &lt;td&gt;$30,000-49,999&lt;/td&gt;
-      &lt;td&gt;Midwest&lt;/td&gt;
-      &lt;td&gt;Suburban&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;30-39 years&lt;/td&gt;
-      &lt;td&gt;Some College&lt;/td&gt;
-      &lt;td&gt;$50,000-99,999&lt;/td&gt;
-      &lt;td&gt;South&lt;/td&gt;
-      &lt;td&gt;Rural&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;40-49 years&lt;/td&gt;
-      &lt;td&gt;College&lt;/td&gt;
-      &lt;td&gt;$100,000-199,000&lt;/td&gt;
-      &lt;td&gt;West&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;50-64 years&lt;/td&gt;
-      &lt;td&gt;Postgraduate&lt;/td&gt;
-      &lt;td&gt;Over $200,000&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;65 and older&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;In each election, the voting behavior of each demographic group are represented as a column vector capturing whether or not the greater proportion voted for the winning presidential candidate.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-Demographic_i = 
-\begin{cases}
-1 &amp; \text{if the higher share voted for the winning candidate} \\
-0 &amp;\text{if the difference in voting share was within 5%} \\
--1 &amp;\text{if the higher share voted for the losing candidate} 
-\end{cases} %]]&gt;&lt;/script&gt;
-
-&lt;p&gt;Note that R uses the singular value decomposition method to perform principal component analysis, where the convention is to consider rows as observations and columns as variables, so our matrix needs to be in &lt;em&gt;election_year x demographic_group&lt;/em&gt; format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same scale of {1, 0, -1}, no further processing is needed, e.g. mean-centering or normalization.&lt;/p&gt;
-
-&lt;h1 id=&quot;principal-component-analysis&quot;&gt;Principal Component Analysis&lt;/h1&gt;
-
-&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
-
-&lt;p&gt;Each principal component represents a “dimension” of the data, describing some underlying dynamic. The table below shows the proportion of variance in the data that each principal component accounts for.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;PC1&lt;/th&gt;
-      &lt;th&gt;PC2&lt;/th&gt;
-      &lt;th&gt;PC3&lt;/th&gt;
-      &lt;th&gt;PC4&lt;/th&gt;
-      &lt;th&gt;PC5&lt;/th&gt;
-      &lt;th&gt;PC6&lt;/th&gt;
-      &lt;th&gt;PC7&lt;/th&gt;
-      &lt;th&gt;PC8&lt;/th&gt;
-      &lt;th&gt;PC9&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Proportion of Variance&lt;/td&gt;
-      &lt;td&gt;0.6023&lt;/td&gt;
-      &lt;td&gt;0.1401&lt;/td&gt;
-      &lt;td&gt;0.08354&lt;/td&gt;
-      &lt;td&gt;0.06334&lt;/td&gt;
-      &lt;td&gt;0.03156&lt;/td&gt;
-      &lt;td&gt;0.02662&lt;/td&gt;
-      &lt;td&gt;0.02079&lt;/td&gt;
-      &lt;td&gt;0.01767&lt;/td&gt;
-      &lt;td&gt;0.01415&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Cumulative Proportion&lt;/td&gt;
-      &lt;td&gt;0.6023&lt;/td&gt;
-      &lt;td&gt;0.7523&lt;/td&gt;
-      &lt;td&gt;0.82588&lt;/td&gt;
-      &lt;td&gt;0.88922&lt;/td&gt;
-      &lt;td&gt;0.92078&lt;/td&gt;
-      &lt;td&gt;0.94739&lt;/td&gt;
-      &lt;td&gt;0.96818&lt;/td&gt;
-      &lt;td&gt;0.98585&lt;/td&gt;
-      &lt;td&gt;1.00000&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Mathematically, the principal components of a dataset form an orthogonal basis. Geometrically, basis vectors can be seen as the axes in a Cartesian coordinate system. Humans are comfortable seeing data represented in two dimensions: x and y, so we can project the first two principal components, PC1 and PC2, onto the standard x, y plane. Together, they capture 75% of variance in the data.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/elections_biplot.png&quot; alt=&quot;Presidential Election biplot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here, the largest two principal components form the axes of the biplot above. There are two things to interpret: points and vectors. Points (presidential election years) that are close together have similar demographics while vectors (demographic groups) that are close together have similar voting behavior. We see that Democratic presidences are grouped on the left while Republican presidences are grouped on the right. Several demographics are clustered together:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Green&lt;/strong&gt;: Democrat, Liberal, Hispanic, Urban, Jewish, Black&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Orange&lt;/strong&gt;: 18-24 years old, Women, Unmarried, East&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Blue&lt;/strong&gt;: Post-graduate education, First-time voter&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Yellow&lt;/strong&gt;: Republican, Protestant, $100,000-199,999 income&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;analysis&quot;&gt;Analysis&lt;/h2&gt;
-
-&lt;p&gt;Let’s focus on the first principal component, on how demographics are distributed along the x-axis. Demographics on the farthest left are Democrat, Liberal, Hispanic, Urban, Jewish, and Black. On the farthest right, we have Republican, Conservative, Over $200k annual income, and Protestant. Recall that a principal component is supposed to capture some dynamic of the data in a certain dimension, so we can infer that the first component represents a political spectrum from Democratic to Republican. The farther away from the origin a demographic group’s vector goes in along the x-axis, the more politically united it is.&lt;/p&gt;
-
-&lt;p&gt;Interestingly, we see that the more recent the presidency, the further out they are on the x-axis. This reflects the historical trend that presidencies and voters have become more partisan over the years. Jimmy Carter’s presidency in 1976 and Ronald Reagan’s presidency in 1984 are much closer to the origin than Obama’s presidency in 2012 and Bush’s presidency in 2004.&lt;/p&gt;
-
-&lt;p&gt;The second principal component appears to represent the predictive power of a demographic. Above the scale, knowing which candidate that Liberals, Conservatives, or Married people support tells us little about who will actually win. Below the scale, support from Independents, the West, and First-time voters have major predictive power. This reflects the enormous influence that swing states and California bring to the election.&lt;/p&gt;
-
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
-
-&lt;p&gt;In order to capture the White House, this year’s presidential candidates most likely need to be able to win Independents, the West, the blue cluster (post-graduates and first-time voters), and the orange cluster (18-24 year olds, women, and the East). The orange cluster also includes unmarried people, but presumably the 18-24 year old demographic encapsulates this group.&lt;/p&gt;
-
-&lt;h2 id=&quot;weaknesses&quot;&gt;Weaknesses&lt;/h2&gt;
-
-&lt;h3 id=&quot;sample-data&quot;&gt;Sample Data&lt;/h3&gt;
-&lt;p&gt;Arguably the biggest weakness of the analysis lies in the dataset itself, in its small size and its imprecise demographic groups. Forty years of history only yields ten samples, leaving it difficult to create meaningful demographic groups. Demographic groups such as Married are too broad and can be broken down even further, e.g. Married Independent voters or Married with College degree, but this makes it even more difficult to normalize exit poll questions across years.&lt;/p&gt;
-
-&lt;p&gt;Recent polls offer more specific classifications, but earlier polls do not go into such depth so there is a trade-off between specificity and sample size. For example, national exit polls did not track distinguish sexual orientation until the 1996 presidential election between Bill Clinton and Al Gore.&lt;/p&gt;
-
-&lt;h3 id=&quot;pca-assumptions&quot;&gt;PCA Assumptions&lt;/h3&gt;
-&lt;p&gt;PCA seeks to draw out the dynamics of a system and is robust against time, but this strength is a weakness when applied to presidential elections. The very nature of winning elections requires identifying and capitalizing on recent trends, and this analysis missed the new influence of minority groups.&lt;/p&gt;
-
-&lt;p&gt;It is widely agreed that Obama won in 2008 and again in 2012 by capturing the women, youth, and minority vote. The analysis does highlight the significance of women and young voters, but placed Hispanics and Blacks (part of the Green cluster) as poorly predictive. Moreover, the analysis places Independent voters as strongly significant, but the dataset shows a declining influence over the past 12 years.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Demographic&lt;/th&gt;
-      &lt;th&gt;2012&lt;/th&gt;
-      &lt;th&gt;2008&lt;/th&gt;
-      &lt;th&gt;2004&lt;/th&gt;
-      &lt;th&gt;2000&lt;/th&gt;
-      &lt;th&gt;1996&lt;/th&gt;
-      &lt;th&gt;1992&lt;/th&gt;
-      &lt;th&gt;1988&lt;/th&gt;
-      &lt;th&gt;1984&lt;/th&gt;
-      &lt;th&gt;1980&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Independent&lt;/td&gt;
-      &lt;td&gt;-1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;-1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;In addition, PCA presupposes a linear dynamic in how demographics influence the outcome of a presidential election. This may seem reasonable as we expect elections to be zero-sum, i.e. a person can only vote for one person. We also expect a demographic’s influence to vary linearly with size and unity and that each person’s vote is equally weighted, i.e. presidential candidates win simply by being more popular. However, elections are won in the Electoral College rather than by popular vote, so the influence of a demographic group may not necessarily be linear with the probability of the outcome.&lt;/p&gt;
-
-&lt;h2 id=&quot;extensions&quot;&gt;Extensions&lt;/h2&gt;
-
-&lt;p&gt;Instead of looking at national exit polls, the analysis can focus on exit polls in states with the most electoral votes: California, Texas, New York, or look at exit polls in swing states only: Ohio, Pennsylvania, Florida, Colorado.&lt;/p&gt;
-
-&lt;p&gt;A survey of Hilary Clinton and Donald Trump’s electorate base would also supplement this study.&lt;/p&gt;
-
-&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Shlens, J., 2014. A tutorial on principal component analysis. arXiv preprint arXiv:1404.1100. &lt;a href=&quot;http://arxiv.org/pdf/1404.1100.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“2012 President Exit Polls.” The New York Times. &lt;a href=&quot;http://elections.nytimes.com/2012/results/president/exit-polls&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“How Groups Voted.” Roper Center for Public Opinion Research, Cornell University. &lt;a href=&quot;http://ropercenter.cornell.edu/polls/us-elections/how-groups-voted/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“2004 U.S. President National Exit Poll” CNN. &lt;a href=&quot;http://www.cnn.com/ELECTION/2004/pages/results/states/US/P/00/epolls.0.html&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;1992-1996 Voting Demographics. Gallup. &lt;a href=&quot;http://www.gallup.com/poll/9466/election-polls-vote-groups-19921996.aspx&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“CPI Inflation Calculator.” Bureau of Labor Statistics. &lt;a href=&quot;http://www.bls.gov/data/inflation_calculator.htm&quot;&gt;link&lt;/a&gt; &lt;em&gt;Used to normalize income across polling years.&lt;/em&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Mon, 20 Jun 2016 00:00:00 -0500</pubDate>
-        <link>/svd-on-presidential-elections.html</link>
-        <guid isPermaLink="true">/svd-on-presidential-elections.html</guid>
+        <category>github</category>
         
+        <category>reference</category>
         
-      </item>
-    
-      <item>
-        <title>Initial Commit</title>
-        <description>&lt;p&gt;What am I doing? Seriously, what.&lt;/p&gt;
-
-&lt;h3 id=&quot;is-this-a-header&quot;&gt;Is this a header?&lt;/h3&gt;
-
-&lt;p&gt;What does it look like?&lt;/p&gt;
-
-&lt;h2 id=&quot;godspeed&quot;&gt;Godspeed&lt;/h2&gt;
-
-&lt;p&gt;For it is the only speed.&lt;/p&gt;
-
-&lt;h1 id=&quot;no-way-no-way-no-way&quot;&gt;No way no way no way&lt;/h1&gt;
-
-&lt;p&gt;hi&lt;/p&gt;
-</description>
-        <pubDate>Sun, 19 Jun 2016 00:00:00 -0500</pubDate>
-        <link>/initial-commit.html</link>
-        <guid isPermaLink="true">/initial-commit.html</guid>
+        <category>code</category>
         
         
       </item>
