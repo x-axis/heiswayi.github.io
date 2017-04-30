@@ -5,8 +5,8 @@
     <description>Project log of things I have done in my free time.</description>
     <link>https://x-axis.github.io/</link>
     <atom:link href="https://x-axis.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Apr 2017 19:22:06 -0500</pubDate>
-    <lastBuildDate>Sat, 29 Apr 2017 19:22:06 -0500</lastBuildDate>
+    <pubDate>Sat, 29 Apr 2017 19:25:59 -0500</pubDate>
+    <lastBuildDate>Sat, 29 Apr 2017 19:25:59 -0500</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -524,60 +524,6 @@ I diverge.
       </item>
     
       <item>
-        <title>Calculating Value-at-Risk using Extreme Value Theory</title>
-        <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;Prior to Robert Engle’s introduction of ARCH processes in 1982, little methodology existed for modeling the variance of financial returns. At the time, conventional time series models tended to assume constant variance which fell short in capturing the dynamics of financial markets. The ARCH model developed by Engle offered a method of forecasting variance, by weighting a fixed number of previous observations. In 1986, Tim Bollerslev generalized this approach with the GARCH model, which assigned declining weights to all observations and let very old weights approach zero.&lt;/p&gt;
-
-&lt;p&gt;These initial models have proved to be simple and robust, but receive criticism for failing to consider the direction of returns. ARCH/GARCH treat negative returns and positive returns symmetrically, but both economic theory and historical trends suggest that volatility responds asymmetrically to market information. In particular, financial markets exhibit a &lt;em&gt;leverage effect&lt;/em&gt;, where losses impact volatility more than gains. This asymmetric response naturally leads to an asymmetry in distribution, where the distribution of losses exhibit heavier tails than the distribution of gains.&lt;/p&gt;
-
-&lt;p&gt;Drawing on results from Extreme Value Theory, we model daily log returns for the S&amp;amp;P 500 Index over ten years and produce a one-day value-at-risk for the next trading day. The 2% left tail is fit by a Generalized Pareto distribution using maximum likelihood estimation, representing the distribution of the fifty worst returns over ten years. To ensure stable parameter estimates for the Generalized Pareto, we fit on the returns after adjusting for volatility, by “degarching” the time series using a leveraged GARCH model. This adjustment accounts for the market tendency to display higher volatility in response to negative shocks, resulting in a more accurate portrayal of value-at-risk than the traditional GARCH model.&lt;/p&gt;
-
-&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
-
-&lt;p&gt;The dataset consists of daily adjusted closing prices for the S&amp;amp;P 500 Index from Thursday November 2, 2006 to Friday October 7th, 2016, with 2,501 days in total. In order to make meaningful comparisons across time by using an invariant quantity, the time series was converted into log returns.  The final dataset consisted of 2,500 daily log returns. Data was sourced from Yahoo Finance under the ^GSPC ticker.&lt;/p&gt;
-
-&lt;p&gt;Analysis and results were produced in MATLAB.&lt;/p&gt;
-
-&lt;h1 id=&quot;gjr-garch11-model&quot;&gt;GJR-GARCH(1,1) Model&lt;/h1&gt;
-
-&lt;p&gt;In 1993, Glosten, Jagannathan, and Runkle addressed the early ARCH/GARCH criticisms with the GJR-GARCH model, in which asymmetric response weight was differentiated for positive and negative shocks.&lt;/p&gt;
-
-&lt;p&gt;For a time series of returns &lt;script type=&quot;math/tex&quot;&gt;\{r_i\}_{i=1}^n&lt;/script&gt;, a drift process &lt;script type=&quot;math/tex&quot;&gt;\{\mu_t\}&lt;/script&gt;, and residuals &lt;script type=&quot;math/tex&quot;&gt;\varepsilon_i = r_i - \mu_i&lt;/script&gt;, the “leveraged” GARCH model can be parameterized as:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation} 
-\sigma^2_t = \alpha_0 + \alpha_1(\varepsilon_{t-1} + \delta|\varepsilon_{t-1}|)^2 + \beta_1\sigma^2_{t-1}
-\end{equation}&lt;/script&gt;
-
-&lt;p&gt;with &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-\delta^2 &lt; 1 %]]&gt;&lt;/script&gt;. An additional constraint is required for the existence of unconditional variance, given by &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-\alpha_1(1+\delta^2) + \beta_1 &lt; 1 %]]&gt;&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;The quasi-log likelihood is:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation} 
-\log \ell_{\theta | \sigma_i} = \frac{1}{2}\sum_{i=1}^n \left[ \left(\frac{\varepsilon_i}{\sigma_i}\right)^2 + \log(2\pi\sigma_i^2)\right]
-\end{equation}&lt;/script&gt;
-
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;\theta&lt;/script&gt; represents the vector of parameters to be simultaneously estimated and &lt;script type=&quot;math/tex&quot;&gt;\sigma_i^2&lt;/script&gt; is specified by Equation (1).&lt;/p&gt;
-
-&lt;p&gt;Due to the extremely short time horizon of one day, we can reasonably assume that daily returns have zero drift. Historically, daily equity returns have shown zero or nearly zero drift. Therefore, the residuals used to outfit the quasi-log likelihood are simply the log returns as specified in the Setup section.&lt;/p&gt;
-
-&lt;p&gt;A grid of initial seeds was created with initial values of &lt;script type=&quot;math/tex&quot;&gt;\alpha_0&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\alpha_1&lt;/script&gt; fixed at 0.1 and 0.01, varying negatively for &lt;script type=&quot;math/tex&quot;&gt;\delta&lt;/script&gt;, and varying positively for &lt;script type=&quot;math/tex&quot;&gt;\beta_1&lt;/script&gt;. The negative quasi-likelihood was minimized for all seeds to find the estimates producing the smallest negative log likelihood. The results are shown in Table I.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 19 Oct 2016 00:00:00 -0500</pubDate>
-        <link>https://x-axis.github.io/2016/sp500-extreme-value-theory</link>
-        <guid isPermaLink="true">https://x-axis.github.io/2016/sp500-extreme-value-theory</guid>
-        
-        <category>math</category>
-        
-        <category>statistics</category>
-        
-        <category>writeups</category>
-        
-        
-      </item>
-    
-      <item>
         <title>Liquid Syntax Errors in Jekyll 3.2.1</title>
         <description>&lt;p&gt;Two days ago, I encountered the following error message when building my site:&lt;/p&gt;
 
@@ -891,6 +837,305 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
         <category>reference</category>
         
         <category>code</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Principal Component Analysis of Presidential Elections</title>
+        <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Using national exit polls, we undertake a principal component analysis of voter demographics for United States presidential elections from 1976 to 2012. We aim to quantify the dynamics of voters and identify the demographics that have best predicted presidential election outcomes from the Carter presidency to the current Obama presidency.&lt;/p&gt;
+
+&lt;h1 id=&quot;data&quot;&gt;Data&lt;/h1&gt;
+&lt;p&gt;National exit polls from Gallup and various news sources were aggregated into a raw data set. These polls captured 45 demographic groups which were further grouped into 12 categories.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Ideology&lt;/th&gt;
+      &lt;th&gt;Party&lt;/th&gt;
+      &lt;th&gt;Gender&lt;/th&gt;
+      &lt;th&gt;Married&lt;/th&gt;
+      &lt;th&gt;Race&lt;/th&gt;
+      &lt;th&gt;Religion&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Liberal&lt;/td&gt;
+      &lt;td&gt;Democrat&lt;/td&gt;
+      &lt;td&gt;Men&lt;/td&gt;
+      &lt;td&gt;Married&lt;/td&gt;
+      &lt;td&gt;White&lt;/td&gt;
+      &lt;td&gt;Protestant&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Moderate&lt;/td&gt;
+      &lt;td&gt;Republican&lt;/td&gt;
+      &lt;td&gt;Women&lt;/td&gt;
+      &lt;td&gt;Unmarried&lt;/td&gt;
+      &lt;td&gt;Black&lt;/td&gt;
+      &lt;td&gt;Catholic&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Conservative&lt;/td&gt;
+      &lt;td&gt;Independent&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Asian&lt;/td&gt;
+      &lt;td&gt;Jewish&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Hispanic&lt;/td&gt;
+      &lt;td&gt;Evangelical&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Other&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+      &lt;th&gt;Education&lt;/th&gt;
+      &lt;th&gt;Income&lt;/th&gt;
+      &lt;th&gt;Region&lt;/th&gt;
+      &lt;th&gt;Community&lt;/th&gt;
+      &lt;th&gt;Voting Status&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;18-24 years&lt;/td&gt;
+      &lt;td&gt;Less than HS&lt;/td&gt;
+      &lt;td&gt;Under $30,000&lt;/td&gt;
+      &lt;td&gt;East&lt;/td&gt;
+      &lt;td&gt;Urban&lt;/td&gt;
+      &lt;td&gt;First-time voter&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;25-29 years&lt;/td&gt;
+      &lt;td&gt;High School&lt;/td&gt;
+      &lt;td&gt;$30,000-49,999&lt;/td&gt;
+      &lt;td&gt;Midwest&lt;/td&gt;
+      &lt;td&gt;Suburban&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;30-39 years&lt;/td&gt;
+      &lt;td&gt;Some College&lt;/td&gt;
+      &lt;td&gt;$50,000-99,999&lt;/td&gt;
+      &lt;td&gt;South&lt;/td&gt;
+      &lt;td&gt;Rural&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;40-49 years&lt;/td&gt;
+      &lt;td&gt;College&lt;/td&gt;
+      &lt;td&gt;$100,000-199,000&lt;/td&gt;
+      &lt;td&gt;West&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;50-64 years&lt;/td&gt;
+      &lt;td&gt;Postgraduate&lt;/td&gt;
+      &lt;td&gt;Over $200,000&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;65 and older&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;In each election, the voting behavior of each demographic group are represented as a column vector capturing whether or not the greater proportion voted for the winning presidential candidate.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+Demographic_i = 
+\begin{cases}
+1 &amp; \text{if the higher share voted for the winning candidate} \\
+0 &amp;\text{if the difference in voting share was within 5%} \\
+-1 &amp;\text{if the higher share voted for the losing candidate} 
+\end{cases} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Note that R uses the singular value decomposition method to perform principal component analysis, where the convention is to consider rows as observations and columns as variables, so our matrix needs to be in &lt;em&gt;election_year x demographic_group&lt;/em&gt; format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same scale of {1, 0, -1}, no further processing is needed, e.g. mean-centering or normalization.&lt;/p&gt;
+
+&lt;h1 id=&quot;principal-component-analysis&quot;&gt;Principal Component Analysis&lt;/h1&gt;
+
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;Each principal component represents a “dimension” of the data, describing some underlying dynamic. The table below shows the proportion of variance in the data that each principal component accounts for.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;PC1&lt;/th&gt;
+      &lt;th&gt;PC2&lt;/th&gt;
+      &lt;th&gt;PC3&lt;/th&gt;
+      &lt;th&gt;PC4&lt;/th&gt;
+      &lt;th&gt;PC5&lt;/th&gt;
+      &lt;th&gt;PC6&lt;/th&gt;
+      &lt;th&gt;PC7&lt;/th&gt;
+      &lt;th&gt;PC8&lt;/th&gt;
+      &lt;th&gt;PC9&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Proportion of Variance&lt;/td&gt;
+      &lt;td&gt;0.6023&lt;/td&gt;
+      &lt;td&gt;0.1401&lt;/td&gt;
+      &lt;td&gt;0.08354&lt;/td&gt;
+      &lt;td&gt;0.06334&lt;/td&gt;
+      &lt;td&gt;0.03156&lt;/td&gt;
+      &lt;td&gt;0.02662&lt;/td&gt;
+      &lt;td&gt;0.02079&lt;/td&gt;
+      &lt;td&gt;0.01767&lt;/td&gt;
+      &lt;td&gt;0.01415&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Cumulative Proportion&lt;/td&gt;
+      &lt;td&gt;0.6023&lt;/td&gt;
+      &lt;td&gt;0.7523&lt;/td&gt;
+      &lt;td&gt;0.82588&lt;/td&gt;
+      &lt;td&gt;0.88922&lt;/td&gt;
+      &lt;td&gt;0.92078&lt;/td&gt;
+      &lt;td&gt;0.94739&lt;/td&gt;
+      &lt;td&gt;0.96818&lt;/td&gt;
+      &lt;td&gt;0.98585&lt;/td&gt;
+      &lt;td&gt;1.00000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Mathematically, the principal components of a dataset form an orthogonal basis. Geometrically, basis vectors can be seen as the axes in a Cartesian coordinate system. Humans are comfortable seeing data represented in two dimensions: x and y, so we can project the first two principal components, PC1 and PC2, onto the standard x, y plane. Together, they capture 75% of variance in the data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/1RVA7lJ.png&quot; alt=&quot;Presidential Election biplot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here, the largest two principal components form the axes of the biplot above. There are two things to interpret: points and vectors. Points (presidential election years) that are close together have similar demographics while vectors (demographic groups) that are close together have similar voting behavior. We see that Democratic presidences are grouped on the left while Republican presidences are grouped on the right. Several demographics are clustered together:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Green&lt;/strong&gt;: Democrat, Liberal, Hispanic, Urban, Jewish, Black&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Orange&lt;/strong&gt;: 18-24 years old, Women, Unmarried, East&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Blue&lt;/strong&gt;: Post-graduate education, First-time voter&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Yellow&lt;/strong&gt;: Republican, Protestant, $100,000-199,999 income&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;analysis&quot;&gt;Analysis&lt;/h2&gt;
+
+&lt;p&gt;Let’s focus on the first principal component, on how demographics are distributed along the x-axis. Demographics on the farthest left are Democrat, Liberal, Hispanic, Urban, Jewish, and Black. On the farthest right, we have Republican, Conservative, Over $200k annual income, and Protestant. Recall that a principal component is supposed to capture some dynamic of the data in a certain dimension, so we can infer that the first component represents a political spectrum from Democratic to Republican. The farther away from the origin a demographic group’s vector goes in along the x-axis, the more politically united it is.&lt;/p&gt;
+
+&lt;p&gt;Interestingly, we see that the more recent the presidency, the further out they are on the x-axis. This reflects the historical trend that presidencies and voters have become more partisan over the years. Jimmy Carter’s presidency in 1976 and Ronald Reagan’s presidency in 1984 are much closer to the origin than Obama’s presidency in 2012 and Bush’s presidency in 2004.&lt;/p&gt;
+
+&lt;p&gt;The second principal component appears to represent the predictive power of a demographic. Above the scale, knowing which candidate that Liberals, Conservatives, or Married people support tells us little about who will actually win. Below the scale, support from Independents, the West, and First-time voters have major predictive power. This reflects the enormous influence that swing states and California bring to the election.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;In order to capture the White House, this year’s presidential candidates most likely need to be able to win Independents, the West, the blue cluster (post-graduates and first-time voters), and the orange cluster (18-24 year olds, women, and the East). The orange cluster also includes unmarried people, but presumably the 18-24 year old demographic encapsulates this group.&lt;/p&gt;
+
+&lt;h2 id=&quot;weaknesses&quot;&gt;Weaknesses&lt;/h2&gt;
+
+&lt;h3 id=&quot;sample-data&quot;&gt;Sample Data&lt;/h3&gt;
+&lt;p&gt;Arguably the biggest weakness of the analysis lies in the dataset itself, in its small size and its imprecise demographic groups. Forty years of history only yields ten samples, leaving it difficult to create meaningful demographic groups. Demographic groups such as Married are too broad and can be broken down even further, e.g. Married Independent voters or Married with College degree, but this makes it even more difficult to normalize exit poll questions across years.&lt;/p&gt;
+
+&lt;p&gt;Recent polls offer more specific classifications, but earlier polls do not go into such depth so there is a trade-off between specificity and sample size. For example, national exit polls did not track distinguish sexual orientation until the 1996 presidential election between Bill Clinton and Al Gore.&lt;/p&gt;
+
+&lt;h3 id=&quot;pca-assumptions&quot;&gt;PCA Assumptions&lt;/h3&gt;
+&lt;p&gt;PCA seeks to draw out the dynamics of a system and is robust against time, but this strength is a weakness when applied to presidential elections. The very nature of winning elections requires identifying and capitalizing on recent trends, and this analysis missed the new influence of minority groups.&lt;/p&gt;
+
+&lt;p&gt;It is widely agreed that Obama won in 2008 and again in 2012 by capturing the women, youth, and minority vote. The analysis does highlight the significance of women and young voters, but placed Hispanics and Blacks (part of the Green cluster) as poorly predictive. Moreover, the analysis places Independent voters as strongly significant, but the dataset shows a declining influence over the past 12 years.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Demographic&lt;/th&gt;
+      &lt;th&gt;2012&lt;/th&gt;
+      &lt;th&gt;2008&lt;/th&gt;
+      &lt;th&gt;2004&lt;/th&gt;
+      &lt;th&gt;2000&lt;/th&gt;
+      &lt;th&gt;1996&lt;/th&gt;
+      &lt;th&gt;1992&lt;/th&gt;
+      &lt;th&gt;1988&lt;/th&gt;
+      &lt;th&gt;1984&lt;/th&gt;
+      &lt;th&gt;1980&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Independent&lt;/td&gt;
+      &lt;td&gt;-1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;-1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;In addition, PCA presupposes a linear dynamic in how demographics influence the outcome of a presidential election. This may seem reasonable as we expect elections to be zero-sum, i.e. a person can only vote for one person. We also expect a demographic’s influence to vary linearly with size and unity and that each person’s vote is equally weighted, i.e. presidential candidates win simply by being more popular. However, elections are won in the Electoral College rather than by popular vote, so the influence of a demographic group may not necessarily be linear with the probability of the outcome.&lt;/p&gt;
+
+&lt;h2 id=&quot;extensions&quot;&gt;Extensions&lt;/h2&gt;
+
+&lt;p&gt;Instead of looking at national exit polls, the analysis can focus on exit polls in states with the most electoral votes: California, Texas, New York, or look at exit polls in swing states only: Ohio, Pennsylvania, Florida, Colorado.&lt;/p&gt;
+
+&lt;p&gt;A survey of Hilary Clinton and Donald Trump’s electorate base would also supplement this study.&lt;/p&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Shlens, J., 2014. A tutorial on principal component analysis. arXiv preprint arXiv:1404.1100. &lt;a href=&quot;http://arxiv.org/pdf/1404.1100.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“2012 President Exit Polls.” The New York Times. &lt;a href=&quot;http://elections.nytimes.com/2012/results/president/exit-polls&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“How Groups Voted.” Roper Center for Public Opinion Research, Cornell University. &lt;a href=&quot;http://ropercenter.cornell.edu/polls/us-elections/how-groups-voted/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“2004 U.S. President National Exit Poll” CNN. &lt;a href=&quot;http://www.cnn.com/ELECTION/2004/pages/results/states/US/P/00/epolls.0.html&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;1992-1996 Voting Demographics. Gallup. &lt;a href=&quot;http://www.gallup.com/poll/9466/election-polls-vote-groups-19921996.aspx&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“CPI Inflation Calculator.” Bureau of Labor Statistics. &lt;a href=&quot;http://www.bls.gov/data/inflation_calculator.htm&quot;&gt;link&lt;/a&gt; &lt;em&gt;Used to normalize income across polling years.&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 20 Jun 2016 00:00:00 -0500</pubDate>
+        <link>https://x-axis.github.io/2016/svd-on-presidential-elections</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2016/svd-on-presidential-elections</guid>
+        
+        <category>statistics</category>
+        
+        <category>code</category>
+        
+        <category>writeups</category>
         
         
       </item>
