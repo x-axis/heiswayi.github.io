@@ -5,9 +5,66 @@
     <description>Project log of things I have done in my free time.</description>
     <link>https://x-axis.github.io/</link>
     <atom:link href="https://x-axis.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Apr 2017 19:43:34 -0500</pubDate>
-    <lastBuildDate>Sat, 29 Apr 2017 19:43:34 -0500</lastBuildDate>
+    <pubDate>Fri, 01 Dec 2017 00:18:19 -0600</pubDate>
+    <lastBuildDate>Fri, 01 Dec 2017 00:18:19 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Singularity</title>
+        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Was this the singularity that launched a thousand redshifts,
+And irradiated the boundless expanse of space?
+Sweet Sagittarius, make me immortal with a kiss.
+Her mass sucks forth my soul: see where it flies!
+Come, A*, come, give me my soul again.
+Here will I dwell, for eternity is in these horizons,
+And all is infinitesimal that is not Sagittarius A*.
+I will be Genzel, and for love of thee,
+Instead of Kepler, shall Fermi be sacked;
+And I will measure with neighboring S2, 
+And prove thy central mass on my orbit;
+Yea, I will debunk dense stellar objects,
+And then return to Sgr A* for a kiss.
+Thou art grander than the Orion Sun
+Clad in the remnants of a thousand stars;
+Brighter art thou than an x-ray flare
+When it appeared to hapless Chandra;
+More lovely than the monarch of the sky
+In humbling Scorpius's stingin' scales;
+And none but thou shalt be my paramour!
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
+
+&lt;p&gt;Inspired by Christopher Marlowe’s &lt;a href=&quot;https://allpoetry.com/The-Face-That-Launch%27d-A-Thousand-Ships&quot;&gt;The Face That Launch’d A Thousand Ships&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Nov 2017 00:00:00 -0600</pubDate>
+        <link>https://x-axis.github.io/2017/singularity</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2017/singularity</guid>
+        
+        <category>poetry</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>World Map Dining Table</title>
+        <description>&lt;p&gt;Log last updated: 10/18/2018&lt;/p&gt;
+
+&lt;p&gt;It’s been so long since I’ve posted! I graduated and started working full-time. Moved into a new apartment. Some exciting personal stuff which has been occupying my evenings :). Now that I’ve started to get into a routine, my latest project has been to repurpose my dining table into functional artwork.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 18 Oct 2017 00:00:00 -0500</pubDate>
+        <link>https://x-axis.github.io/2017/world-map-dining-table</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2017/world-map-dining-table</guid>
+        
+        <category>projects</category>
+        
+        <category>logs</category>
+        
+        
+      </item>
     
       <item>
         <title>Sonnet No. 116</title>
@@ -706,436 +763,6 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
         <category>reference</category>
         
         <category>code</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Blog Reference Sheet</title>
-        <description>&lt;h2 id=&quot;blog&quot;&gt;Blog&lt;/h2&gt;
-&lt;p&gt;At the core, this blog is written in &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;, which is a syntax that turns plain text into HTML. Its creator, John Gruber, sought to design a language whose syntax was “as readable as possible.” Indeed, Markdown was inspired by the format of plain text email, with as few formatting tags as possible.&lt;/p&gt;
-
-&lt;p&gt;The “scaffold” of this blog – that is, the meta-programming technique that generates code from my Markdown text – is &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;. From &lt;a href=&quot;http://jekyllbootstrap.com/lessons/jekyll-introduction.html&quot;&gt;What is Jekyll?&lt;/a&gt;,&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as “a simple, blog aware, static site generator”.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Static websites do not depend on a live connection to a database or server-side code; therefore the user sees exactly what I have written at the time of publication. As a result, Jekyll only needs to parse the blog components once in order to generate a website, which is then served on a web-server.&lt;/p&gt;
-
-&lt;p&gt;The web server used is &lt;a href=&quot;https://pages.github.com&quot;&gt;GitHub Pages&lt;/a&gt;, which hosts my website from my GitHub repository. A repository is a central hub or location where things are stored - in this case, source code. As per its namesake, GitHub uses the Git version control system to manage its repository. Wikipedia offers a distinction,&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Unlike Git, which is strictly a command-line tool, GitHub provides a Web-based graphical interface and desktop as well as mobile integration.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Incidentally, GitHub uses Jekyll to power GitHub Pages. Therefore, it is because I chose GitHub Pages as my web server, that I came to use Jekyll as my scaffold. I edit my blog locally on my computer through Terminal (the command line interface for Apple’s OS X), and push changes to my website through GitHub.&lt;/p&gt;
-
-&lt;p&gt;I should further note that the theme of this blog was designed by &lt;a href=&quot;http://heiswayi.github.io&quot;&gt;Heiswayi Nrird&lt;/a&gt;, who I think has captured the spirit of minimalism quite well, given that this site combines both blog and portfolio.&lt;/p&gt;
-
-&lt;h3 id=&quot;jekyll-in-terminal&quot;&gt;Jekyll in Terminal&lt;/h3&gt;
-
-&lt;p&gt;Build entire site.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll build
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Build only files that have been modified.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll build --incremental
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;git-cheat-sheet&quot;&gt;Git Cheat Sheet&lt;/h2&gt;
-
-&lt;h3 id=&quot;flags&quot;&gt;Flags&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Flag&lt;/th&gt;
-      &lt;th&gt;Long form&lt;/th&gt;
-      &lt;th&gt;Meaning&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;-a&lt;/td&gt;
-      &lt;td&gt;–all&lt;/td&gt;
-      &lt;td&gt;Automatically stage all modified files but not new files.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;-m &amp;lt;msg&amp;gt;&lt;/td&gt;
-      &lt;td&gt;–message=&amp;lt;msg&amp;gt;&lt;/td&gt;
-      &lt;td&gt;Use the given &lt;msg&gt; as the commit message.&lt;/msg&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;-C &amp;lt;commit&amp;gt;&lt;/td&gt;
-      &lt;td&gt;–reuse-message=&amp;lt;commit&amp;gt;&lt;/td&gt;
-      &lt;td&gt;Reuse the log message and authorship from &amp;lt;commit&amp;gt;.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;commits&quot;&gt;Commits&lt;/h3&gt;
-
-&lt;p&gt;Record changes to repository for all modified files with specified commit message.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -a -m &lt;span class=&quot;s2&quot;&gt;&quot;Commit message.&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Commit using most recent commit and message.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit --amend --no-edit
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;pushing-changes&quot;&gt;Pushing Changes&lt;/h3&gt;
-
-&lt;p&gt;Push stuff… idk…&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;revert-commits&quot;&gt;Revert commits&lt;/h3&gt;
-
-&lt;p&gt;Still working on figuring this out.&lt;/p&gt;
-
-&lt;h2 id=&quot;latex-formatting&quot;&gt;LaTeX Formatting&lt;/h2&gt;
-
-&lt;h3 id=&quot;setup&quot;&gt;Setup&lt;/h3&gt;
-
-&lt;p&gt;Add the MathJax script into the &lt;code&gt;&amp;lt;head&amp;rt;&lt;/code&gt; block of page.&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;async&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;equations&quot;&gt;Equations&lt;/h3&gt;
-
-&lt;p&gt;In Markdown, surround equations with double dollar signs.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\delta E_{x}}{\delta t} = \frac{\delta f(z-ct)}{\delta t} = f^{\prime}(z - ct)\Big(\frac{\delta(z-ct)}{\delta t}\Big) = -c*f^{\prime}(z - ct)&lt;/script&gt;
-
-&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; E&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;_{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;z &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; ct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\Big&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\frac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\delta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\Big&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;z &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; ct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sun, 17 Jul 2016 00:00:00 -0500</pubDate>
-        <link>https://x-axis.github.io/2016/reference-sheet</link>
-        <guid isPermaLink="true">https://x-axis.github.io/2016/reference-sheet</guid>
-        
-        <category>jekyll</category>
-        
-        <category>github</category>
-        
-        <category>reference</category>
-        
-        <category>code</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Principal Component Analysis of Presidential Elections</title>
-        <description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;Using national exit polls, we undertake a principal component analysis of voter demographics for United States presidential elections from 1976 to 2012. We aim to quantify the dynamics of voters and identify the demographics that have best predicted presidential election outcomes from the Carter presidency to the current Obama presidency.&lt;/p&gt;
-
-&lt;h1 id=&quot;data&quot;&gt;Data&lt;/h1&gt;
-&lt;p&gt;National exit polls from Gallup and various news sources were aggregated into a raw data set. These polls captured 45 demographic groups which were further grouped into 12 categories.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Ideology&lt;/th&gt;
-      &lt;th&gt;Party&lt;/th&gt;
-      &lt;th&gt;Gender&lt;/th&gt;
-      &lt;th&gt;Married&lt;/th&gt;
-      &lt;th&gt;Race&lt;/th&gt;
-      &lt;th&gt;Religion&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Liberal&lt;/td&gt;
-      &lt;td&gt;Democrat&lt;/td&gt;
-      &lt;td&gt;Men&lt;/td&gt;
-      &lt;td&gt;Married&lt;/td&gt;
-      &lt;td&gt;White&lt;/td&gt;
-      &lt;td&gt;Protestant&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Moderate&lt;/td&gt;
-      &lt;td&gt;Republican&lt;/td&gt;
-      &lt;td&gt;Women&lt;/td&gt;
-      &lt;td&gt;Unmarried&lt;/td&gt;
-      &lt;td&gt;Black&lt;/td&gt;
-      &lt;td&gt;Catholic&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Conservative&lt;/td&gt;
-      &lt;td&gt;Independent&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Asian&lt;/td&gt;
-      &lt;td&gt;Jewish&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Hispanic&lt;/td&gt;
-      &lt;td&gt;Evangelical&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Other&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Age&lt;/th&gt;
-      &lt;th&gt;Education&lt;/th&gt;
-      &lt;th&gt;Income&lt;/th&gt;
-      &lt;th&gt;Region&lt;/th&gt;
-      &lt;th&gt;Community&lt;/th&gt;
-      &lt;th&gt;Voting Status&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;18-24 years&lt;/td&gt;
-      &lt;td&gt;Less than HS&lt;/td&gt;
-      &lt;td&gt;Under $30,000&lt;/td&gt;
-      &lt;td&gt;East&lt;/td&gt;
-      &lt;td&gt;Urban&lt;/td&gt;
-      &lt;td&gt;First-time voter&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;25-29 years&lt;/td&gt;
-      &lt;td&gt;High School&lt;/td&gt;
-      &lt;td&gt;$30,000-49,999&lt;/td&gt;
-      &lt;td&gt;Midwest&lt;/td&gt;
-      &lt;td&gt;Suburban&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;30-39 years&lt;/td&gt;
-      &lt;td&gt;Some College&lt;/td&gt;
-      &lt;td&gt;$50,000-99,999&lt;/td&gt;
-      &lt;td&gt;South&lt;/td&gt;
-      &lt;td&gt;Rural&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;40-49 years&lt;/td&gt;
-      &lt;td&gt;College&lt;/td&gt;
-      &lt;td&gt;$100,000-199,000&lt;/td&gt;
-      &lt;td&gt;West&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;50-64 years&lt;/td&gt;
-      &lt;td&gt;Postgraduate&lt;/td&gt;
-      &lt;td&gt;Over $200,000&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;65 and older&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;In each election, the voting behavior of each demographic group are represented as a column vector capturing whether or not the greater proportion voted for the winning presidential candidate.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-Demographic_i = 
-\begin{cases}
-1 &amp; \text{if the higher share voted for the winning candidate} \\
-0 &amp;\text{if the difference in voting share was within 5%} \\
--1 &amp;\text{if the higher share voted for the losing candidate} 
-\end{cases} %]]&gt;&lt;/script&gt;
-
-&lt;p&gt;Note that R uses the singular value decomposition method to perform principal component analysis, where the convention is to consider rows as observations and columns as variables, so our matrix needs to be in &lt;em&gt;election_year x demographic_group&lt;/em&gt; format. The data for all 45 demographics then comprises a 10 x 45 matrix. Since each demographic is encoded on the same scale of {1, 0, -1}, no further processing is needed, e.g. mean-centering or normalization.&lt;/p&gt;
-
-&lt;h1 id=&quot;principal-component-analysis&quot;&gt;Principal Component Analysis&lt;/h1&gt;
-
-&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
-
-&lt;p&gt;Each principal component represents a “dimension” of the data, describing some underlying dynamic. The table below shows the proportion of variance in the data that each principal component accounts for.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;PC1&lt;/th&gt;
-      &lt;th&gt;PC2&lt;/th&gt;
-      &lt;th&gt;PC3&lt;/th&gt;
-      &lt;th&gt;PC4&lt;/th&gt;
-      &lt;th&gt;PC5&lt;/th&gt;
-      &lt;th&gt;PC6&lt;/th&gt;
-      &lt;th&gt;PC7&lt;/th&gt;
-      &lt;th&gt;PC8&lt;/th&gt;
-      &lt;th&gt;PC9&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Proportion of Variance&lt;/td&gt;
-      &lt;td&gt;0.6023&lt;/td&gt;
-      &lt;td&gt;0.1401&lt;/td&gt;
-      &lt;td&gt;0.08354&lt;/td&gt;
-      &lt;td&gt;0.06334&lt;/td&gt;
-      &lt;td&gt;0.03156&lt;/td&gt;
-      &lt;td&gt;0.02662&lt;/td&gt;
-      &lt;td&gt;0.02079&lt;/td&gt;
-      &lt;td&gt;0.01767&lt;/td&gt;
-      &lt;td&gt;0.01415&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Cumulative Proportion&lt;/td&gt;
-      &lt;td&gt;0.6023&lt;/td&gt;
-      &lt;td&gt;0.7523&lt;/td&gt;
-      &lt;td&gt;0.82588&lt;/td&gt;
-      &lt;td&gt;0.88922&lt;/td&gt;
-      &lt;td&gt;0.92078&lt;/td&gt;
-      &lt;td&gt;0.94739&lt;/td&gt;
-      &lt;td&gt;0.96818&lt;/td&gt;
-      &lt;td&gt;0.98585&lt;/td&gt;
-      &lt;td&gt;1.00000&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Mathematically, the principal components of a dataset form an orthogonal basis. Geometrically, basis vectors can be seen as the axes in a Cartesian coordinate system. Humans are comfortable seeing data represented in two dimensions: x and y, so we can project the first two principal components, PC1 and PC2, onto the standard x, y plane. Together, they capture 75% of variance in the data.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/1RVA7lJ.png&quot; alt=&quot;Presidential Election biplot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here, the largest two principal components form the axes of the biplot above. There are two things to interpret: points and vectors. Points (presidential election years) that are close together have similar demographics while vectors (demographic groups) that are close together have similar voting behavior. We see that Democratic presidences are grouped on the left while Republican presidences are grouped on the right. Several demographics are clustered together:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Green&lt;/strong&gt;: Democrat, Liberal, Hispanic, Urban, Jewish, Black&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Orange&lt;/strong&gt;: 18-24 years old, Women, Unmarried, East&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Blue&lt;/strong&gt;: Post-graduate education, First-time voter&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Yellow&lt;/strong&gt;: Republican, Protestant, $100,000-199,999 income&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;analysis&quot;&gt;Analysis&lt;/h2&gt;
-
-&lt;p&gt;Let’s focus on the first principal component, on how demographics are distributed along the x-axis. Demographics on the farthest left are Democrat, Liberal, Hispanic, Urban, Jewish, and Black. On the farthest right, we have Republican, Conservative, Over $200k annual income, and Protestant. Recall that a principal component is supposed to capture some dynamic of the data in a certain dimension, so we can infer that the first component represents a political spectrum from Democratic to Republican. The farther away from the origin a demographic group’s vector goes in along the x-axis, the more politically united it is.&lt;/p&gt;
-
-&lt;p&gt;Interestingly, we see that the more recent the presidency, the further out they are on the x-axis. This reflects the historical trend that presidencies and voters have become more partisan over the years. Jimmy Carter’s presidency in 1976 and Ronald Reagan’s presidency in 1984 are much closer to the origin than Obama’s presidency in 2012 and Bush’s presidency in 2004.&lt;/p&gt;
-
-&lt;p&gt;The second principal component appears to represent the predictive power of a demographic. Above the scale, knowing which candidate that Liberals, Conservatives, or Married people support tells us little about who will actually win. Below the scale, support from Independents, the West, and First-time voters have major predictive power. This reflects the enormous influence that swing states and California bring to the election.&lt;/p&gt;
-
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
-
-&lt;p&gt;In order to capture the White House, this year’s presidential candidates most likely need to be able to win Independents, the West, the blue cluster (post-graduates and first-time voters), and the orange cluster (18-24 year olds, women, and the East). The orange cluster also includes unmarried people, but presumably the 18-24 year old demographic encapsulates this group.&lt;/p&gt;
-
-&lt;h2 id=&quot;weaknesses&quot;&gt;Weaknesses&lt;/h2&gt;
-
-&lt;h3 id=&quot;sample-data&quot;&gt;Sample Data&lt;/h3&gt;
-&lt;p&gt;Arguably the biggest weakness of the analysis lies in the dataset itself, in its small size and its imprecise demographic groups. Forty years of history only yields ten samples, leaving it difficult to create meaningful demographic groups. Demographic groups such as Married are too broad and can be broken down even further, e.g. Married Independent voters or Married with College degree, but this makes it even more difficult to normalize exit poll questions across years.&lt;/p&gt;
-
-&lt;p&gt;Recent polls offer more specific classifications, but earlier polls do not go into such depth so there is a trade-off between specificity and sample size. For example, national exit polls did not track distinguish sexual orientation until the 1996 presidential election between Bill Clinton and Al Gore.&lt;/p&gt;
-
-&lt;h3 id=&quot;pca-assumptions&quot;&gt;PCA Assumptions&lt;/h3&gt;
-&lt;p&gt;PCA seeks to draw out the dynamics of a system and is robust against time, but this strength is a weakness when applied to presidential elections. The very nature of winning elections requires identifying and capitalizing on recent trends, and this analysis missed the new influence of minority groups.&lt;/p&gt;
-
-&lt;p&gt;It is widely agreed that Obama won in 2008 and again in 2012 by capturing the women, youth, and minority vote. The analysis does highlight the significance of women and young voters, but placed Hispanics and Blacks (part of the Green cluster) as poorly predictive. Moreover, the analysis places Independent voters as strongly significant, but the dataset shows a declining influence over the past 12 years.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Demographic&lt;/th&gt;
-      &lt;th&gt;2012&lt;/th&gt;
-      &lt;th&gt;2008&lt;/th&gt;
-      &lt;th&gt;2004&lt;/th&gt;
-      &lt;th&gt;2000&lt;/th&gt;
-      &lt;th&gt;1996&lt;/th&gt;
-      &lt;th&gt;1992&lt;/th&gt;
-      &lt;th&gt;1988&lt;/th&gt;
-      &lt;th&gt;1984&lt;/th&gt;
-      &lt;th&gt;1980&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Independent&lt;/td&gt;
-      &lt;td&gt;-1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;-1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;In addition, PCA presupposes a linear dynamic in how demographics influence the outcome of a presidential election. This may seem reasonable as we expect elections to be zero-sum, i.e. a person can only vote for one person. We also expect a demographic’s influence to vary linearly with size and unity and that each person’s vote is equally weighted, i.e. presidential candidates win simply by being more popular. However, elections are won in the Electoral College rather than by popular vote, so the influence of a demographic group may not necessarily be linear with the probability of the outcome.&lt;/p&gt;
-
-&lt;h2 id=&quot;extensions&quot;&gt;Extensions&lt;/h2&gt;
-
-&lt;p&gt;Instead of looking at national exit polls, the analysis can focus on exit polls in states with the most electoral votes: California, Texas, New York, or look at exit polls in swing states only: Ohio, Pennsylvania, Florida, Colorado.&lt;/p&gt;
-
-&lt;p&gt;A survey of Hilary Clinton and Donald Trump’s electorate base would also supplement this study.&lt;/p&gt;
-
-&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Shlens, J., 2014. A tutorial on principal component analysis. arXiv preprint arXiv:1404.1100. &lt;a href=&quot;http://arxiv.org/pdf/1404.1100.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“2012 President Exit Polls.” The New York Times. &lt;a href=&quot;http://elections.nytimes.com/2012/results/president/exit-polls&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“How Groups Voted.” Roper Center for Public Opinion Research, Cornell University. &lt;a href=&quot;http://ropercenter.cornell.edu/polls/us-elections/how-groups-voted/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“2004 U.S. President National Exit Poll” CNN. &lt;a href=&quot;http://www.cnn.com/ELECTION/2004/pages/results/states/US/P/00/epolls.0.html&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;1992-1996 Voting Demographics. Gallup. &lt;a href=&quot;http://www.gallup.com/poll/9466/election-polls-vote-groups-19921996.aspx&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“CPI Inflation Calculator.” Bureau of Labor Statistics. &lt;a href=&quot;http://www.bls.gov/data/inflation_calculator.htm&quot;&gt;link&lt;/a&gt; &lt;em&gt;Used to normalize income across polling years.&lt;/em&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Mon, 20 Jun 2016 00:00:00 -0500</pubDate>
-        <link>https://x-axis.github.io/2016/svd-on-presidential-elections</link>
-        <guid isPermaLink="true">https://x-axis.github.io/2016/svd-on-presidential-elections</guid>
-        
-        <category>statistics</category>
-        
-        <category>code</category>
-        
-        <category>writeups</category>
         
         
       </item>

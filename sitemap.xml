@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://x-axis.github.io/2017/singularity</loc>
+<lastmod>2017-11-29T00:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>https://x-axis.github.io/2017/world-map-dining-table</loc>
+<lastmod>2017-10-18T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://x-axis.github.io/2017/sonnet-116</loc>
 <lastmod>2017-04-13T00:00:00-05:00</lastmod>
 </url>
