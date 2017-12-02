@@ -5,9 +5,53 @@
     <description>Project log of things I have done in my free time.</description>
     <link>https://x-axis.github.io/</link>
     <atom:link href="https://x-axis.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Dec 2017 14:02:40 -0600</pubDate>
-    <lastBuildDate>Fri, 01 Dec 2017 14:02:40 -0600</lastBuildDate>
+    <pubDate>Fri, 01 Dec 2017 21:55:40 -0600</pubDate>
+    <lastBuildDate>Fri, 01 Dec 2017 21:55:40 -0600</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Literary Souvenirs</title>
+        <description>&lt;p&gt;From time to time, I have read poems on graves, scribbled behind bathroom doors, shared in anonymous forums. These have no digital footprint and therefore, because memory is imperfect, they are scribed here.&lt;/p&gt;
+
+&lt;p&gt;A nice rhyme scheme and a pleasant cadence.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Do not so quick spurn one in plight --
+The wheels of Fate so turns
+In fashions which grant grim delight
+That fortune one day burns.
+
+Do not so quick serve one of light --
+As the zealot later learns
+The fall of kings and age of night
+Is the fate which fervor earns.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This one is particularly sad and made me cry. I saw it etched into a memorial :(.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;I was a traveler
+Across the country far and wide
+I heard the mountain's testimony
+And saw the skies declare his glory
+
+Along the highways I traveled
+Till concrete and steel collapsed
+Although I was crushed and buried
+I am still alive!
+
+But as man's work failed me
+My savior stood by me
+Remember the works of Jesus Christ
+For his love endures forever
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 01 Dec 2017 00:00:00 -0600</pubDate>
+        <link>https://x-axis.github.io/2017/literary-souvenirs</link>
+        <guid isPermaLink="true">https://x-axis.github.io/2017/literary-souvenirs</guid>
+        
+        <category>poetry</category>
+        
+        
+      </item>
     
       <item>
         <title>Singularity</title>
@@ -22,7 +66,7 @@ I will be Genzel, and for love of thee,
 Instead of Kepler, shall Fermi be sacked;
 And I will measure with neighboring S2, 
 And prove thy central mass on my orbit;
-Yea, I will debunk dense stellar objects,
+Yea, I will debunk theories to the contrary,
 And then return to Sgr A* for a kiss.
 Thou art grander than the Orion Sun
 Clad in the remnants of a thousand stars;
@@ -711,54 +755,6 @@ jekyll 3.1.6 | Error: undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/sp
         <category>internship</category>
         
         <category>jobs</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Compiling Python Code in Vim</title>
-        <description>&lt;p&gt;At the beginning of the summer, I configured my vim environment for Python development, including being able to compile my code within the editor. Today, I pulled up some old files and couldn’t remember how to run it anymore…&lt;/p&gt;
-
-&lt;p&gt;I looked in my vimrc file and it looks like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&quot; Set makeprg to compile current Python file&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; makprg&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;python\ %
-&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; noswapfile
-
-&lt;span class=&quot;c&quot;&gt;&quot; Map keys to compile Python scripts&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;nnoremap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;S&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;b1 &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;bar&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;bar&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;bd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;bar&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; 
-&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;b1 &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;bar&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;botright&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;vnew&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;bar&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; 
-&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;read &lt;span class=&quot;p&quot;&gt;!&lt;/span&gt;python &lt;span class=&quot;k&quot;&gt;lol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;m&lt;/span&gt; json&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;tool &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;CR&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;What is this ugliness?! It looks like hitting Shift+B results in the following:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Loads the first buffer (presumably where my code is)&lt;/li&gt;
-  &lt;li&gt;Writes the file (saves it)&lt;/li&gt;
-  &lt;li&gt;Closes buffers 1 through 1000 (essentially closes all buffers). I assume the exclamation forces this action without saving the other buffers.&lt;/li&gt;
-  &lt;li&gt;Reloads the first buffer&lt;/li&gt;
-  &lt;li&gt;Opens a new vertical buffer in the bottom right part of vim&lt;/li&gt;
-  &lt;li&gt;Runs the shell command &lt;code&gt;python lol.py&lt;/code&gt; and reads the output into a new buffer&lt;/li&gt;
-  &lt;li&gt;Runs the Python module, json.tool&lt;/li&gt;
-  &lt;li&gt;Hits enter&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Ignoring the fact that I apparently hardcoded a build sequence for one file, the output doesn’t look too bad. The results look like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/lv2Iw89.png&quot; alt=&quot;Python output in vim buffer&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 19 Jul 2016 00:00:00 -0500</pubDate>
-        <link>https://x-axis.github.io/2016/compiling-python-code-in-vim</link>
-        <guid isPermaLink="true">https://x-axis.github.io/2016/compiling-python-code-in-vim</guid>
-        
-        <category>notes</category>
-        
-        <category>reference</category>
-        
-        <category>code</category>
         
         
       </item>
